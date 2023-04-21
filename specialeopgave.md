@@ -72,13 +72,10 @@ Furthermore, affinity diagrams facilitate collaboration and interdisciplinary co
 
 In addition to traditional literature search methods, I used Elicit, a digital research assistant employing large language models. The steps followed while using Elicit in this study are outlined below:
 
-Posing a Research Question: A research question was entered into Elicit (e.g., \"What are the ethical implications of using LLMs in qualitative research?\").
-
-Semantic Similarity Searches: Elicit searched for relevant papers based on semantic relationships rather than just keyword matching, broadening the scope of literature found.
-
-Custom Abstract Summaries: Elicit generated tailored summaries of the sources' abstracts, presenting only information relevant to the research question, thus providing an initial understanding and evaluation of the research.
-
-Citation Graph Analysis: Elicit was used to explore the citation graph of selected papers to identify additional relevant literature based on citation relationships.
+1. Posing a Research Question: A research question was entered into Elicit (e.g., \"What are the ethical implications of using LLMs in qualitative research?\").
+2. Semantic Similarity Searches: Elicit searched for relevant papers based on semantic relationships rather than just keyword matching, broadening the scope of literature found.
+3. Custom Abstract Summaries: Elicit generated tailored summaries of the sources' abstracts, presenting only information relevant to the research question, thus providing an initial understanding and evaluation of the research.
+4. Citation Graph Analysis: Elicit was used to explore the citation graph of selected papers to identify additional relevant literature based on citation relationships.
 
 By following these steps and incorporating Elicit\'s features into the literature review process, a comprehensive and organised analysis of the available literature was achieved. Elicit served as a valuable resource in the development of the present study, contributing significantly to the literature review component.
 
