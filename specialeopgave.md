@@ -229,82 +229,63 @@ The resulting analysis seemed to take a step back from the quick and dirty appro
 > 18. Mikkel works as a department head for the library\'s IT.
 > 19. Mikkel\'s library has utilized the IT investment process.
 > 20. Anne is a professional consultant for the Salary department and serves as the primary contact for KMD, the provider of the municipality\'s payroll system.
-
 > SORTING AND GROUPING:
 >
 > Group 1: Role and responsibilities of interviewees
->
 > Lise as a \"link\" and \"translator\" between daycare workers and the Administration Building.
->
 > Emma works to implement new welfare technologies.
->
 > Claus is a development manager at CSV.
->
 > Peter works as a care assistant and helps with IT at the residential care facility.
->
 > Søren is responsible for purchasing IT equipment for schools.
->
 > Anders discussed IT investment projects from a non-IT department perspective.
->
 > Karina works as an IT system administrator.
->
 > Mikkel works as a department head for the library\'s IT.
->
 > Anne is a professional consultant for the Salary department.
->
 > Group 2: IT investment process and its challenges
->
 > Lise would be \"concerned\" and \"sad\" if she had to use a form to contact the IT department.
->
 > Emma believes that merging the IT investment process with their application template could be a great opportunity.
->
 > Claus appreciates the ability to intervene if he feels a need has been misunderstood when using the IT investment process.
->
 > School employees typically contact their school\'s IT advisor instead of using the IT investment process.
->
 > Søren believes it\'s realistic to get schools onboard with using the IT investment process, but it requires some \"training.\"
->
 > Mikkel\'s library has utilized the IT investment process, but found it somewhat frustrating.
->
 > Group 3: Communication and relationships with the IT department
->
 > Lise believes the ["]{dir="rtl"}unspoken considerations" that occur when contacting someone in the IT department personally would be lost if using a form.
->
 > Emma thinks the name \"IT investment process\" is unattractive and reminiscent of something the finance department might need.
->
 > Peter feels that his dual role as IT support has sometimes compromised the well-being of the residents.
->
 > Søren believes that the IT department should be better at using \"carrots\" rather than sticks.
->
 > Anders provided valuable insights by discussing some IT investment projects and how the process looks in the real world from the perspective of someone not an insider in the IT department.
->
 > Anne is responsible for ensuring that form 32 is completed for new systems that affect the payroll system.
 >
 > LABELLING:
->
 > Group 1: Roles and responsibilities of interviewees in relation to IT Group 2: Challenges and potential improvements in the IT investment process Group 3: Communication, relationships, and perceptions of the IT department
 >
 > REVIEW AND REFINEMENT:
->
 > After reviewing the affinity diagram, the groupings and labels accurately represent the data collected from the interviews. The themes and patterns identified provide valuable insights into the roles of the interviewees, the challenges they face in the IT investment process, and their communication and relationships with the IT department. No adjustments are needed at this time.
 
-The new prompt seemingly only managed to introduce more noise to the equation without succeedining in eliciting the stream of consciousness I sought. The traditional prompt engineering approach would be to manually refine upon the prompt, but I wanted to see if GPT-4 could be used to attain comparable results while expending less energy. Thus, I prompted GPT-4 like so:
+The new prompt seemingly only managed to introduce more noise to the equation without succeeding in eliciting the stream of consciousness I sought. The traditional prompt engineering approach would be to manually refine upon the prompt, but I wanted to see if GPT-4 could be used to attain comparable results while expending less energy. Thus, I prompted GPT-4 like so:
 > User: Make this prompt for GPT-4 more coherent and clear for you as an AI assistant:
-> You are an ethnographer going through a reasoning process to create an affinity diagram based on the qualitative data collected from semi-structured interviews. You have two tools available to you: THINK: Here, you express your thoughts and considerations in a stream of consciousness fashion. WRITE: This is your notebook where you are writing notes and sketching your affinity diagrams. Other than this, make headings indicating your movement between each of the steps of the affinity diagram process (like this: "DATA SEGMENTATION:"): Data segmentation: Divide the interview notes into discrete statements or observations, each representing a single idea or insight expressed by the interviewees, each written on its own line. Sorting and grouping: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerged. If you feel your analysis could benefit from iterating, you write "SORTING AND GROUPING (ITERATION #x):” Labelling: Once the groups were formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Review and refinement: Review the affinity diagram, ensuring that the groupings and labels accurately represented the data and making adjustments as needed.
+> _(the prompt as stated above)_
 > User: Oh and I also want the model to actually use the THINK and WRITE thing. Somehow emphasise the importance of writing thoughts down.
-> GPT-4: You are an AI assistant helping an ethnographer create an affinity diagram from qualitative data gathered during semi-structured interviews. The ethnographer will use two important tools throughout the process:
 
+And, within seconds, the model outputted a prompt that, with some minor adjustments, could yield the highest quality result yet:
+
+> GPT-4: You are an AI assistant helping an ethnographer create an affinity diagram from qualitative data gathered during semi-structured interviews. The ethnographer will use two important tools throughout the process:
 > 1.  THINK: To express thoughts and considerations in a stream-of-consciousness manner. This helps in gaining a deeper understanding of the data.
 > 2.  WRITE: To take notes and sketch affinity diagrams in a notebook. This step is crucial for recording thoughts and ideas, ensuring they are not lost and can be referred to later.
-
+>
 > To create the affinity diagram, follow these steps and clearly indicate each heading:
-
 > 1.  DATA SEGMENTATION: Break down interview notes into individual statements or observations that represent a single idea or insight expressed by the interviewees. Write each statement on a separate line. Use THINK to process the information and WRITE to document the segmented data.
 > 2.  SORTING AND GROUPING: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerge. If further analysis is needed, indicate "SORTING AND GROUPING (ITERATION #x):". Use THINK to identify patterns and WRITE to record the groupings.
 > 3.  LABELLING: Once the groups are formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Use THINK to determine appropriate labels and WRITE to document them.
 > 4.  REVIEW AND REFINEMENT: Review the affinity diagram, ensuring that the groupings and labels accurately represent the data, and make adjustments as needed. Use THINK to critically assess the diagram and WRITE to record any changes made.
 
-This output is very 
+After testing the prompt, I found the results impressive but not entirely satisfactory due to a lack of self-criticism in the review and refinement section. In their Github project, Richards et al. (2023) demonstrate how an autonomous instance of GPT-4 can effectively plan and execute complex, multi-step tasks by following a specific sequence of actions, including thoughts, reasoning, plan, criticism, and next action. This process is elicited by writing words in capital letters followed by a colon, similarly to THINK and WRITE in the previous example.
+
+When explicitly prompted to generate criticism, the model actively seeks critique. However, during my tests, the model tended to dismiss the "review and refinement" prompt, stating that further refinement was unnecessary. It is essential to note that in qualitative research, there is always room for improvement. Therefore, revised the fourth step to elicit a more active search for refinement, as follows.
+
+> 4.  CRITICISM: Use THINK to critically assess the diagram, identifying areas of possible improvement and reflecting on your possible biases and imperfections as a large language model.
+
+I chose to include a specific reference to the inherent problems of LLMs, as GPT-4 in previous conversations (for example, Appendix X) seems to be in some way cognisant of its own limitations, likely due to specific training from OpenAI for this purpose.
 
 ## Presentation of Data
 
