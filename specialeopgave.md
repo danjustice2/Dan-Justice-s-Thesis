@@ -58,7 +58,7 @@ Another strength of the book is the emphasis on using sketching as a collaborati
 
 ### Affinity Diagrams
 
-Affinity diagrams, also known as the KJ method or affinity charting, were first developed by Japanese anthropologist Jiro Kawakita (as cited in Scupin, 1997). The method has since become widely adopted in various fields, including ethnographic user experience (UX) studies. Affinity diagrams are used to synthesise and categorise large amounts of qualitative data, such as observations, interviews, and field notes, into meaningful and easily understandable themes and patterns (Hanington & Martin, 2019).
+Affinity diagrams, also known as the KJ method or affinity charting, were first developed by Japanese anthropologist Jiro Kawakita (as cited in Scupin, 1997). Affinity diagrams are used to synthesise and categorise large amounts of qualitative data, such as observations, interviews, and field notes, into meaningful and easily understandable themes and patterns (Hanington & Martin, 2019).
 
 The affinity diagramming process typically starts with the raw data being transformed into discrete statements or observations. These statements are then grouped based on their similarities and relationships (Hanington & Martin, 2019). The groups are subsequently labeled with descriptive headings, which capture the essence of their content. This iterative process allows for the identification of patterns, themes, and relationships among the collected data, thus providing insights and guidance for further analysis and design (Holtzblatt & Beyer, 2016).
 
@@ -127,13 +127,13 @@ In addition to generating text contained within this report, LLMs were also used
 
 #### New Challenges Presented by Working with LLMs
 
-While LLMs have proven to be highly beneficial, utilising these models does not simply reduce the workload; rather, it shifts the workload onto a different set of competencies. The quality of results obtained from an LLM is heavily dependent on the effectiveness of human communication with the model, giving rise to the art of prompt engineering. Prompt engineering refers to the process of crafting prompts or instructions that guide LLMs in producing high-quality results.
+Prompt engineering is a critical process for achieving high-quality results with LLMs, which have proven to be highly beneficial in various tasks. According to DAIR.AI (2023), "prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
 
-In contrast to their predecessors, GPT-3.5 and GPT-4 do not currently support fine-tuning, which makes prompt engineering even more critical. Without the ability to fine-tune the model for specific tasks, the design of the prompt becomes essential in obtaining high-quality results.
+As GPT-3.5 and GPT-4 do not currently support fine-tuning for specific tasks, prompt engineering becomes even more essential in obtaining high-quality results. The Prompt Engineering Guide from DAIR.AI (2023) proved to be an excellent resource for prompting the models as it offers a repository of knowledge about prompt engineering, referencing state of the art research in the area, such as Wei et al. (2022), 
 
-The prompt engineering process involves several steps, including selecting appropriate text prompts, tuning the model\'s hyperparameters (such as temperature, which governs the level of creativity or novelty in the output), and tailoring the prompt design to the model\'s capabilities. The primary goal is to create prompts that provide sufficient context for the model to generate high-quality results while avoiding those that may lead to incorrect or irrelevant outputs.
+The process of prompt engineering includes selecting appropriate text prompts, tuning the model's hyperparameters, and tailoring the prompt design to the model's capabilities. The primary objective is to create prompts that provide sufficient context for the LLM to generate high-quality results while avoiding those that may lead to incorrect or irrelevant outputs.
 
-For instance, in the case of text summarisation, an effective prompt should encapsulate the main idea of the input text and supply enough information for the model to generate a concise summary. Similarly, in question-answering tasks, a well-crafted prompt should capture the essence of the question and offer ample context for the model to generate accurate and relevant responses.
+In summary, effective prompt engineering is crucial for obtaining accurate and relevant results with LLMs. The Prompt Engineering Guide from DAIR.AI (2023) provides valuable insights into the process, making it an excellent resource for those seeking to improve their LLM's performance.
 
 #### Platforms Used
 
@@ -206,7 +206,7 @@ Large language models like GPT-4 do not think, but rather produce words (or, mor
 > Sorting and grouping: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerged. If you feel your analysis could benefit from iterating, you write \"SORTING AND GROUPING (ITERATION #x):"
 > Labelling: Once the groups were formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Review and refinemeznt: Review the affinity diagram, ensuring that the groupings and labels accurately represented the data and making adjustments as needed.
 
-The resulting analysis seemed to take a step back from the quick and dirty approach. However, the model's output succeeded to some degree in giving a clearer train of thought, making it easier to explain why the model responded as it did. The raw output is as follows:
+The resulting analysis seemed to take a step back from the quick and dirty approach, the model seemingly being pigeonholed by its many irrelevant data segments. The raw output is as follows:
 
 > DATA SEGMENTATION:
 > 1.  Lise as a \"link\" and \"translator\" between daycare workers and the Administration Building.
@@ -234,59 +234,77 @@ The resulting analysis seemed to take a step back from the quick and dirty appro
 >
 > Group 1: Role and responsibilities of interviewees
 >
->> Lise as a \"link\" and \"translator\" between daycare workers and the Administration Building.
+> Lise as a \"link\" and \"translator\" between daycare workers and the Administration Building.
 >
->> Emma works to implement new welfare technologies.
+> Emma works to implement new welfare technologies.
 >
->> Claus is a development manager at CSV.
+> Claus is a development manager at CSV.
 >
->> Peter works as a care assistant and helps with IT at the residential care facility.
+> Peter works as a care assistant and helps with IT at the residential care facility.
 >
->> Søren is responsible for purchasing IT equipment for schools.
+> Søren is responsible for purchasing IT equipment for schools.
 >
->> Anders discussed IT investment projects from a non-IT department perspective.
+> Anders discussed IT investment projects from a non-IT department perspective.
 >
->> Karina works as an IT system administrator.
+> Karina works as an IT system administrator.
 >
->> Mikkel works as a department head for the library\'s IT.
+> Mikkel works as a department head for the library\'s IT.
 >
->> Anne is a professional consultant for the Salary department.
+> Anne is a professional consultant for the Salary department.
 >
 > Group 2: IT investment process and its challenges
 >
->> Lise would be \"concerned\" and \"sad\" if she had to use a form to contact the IT department.
+> Lise would be \"concerned\" and \"sad\" if she had to use a form to contact the IT department.
 >
->> Emma believes that merging the IT investment process with their application template could be a great opportunity.
+> Emma believes that merging the IT investment process with their application template could be a great opportunity.
 >
->> Claus appreciates the ability to intervene if he feels a need has been misunderstood when using the IT investment process.
+> Claus appreciates the ability to intervene if he feels a need has been misunderstood when using the IT investment process.
 >
->> School employees typically contact their school\'s IT advisor instead of using the IT investment process.
+> School employees typically contact their school\'s IT advisor instead of using the IT investment process.
 >
->> Søren believes it\'s realistic to get schools onboard with using the IT investment process, but it requires some \"training.\"
+> Søren believes it\'s realistic to get schools onboard with using the IT investment process, but it requires some \"training.\"
 >
->> Mikkel\'s library has utilized the IT investment process, but found it somewhat frustrating.
+> Mikkel\'s library has utilized the IT investment process, but found it somewhat frustrating.
 >
 > Group 3: Communication and relationships with the IT department
 >
->> Lise believes the ["]{dir="rtl"}unspoken considerations" that occur when contacting someone in the IT department personally would be lost if using a form.
+> Lise believes the ["]{dir="rtl"}unspoken considerations" that occur when contacting someone in the IT department personally would be lost if using a form.
 >
->> Emma thinks the name \"IT investment process\" is unattractive and reminiscent of something the finance department might need.
+> Emma thinks the name \"IT investment process\" is unattractive and reminiscent of something the finance department might need.
 >
->> Peter feels that his dual role as IT support has sometimes compromised the well-being of the residents.
+> Peter feels that his dual role as IT support has sometimes compromised the well-being of the residents.
 >
->> Søren believes that the IT department should be better at using \"carrots\" rather than sticks.
+> Søren believes that the IT department should be better at using \"carrots\" rather than sticks.
 >
->> Anders provided valuable insights by discussing some IT investment projects and how the process looks in the real world from the perspective of someone not an insider in the IT department.
+> Anders provided valuable insights by discussing some IT investment projects and how the process looks in the real world from the perspective of someone not an insider in the IT department.
 >
->> Anne is responsible for ensuring that form 32 is completed for new systems that affect the payroll system.
+> Anne is responsible for ensuring that form 32 is completed for new systems that affect the payroll system.
 >
 > LABELLING:
 >
->> Group 1: Roles and responsibilities of interviewees in relation to IT Group 2: Challenges and potential improvements in the IT investment process Group 3: Communication, relationships, and perceptions of the IT department
+> Group 1: Roles and responsibilities of interviewees in relation to IT Group 2: Challenges and potential improvements in the IT investment process Group 3: Communication, relationships, and perceptions of the IT department
 >
 > REVIEW AND REFINEMENT:
 >
->> After reviewing the affinity diagram, the groupings and labels accurately represent the data collected from the interviews. The themes and patterns identified provide valuable insights into the roles of the interviewees, the challenges they face in the IT investment process, and their communication and relationships with the IT department. No adjustments are needed at this time.
+> After reviewing the affinity diagram, the groupings and labels accurately represent the data collected from the interviews. The themes and patterns identified provide valuable insights into the roles of the interviewees, the challenges they face in the IT investment process, and their communication and relationships with the IT department. No adjustments are needed at this time.
+
+The new prompt seemingly only managed to introduce more noise to the equation without succeedining in eliciting the stream of consciousness I sought. The traditional prompt engineering approach would be to manually refine upon the prompt, but I wanted to see if GPT-4 could be used to attain comparable results while expending less energy. Thus, I prompted GPT-4 like so:
+> User: Make this prompt for GPT-4 more coherent and clear for you as an AI assistant:
+> You are an ethnographer going through a reasoning process to create an affinity diagram based on the qualitative data collected from semi-structured interviews. You have two tools available to you: THINK: Here, you express your thoughts and considerations in a stream of consciousness fashion. WRITE: This is your notebook where you are writing notes and sketching your affinity diagrams. Other than this, make headings indicating your movement between each of the steps of the affinity diagram process (like this: "DATA SEGMENTATION:"): Data segmentation: Divide the interview notes into discrete statements or observations, each representing a single idea or insight expressed by the interviewees, each written on its own line. Sorting and grouping: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerged. If you feel your analysis could benefit from iterating, you write "SORTING AND GROUPING (ITERATION #x):” Labelling: Once the groups were formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Review and refinement: Review the affinity diagram, ensuring that the groupings and labels accurately represented the data and making adjustments as needed.
+> User: Oh and I also want the model to actually use the THINK and WRITE thing. Somehow emphasise the importance of writing thoughts down.
+> GPT-4: You are an AI assistant helping an ethnographer create an affinity diagram from qualitative data gathered during semi-structured interviews. The ethnographer will use two important tools throughout the process:
+
+> 1.  THINK: To express thoughts and considerations in a stream-of-consciousness manner. This helps in gaining a deeper understanding of the data.
+> 2.  WRITE: To take notes and sketch affinity diagrams in a notebook. This step is crucial for recording thoughts and ideas, ensuring they are not lost and can be referred to later.
+
+> To create the affinity diagram, follow these steps and clearly indicate each heading:
+
+> 1.  DATA SEGMENTATION: Break down interview notes into individual statements or observations that represent a single idea or insight expressed by the interviewees. Write each statement on a separate line. Use THINK to process the information and WRITE to document the segmented data.
+> 2.  SORTING AND GROUPING: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerge. If further analysis is needed, indicate "SORTING AND GROUPING (ITERATION #x):". Use THINK to identify patterns and WRITE to record the groupings.
+> 3.  LABELLING: Once the groups are formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Use THINK to determine appropriate labels and WRITE to document them.
+> 4.  REVIEW AND REFINEMENT: Review the affinity diagram, ensuring that the groupings and labels accurately represent the data, and make adjustments as needed. Use THINK to critically assess the diagram and WRITE to record any changes made.
+
+This output is very 
 
 ## Presentation of Data
 
