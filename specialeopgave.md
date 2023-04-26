@@ -203,7 +203,7 @@ Large language models like GPT-4 do not think, but rather produce words (or, mor
 > WRITE: This is your notebook where you are writing notes and sketching your affinity diagrams.
 > Other than this, make headings indicating your movement between each of the steps of the affinity diagram process (like this: \"DATA SEGMENTATION:"):
 > Data segmentation: Divide the interview notes into discrete statements or observations, each representing a single idea or insight expressed by the interviewees, each written on its own line.
-> Sorting and grouping: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerged. If you feel your analysis could benefit from iterating, you write \"SORTING AND GROUPING (ITERATION #x):"
+> Sorting and grouping: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerged. If you feel your analysis could benefit from iterating, you write \"SORTING AND GROUPING (ITERATION # x):"
 > Labelling: Once the groups were formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Review and refinemeznt: Review the affinity diagram, ensuring that the groupings and labels accurately represented the data and making adjustments as needed.
 
 The resulting analysis seemed to take a step back from the quick and dirty approach, the model seemingly being pigeonholed by its many irrelevant data segments. The raw output is as follows:
@@ -229,8 +229,8 @@ The resulting analysis seemed to take a step back from the quick and dirty appro
 > 18. Mikkel works as a department head for the library\'s IT.
 > 19. Mikkel\'s library has utilized the IT investment process.
 > 20. Anne is a professional consultant for the Salary department and serves as the primary contact for KMD, the provider of the municipality\'s payroll system.
-> SORTING AND GROUPING:
 >
+> SORTING AND GROUPING:
 > Group 1: Role and responsibilities of interviewees
 > Lise as a \"link\" and \"translator\" between daycare workers and the Administration Building.
 > Emma works to implement new welfare technologies.
@@ -262,7 +262,8 @@ The resulting analysis seemed to take a step back from the quick and dirty appro
 > REVIEW AND REFINEMENT:
 > After reviewing the affinity diagram, the groupings and labels accurately represent the data collected from the interviews. The themes and patterns identified provide valuable insights into the roles of the interviewees, the challenges they face in the IT investment process, and their communication and relationships with the IT department. No adjustments are needed at this time.
 
-The new prompt seemingly only managed to introduce more noise to the equation without succeeding in eliciting the stream of consciousness I sought. The traditional prompt engineering approach would be to manually refine upon the prompt, but I wanted to see if GPT-4 could be used to attain comparable results while expending less energy. Thus, I prompted GPT-4 like so:
+The introduction of the new prompt appeared to have added more noise to the equation and failed to produce the desired stream of consciousness. As a result on the lack of simulated though, the end results seem to be pigeonholed by the odd choice of data segments at the beginning. The conventional method of prompt engineering would be to refine the prompt manually. However, I was curious if GPT-4 could achieve similar results while using less effort. To test this, I prompted GPT-4 in the following way:
+
 > User: Make this prompt for GPT-4 more coherent and clear for you as an AI assistant:
 > _(the prompt as stated above)_
 > User: Oh and I also want the model to actually use the THINK and WRITE thing. Somehow emphasise the importance of writing thoughts down.
@@ -275,17 +276,19 @@ And, within seconds, the model outputted a prompt that, with some minor adjustme
 >
 > To create the affinity diagram, follow these steps and clearly indicate each heading:
 > 1.  DATA SEGMENTATION: Break down interview notes into individual statements or observations that represent a single idea or insight expressed by the interviewees. Write each statement on a separate line. Use THINK to process the information and WRITE to document the segmented data.
-> 2.  SORTING AND GROUPING: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerge. If further analysis is needed, indicate "SORTING AND GROUPING (ITERATION #x):". Use THINK to identify patterns and WRITE to record the groupings.
+> 2.  SORTING AND GROUPING: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerge. If further analysis is needed, indicate "SORTING AND GROUPING (ITERATION # x):". Use THINK to identify patterns and WRITE to record the groupings.
 > 3.  LABELLING: Once the groups are formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Use THINK to determine appropriate labels and WRITE to document them.
 > 4.  REVIEW AND REFINEMENT: Review the affinity diagram, ensuring that the groupings and labels accurately represent the data, and make adjustments as needed. Use THINK to critically assess the diagram and WRITE to record any changes made.
 
-After testing the prompt, I found the results impressive but not entirely satisfactory due to a lack of self-criticism in the review and refinement section. In their Github project, Richards et al. (2023) demonstrate how an autonomous instance of GPT-4 can effectively plan and execute complex, multi-step tasks by following a specific sequence of actions, including thoughts, reasoning, plan, criticism, and next action. This process is elicited by writing words in capital letters followed by a colon, similarly to THINK and WRITE in the previous example.
+The prompt's primary issue is that it frames the model as an "AI assistant helping an ethnographer." While no published research substantiates this claim, there is a consensus among online prompt engineering communities that GPT models produce higher-quality results when prompted as experts (for example, one such discussion on Reddit under @paraizordYouAreExpert2023). Therefore, I have revised the prompt to "You are an AI ethnographer assisting your human colleague," which strikes a balance between prompting the model as an expert and making it aware of its position and limitations.
 
-When explicitly prompted to generate criticism, the model actively seeks critique. However, during my tests, the model tended to dismiss the "review and refinement" prompt, stating that further refinement was unnecessary. It is essential to note that in qualitative research, there is always room for improvement. Therefore, revised the fourth step to elicit a more active search for refinement, as follows.
+After testing the revised prompt, I found the results impressive but unsatisfactory due to a lack of self-criticism in the review and refinement section. During my tests, the model tended to dismiss the "review and refinement" prompt, stating that further refinement was unnecessary. However, qualitative research always allows room for improvement, so I wasn't ready to accept this answer.
 
-> 4.  CRITICISM: Use THINK to critically assess the diagram, identifying areas of possible improvement and reflecting on your possible biases and imperfections as a large language model.
+@richardsAutoGPTAutonomousGPT42023 demonstrated how an autonomous GPT-4 instance can plan and execute complex, multi-step tasks by following a specific sequence of actions: thoughts, reasoning, plan, criticism, and next action. Therefore, I revised the fourth step to prompt a more active search for refinement as follows, borrowing the "CRITICISM" keyword from @richardsAutoGPTAutonomousGPT42023.
 
-I chose to include a specific reference to the inherent problems of LLMs, as GPT-4 in previous conversations (for example, Appendix X) seems to be in some way cognisant of its own limitations, likely due to specific training from OpenAI for this purpose.
+> 4.  CRITICISM: Use THINK to critically assess the diagram, identifying areas of possible improvement. Also reflect on your possible biases and imperfections as a large language model.
+
+Interestingly, GPT-4 seems to be better at reflecting upon its own biases as an LLM than its predecessors (see, for example, Appendix X), likely due to its larger corpus of text following the introduction of GPT-3 and its first surges in popularity in research circles (although before the introduction of ChatGPT) and specialised training from OpenAI for this purpose. For that reason that I chose to specifically ask the model to reflect upon its own biases.
 
 ## Presentation of Data
 
