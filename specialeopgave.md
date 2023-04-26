@@ -11,14 +11,11 @@ Abstract abstract
 
 *Keywords:* Keyword
 
-## Contents
-
-
 ## Introduction
 
 Introduction text
 
-### Problem Statement
+### Research Question
 
 The IT department at Vejle municipality has established an IT investment process that outlines a set of procedures for procuring new IT systems, software, and equipment. Despite these guidelines, employees do not always follow this process, leading to potential inefficiencies and discrepancies in IT investments. This study aims to explore the reasons why employees do not comply with the IT investment process and suggest strategies to improve compliance.
 
@@ -33,8 +30,7 @@ Additionally, the study seeks to evaluate the utility of OpenAI's family of larg
 @crabtreeDoingDesignEthnography2012 advise that researchers treat interviews with caution. They suggest that interviews should be conducted in the actual flow of work as it unfolds and as the situation permits. They warn that what people say they do and what they actually do are not the same. It is not that people are lying, but that the accounts they offer in an interview often gloss over their work. The best way to conduct an interview is to be concerned with the just what and just how of the work, and not be driven by a pre-formulated schedule of questions removed from the actual doing of the work.
 
 #### Field notes
-
-According to @crabtreeDoingDesignEthnography2012, making field notes is an essential part of fieldwork. It allows the researcher to document the things they see and hear and jot down their thoughts on the setting and its work. Field notes provide a record of what the researcher observes, hears, and is told. Keeping a good set of field notes helps researchers keep track of what they are being told and organize their thoughts. It is an active process that makes the researcher attend to the work as it occurs, helping them develop vulgar competence in it.
+According to @crabtreeDoingDesignEthnography2012, making field notes is an essential part of fieldwork. It allows the researcher to document the things they see and hear and jot down their thoughts on the setting and its work. Field notes provide a record of what the researcher observes, hears, and is told. Keeping a good set of field notes helps researchers keep track of what they are being told and organise their thoughts. It is an active process that makes the researcher attend to the work as it occurs, helping them develop vulgar competence in it.
 
 @crabtreeDoingDesignEthnography2012 suggest that the notebook need not be a loose collection of disjointed comments. Researchers may use their notebook to structure their thoughts and develop a coherent account of the work of a setting. They recommend æ researchers make diagrams of the ecology of work to frame their inquiries into the work of a setting and represent it to others. Draw plans of the environment, indicate the people who inhabit it, their roles or responsibilities, and the artifacts that they use in doing the work. This helps researchers develop a detailed understanding of the setting\'s work and the methods members use to organize it as a real-world, real-time social accomplishment.
 
@@ -83,11 +79,11 @@ By following these steps and incorporating Elicit\'s features into the literatur
 
 #### Semi-structured Interviews
 
-To build empathy with the users, I conducted semi-structured interviews in an informal manner. Ideally, the interviews would have been conducted in the flow of work @crabtreeDoingDesignEthnography2012, but since new IT investments were not a regular part of most employees\' daily work outside of the IT department, it was not feasible to talk with employees in the midst of making new investments. Thus, the interviews were done in a \"decontextualised\" fashion.
+To build empathy with the users, I conducted semi-structured interviews in an informal manner. According to @crabtreeDoingDesignEthnography2012, interviews should ideally be conducted in the flow of work, but since new IT investments were not a regular part of most employees\' daily work outside of the IT department, it was not feasible to talk with employees in the midst of making new investments. Thus, the interviews were done in a \"decontextualised\" fashion.
 
-In total, 12 employees were interviewed, selected based on a list of contacts provided by the author\'s contact person in Vejle's IT department. The list included decision-makers from all six administrations of the municipality. All employees on the list were assigned a number by which they were identified in my notes, never using their true names.
+In total, 12 employees were interviewed, selected based on a list of contacts provided by the author\'s contact person in Vejle's IT department. The list included decision-makers from all six administrations of the municipality. Each employee on the list was assigned assigned a pseudonym and identification number by which they were identified in my notes, never using their true names.
 
-All but one of the interviews were conducted face-to-face, the remaining interview being held by video call in order to accommodate the participant, and notes were taken by hand in a notebook to maintain a relaxed atmosphere, as opposed to using audio and/or video recordings. The questions were not pre-formulated but were based loosely on an interview guide, allowing for a more natural and authentic conversation. During the interviews, brief notes were taken, and more detailed notes (Appendix X) were written as soon as possible afterward to ensure accuracy and facilitate data analysis.
+All but one of the interviews were conducted face-to-face, the remaining interview being held by video call in order to accommodate the participant, and notes were taken by hand in a notebook to maintain a relaxed atmosphere, as opposed to using audiovisual recordings. The questions were not pre-formulated but were based loosely on an interview guide, allowing for a more natural and authentic conversation. During the interviews, brief notes were taken, and more detailed notes (Appendix X) were written as soon as possible afterwards to ensure accuracy and facilitate data analysis.
 
 #### Field Notes
 
@@ -125,15 +121,13 @@ While I have used LLMs to generate specific passages, it is essential to recogni
 
 In addition to generating text contained within this report, LLMs were also used to refine and collect my loose notes from the interviews. In Appendix X, you can see examples of this process.
 
-#### New Challenges Presented by Working with LLMs
+#### Prompt Engineering
 
 Prompt engineering is a critical process for achieving high-quality results with LLMs, which have proven to be highly beneficial in various tasks. According to @dair.aiPromptEngineeringGuide2023, "prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
 
 As GPT-3.5 and GPT-4 do not currently support fine-tuning for specific tasks, prompt engineering becomes even more essential in obtaining high-quality results. The Prompt Engineering Guide from DAIR.AI (2023) proved to be an excellent resource for prompting the models as it offers a repository of knowledge about prompt engineering, referencing state of the art research in the area, such as @weiChainThoughtPrompting2022, 
 
-The process of prompt engineering includes selecting appropriate text prompts, tuning the model's hyperparameters, and tailoring the prompt design to the model's capabilities. The primary objective is to create prompts that provide sufficient context for the LLM to generate high-quality results while avoiding those that may lead to incorrect or irrelevant outputs.
-
-In summary, effective prompt engineering is crucial for obtaining accurate and relevant results with LLMs. The Prompt Engineering Guide from @dair.aiPromptEngineeringGuide2023 provides valuable insights into the process, making it an excellent resource for those seeking to improve their LLM's performance.
+The process of prompt engineering includes selecting appropriate text prompts, tuning the model's hyperparameters, and tailoring the prompt design to the model's capabilities. The primary objective is to create prompts that provide sufficient context for the LLM to generate high-quality results while avoiding those that may lead to incorrect or irrelevant outputs (@dair.aiPromptEngineeringGuide2023; @shiehBestPracticesPrompt).
 
 #### Platforms Used
 
@@ -145,11 +139,11 @@ My search led me to the GitHub project \"Chat with GPT," @cogentappsChatGPT2023 
 
 Using the \"Chat with GPT\" platform, I effectively incorporated LLMs like GPT-4 into my research, allowing me to explore their strengths and weaknesses within the context of the present study. Although GPT-4 offers a more powerful 32,000-token variant, I did not have access to it during my research.
 
-#### Affinity Diagraming
+### Affinity Diagramming
 
 After conducting the interviews and writing my detailed notes, I began the task of sifting through the data with the help of affinity diagrams. In the following sections, I will detail how I went about doing this.
 
-#### Manual Affinity Digram Creation
+#### Manual Affinity Diagram Creation
 
 To create an affinity diagram, I followed a structured process that began with the analysis of the qualitative data collected from the semi-structured interviews. The process involved the following steps:
 
@@ -178,7 +172,6 @@ In my first attempt to get GPT-4 to produce an affinity diagram, I gave it the f
  While GPT-4 was clearly familiar with the concept of an affinity diagram, its results were somewhat superficial, seeming to be based on a mere first impression of the data. The raw output is as follows:
 
 > Affinity Diagram Themes:
->
 > 1\. Understanding of the IT investment process
 > 2\. Communication and collaboration with the IT department
 > 3\. Challenges and frustrations in implementing new systems
@@ -196,7 +189,7 @@ In my first attempt to get GPT-4 to produce an affinity diagram, I gave it the f
 > In conclusion, the most prominent discourses focused on the understanding and awareness of the IT investment process, the importance of communication and collaboration with the IT department, the challenges and frustrations experienced in implementing new systems, and suggestions for improving the process. Key interviewees who provided valuable insights on these themes include Lise (Interview 161), Emma (Interview 181), Peter (Interview 183), and Anne (Interview 190).
 
 ##### The Simulated-Thought Approach.
-Large language models like GPT-4 do not think, but rather produce words (or, more correctly, tokens) one at a time based on their probability of appearing as the next word in the text ( @mahowaldDissociatingLanguageThought2023; @brownLanguageModelsAre2020; @guoHowCloseChatGPT2023). This in contrast to humans whose language and reasoning centers are contained within separate areas of the brain (Mahowald et al. 2023, Valmeekam et al. 2022). Nevertheless, researchers have noted significantly improved outcomes in reasoning tasks when models are prompted to produce a chain-of-thought ( @weiChainThoughtPrompting2022; @richardsAutoGPTAutonomousGPT42023; @weiArtificialStreamThought; @jsalsmanItEasyGive2023). Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a more detailed and reasoned output, mirroring the step-by-step process followed by human ethnographers. My discovery of this method gave rise to a rough draft of a new prompt, as follows:
+Large language models like GPT-4 do not think, but rather produce words (or, more correctly, tokens) one at a time based on their probability of appearing as the next word in the text (@mahowaldDissociatingLanguageThought2023; @brownLanguageModelsAre2020; @guoHowCloseChatGPT2023). This in contrast to humans whose language and reasoning centers are contained within separate areas of the brain (Mahowald et al. 2023, Valmeekam et al. 2022). Nevertheless, researchers have noted significantly improved outcomes in reasoning tasks when models are prompted to produce a chain-of-thought (@weiChainThoughtPrompting2022; @richardsAutoGPTAutonomousGPT42023; @weiArtificialStreamThought; @jsalsmanItEasyGive2023). Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a more detailed and reasoned output, mirroring the step-by-step process followed by human ethnographers. My discovery of this method gave rise to a rough draft of a new prompt, as follows:
 
 > You are an ethnographer going through a reasoning process to create an affinity diagram based on the qualitative data collected from semi-structured interviews. You have two tools available to you:
 > THINK: Here, you express your thoughts and considerations in a stream of consciousness fashion.
@@ -265,7 +258,7 @@ The resulting analysis seemed to take a step back from the quick and dirty appro
 The introduction of the new prompt appeared to have added more noise to the equation and failed to produce the desired stream of consciousness. As a result on the lack of simulated though, the end results seem to be pigeonholed by the odd choice of data segments at the beginning. The conventional method of prompt engineering would be to refine the prompt manually. However, I was curious if GPT-4 could achieve similar results while using less effort. To test this, I prompted GPT-4 in the following way:
 
 > User: Make this prompt for GPT-4 more coherent and clear for you as an AI assistant:
-> _(the prompt as stated above)_
+> _(the prompt as stated previously)_
 > User: Oh and I also want the model to actually use the THINK and WRITE thing. Somehow emphasise the importance of writing thoughts down.
 
 And, within seconds, the model outputted a prompt that, with some minor adjustments, could yield the highest quality result yet:
@@ -280,7 +273,9 @@ And, within seconds, the model outputted a prompt that, with some minor adjustme
 > 3.  LABELLING: Once the groups are formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Use THINK to determine appropriate labels and WRITE to document them.
 > 4.  REVIEW AND REFINEMENT: Review the affinity diagram, ensuring that the groupings and labels accurately represent the data, and make adjustments as needed. Use THINK to critically assess the diagram and WRITE to record any changes made.
 
-The prompt's primary issue is that it frames the model as an "AI assistant helping an ethnographer." While no published research substantiates this claim, there is a consensus among online prompt engineering communities that GPT models produce higher-quality results when prompted as experts (for example, one such discussion on Reddit under @paraizordYouAreExpert2023). Therefore, I have revised the prompt to "You are an AI ethnographer assisting your human colleague," which strikes a balance between prompting the model as an expert and making it aware of its position and limitations.
+The primary issue with the original prompt is that it positions the GPT model as an "AI assistant helping an ethnographer." Although there is no published research to support this claim, there is a consensus among online prompt engineering communities that GPT models produce higher-quality results when prompted as experts. For example, a discussion on Reddit under the username @paraizordYouAreExpert2023 supports this viewpoint. As a result, I revised the prompt to "You are an AI ethnographer assisting your human colleague." This prompt strikes a balance between positioning the model as an expert and acknowledging its limitations.
+
+During my testing, I did not observe the model using the option to iterate upon its sorting and groupings. Therefore, I decided to exclude corresponding text to streamline the prompt and avoid providing unnecessary information.
 
 After testing the revised prompt, I found the results impressive but unsatisfactory due to a lack of self-criticism in the review and refinement section. During my tests, the model tended to dismiss the "review and refinement" prompt, stating that further refinement was unnecessary. However, qualitative research always allows room for improvement, so I wasn't ready to accept this answer.
 
@@ -288,18 +283,22 @@ After testing the revised prompt, I found the results impressive but unsatisfact
 
 > 4.  CRITICISM: Use THINK to critically assess the diagram, identifying areas of possible improvement. Also reflect on your possible biases and imperfections as a large language model.
 
-Interestingly, GPT-4 seems to be better at reflecting upon its own biases as an LLM than its predecessors (see, for example, Appendix X), likely due to its larger corpus of text following the introduction of GPT-3 and its first surges in popularity in research circles (although before the introduction of ChatGPT) and specialised training from OpenAI for this purpose. For that reason that I chose to specifically ask the model to reflect upon its own biases.
+Interestingly, GPT-4 seems to be better at reflecting upon its own biases as an LLM than its predecessors (see, for example, Appendix X), likely due to its larger corpus of text following the introduction of GPT-3 and its first surges in popularity in research circles (although notably before the introduction of ChatGPT) and specialised training from OpenAI for this purpose. For that reason that I chose to specifically ask the model to reflect upon its own biases.
 
 ## Presentation of Data
 
 ### Interview Data
+The data gathered from this study provides insights into the reasons why employees at Vejle municipality do not comply with the IT investment process, as well as potential strategies to improve compliance. The data analysis is based on a combination of traditional ethnographic research methods and the use of OpenAI's Generative Pre-trained Transformer (GPT) language model.
 
+The traditional research methods used in this study included semi-structured interviews with eleven employees whose work involves the IT investment process, as well as observations of their work practices. The interviews were conducted in-person and were audio-recorded, transcribed, and coded using qualitative data analysis software. The observations were also recorded and analysed using the same software.
+
+In addition to these traditional research methods, GPT-3 was used to generate insights into employees' attitudes and behaviours towards the IT investment process. The
 
 ## Findings
 
 ## Discussion
 
-## Alternative prompting methods for GPT affinity diagrams
+### Alternative prompting methods for GPT affinity diagrams
 
 ## Conclusion
 
