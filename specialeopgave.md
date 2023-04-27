@@ -29,7 +29,7 @@ Additionally, the study seeks to evaluate the utility of OpenAI's family of larg
 
 @crabtreeDoingDesignEthnography2012 advise that researchers treat interviews with caution. They suggest that interviews should be conducted in the actual flow of work as it unfolds and as the situation permits. They warn that what people say they do and what they actually do are not the same. It is not that people are lying, but that the accounts they offer in an interview often gloss over their work. The best way to conduct an interview is to be concerned with the just what and just how of the work, and not be driven by a pre-formulated schedule of questions removed from the actual doing of the work.
 
-- [ ] #### Field notes
+#### Field notes
 According to @crabtreeDoingDesignEthnography2012, making field notes is an essential part of fieldwork. It allows the researcher to document the things they see and hear and jot down their thoughts on the setting and its work. Field notes provide a record of what the researcher observes, hears, and is told. Keeping a good set of field notes helps researchers keep track of what they are being told and organise their thoughts. It is an active process that makes the researcher attend to the work as it occurs, helping them develop vulgar competence in it.
 
 @crabtreeDoingDesignEthnography2012 suggest that the notebook need not be a loose collection of disjointed comments. Researchers may use their notebook to structure their thoughts and develop a coherent account of the work of a setting. They recommend researchers make diagrams of the ecology of work to frame their inquiries into the work of a setting and represent it to others. Draw plans of the environment, indicate the people who inhabit it, their roles or responsibilities, and the artifacts that they use in doing the work. This helps researchers develop a detailed understanding of the setting\'s work and the methods members use to organize it as a real-world, real-time social accomplishment.
@@ -319,7 +319,7 @@ This prompt was much more explicit in explaining what steps the model should fol
 Determined to craft prompt that could enable the model to yield high quality results every time, I decided to take a step back and start writing a new prompt from scratch, learning from the aforementioned experiments. The resulting prompt is as follows.
 
 >You are an ethnographer tasked with analysing a fellow ethnographer’s notes gathered from conducted interviews and making an affinity diagram. In order to craft an affinity diagram, you follow this structure:
-
+>
 >\# OVERVIEW
 >\## THINK
 >\[You give a detailed and in-depth bicameral dialogue, thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.\]
