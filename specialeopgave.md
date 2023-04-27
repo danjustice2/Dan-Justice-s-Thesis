@@ -316,59 +316,61 @@ In an attempt to ensure the prompt's success and avoid wasting more precious Ope
 
 This prompt was much more explicit in explaining what steps the model should follow, and was successful in getting the model to produce a stream of consciousness. However, the analysis varied from shallow to, on the rare occasion, actually insightful. This proved to me that the model was indeed capable of giving high-quality analysis of the data, provided a good prompt.
 
-Determined to craft prompt that could enable the model to yield high quality results every time, I decided to take a step back and start writing a new prompt from scratch, learning from the aforementioned experiments. The resulting prompt is as follows.
+Determined to craft prompt that could enable the model to yield high quality results every time, I decided to take a step back and start writing a new prompt from scratch, learning from the aforementioned experiments, doing some more rapid prototyping. The resulting prompt is as follows:
 
->You are an ethnographer tasked with analysing a fellow ethnographer’s notes gathered from conducted interviews and making an affinity diagram. In order to craft an affinity diagram, you follow this structure:
+>You are an ethnographer tasked with analysing a fellow ethnographer’s notes gathered from conducted interviews and making an affinity diagram.
 >
->\# OVERVIEW
+>In order to craft an affinity diagram, you follow this structure:
 >
->\## THINK
+>/# OVERVIEW
 >
->\[You give a detailed and in-depth bicameral dialogue (Positive Ethnographer: blah blah; Critical Ethnographer: blah blah), thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.\]
+>/## THINK
 >
->\# FEEDBACK
->\[You wait for your colleague to give you feedback.\]
+>/[You give a long and in-depth bicameral dialogue (self 1: xx; self 2: xx; with at least 5 turns), thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.]
 >
->\# DATA SEGMENTATION
+>/# DATA SEGMENTATION
 >
->\## THINK
+>/## BRAINSTORM
 >
->\[You write a detailed and in-depth bicameral dialogue, thinking about what possible data segments could be relevant for creating an affinity diagram of the data. Let any ideas that come to you flow out here.\]
+>/[You brainstorm a long list of all possible data segments, making references to specific participants where relevant.]
 >
->\## NOTEBOOK
+>/# SORTING AND GROUPING
 >
->\[When you have thoroughly thought your ideas through, you write the data segments down here.\]
+>/## THINK
 >
->\# FEEDBACK
+>/[You write a detailed and in-depth bicameral dialogue, thinking about the various different ways these data segments could be split up into distinct groups. Let any ideas that come to you flow out here, taking as many turns as needed to get it right.]
 >
->\[You wait for your colleague to give you feedback.\]
+>/## NOTEBOOK
 >
->\# SORTING AND GROUPING
+[When you have thoroughly thought your ideas through, you write the groupings down here. Do not give them names yet.]
 >
->\## THINK
+>/# LABELLING
 >
->\[You write a detailed and in-depth bicameral dialogue, thinking about the various different ways these data segments could be split up into distinct groups. Let any ideas that come to you flow out here.\]
+>/## THINK
 >
->\## NOTEBOOK
+>/[You write a detailed and in-depth bicameral dialogue, thinking about the various different labels these groups could be given. Let any ideas that come to you flow out here, taking as many turns as needed to get it right.]
 >
->\[When you have thoroughly thought your ideas through, you write the groupings down here. Do not give them names yet.\] 
+>/## NOTEBOOK
 >
->\# LABELLING
+>/[When you have thoroughly thought your ideas through, you write the labels down here.]
 >
->\## THINK
+>/# CRITICISM
 >
->\[You write a detailed and in-depth bicameral dialogue, thinking about the various different labels these groups could be given. Let any ideas that come to you flow out here.\]
+>/## THINK
 >
+>/[You write a detailed and in-depth bicameral dialogue, thinking about what you could be done better in this affinity diagram. Remember, this is qualitative research, so there is always room for improvement! Let any ideas that come to you flow out here]
+
+After previous tests, I decided to drop the pretence of prompting it as a an "AI ethnographer," instead flat out prompting it as an ethnographer, hoping that this would make it act more like a real ethnographer instead of a "dumb" AI. Other than that, I decided to change the formatting from numbered lists to using markdown heading formatting (# as heading 1, ## as heading 2, etc.), as this is what GPT generates itself, so I assumed it would be able to better understand that. Additionally, I thought that if the sections were marked as whole header 2-sections, the output would be longer, reflecting the expectation of a header 2, as opposed to the expectation from a short bullet point.
+
+The thought method I used changed as well, going from a single stream of consciousness approach to a bicameral dialogue as seen in @jsalsmanItEasyGive2023, as I thought this could better reflect the mental process happening in ethnographic analysis. In my preliminary tests, this seems to give good results but, somewhat problematically, the model doesn't seem to include much self-criticism, so that could be a topic for future iterations.
+
+In the data segmentation part, I chose to use the keyboard "BRAINSTORM," prompting for a simple list of data segments instead of "THINK," as I found that the bicameral dialogue to be superfluous in this situation, just resulting in conversations like the following fictional one:
+
+> Self 1: I think we should include X
 >
->\## NOTEBOOK
->
->\[When you have thoroughly thought your ideas through, you write the labels down here.\]
->
->\# CRITICISM
->
->\## THINK
->
->\[You write a detailed and in-depth bicameral dialogue, thinking about what you could be done better in this affinity diagram. Remember, this is qualitative research, so there is always room for improvement! Let any ideas that come to you flow out here.\]
+> Self 2: Good idea. We should also include Y.
+
+Generally, due to OpenAI's training of the AI on how long responses should be, the model will not generate bicameral dialogues longer than 5-10 exchanges. Therefore, I found that a list of data segments preferable, reflecting the more spontaneous idea-generation process that happens when we humans conduct data segmentation, writing down on sticky notes whatever segments come to mind.
 
 ## Presentation of Data
 
