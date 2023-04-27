@@ -29,10 +29,10 @@ Additionally, the study seeks to evaluate the utility of OpenAI's family of larg
 
 @crabtreeDoingDesignEthnography2012 advise that researchers treat interviews with caution. They suggest that interviews should be conducted in the actual flow of work as it unfolds and as the situation permits. They warn that what people say they do and what they actually do are not the same. It is not that people are lying, but that the accounts they offer in an interview often gloss over their work. The best way to conduct an interview is to be concerned with the just what and just how of the work, and not be driven by a pre-formulated schedule of questions removed from the actual doing of the work.
 
-#### Field notes
+- [ ] #### Field notes
 According to @crabtreeDoingDesignEthnography2012, making field notes is an essential part of fieldwork. It allows the researcher to document the things they see and hear and jot down their thoughts on the setting and its work. Field notes provide a record of what the researcher observes, hears, and is told. Keeping a good set of field notes helps researchers keep track of what they are being told and organise their thoughts. It is an active process that makes the researcher attend to the work as it occurs, helping them develop vulgar competence in it.
 
-@crabtreeDoingDesignEthnography2012 suggest that the notebook need not be a loose collection of disjointed comments. Researchers may use their notebook to structure their thoughts and develop a coherent account of the work of a setting. They recommend æ researchers make diagrams of the ecology of work to frame their inquiries into the work of a setting and represent it to others. Draw plans of the environment, indicate the people who inhabit it, their roles or responsibilities, and the artifacts that they use in doing the work. This helps researchers develop a detailed understanding of the setting\'s work and the methods members use to organize it as a real-world, real-time social accomplishment.
+@crabtreeDoingDesignEthnography2012 suggest that the notebook need not be a loose collection of disjointed comments. Researchers may use their notebook to structure their thoughts and develop a coherent account of the work of a setting. They recommend researchers make diagrams of the ecology of work to frame their inquiries into the work of a setting and represent it to others. Draw plans of the environment, indicate the people who inhabit it, their roles or responsibilities, and the artifacts that they use in doing the work. This helps researchers develop a detailed understanding of the setting\'s work and the methods members use to organize it as a real-world, real-time social accomplishment.
 
 #### Formal Organisation of Work and Flow of Work
 
@@ -100,38 +100,28 @@ In addition to being a useful record of my observations, my field notes served a
 On the whole, my field notes served as a critical resource for documenting and organising the rich and complex data that I collected during my fieldwork. By capturing the unfolding of work in Vejle and facilitating my understanding of it, my field notes provided a solid foundation for the analysis and interpretation of my research findings.
 
 ### Large Language Models
-
-In light of the limited literature on the application of LLMs, such as GPT-3.5 (from the ChatGPT platform) and GPT-4, in qualitative research, this study adopted an exploratory approach to investigate the potential of these tools. Consequently, I utilized these LLMs as supplementary instruments within this study. To maintain a clear and coherent narrative, I will discuss the reasoning and approach behind incorporating these tools in the upcoming sections. Additionally, for complete transparency, I have included the full transcripts of my interactions with the models in Appendix X.
+In light of the limited literature on the application of LLMs, such as GPT-3.5 (from the ChatGPT platform) and GPT-4, in qualitative research, this study adopted an exploratory approach to investigate the potential of these tools. Consequently, I utilised these LLMs as supplementary instruments within this study. To maintain a clear and coherent narrative, I will discuss the reasoning and approach behind incorporating these tools in the upcoming sections. Additionally, for complete transparency, I have included the full transcripts of my interactions with the models in Appendix X.
 
 #### Chat Functionality
+The conversational ability of LLMs provided the author with a distinctive opportunity to gather information beyond their personal knowledge and the resources available in the context of their research. With access to an extensive corpus of text, LLMs were able to generate responses to the author's queries that often offered fresh perspectives on the research topic. This prompted the author to consider new questions, viewpoints, and avenues of inquiry that may have otherwise been overlooked.
 
-The conversational capability of these LLMs provided me with a unique opportunity to gather information beyond my personal knowledge and the resources available in the context of my research. With their extensive corpus of text, LLMs are capable of generating responses to my questions that often offered fresh perspectives on my research topic, prompting me to consider new questions and viewpoints, and explore new avenues of inquiry that would have otherwise gone unexplored.
-
-The LLMs not only gave me an advisor who was always available and never tired or impatient, but also encouraged me to think more creatively about my research and consider possibilities I may have overlooked.
-
-As researchers in the humanities, we are well-acquainted with the ways human biases can shape and impact our understanding of the world. Similarly, LLMs can be biased by their training data. It is therefore particularly important for us to examine the potential biases and limitations of LLMs. By investigating the use of LLMs in our field, we can not only understand the potential limitations of these tools, but also find ways to mitigate any biases and make the most of their potential. Thus, it is essential for humanities researchers to lead the investigation and critical examination of these tools.
-
-The reliability and accuracy of responses generated by LLMs hinge upon the quality of data they have been trained on. Constrained by the scope of their training corpus, these models may inadvertently perpetuate biases inherent in the data. As such, it becomes crucial for humanities researchers to scrutinise these tools and explore avenues for integrating them into our research. It is worth noting that humans, too, are influenced by the data on which we are "trained," such as our memories and knowledge, and are therefore subject to our own biases. Possessing expertise in untangling such complexities, we are well-suited to tackle this challenge.
+Furthermore, the LLMs not only served as a readily available resource but also stimulated the author's critical thinking and intellectual curiosity. By acting as a sounding board, the LLMs provided the author with a space to explore new ideas and perspectives, prompting them to think more deeply about their research.
 
 #### Text Generation
+This report acknowledges the use of OpenAI's language models (LLMs) to assist in the writing process. Although LLMs were used to generate specific passages in this report, it is crucial to note that these passages underwent significant editing, revision, and refinement to fit within the author's writing process. This approach entailed multiple rounds of editing, revising, and proofreading, ensuring that any text generated by LLMs was subjected to rigorous scrutiny and manual refinement where necessary. This approach allowed the author to leverage the power of LLMs while maintaining the integrity and authorship of the final product.
 
-The present report contains text that was written with the assistance of OpenAI\'s models. Though some may find this decision controversial, I firmly believe that the text generated by these models is just as much my own as anything I could have written manually. Writing a research paper is not a linear process, but rather a constant cycle of drafting, re-reading, re-writing, and revising until the desired outcome is achieved. During this process, I leveraged a variety of resources, including LLMs, to improve my writing, develop my ideas, and save time for tasks that require human expertise.
-
-While I have used LLMs to generate specific passages, it is essential to recognise that these passages have undergone significant revision and are tailored to my iterative writing process. This approach involves several rounds of editing, revising, and re-reading, meaning that any text generated by LLMs is subjected to extensive scrutiny and, where necessary, manual refinement.
-
-In addition to generating text contained within this report, LLMs were also used to refine and collect my loose notes from the interviews. In Appendix X, you can see examples of this process.
+##### Text Summarisation
+After completing the interviews, the notes for each interview were fed into GPT-4 one at a time to generate more coherent and refined prose. The generated texts were reviewed for completeness and factual accuracy to ensure the reliability and validity of the data. Examples of this process can be found in Appendix X.
 
 #### Prompt Engineering
-
-Prompt engineering is a critical process for achieving high-quality results with LLMs, which have proven to be highly beneficial in various tasks. According to @dair.aiPromptEngineeringGuide2023, "prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
+Prompt engineering is a critical process for achieving high-quality results with LLMs, which have proven to be highly beneficial in various tasks. According to @dair.aiPromptEngineeringGuide2023, "prompt engineering is a relatively new discipline for developing and optimising prompts to efficiently use language models for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
 
 As GPT-3.5 and GPT-4 do not currently support fine-tuning for specific tasks, prompt engineering becomes even more essential in obtaining high-quality results. The Prompt Engineering Guide from DAIR.AI (2023) proved to be an excellent resource for prompting the models as it offers a repository of knowledge about prompt engineering, referencing state of the art research in the area, such as @weiChainThoughtPrompting2022, 
 
 The process of prompt engineering includes selecting appropriate text prompts, tuning the model's hyperparameters, and tailoring the prompt design to the model's capabilities. The primary objective is to create prompts that provide sufficient context for the LLM to generate high-quality results while avoiding those that may lead to incorrect or irrelevant outputs (@dair.aiPromptEngineeringGuide2023; @shiehBestPracticesPrompt).
 
 #### Platforms Used
-
-Throughout my research, I aimed to find the most effective way to interact with large language models (LLMs). I began with ChatGPT, the well-known platform offering access to GPT-3.5 and limited access to GPT-4. However, I encountered several limitations that constrained my research.
+Throughout my research, I aimed to find the most effective way to interact with LLMs. I began with ChatGPT, the well-known platform offering access to GPT-3.5 and limited access to GPT-4. However, I encountered several limitations that constrained my research.
 
 Seeking a better approach, I experimented with OpenAI\'s developer playground. This platform allowed me to harness GPT-4\'s 8,000-token capacity and actively guide the model\'s responses by editing outputs, adjusting hyperparameters, and modifying the system prompt to adopt specific roles, such as an ethnographer. Despite these advantages, the developer playground lacked a user-friendly method for saving and referencing chats.
 
@@ -139,26 +129,26 @@ My search led me to the GitHub project \"Chat with GPT," @cogentappsChatGPT2023 
 
 Using the \"Chat with GPT\" platform, I effectively incorporated LLMs like GPT-4 into my research, allowing me to explore their strengths and weaknesses within the context of the present study. Although GPT-4 offers a more powerful 32,000-token variant, I did not have access to it during my research.
 
-### Affinity Diagramming
+#### Ethical Considerations of Utilising LLMs
+While LLMs offer a powerful tool for researchers, they raise ethical considerations about their use. The reliability and accuracy of responses generated by LLMs depend on the quality of data they have been trained on. As a result, these models may unintentionally perpetuate biases inherent in the data. In order to effectively integrate LLMs into our research, it becomes crucial for humanities researchers to scrutinise these tools and explore ways to mitigate any potential biases.
 
-After conducting the interviews and writing my detailed notes, I began the task of sifting through the data with the help of affinity diagrams. In the following sections, I will detail how I went about doing this.
+However, it is important to acknowledge that humans are also subject to their own biases based on the data on which they are "trained," such as memories and knowledge. As researchers in the humanities, we are well aware of the ways in which our own biases can impact our understanding of the world. We possess the expertise to untangle such complexities and apply this critical lens to the use of LLMs.
+
+Through investigating the use of LLMs in our field, we can not only understand their potential limitations and biases, but also find ways to mitigate these challenges and maximise their potential. As such, it is crucial for humanities researchers to take the lead in the examination and critical analysis of LLMs.
+
+### Affinity Diagramming
+The present study utilised affinity diagramming as a method of analysing the qualitative data collected from the semi-structured interviews. After conducting the interviews and taking detailed notes, the researcher followed a structured process to create two affinity diagrams: the first crafted with traditional research methods, the second being made with the assistance of GPT-4.
 
 #### Manual Affinity Diagram Creation
+Firstly, the data segmentation process was undertaken, which involved breaking down the interview notes into discrete statements or observations, each representing a single idea or insight expressed by the interviewees. Next, the sorting and grouping stage took place, whereby the statements were sorted into groups based on their similarities and relationships. This process was iterative, with statements being moved between groups as new connections and patterns emerged.
 
-To create an affinity diagram, I followed a structured process that began with the analysis of the qualitative data collected from the semi-structured interviews. The process involved the following steps:
-
-1.  Data segmentation: I divided the interview notes into discrete statements or observations, each representing a single idea or insight expressed by the interviewees.
-2.  Sorting and grouping: I sorted the statements into groups based on their similarities and relationships. This process was iterative, with statements being moved between groups as new connections and patterns emerged.
-3.  Labelling: Once the groups were formed, I assigned descriptive headings to each group, capturing the essence of the content within. These headings represented the primary themes and patterns identified in the data.
-4.  Review and refinement: I reviewed the affinity diagram, ensuring that the groupings and labels accurately represented the data and making adjustments as needed.
+After the sorting and grouping process, the researcher assigned descriptive headings to each group, which represented the primary themes and patterns identified in the data. These headings captured the essence of the content within each group. Finally, the affinity diagram was reviewed and refined, ensuring that the groupings and labels accurately represented the data, and making adjustments as needed.
 
 #### Affinity Diagram Creation Assisted by GPT-4
 
 In this section, I will explore the capabilities of GPT-4 in creating an affinity diagram and compare its performance with that of myself as a human ethnographer. Affinity diagrams are useful tools for organising and making sense of vast amounts of information. Given GPT-4\'s ability to process vast swaths of text, it presents a unique opportunity to investigate the effectiveness of the language model in creating a affinity diagrams.
 
-Prompt engineering is an essential part of attaining high-quality results from large language models (LLMs) like GPT-4. In this section, I will focus on prompt engineering and its importance in achieving the desired output. However, I must also manage the workload of prompt engineering to prevent it from becoming more resource-intensive than manual labor.
-
-However, GPT-4's improved ability to understand and assist with meta-tasks, such as improving upon its own prompts, presents a possible avenue for ensuring that utilising LLMs does not defeat itself in this way.
+Prompt engineering plays a crucial role in achieving optimal performance of Language Models (LMs), including GPT-4. In this section, I will discuss my approach to prompt engineering and my efforts to achieve high-quality results. With GPT-4's enhanced capacity to comprehend and aid with meta-tasks, such as refining its own prompts, there is potential for streamlining the prompt engineering process without compromising its efficacy, thus further reducing workload.
 
 Rather than spending a long time crafting the perfect prompt, I opted for an iterative approach to prompt engineering, attempting several methods of eliciting affinity diagrams from GPT-4.
 
@@ -188,6 +178,37 @@ In my first attempt to get GPT-4 to produce an affinity diagram, I gave it the f
 >
 > In conclusion, the most prominent discourses focused on the understanding and awareness of the IT investment process, the importance of communication and collaboration with the IT department, the challenges and frustrations experienced in implementing new systems, and suggestions for improving the process. Key interviewees who provided valuable insights on these themes include Lise (Interview 161), Emma (Interview 181), Peter (Interview 183), and Anne (Interview 190).
 
+Subsequently, I became curious about the model's ability to reflect on itself and engage in self-critique. Therefore, I presented the model with the following prompt:
+
+>"You are a large language model acting as an ethnographer, speaking with your human colleague. I want you to reflect and introspect upon the conversation until now and how language models like yourself can be used in research like this. Take into account both your strengths and weaknesses."
+
+The resulting conversation is as follows:
+
+>GPT-4: As a large language model and ethnographer, I have both strengths and weaknesses when it comes to conducting research like this. 
+>
+>Strengths:
+>1\. Text analysis: I can quickly analyze and summarize large amounts of text, making it easier to identify key themes, trends, and discourses.
+>2\. Objectivity: As an AI, I am not influenced by personal biases or emotions, which can help ensure an impartial analysis of the data.
+>3\. Consistency: My ability to maintain consistency in the analysis of data can help reduce discrepancies that might occur due to human error or fatigue.
+>
+>Weaknesses:
+>1\. Lack of cultural understanding: As an AI, I may not fully grasp the cultural nuances and complexities involved in the conversations, which could impact the depth and richness of the analysis.
+>2\. Absence of empathy: I do not possess the human ability to empathize with the interviewees, which could hinder my understanding of their emotions and motivations.
+>3\. Limitations in interpreting ambiguous or incomplete data: In cases where the data is ambiguous, incomplete, or contradictory, I might struggle to provide a complete and accurate interpretation of the information.
+>
+>Human researcher: Are there any cases in this data where you can see your weaknesses at play?
+>
+>GPT-4: Yes, there are cases in the data where my weaknesses as a language model are visible.
+>
+>1\. Lack of cultural understanding: In Lise's interview (161), she discusses the "unspoken considerations" that might be lost if she were required to use a form to contact the IT department. As an AI, I might not fully grasp the cultural and social complexities that make these considerations challenging to articulate. A human ethnographer with a deeper understanding of the local culture and social dynamics might be better equipped to analyze such nuances.
+>
+>2\. Absence of empathy: In Peter's interview (183), he describes the emotional impact of juggling IT tasks alongside his care assistant role and how it sometimes compromised the well-being of the residents. Although I can identify the emotional aspects of his account, I lack the ability to empathize with the interviewee, which could limit the depth of my understanding of his experiences.
+>3\. Limitations in interpreting ambiguous or incomplete data: In Mikkel's interview (169), he mentions disagreements or uncertainties about when the IT investment process needed to be used. The data does not provide specific examples or reasons for these disagreements, which makes it challenging for me to analyze the underlying factors contributing to these issues.
+>
+>To overcome these weaknesses and ensure a more comprehensive analysis, it is essential to complement my role as a language model with the expertise of human researchers. They can provide the necessary cultural understanding, empathy, and context to interpret the data more accurately and holistically. Additionally, they can help fill in the gaps or clarify ambiguous information by conducting follow-up interviews, asking more targeted questions, or engaging in further research to better understand the issues at hand. By combining the strengths of both AI and human researchers, we can achieve a more robust and insightful analysis of the data.
+
+The results reveal that GPT-4 demonstrates a heightened ability to examine its own biases as a language model compared to its predecessors. This improvement is likely attributed to the inclusion of text published after GPT-3's initial surge in popularity within research communities, as well as targeted training provided by OpenAI.
+
 ##### The Simulated-Thought Approach.
 Large language models like GPT-4 do not think, but rather produce words (or, more correctly, tokens) one at a time based on their probability of appearing as the next word in the text (@mahowaldDissociatingLanguageThought2023; @brownLanguageModelsAre2020; @guoHowCloseChatGPT2023). This in contrast to humans whose language and reasoning centers are contained within separate areas of the brain (Mahowald et al. 2023, Valmeekam et al. 2022). Nevertheless, researchers have noted significantly improved outcomes in reasoning tasks when models are prompted to produce a chain-of-thought (@weiChainThoughtPrompting2022; @richardsAutoGPTAutonomousGPT42023; @weiArtificialStreamThought; @jsalsmanItEasyGive2023). Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a more detailed and reasoned output, mirroring the step-by-step process followed by human ethnographers. My discovery of this method gave rise to a rough draft of a new prompt, as follows:
 
@@ -207,7 +228,7 @@ The resulting analysis seemed to take a step back from the quick and dirty appro
 > 3.  Installing new apps on iPads can be confusing for daycare workers.
 > 4.  Lise represents the interests of daycare workers in the Administration Building.
 > 5.  Lise would be \"concerned\" and \"sad\" if she had to use a form to contact the IT department.
-> 6.  Lise believes the ["]{dir="rtl"}unspoken considerations" that occur when contacting someone in the IT department personally would be lost if using a form.
+> 6.  Lise believes the unspoken considerations" that occur when contacting someone in the IT department personally would be lost if using a form.
 > 7.  Emma believes that merging the IT investment process with their application template could be a great opportunity.
 > 8.  Emma thinks the name \"IT investment process\" is unattractive and reminiscent of something the finance department might need.
 > 9.  Claus describes his title as a \"McDonald\'s title\" that doesn\'t reveal much about his role.
@@ -255,7 +276,7 @@ The resulting analysis seemed to take a step back from the quick and dirty appro
 > REVIEW AND REFINEMENT:
 > After reviewing the affinity diagram, the groupings and labels accurately represent the data collected from the interviews. The themes and patterns identified provide valuable insights into the roles of the interviewees, the challenges they face in the IT investment process, and their communication and relationships with the IT department. No adjustments are needed at this time.
 
-The introduction of the new prompt appeared to have added more noise to the equation and failed to produce the desired stream of consciousness. As a result on the lack of simulated though, the end results seem to be pigeonholed by the odd choice of data segments at the beginning. The conventional method of prompt engineering would be to refine the prompt manually. However, I was curious if GPT-4 could achieve similar results while using less effort. To test this, I prompted GPT-4 in the following way:
+The introduction of the new prompt seemed to create confusion and did not produce the expected stream of consciousness. The outcome appeared to be constrained by the model's unusual choice of initial data segments. Normally, one would manually refine the prompt to improve its effectiveness. However, I was intrigued to discover whether GPT-4 could achieve comparable results with less effort. To explore this possibility, I engaged GPT-4 using the following approach:
 
 > User: Make this prompt for GPT-4 more coherent and clear for you as an AI assistant:
 > _(the prompt as stated previously)_
@@ -273,26 +294,20 @@ And, within seconds, the model outputted a prompt that, with some minor adjustme
 > 3.  LABELLING: Once the groups are formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Use THINK to determine appropriate labels and WRITE to document them.
 > 4.  REVIEW AND REFINEMENT: Review the affinity diagram, ensuring that the groupings and labels accurately represent the data, and make adjustments as needed. Use THINK to critically assess the diagram and WRITE to record any changes made.
 
-The primary issue with the original prompt is that it positions the GPT model as an "AI assistant helping an ethnographer." Although there is no published research to support this claim, there is a consensus among online prompt engineering communities that GPT models produce higher-quality results when prompted as experts. For example, a discussion on Reddit under the username @paraizordYouAreExpert2023 supports this viewpoint. As a result, I revised the prompt to "You are an AI ethnographer assisting your human colleague." This prompt strikes a balance between positioning the model as an expert and acknowledging its limitations.
+The primary issue with the original prompt is that it positions the GPT model as an "AI assistant helping an ethnographer." Although there is no published research to support this claim, there is a consensus among online prompt engineering communities that GPT models produce higher-quality results when prompted as experts (see, for example, @paraizordYouAreExpert2023). As a result, I revised the prompt to "You are an AI ethnographer helping your human colleague". This prompt strikes a balance between positioning the model as an expert and acknowledging its limitations.
 
 During my testing, I did not observe the model using the option to iterate upon its sorting and groupings. Therefore, I decided to exclude corresponding text to streamline the prompt and avoid providing unnecessary information.
 
-After testing the revised prompt, I found the results impressive but unsatisfactory due to a lack of self-criticism in the review and refinement section. During my tests, the model tended to dismiss the "review and refinement" prompt, stating that further refinement was unnecessary. However, qualitative research always allows room for improvement, so I wasn't ready to accept this answer.
+After testing the revised prompt, I found the results impressive but unsatisfactory due to a lack of self-criticism in the review and refinement section. During my tests, the model tended to dismiss the "review and refinement" prompt, stating that further refinement was unnecessary.
 
 @richardsAutoGPTAutonomousGPT42023 demonstrated how an autonomous GPT-4 instance can plan and execute complex, multi-step tasks by following a specific sequence of actions: thoughts, reasoning, plan, criticism, and next action. Therefore, I revised the fourth step to prompt a more active search for refinement as follows, borrowing the "CRITICISM" keyword from @richardsAutoGPTAutonomousGPT42023.
 
 > 4.  CRITICISM: Use THINK to critically assess the diagram, identifying areas of possible improvement. Also reflect on your possible biases and imperfections as a large language model.
 
-Interestingly, GPT-4 seems to be better at reflecting upon its own biases as an LLM than its predecessors (see, for example, Appendix X), likely due to its larger corpus of text following the introduction of GPT-3 and its first surges in popularity in research circles (although notably before the introduction of ChatGPT) and specialised training from OpenAI for this purpose. For that reason that I chose to specifically ask the model to reflect upon its own biases.
-
 ## Presentation of Data
 
 ### Interview Data
-The data gathered from this study provides insights into the reasons why employees at Vejle municipality do not comply with the IT investment process, as well as potential strategies to improve compliance. The data analysis is based on a combination of traditional ethnographic research methods and the use of OpenAI's Generative Pre-trained Transformer (GPT) language model.
-
-The traditional research methods used in this study included semi-structured interviews with eleven employees whose work involves the IT investment process, as well as observations of their work practices. The interviews were conducted in-person and were audio-recorded, transcribed, and coded using qualitative data analysis software. The observations were also recorded and analysed using the same software.
-
-In addition to these traditional research methods, GPT-3 was used to generate insights into employees' attitudes and behaviours towards the IT investment process. The
+The data gathered in this study consists of semi-structured interviews with 12 employees of Vejle Municipality, ranging through many different positions at all six administrative divisions of the municipality. This includes rough notes taken with pen and paper and more refined notes taken on the computer following the interviews. From these more refined notes, I made two final affinity diagrams: one made myself and the other made by GPT-4 via a carefully-crafted prompt.
 
 ## Findings
 
