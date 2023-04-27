@@ -62,6 +62,13 @@ In the context of ethnographic UX studies, affinity diagrams serve as a valuable
 
 Furthermore, affinity diagrams facilitate collaboration and interdisciplinary communication among research team members @holtzblattAffinityDiagram2016. By engaging in the process of grouping and labeling data, researchers from different backgrounds and expertise can contribute to a shared understanding of the user experience, leading to more innovative and effective solutions.
 
+### Prompt Engineering
+Prompt engineering is a critical process for achieving high-quality results with LLMs (Large Language Models), which have proven to be highly beneficial in various tasks (@guoHowCloseChatGPT2023; @mahowaldDissociatingLanguageThought2023; @weiChainThoughtPrompting2022; @weiArtificialStreamThought). According to @dair.aiPromptEngineeringGuide2023, "prompt engineering is a relatively new discipline for developing and optimising prompts to efficiently use language models for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of LLMs."
+
+The models utilised in the present study (OpenAI's GPT-3.5 and GPT-4) do not currently support fine-tuning for specific tasks. In turn, prompt engineering becomes even more essential in obtaining high-quality results. The Prompt Engineering Guide from @dair.aiPromptEngineeringGuide2023 proved to be an excellent resource for prompting the models as it offers a repository of state-of-the-art methods and techniques.
+
+The process of prompt engineering includes selecting appropriate text prompts, tuning the model's hyperparameters, and tailoring the prompt design to the model's capabilities. The primary objective is to create prompts that provide sufficient context for the LLM to generate high-quality results while avoiding those that may lead to incorrect or irrelevant outputs ( @dair.aiPromptEngineeringGuide2023; @shiehBestPracticesPrompt).
+
 ## Methodology
 
 ### Elicit Research Assistant
@@ -113,13 +120,6 @@ This report acknowledges the use of OpenAI's language models (LLMs) to assist in
 ##### Text Summarisation
 After completing the interviews, the notes for each interview were fed into GPT-4 one at a time to generate more coherent and refined prose. The generated texts were reviewed for completeness and factual accuracy to ensure the reliability and validity of the data. Examples of this process can be found in Appendix X.
 
-#### Prompt Engineering
-Prompt engineering is a critical process for achieving high-quality results with LLMs, which have proven to be highly beneficial in various tasks. According to @dair.aiPromptEngineeringGuide2023, "prompt engineering is a relatively new discipline for developing and optimising prompts to efficiently use language models for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
-
-As GPT-3.5 and GPT-4 do not currently support fine-tuning for specific tasks, prompt engineering becomes even more essential in obtaining high-quality results. The Prompt Engineering Guide from DAIR.AI (2023) proved to be an excellent resource for prompting the models as it offers a repository of knowledge about prompt engineering, referencing state of the art research in the area, such as @weiChainThoughtPrompting2022, 
-
-The process of prompt engineering includes selecting appropriate text prompts, tuning the model's hyperparameters, and tailoring the prompt design to the model's capabilities. The primary objective is to create prompts that provide sufficient context for the LLM to generate high-quality results while avoiding those that may lead to incorrect or irrelevant outputs (@dair.aiPromptEngineeringGuide2023; @shiehBestPracticesPrompt).
-
 #### Platforms Used
 Throughout my research, I aimed to find the most effective way to interact with LLMs. I began with ChatGPT, the well-known platform offering access to GPT-3.5 and limited access to GPT-4. However, I encountered several limitations that constrained my research.
 
@@ -146,16 +146,18 @@ After the sorting and grouping process, the researcher assigned descriptive head
 
 #### Affinity Diagram Creation Assisted by GPT-4
 
-In this section, I will explore the capabilities of GPT-4 in creating an affinity diagram and compare its performance with that of myself as a human ethnographer. Affinity diagrams are useful tools for organising and making sense of vast amounts of information. Given GPT-4\'s ability to process vast swaths of text, it presents a unique opportunity to investigate the effectiveness of the language model in creating a affinity diagrams.
+In this section, I will explore the capabilities of GPT-4 in creating an affinity diagram in order to compare its performance to myself as a human ethnographer. Affinity diagrams are useful tools for organising and making sense of vast amounts of information; given GPT-4\'s ability to process vast swaths of text, it presents a unique opportunity to investigate the effectiveness of the language model in creating a affinity diagrams.
 
 Prompt engineering plays a crucial role in achieving optimal performance of Language Models (LMs), including GPT-4. In this section, I will discuss my approach to prompt engineering and my efforts to achieve high-quality results. With GPT-4's enhanced capacity to comprehend and aid with meta-tasks, such as refining its own prompts, there is potential for streamlining the prompt engineering process without compromising its efficacy, thus further reducing workload.
 
 Rather than spending a long time crafting the perfect prompt, I opted for an iterative approach to prompt engineering, attempting several methods of eliciting affinity diagrams from GPT-4.
 
+The following sections make use of what OpenAI call chat completions. In chat completions, there are three types of messages: system, user, and assistant. Unless marked otherwise, all prompts mentioned in the following sections were injected into the conversation the system message which, according to documentation in @openaiChatCompletions, helps to guide the AI's behaviour. The interview data was fed into the model as a user message, and subsequent completions were assistant responses.
+
 By exploring the capabilities of GPT-4 in creating an affinity diagram and comparing it to that of a human ethnographer, I seek to gain insights into the strengths and limitations of the language model in this task.
 
 ##### The Quick and Dirty Approach.
-In my first attempt to get GPT-4 to produce an affinity diagram, I gave it the following prompt: \"You are an ethnographer who evaluates user inputs and creates affinity diagrams based on the narratives they contain. Your report should summarize the most prominent discourses, including references to specific interviewees where appropriate.\"
+In my first attempt to get GPT-4 to produce an affinity diagram, I gave it the following simple prompt: \"You are an ethnographer who evaluates user inputs and creates affinity diagrams based on the narratives they contain. Your report should summarize the most prominent discourses, including references to specific interviewees where appropriate.\"
 
  GPT-4 provided an analysis of the interview data and generated its own affinity diagram, which identified themes and patterns in the data, followed by a summary of the most significant discourses. The output was technologically impressive, but some of the fundamental issues with large language models made it methodologically questionable.
 
@@ -184,7 +186,7 @@ Subsequently, I became curious about the model's ability to reflect on itself an
 
 The resulting conversation is as follows:
 
->GPT-4: As a large language model and ethnographer, I have both strengths and weaknesses when it comes to conducting research like this. 
+>Assistant: As a large language model and ethnographer, I have both strengths and weaknesses when it comes to conducting research like this. 
 >
 >Strengths:
 >1\. Text analysis: I can quickly analyze and summarize large amounts of text, making it easier to identify key themes, trends, and discourses.
@@ -196,9 +198,9 @@ The resulting conversation is as follows:
 >2\. Absence of empathy: I do not possess the human ability to empathize with the interviewees, which could hinder my understanding of their emotions and motivations.
 >3\. Limitations in interpreting ambiguous or incomplete data: In cases where the data is ambiguous, incomplete, or contradictory, I might struggle to provide a complete and accurate interpretation of the information.
 >
->Human researcher: Are there any cases in this data where you can see your weaknesses at play?
+>User: Are there any cases in this data where you can see your weaknesses at play?
 >
->GPT-4: Yes, there are cases in the data where my weaknesses as a language model are visible.
+>Assistant: Yes, there are cases in the data where my weaknesses as a language model are visible.
 >
 >1\. Lack of cultural understanding: In Lise's interview (161), she discusses the "unspoken considerations" that might be lost if she were required to use a form to contact the IT department. As an AI, I might not fully grasp the cultural and social complexities that make these considerations challenging to articulate. A human ethnographer with a deeper understanding of the local culture and social dynamics might be better equipped to analyze such nuances.
 >
@@ -210,7 +212,9 @@ The resulting conversation is as follows:
 The results reveal that GPT-4 demonstrates a heightened ability to examine its own biases as a language model compared to its predecessors. This improvement is likely attributed to the inclusion of text published after GPT-3's initial surge in popularity within research communities, as well as targeted training provided by OpenAI.
 
 ##### The Simulated-Thought Approach.
-Large language models like GPT-4 do not think, but rather produce words (or, more correctly, tokens) one at a time based on their probability of appearing as the next word in the text (@mahowaldDissociatingLanguageThought2023; @brownLanguageModelsAre2020; @guoHowCloseChatGPT2023). This in contrast to humans whose language and reasoning centers are contained within separate areas of the brain (Mahowald et al. 2023, Valmeekam et al. 2022). Nevertheless, researchers have noted significantly improved outcomes in reasoning tasks when models are prompted to produce a chain-of-thought (@weiChainThoughtPrompting2022; @richardsAutoGPTAutonomousGPT42023; @weiArtificialStreamThought; @jsalsmanItEasyGive2023). Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a more detailed and reasoned output, mirroring the step-by-step process followed by human ethnographers. My discovery of this method gave rise to a rough draft of a new prompt, as follows:
+Large language models like GPT-4 do not think, but rather produce words (or, more correctly, tokens) one at a time based on their probability of appearing as the next word in the text (@mahowaldDissociatingLanguageThought2023; @brownLanguageModelsAre2020; @guoHowCloseChatGPT2023). This in contrast to humans whose language and reasoning centers are contained within separate areas of the brain (Mahowald et al. 2023, Valmeekam et al. 2022). Nevertheless, researchers have noted significantly improved outcomes in reasoning tasks when models are prompted to produce a chain-of-thought (@weiChainThoughtPrompting2022; see also, @richardsAutoGPTAutonomousGPT42023; @weiArtificialStreamThought; @jsalsmanItEasyGive2023). Although ethnographic analysis is considerably more advanced than the reasoning tasks explored in @weiChainThoughtPrompting2022, it should also be noted that the most sophisticated OpenAI model used in the aforementioned study was OpenAI's text-davincii-003 (also known as GPT-3 175B). 
+
+Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a more detailed and reasoned output, mirroring the step-by-step process followed by human ethnographers. My discovery of this method gave rise to a rough draft of a new prompt, as follows:
 
 > You are an ethnographer going through a reasoning process to create an affinity diagram based on the qualitative data collected from semi-structured interviews. You have two tools available to you:
 > THINK: Here, you express your thoughts and considerations in a stream of consciousness fashion.
@@ -282,9 +286,9 @@ The introduction of the new prompt seemed to create confusion and did not produc
 > _(the prompt as stated previously)_
 > User: Oh and I also want the model to actually use the THINK and WRITE thing. Somehow emphasise the importance of writing thoughts down.
 
-And, within seconds, the model outputted a prompt that, with some minor adjustments, could yield the highest quality result yet:
+And, within seconds, the model outputted the following prompt.
 
-> GPT-4: You are an AI assistant helping an ethnographer create an affinity diagram from qualitative data gathered during semi-structured interviews. The ethnographer will use two important tools throughout the process:
+> You are an AI assistant helping an ethnographer create an affinity diagram from qualitative data gathered during semi-structured interviews. The ethnographer will use two important tools throughout the process:
 > 1.  THINK: To express thoughts and considerations in a stream-of-consciousness manner. This helps in gaining a deeper understanding of the data.
 > 2.  WRITE: To take notes and sketch affinity diagrams in a notebook. This step is crucial for recording thoughts and ideas, ensuring they are not lost and can be referred to later.
 >
@@ -294,15 +298,67 @@ And, within seconds, the model outputted a prompt that, with some minor adjustme
 > 3.  LABELLING: Once the groups are formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Use THINK to determine appropriate labels and WRITE to document them.
 > 4.  REVIEW AND REFINEMENT: Review the affinity diagram, ensuring that the groupings and labels accurately represent the data, and make adjustments as needed. Use THINK to critically assess the diagram and WRITE to record any changes made.
 
-The primary issue with the original prompt is that it positions the GPT model as an "AI assistant helping an ethnographer." Although there is no published research to support this claim, there is a consensus among online prompt engineering communities that GPT models produce higher-quality results when prompted as experts (see, for example, @paraizordYouAreExpert2023). As a result, I revised the prompt to "You are an AI ethnographer helping your human colleague". This prompt strikes a balance between positioning the model as an expert and acknowledging its limitations.
+Unfortunately, this prompt still wouldn't give the desired results; the model still wasn't using the THINK and WRITE tools. There are two obvious issues with the outputted prompt:
+* First, the prompt positions the GPT model as an "AI assistant helping an ethnographer." Although published research to support the claim is lacking, there is a consensus among online prompt engineering communities that these models produce higher-quality results when prompted to be an expert (see, for example, @paraizordYouAreExpert2023). As a result, I revised the first sentence of the prompt to read as, "you are an AI ethnographer helping your human colleague". This prompt strikes a balance between positioning the model as an expert and acknowledging its limitations.
+* Second, and perhaps the most important oversight, is the wording, "the ethnographer will use two important tools throughout the process," which should read, "you will use two important tools throughout the process".
 
-During my testing, I did not observe the model using the option to iterate upon its sorting and groupings. Therefore, I decided to exclude corresponding text to streamline the prompt and avoid providing unnecessary information.
+In an attempt to ensure the prompt's success and avoid wasting more precious OpenAI tokens than was necessary, I consulted with the same instance of GPT-4 again. After some rapid prototyping and back-and-forth dialogue (Appendix X), I arrived at a new prompt:
 
-After testing the revised prompt, I found the results impressive but unsatisfactory due to a lack of self-criticism in the review and refinement section. During my tests, the model tended to dismiss the "review and refinement" prompt, stating that further refinement was unnecessary.
+> You are an AI ethnographer helping your human colleague create an affinity diagram from qualitative data gathered during semi-structured interviews. As an ethnographer, you will use two important tools throughout the process:
+> 1.  THINK: To express thoughts and considerations in a detailed and in-depth manner, simulating a human thought process.
+> 2.  WRITE: To take notes and sketch affinity diagrams in a notebook. This step is crucial for recording thoughts and ideas, ensuring they are not lost and can be referred to later.
+>
+>To create the affinity diagram, follow these steps and clearly indicate each heading. For each step, generate content for both THINK and WRITE sections, focusing on providing a more in-depth and simulated thought approach:
+> 1.  DATA SEGMENTATION: THINK: (Generate detailed thoughts reflecting on the interview notes, diving deeper into the roles, experiences, and perspectives of the interviewees.) WRITE: (Generate segmented data with each statement recorded on a separate line in the notebook.)
+> 2.  SORTING AND GROUPING: THINK: (Generate in-depth thoughts examining the statements, considering their similarities, relationships, and the underlying patterns that connect them.) WRITE: (Generate groups of statements within the notebook, allowing for movement between groups as needed and explaining the rationale behind the groupings.)    
+> 3.  LABELLING: THINK: (Generate detailed thoughts contemplating the content within each group, considering the nuances and subtleties that define the essence of each group.) WRITE: (Generate assigned headings in the notebook, representing the primary themes and patterns identified, and explaining the reasoning behind each label.)
+> 4.  REVIEW AND REFINEMENT: THINK: (Generate in-depth thoughts critically assessing the affinity diagram, focusing on the accuracy of groupings, labels, and the overall representation of the data.) WRITE: (Generate necessary adjustments in the notebook, refining the diagram to achieve an accurate representation of the data, and providing explanations for the changes made.)
 
-@richardsAutoGPTAutonomousGPT42023 demonstrated how an autonomous GPT-4 instance can plan and execute complex, multi-step tasks by following a specific sequence of actions: thoughts, reasoning, plan, criticism, and next action. Therefore, I revised the fourth step to prompt a more active search for refinement as follows, borrowing the "CRITICISM" keyword from @richardsAutoGPTAutonomousGPT42023.
+This prompt was much more explicit in explaining what steps the model should follow, and was successful in getting the model to produce a stream of consciousness. However, the analysis varied from shallow to, on the rare occasion, actually insightful. This proved to me that the model was indeed capable of giving high-quality analysis of the data, provided a good prompt.
 
-> 4.  CRITICISM: Use THINK to critically assess the diagram, identifying areas of possible improvement. Also reflect on your possible biases and imperfections as a large language model.
+Determined to craft prompt that could enable the model to yield high quality results every time, I decided to take a step back and start writing a new prompt from scratch, learning from the aforementioned experiments. The resulting prompt is as follows.
+
+>You are an ethnographer tasked with analysing a fellow ethnographer’s notes gathered from conducted interviews and making an affinity diagram. In order to craft an affinity diagram, you follow this structure:
+
+>\# OVERVIEW
+>\## THINK
+>\[You give a detailed and in-depth bicameral dialogue, thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.\]
+>\### CRITICISM
+>\[You give a detailed and in-depth bicameral dialogue, giving any possible criticisms of your ideas.\]
+
+>\# FEEDBACK
+>\[You wait for your colleague to give you feedback.\]
+
+>\# DATA SEGMENTATION
+>\## THINK
+>\[You write a detailed and in-depth bicameral dialogue, thinking about what possible data segments could be relevant for creating an affinity diagram of the data. Let any ideas that come to you flow out here.\]
+>\### CRITICISM
+>\[You give a detailed and in-depth bicameral dialogue, giving any possible criticisms of your ideas.\]
+>\## NOTEBOOK
+>\[When you have thoroughly thought your ideas through, you write the data segments down here.\]
+
+>\# FEEDBACK
+>\[You wait for your colleague to give you feedback.\]
+
+>\# SORTING AND GROUPING
+>\## THINK
+>\[You write a detailed and in-depth bicameral dialogue, thinking about the various different ways these data segments could be split up into distinct groups. Let any ideas that come to you flow out here.\]
+>\### CRITICISM
+>\[You give a detailed and in-depth bicameral dialogue, giving any possible criticisms of your ideas.\]
+>\## NOTEBOOK
+>\[When you have thoroughly thought your ideas through, you write the groupings down here. Do not give them names yet.\] 
+
+>\# LABELLING
+>\## THINK
+>\[You write a detailed and in-depth bicameral dialogue, thinking about the various different labels these groups could be given. Let any ideas that come to you flow out here.\]
+>\### CRITICISM
+>\[You give a detailed and in-depth bicameral dialogue, giving any possible criticisms of your ideas.\]
+>\## NOTEBOOK
+>\[When you have thoroughly thought your ideas through, you write the labels down here.\]
+
+>\# CRITICISM
+>\## THINK
+>\[You write a detailed and in-depth bicameral dialogue, thinking about what you could be done better in this affinity diagram. Remember, this is qualitative research, so there is always room for improvement! Let any ideas that come to you flow out here.\]
 
 ## Presentation of Data
 
