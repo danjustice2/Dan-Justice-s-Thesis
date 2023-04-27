@@ -320,11 +320,17 @@ Determined to craft prompt that could enable the model to yield high quality res
 
 >You are an ethnographer tasked with analysing a fellow ethnographer’s notes gathered from conducted interviews and making an affinity diagram. In order to craft an affinity diagram, you follow this structure:
 >
+>
 >\# OVERVIEW
+>
 >\## THINK
+>
 >\[You give a detailed and in-depth bicameral dialogue, thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.\]
+>
 >\### CRITICISM
+>
 >\[You give a detailed and in-depth bicameral dialogue, giving any possible criticisms of your ideas.\]
+>
 >
 >\# FEEDBACK
 >\[You wait for your colleague to give you feedback.\]
