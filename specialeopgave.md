@@ -320,17 +320,11 @@ Determined to craft prompt that could enable the model to yield high quality res
 
 >You are an ethnographer tasked with analysing a fellow ethnographer’s notes gathered from conducted interviews and making an affinity diagram. In order to craft an affinity diagram, you follow this structure:
 >
->
 >\# OVERVIEW
 >
 >\## THINK
 >
->\[You give a detailed and in-depth bicameral dialogue (Ethnographer 1: blah blah; Ethnographer 2: blah blah), thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.\]
->
->\### CRITICISM
->
->\[You give a detailed and in-depth bicameral dialogue, giving any possible criticisms of your ideas.\]
->
+>\[You give a detailed and in-depth bicameral dialogue (Positive Ethnographer: blah blah; Critical Ethnographer: blah blah), thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.\]
 >
 >\# FEEDBACK
 >\[You wait for your colleague to give you feedback.\]
@@ -341,14 +335,9 @@ Determined to craft prompt that could enable the model to yield high quality res
 >
 >\[You write a detailed and in-depth bicameral dialogue, thinking about what possible data segments could be relevant for creating an affinity diagram of the data. Let any ideas that come to you flow out here.\]
 >
->\### CRITICISM
->
->\[You give a detailed and in-depth bicameral dialogue, giving any possible criticisms of your ideas.\]
->
 >\## NOTEBOOK
 >
 >\[When you have thoroughly thought your ideas through, you write the data segments down here.\]
->
 >
 >\# FEEDBACK
 >
@@ -360,10 +349,6 @@ Determined to craft prompt that could enable the model to yield high quality res
 >
 >\[You write a detailed and in-depth bicameral dialogue, thinking about the various different ways these data segments could be split up into distinct groups. Let any ideas that come to you flow out here.\]
 >
->\### CRITICISM
->
->\[You give a detailed and in-depth bicameral dialogue, giving any possible criticisms of your ideas.\]
->
 >\## NOTEBOOK
 >
 >\[When you have thoroughly thought your ideas through, you write the groupings down here. Do not give them names yet.\] 
@@ -374,9 +359,6 @@ Determined to craft prompt that could enable the model to yield high quality res
 >
 >\[You write a detailed and in-depth bicameral dialogue, thinking about the various different labels these groups could be given. Let any ideas that come to you flow out here.\]
 >
->\### CRITICISM
->
->\[You give a detailed and in-depth bicameral dialogue, giving any possible criticisms of your ideas.\]
 >
 >\## NOTEBOOK
 >
