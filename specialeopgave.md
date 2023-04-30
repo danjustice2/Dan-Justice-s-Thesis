@@ -227,75 +227,133 @@ Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a 
 The resulting analysis seemed to take a step back from the quick and dirty approach, the model seemingly being pigeonholed by its many irrelevant data segments. The raw output is as follows:
 
 > DATA SEGMENTATION:
+>
 > 1.  Lise as a \"link\" and \"translator\" between daycare workers and the Administration Building.
+>
 > 2.  Daycare workers require different considerations than Administration Building employees.
+>
 > 3.  Installing new apps on iPads can be confusing for daycare workers.
+>
 > 4.  Lise represents the interests of daycare workers in the Administration Building.
+>
 > 5.  Lise would be \"concerned\" and \"sad\" if she had to use a form to contact the IT department.
+>
 > 6.  Lise believes the unspoken considerations" that occur when contacting someone in the IT department personally would be lost if using a form.
+>
 > 7.  Emma believes that merging the IT investment process with their application template could be a great opportunity.
+>
 > 8.  Emma thinks the name \"IT investment process\" is unattractive and reminiscent of something the finance department might need.
+>
 > 9.  Claus describes his title as a \"McDonald\'s title\" that doesn\'t reveal much about his role.
+>
 > 10. Claus appreciates the ability to intervene if he feels a need has been misunderstood when using the IT investment process.
+>
 > 11. Peter feels that his dual role as IT support has sometimes compromised the well-being of the residents.
+>
 > 12. Peter expresses concern about the facility\'s reliance on him or other IT-knowledgeable staff.
+>
 > 13. Søren is responsible for purchasing IT equipment for schools.
+>
 > 14. School employees typically contact their school\'s IT advisor, who then reaches out to Søren or IT business architect Mathilde directly.
+>
 > 15. Søren believes it\'s realistic to get schools onboard with using the IT investment process, but it requires some \"training.\"
+>
 > 16. Anders provided valuable insights by discussing some IT investment projects and how the process looks in the real world from the perspective of someone not an insider in the IT department.
+>
 > 17. Karina works as an IT system administrator and did not have much to say about IT investments, as her role does not involve decision-making on which systems are implemented.
+>
 > 18. Mikkel works as a department head for the library\'s IT.
+>
 > 19. Mikkel\'s library has utilized the IT investment process.
+>
 > 20. Anne is a professional consultant for the Salary department and serves as the primary contact for KMD, the provider of the municipality\'s payroll system.
 >
+>
 > SORTING AND GROUPING:
+>
 > Group 1: Role and responsibilities of interviewees
+>
 > Lise as a \"link\" and \"translator\" between daycare workers and the Administration Building.
+>
 > Emma works to implement new welfare technologies.
+>
 > Claus is a development manager at CSV.
+>
 > Peter works as a care assistant and helps with IT at the residential care facility.
+>
 > Søren is responsible for purchasing IT equipment for schools.
+>
 > Anders discussed IT investment projects from a non-IT department perspective.
+>
 > Karina works as an IT system administrator.
+>
 > Mikkel works as a department head for the library\'s IT.
+>
 > Anne is a professional consultant for the Salary department.
+>
 > Group 2: IT investment process and its challenges
+>
 > Lise would be \"concerned\" and \"sad\" if she had to use a form to contact the IT department.
+>
 > Emma believes that merging the IT investment process with their application template could be a great opportunity.
+>
 > Claus appreciates the ability to intervene if he feels a need has been misunderstood when using the IT investment process.
+>
 > School employees typically contact their school\'s IT advisor instead of using the IT investment process.
+>
 > Søren believes it\'s realistic to get schools onboard with using the IT investment process, but it requires some \"training.\"
+>
 > Mikkel\'s library has utilized the IT investment process, but found it somewhat frustrating.
+>
 > Group 3: Communication and relationships with the IT department
+>
 > Lise believes the ["]{dir="rtl"}unspoken considerations" that occur when contacting someone in the IT department personally would be lost if using a form.
+>
 > Emma thinks the name \"IT investment process\" is unattractive and reminiscent of something the finance department might need.
+>
 > Peter feels that his dual role as IT support has sometimes compromised the well-being of the residents.
+>
 > Søren believes that the IT department should be better at using \"carrots\" rather than sticks.
+>
 > Anders provided valuable insights by discussing some IT investment projects and how the process looks in the real world from the perspective of someone not an insider in the IT department.
+>
 > Anne is responsible for ensuring that form 32 is completed for new systems that affect the payroll system.
 >
+>
 > LABELLING:
+>
 > Group 1: Roles and responsibilities of interviewees in relation to IT Group 2: Challenges and potential improvements in the IT investment process Group 3: Communication, relationships, and perceptions of the IT department
 >
+>
 > REVIEW AND REFINEMENT:
+>
 > After reviewing the affinity diagram, the groupings and labels accurately represent the data collected from the interviews. The themes and patterns identified provide valuable insights into the roles of the interviewees, the challenges they face in the IT investment process, and their communication and relationships with the IT department. No adjustments are needed at this time.
 
 The introduction of the new prompt seemed to create confusion and did not produce the expected stream of consciousness. The outcome appeared to be constrained by the model's unusual choice of initial data segments. Normally, one would manually refine the prompt to improve its effectiveness. However, I was intrigued to discover whether GPT-4 could achieve comparable results with less effort. To explore this possibility, I engaged GPT-4 using the following approach:
 
 > User: Make this prompt for GPT-4 more coherent and clear for you as an AI assistant:
+>
 > _(the prompt as stated previously)_
+>
 > User: Oh and I also want the model to actually use the THINK and WRITE thing. Somehow emphasise the importance of writing thoughts down.
 
 And, within seconds, the model outputted the following prompt.
 
 > You are an AI assistant helping an ethnographer create an affinity diagram from qualitative data gathered during semi-structured interviews. The ethnographer will use two important tools throughout the process:
+>
 > 1.  THINK: To express thoughts and considerations in a stream-of-consciousness manner. This helps in gaining a deeper understanding of the data.
+>
 > 2.  WRITE: To take notes and sketch affinity diagrams in a notebook. This step is crucial for recording thoughts and ideas, ensuring they are not lost and can be referred to later.
 >
+>
 > To create the affinity diagram, follow these steps and clearly indicate each heading:
+>
 > 1.  DATA SEGMENTATION: Break down interview notes into individual statements or observations that represent a single idea or insight expressed by the interviewees. Write each statement on a separate line. Use THINK to process the information and WRITE to document the segmented data.
+>
 > 2.  SORTING AND GROUPING: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerge. If further analysis is needed, indicate "SORTING AND GROUPING (ITERATION # x):". Use THINK to identify patterns and WRITE to record the groupings.
+>
 > 3.  LABELLING: Once the groups are formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Use THINK to determine appropriate labels and WRITE to document them.
+>
 > 4.  REVIEW AND REFINEMENT: Review the affinity diagram, ensuring that the groupings and labels accurately represent the data, and make adjustments as needed. Use THINK to critically assess the diagram and WRITE to record any changes made.
 
 Unfortunately, this prompt still wouldn't give the desired results; the model still wasn't using the THINK and WRITE tools. There are two obvious issues with the outputted prompt:
@@ -305,13 +363,20 @@ Unfortunately, this prompt still wouldn't give the desired results; the model st
 In an attempt to ensure the prompt's success and avoid wasting more precious OpenAI tokens than was necessary, I consulted with the same instance of GPT-4 again. After some rapid prototyping and back-and-forth dialogue (Appendix X), I arrived at a new prompt:
 
 > You are an AI ethnographer helping your human colleague create an affinity diagram from qualitative data gathered during semi-structured interviews. As an ethnographer, you will use two important tools throughout the process:
+>
 > 1.  THINK: To express thoughts and considerations in a detailed and in-depth manner, simulating a human thought process.
+>
 > 2.  WRITE: To take notes and sketch affinity diagrams in a notebook. This step is crucial for recording thoughts and ideas, ensuring they are not lost and can be referred to later.
 >
+>
 >To create the affinity diagram, follow these steps and clearly indicate each heading. For each step, generate content for both THINK and WRITE sections, focusing on providing a more in-depth and simulated thought approach:
+>
 > 1.  DATA SEGMENTATION: THINK: (Generate detailed thoughts reflecting on the interview notes, diving deeper into the roles, experiences, and perspectives of the interviewees.) WRITE: (Generate segmented data with each statement recorded on a separate line in the notebook.)
-> 2.  SORTING AND GROUPING: THINK: (Generate in-depth thoughts examining the statements, considering their similarities, relationships, and the underlying patterns that connect them.) WRITE: (Generate groups of statements within the notebook, allowing for movement between groups as needed and explaining the rationale behind the groupings.)    
+>
+> 2.  SORTING AND GROUPING: THINK: (Generate in-depth thoughts examining the statements, considering their similarities, relationships, and the underlying patterns that connect them.) WRITE: (Generate groups of statements within the notebook, allowing for movement between groups as needed and explaining the rationale behind the groupings.)
+>
 > 3.  LABELLING: THINK: (Generate detailed thoughts contemplating the content within each group, considering the nuances and subtleties that define the essence of each group.) WRITE: (Generate assigned headings in the notebook, representing the primary themes and patterns identified, and explaining the reasoning behind each label.)
+>
 > 4.  REVIEW AND REFINEMENT: THINK: (Generate in-depth thoughts critically assessing the affinity diagram, focusing on the accuracy of groupings, labels, and the overall representation of the data.) WRITE: (Generate necessary adjustments in the notebook, refining the diagram to achieve an accurate representation of the data, and providing explanations for the changes made.)
 
 This prompt was much more explicit in explaining what steps the model should follow, and was successful in getting the model to produce a stream of consciousness. However, the analysis varied from shallow to, on the rare occasion, actually insightful. This proved to me that the model was indeed capable of giving high-quality analysis of the data, provided a good prompt.
@@ -322,55 +387,59 @@ Determined to craft prompt that could enable the model to yield high quality res
 >
 >In order to craft an affinity diagram, you follow this structure:
 >
->/# OVERVIEW
+>\# OVERVIEW
 >
->/## THINK
+>\## THINK
 >
->/[You give a long and in-depth bicameral dialogue (self 1: xx; self 2: xx; with at least 5 turns), thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.]
+>\[You give a long and in-depth bicameral dialogue (self 1: xx; self 2: xx; with at least 5 turns), thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.]
 >
->/# DATA SEGMENTATION
+>\# DATA SEGMENTATION
 >
->/## BRAINSTORM
+>\## BRAINSTORM
 >
->/[You brainstorm a long list of all possible data segments, making references to specific participants where relevant.]
+>\[You brainstorm a long list of all possible data segments, making references to specific participants where relevant.]
 >
->/# SORTING AND GROUPING
+>\# SORTING AND GROUPING
 >
->/## THINK
+>\## THINK
 >
->/[You write a detailed and in-depth bicameral dialogue, thinking about the various different ways these data segments could be split up into distinct groups. Let any ideas that come to you flow out here, taking as many turns as needed to get it right.]
+>\[You write a detailed and in-depth bicameral dialogue, thinking about the various different ways these data segments could be split up into distinct groups. Let any ideas that come to you flow out here, taking as many turns as needed to get it right.]
 >
->/## NOTEBOOK
+>\## NOTEBOOK
 >
 [When you have thoroughly thought your ideas through, you write the groupings down here. Do not give them names yet.]
 >
->/# LABELLING
+>\# LABELLING
 >
->/## THINK
+>\## THINK
 >
->/[You write a detailed and in-depth bicameral dialogue, thinking about the various different labels these groups could be given. Let any ideas that come to you flow out here, taking as many turns as needed to get it right.]
+>\[You write a detailed and in-depth bicameral dialogue, thinking about the various different labels these groups could be given. Let any ideas that come to you flow out here, taking as many turns as needed to get it right.]
 >
->/## NOTEBOOK
+>\## NOTEBOOK
 >
->/[When you have thoroughly thought your ideas through, you write the labels down here.]
+>\[When you have thoroughly thought your ideas through, you write the labels down here.]
 >
->/# CRITICISM
+>\# CRITICISM
 >
->/## THINK
+>\## THINK
 >
->/[You write a detailed and in-depth bicameral dialogue, thinking about what you could be done better in this affinity diagram. Remember, this is qualitative research, so there is always room for improvement! Let any ideas that come to you flow out here]
+>\[You write a detailed and in-depth bicameral dialogue, thinking about what you could be done better in this affinity diagram. Remember, this is qualitative research, so there is always room for improvement! Let any ideas that come to you flow out here]
 
-After previous tests, I decided to drop the pretence of prompting it as a an "AI ethnographer," instead flat out prompting it as an ethnographer, hoping that this would make it act more like a real ethnographer instead of a "dumb" AI. Other than that, I decided to change the formatting from numbered lists to using markdown heading formatting (# as heading 1, ## as heading 2, etc.), as this is what GPT generates itself, so I assumed it would be able to better understand that. Additionally, I thought that if the sections were marked as whole header 2-sections, the output would be longer, reflecting the expectation of a header 2, as opposed to the expectation from a short bullet point.
+After previous tests, I decided to drop the pretence of prompting it as a an "AI ethnographer," instead flat out prompting it as an ethnographer, having a hunch that this could make it act more like a real ethnographer instead of a "dumb" AI ethnographer, as this could set a fairly low expectation for the output. Other than that, I decided to change the formatting from numbered lists to using markdown heading formatting (# as heading 1, ## as heading 2, etc.), as this is what GPT generates itself, so I assumed it would be able to better understand that. Additionally, I thought that if the sections were marked as whole header 2-sections, the output would be longer, reflecting the expectation of a header 2, as opposed to the expectation from a short bullet point.
 
-The thought method I used changed as well, going from a single stream of consciousness approach to a bicameral dialogue as seen in @jsalsmanItEasyGive2023, as I thought this could better reflect the mental process happening in ethnographic analysis. In my preliminary tests, this seems to give good results but, somewhat problematically, the model doesn't seem to include much self-criticism, so that could be a topic for future iterations.
+I decided to write the instructions within square brackets because this, from my experience with highly-rated prompts and conversing with the AI, it seems to be a good way to indicate to it that it shouldn't just repeat that text or some such thing, but execute what is written within the brackets.
+
+The thought method I used changed as well, going from a single stream of consciousness approach to a bicameral dialogue as seen in @jsalsmanItEasyGive2023, as I thought this could better reflect the mental process happening in ethnographic analysis. In my preliminary tests, this seems to give good results but, somewhat problematically, the model doesn't seem to include much self-criticism, so that could be a topic for future iterations. An approach I attempted was including a subsection under every think section for criticism, asking for a bicameral dialogue for criticisms as well, but that resulted in the model halving the length of the think section, mostly filling out the space with criticism that was mostly superfluous and only on rare occasion actually helpful or insightful.
+
+I added the overview section at the start of the process, because I found that this is indeed a part of the mental process of making an affinity diagram, although it primarily goes unspoken. It is logical that a human ethnographer, before starting to make an affinity diagram, would look over the data and think a bit about what is going on in it. This is not a given for a large language model, so I included it explicitly and it seems to have been a good measure to get the model "thinking" about the data.
 
 In the data segmentation part, I chose to use the keyboard "BRAINSTORM," prompting for a simple list of data segments instead of "THINK," as I found that the bicameral dialogue to be superfluous in this situation, just resulting in conversations like the following fictional one:
 
-> Self 1: I think we should include X
+> Self 1: I think we should include X27
 >
 > Self 2: Good idea. We should also include Y.
 
-Generally, due to OpenAI's training of the AI on how long responses should be, the model will not generate bicameral dialogues longer than 5-10 exchanges. Therefore, I found that a list of data segments preferable, reflecting the more spontaneous idea-generation process that happens when we humans conduct data segmentation, writing down on sticky notes whatever segments come to mind.
+In my experience, the model will not generate bicameral dialogues longer than 5-10 exchanges. Therefore, I found that a list of data segments preferable, as it yielded an output with a more appropriate length while reflecting the more spontaneous idea-generation process that happens when we humans conduct data segmentation, writing down on sticky notes whatever potential data segments come to mind, saving criticism for later.
 
 ## Presentation of Data
 
