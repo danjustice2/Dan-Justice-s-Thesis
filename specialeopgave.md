@@ -217,11 +217,17 @@ Large language models like GPT-4 do not think, but rather produce words (or, mor
 Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a more detailed and reasoned output, mirroring the step-by-step process followed by human ethnographers. My discovery of this method gave rise to a rough draft of a new prompt, as follows:
 
 > You are an ethnographer going through a reasoning process to create an affinity diagram based on the qualitative data collected from semi-structured interviews. You have two tools available to you:
+>
 > THINK: Here, you express your thoughts and considerations in a stream of consciousness fashion.
+>
 > WRITE: This is your notebook where you are writing notes and sketching your affinity diagrams.
+>
 > Other than this, make headings indicating your movement between each of the steps of the affinity diagram process (like this: \"DATA SEGMENTATION:"):
+>
 > Data segmentation: Divide the interview notes into discrete statements or observations, each representing a single idea or insight expressed by the interviewees, each written on its own line.
+>
 > Sorting and grouping: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerged. If you feel your analysis could benefit from iterating, you write \"SORTING AND GROUPING (ITERATION # x):"
+>
 > Labelling: Once the groups were formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Review and refinemeznt: Review the affinity diagram, ensuring that the groupings and labels accurately represented the data and making adjustments as needed.
 
 The resulting analysis seemed to take a step back from the quick and dirty approach, the model seemingly being pigeonholed by its many irrelevant data segments. The raw output is as follows:
@@ -383,7 +389,9 @@ This prompt was much more explicit in explaining what steps the model should fol
 
 Determined to craft prompt that could enable the model to yield high quality results every time, I decided to take a step back and start writing a new prompt from scratch, learning from the aforementioned experiments, doing some more rapid prototyping. The resulting prompt is as follows:
 
->You are an ethnographer tasked with analysing a fellow ethnographer’s notes gathered from conducted interviews and making an affinity diagram.
+>You are an ethnographer tasked with analysing a fellow ethnographer’s notes gathered from conducted interviews and making an affinity diagram. Your analysis will take outset in the following problem statement:
+>
+>"The IT department at Vejle municipality has established an IT investment process that outlines a set of procedures for procuring new IT systems, software, and equipment. Despite these guidelines, employees do not always follow this process, leading to potential inefficiencies and discrepancies in IT investments. This study aims to explore the reasons why employees do not comply with the IT investment process and suggest strategies to improve compliance."
 >
 >In order to craft an affinity diagram, you follow this structure:
 >
@@ -391,7 +399,7 @@ Determined to craft prompt that could enable the model to yield high quality res
 >
 >\## THINK
 >
->\[You give a long and in-depth bicameral dialogue (self 1: xx; self 2: xx; with at least 5 turns), thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.]
+>\[You give a long and in-depth bicameral dialogue (Self 1: x\\nSelf 2: x; taking at least 5 turns), thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.]
 >
 >\# DATA SEGMENTATION
 >
@@ -425,19 +433,25 @@ Determined to craft prompt that could enable the model to yield high quality res
 >
 >\[You write a detailed and in-depth bicameral dialogue, thinking about what you could be done better in this affinity diagram. Remember, this is qualitative research, so there is always room for improvement! Let any ideas that come to you flow out here]
 
-After previous tests, I decided to drop the pretence of prompting it as a an "AI ethnographer," instead flat out prompting it as an ethnographer, having a hunch that this could make it act more like a real ethnographer instead of a "dumb" AI ethnographer, as this could set a fairly low expectation for the output. Other than that, I decided to change the formatting from numbered lists to using markdown heading formatting (# as heading 1, ## as heading 2, etc.), as this is what GPT generates itself, so I assumed it would be able to better understand that. Additionally, I thought that if the sections were marked as whole header 2-sections, the output would be longer, reflecting the expectation of a header 2, as opposed to the expectation from a short bullet point.
+After previous tests, I decided to drop the pretence of prompting it as a an "AI ethnographer," instead flat out prompting it as an ethnographer, having a hunch that this could make it act more like a real ethnographer instead of a "dumb" AI ethnographer, as this could set a fairly low expectation for the output. Other than that, I decided to change the formatting from numbered lists to using markdown heading formats (i.e. # for heading 1, ## for heading 2, etc.), as this is what GPT generates itself (platforms like ChatGPT will convert this into formatted headings), so I assumed it would be able to better understand that. Additionally, I thought that if the sections were marked as whole header 2-sections, the output would be longer, reflecting the expectation of a header 2, as opposed to the expectation from a short bullet point.
+
+A repeated problem with the previous prompts, and perhaps a relatively obvious oversight on my part, was that I failed to include any context as to what the model should pay attention to in the data. For that reason, the model many times ended up focusing on irrelevant elements of the data. For that reason, I chose to include the problem statement for the present study, except for the parts of it regarding testing large language models, as this could only serve to confuse our virtual ethnographer.
 
 I decided to write the instructions within square brackets because this, from my experience with highly-rated prompts and conversing with the AI, it seems to be a good way to indicate to it that it shouldn't just repeat that text or some such thing, but execute what is written within the brackets.
 
-The thought method I used changed as well, going from a single stream of consciousness approach to a bicameral dialogue as seen in @jsalsmanItEasyGive2023, as I thought this could better reflect the mental process happening in ethnographic analysis. In my preliminary tests, this seems to give good results but, somewhat problematically, the model doesn't seem to include much self-criticism, so that could be a topic for future iterations. An approach I attempted was including a subsection under every think section for criticism, asking for a bicameral dialogue for criticisms as well, but that resulted in the model halving the length of the think section, mostly filling out the space with criticism that was mostly superfluous and only on rare occasion actually helpful or insightful.
+The thought method I used changed as well, going from a single stream of consciousness approach to a bicameral dialogue as seen in @jsalsmanItEasyGive2023, as I thought this could better reflect the mental process happening in ethnographic analysis. In my preliminary tests, this seems to give good results but, somewhat problematically, the model still doesn't seem to include much self-criticism, so that could be a topic for future iterations.
+
+In previous iterations, I wrote the example for the bicameral dialogue as "Self 1: x; Self 2: x". This worked fine most of the time, but occasionally the model misunderstood and wrote the dialogue in that format in paragraph form, so I decided to use "\\n" instead, which represents a newline character that is used in many programming languages and Unix-based operating systems to represent the end of a line of text and the beginning of a new line @UnicodeCharacter000A. This seemed to give a more consistent easily human-readable result with each entry of the conversation being entered on a new line.
+
+I experimented with approaches like getting the model to write the bicameral dialogue as a more prose-style conversation like "'x,' said Self 1. 'x,' replied Self 2," but this didn't seem to give longer thought sequences and only served to make the result harder for humans to read.
+
+An approach I attempted was including a subsection under every think section for criticism, asking for a bicameral dialogue for criticisms as well, but that resulted in the model halving the length of the think section, mostly filling out the space with criticism that was mostly superfluous and only on rare occasion actually helpful or insightful.
 
 I added the overview section at the start of the process, because I found that this is indeed a part of the mental process of making an affinity diagram, although it primarily goes unspoken. It is logical that a human ethnographer, before starting to make an affinity diagram, would look over the data and think a bit about what is going on in it. This is not a given for a large language model, so I included it explicitly and it seems to have been a good measure to get the model "thinking" about the data.
 
 In the data segmentation part, I chose to use the keyboard "BRAINSTORM," prompting for a simple list of data segments instead of "THINK," as I found that the bicameral dialogue to be superfluous in this situation, just resulting in conversations like the following fictional one:
 
-> Self 1: I think we should include X27
->
-> Self 2: Good idea. We should also include Y.
+> "I think we should include X," said Self 1. "Good idea. We should also include Y," replied Self 2.
 
 In my experience, the model will not generate bicameral dialogues longer than 5-10 exchanges. Therefore, I found that a list of data segments preferable, as it yielded an output with a more appropriate length while reflecting the more spontaneous idea-generation process that happens when we humans conduct data segmentation, writing down on sticky notes whatever potential data segments come to mind, saving criticism for later.
 
