@@ -24,22 +24,28 @@ Additionally, the study seeks to evaluate the utility of OpenAI's family of larg
 ## Case Description
 Vejle Municipality, situated in the southern part of Denmark, is a thriving and diverse region. The administrative headquarters of the municipality are located in a central building in the heart of the city. Although many administrative workers are based there, the municipality also employs a substantial number of individuals in decentralised roles, often with less technical education and background. In total, the municipality has approximately 10,000 employees. This presents an intriguing challenge for the IT department housed within the administration building.
 
-Historically, the IT department was perceived as somewhat insular, struggling to effectively communicate with those outside of its sphere, particularly with regard to decentralised stakeholders. However, in the past 5-10 years, the department has undergone significant changes, hiring four IT architects with diverse strengths and expertise. These architects, who could be seen as diplomats, help facilitate communication between the IT department and the wider organisation, ensuring that the technical solutions provided align with the needs and expectations of all employees. Two of these architects, pseudonymised as Jonas and Mathilde, will be the focus of this report. Mathilde brings a more "soft IT" perspective, focusing on the human element, while Jonas specialises in the technical aspects of IT architecture.
+Historically, the IT department was perceived as somewhat insular, struggling to effectively communicate with those outside of its sphere, particularly with regard to decentralised stakeholders. However, in recent years, the department has undergone significant changes, hiring four IT architects with diverse strengths and expertise. These architects, who could be seen as diplomats, help facilitate communication between the IT department and the wider organisation, ensuring that the technical solutions provided align with the needs and expectations of all employees. Two of these architects, pseudonymised as Jonas and Mathilde, will be the focus of this report. Mathilde brings a more "soft IT" perspective, focusing on the human element, while Jonas specialises in the technical aspects of IT architecture.
 
 Vejle Municipality has implemented an IT investment process, in the form of an online webform accessible via the intranet. Intended for use by all employees prior to making new IT investments, the webform serves two main purposes: to enable the IT department to monitor the technologies they support, and to connect the appropriate IT personnel with the investment project, ensuring smooth implementation and consideration of all potential implications. Despite these benefits, it appears that very few employees actually utilise the webform in practice.
 
 ## Literature Review
 
-### Ethnographic Methods (Crabtree et al. 2012)
+### Ethnomethodology (Crabtree et al. 2012)
+
+Ethnomethodology (EM) is a theoretical approach that has gained considerable attention in the field of social science research. EM emphasises the study of how people create and maintain social order through their everyday interactions, and how they use practical methods and techniques to make sense of their social world. As Crabtree et al. (2012) note, "EM researchers typically focus on how members of a particular community or social setting use their everyday practices and knowledge to produce the norms and rules that govern social life" (p. 316).
+
+EM has been applied in a wide range of fields, including sociology, anthropology, communication studies, and more recently in the study of human-computer interaction and interaction design. In particular, EM has been used to study how people use and interact with technology in their everyday lives, and how technology shapes and influences social practices.
+
+Crabtree et al. (2012) argue that EM can provide valuable insights for understanding technology use in a variety of settings. They note that EM's focus on the details of everyday practices can help researchers identify the practical challenges that people face when using technology, and how these challenges can be addressed through design. Additionally, they argue that EM's emphasis on the social context of technology use can help researchers understand how technology fits into broader social structures and how it shapes social relations.
 
 #### Interview
 
-@ advise that researchers treat interviews with caution. They suggest that interviews should be conducted in the actual flow of work as it unfolds and as the situation permits. They warn that what people say they do and what they actually do are not the same. It is not that people are lying, but that the accounts they offer in an interview often gloss over their work. The best way to conduct an interview is to be concerned with the just what and just how of the work, and not be driven by a pre-formulated schedule of questions removed from the actual doing of the work.
+@crabtreeDoingDesignEthnography2012 advise that researchers treat interviews with caution. They suggest that interviews should be conducted in the actual flow of work as it unfolds and as the situation permits. They warn that what people say they do and what they actually do are not the same. It is not that people are lying, but that the accounts they offer in an interview often gloss over their work. The best way to conduct an interview is to be concerned with the just what and just how of the work, and not be driven by a pre-formulated schedule of questions removed from the actual doing of the work.
 
 #### Field notes
-According to @crabtreeDoingDesignEthnography2012, making field notes is an essential part of fieldwork. It allows the researcher to document the things they see and hear and jot down their thoughts on the setting and its work. Field notes provide a record of what the researcher observes, hears, and is told. Keeping a good set of field notes helps researchers keep track of what they are being told and organise their thoughts. It is an active process that makes the researcher attend to the work as it occurs, helping them develop vulgar competence in it.
+According to @crabtreeDoingDesignEthnography2012, making field notes is an essential part of fieldwork. It allows the researcher to document the things they see and hear and jot down their thoughts on the setting and its work. Field notes provide a record of what the researcher observes, hears, and is told. Keeping a good set of field notes helps researchers keep track of what they are being told and organise their thoughts. It is an active process that makes the researcher attend to the work as it occurs, helping them develop their understanding of the work being done.
 
-@crabtreeDoingDesignEthnography2012 suggest that the notebook need not be a loose collection of disjointed comments. Researchers may use their notebook to structure their thoughts and develop a coherent account of the work of a setting. They recommend researchers make diagrams of the ecology of work to frame their inquiries into the work of a setting and represent it to others. Draw plans of the environment, indicate the people who inhabit it, their roles or responsibilities, and the artifacts that they use in doing the work. This helps researchers develop a detailed understanding of the setting\'s work and the methods members use to organize it as a real-world, real-time social accomplishment.
+@crabtreeDoingDesignEthnography2012 suggest that the notebook need not be a loose collection of disjointed comments. Researchers may use their notebook to structure their thoughts and develop a coherent account of the work of a setting. They recommend researchers make diagrams of the ecology of work to frame their inquiries into the work of a setting and represent it to others. Draw plans of the environment, indicate the people who inhabit it, their roles or responsibilities, and the artefacts that they use in doing the work. This helps researchers develop a detailed understanding of the setting\'s work and the methods members use to organise it as a real-world, real-time social accomplishment.
 
 #### Formal Organisation of Work and Flow of Work
 
@@ -166,7 +172,7 @@ By exploring the capabilities of GPT-4 in creating an affinity diagram and compa
 ##### The Quick and Dirty Approach.
 In my first attempt to get GPT-4 to produce an affinity diagram, I gave it the following simple prompt: \"You are an ethnographer who evaluates user inputs and creates affinity diagrams based on the narratives they contain. Your report should summarize the most prominent discourses, including references to specific interviewees where appropriate.\"
 
- GPT-4 provided an analysis of the interview data and generated its own affinity diagram, which identified themes and patterns in the data, followed by a summary of the most significant discourses. The output was technologically impressive, but some of the fundamental issues with large language models made it methodologically questionable.
+ GPT-4 provided an analysis of the interview data and generated its own affinity diagram, which identified themes and patterns in the data, followed by a summary of the most significant discourses. 
 
  While GPT-4 was clearly familiar with the concept of an affinity diagram, its results were somewhat superficial, seeming to be based on a mere first impression of the data. The raw output is as follows:
 
@@ -218,8 +224,14 @@ The resulting conversation is as follows:
 
 The results reveal that GPT-4 demonstrates a heightened ability to examine its own biases as a language model compared to its predecessors. This improvement is likely attributed to the inclusion of text published after GPT-3's initial surge in popularity within research communities, as well as targeted training provided by OpenAI.
 
+These outputs, while technologically impressive, are methodologically shaky due to some of the fundamental issues with large language models. Allow me to explain:
+ 
+ When we humans make an affinity diagram we follow a mental process, segmenting the data into pieces, *to writing assistant: rest of affinity diagram process here*. Large language models like GPT-4 do not think in the background, but rather produce tokens (small pieces of text, roughly equivalent to one word) one at a time based on their probability of appearing as the next word of text, calculated from the corpus of text the model was trained on ( @mahowaldDissociatingLanguageThought2023; @brownLanguageModelsAre2020; @guoHowCloseChatGPT2023). This in contrast to humans whose language and reasoning centres are contained within separate areas of the brain ( @mahowaldDissociatingLanguageThought2023; @valmeekamLargeLanguageModels2022).
+ 
+ Thus, the model, when simply asked to generate an affinity diagram, does not "think" about its answers in the background, but simply spits out text based on what it gleaned from "reading" the data given. This could be roughly equivalent to a human mearly reading thourhg interview data and writing down main themes and groups without thinking much about it; that is some sort of data analysis, but it certainly doesnt give the depth and richness that affinity diagrams are known and loved for.
+
 ##### The Simulated-Thought Approach.
-Large language models like GPT-4 do not think, but rather produce words (or, more correctly, tokens) one at a time based on their probability of appearing as the next word in the text (@mahowaldDissociatingLanguageThought2023; @brownLanguageModelsAre2020; @guoHowCloseChatGPT2023). This in contrast to humans whose language and reasoning centers are contained within separate areas of the brain (Mahowald et al. 2023, Valmeekam et al. 2022). Nevertheless, researchers have noted significantly improved outcomes in reasoning tasks when models are prompted to produce a chain-of-thought ( @weiChainThoughtPrompting2022; see also, @richardsAutoGPTAutonomousGPT42023; @weiArtificialStreamThought; @jsalsmanItEasyGive2023). Although ethnographic analysis is considerably more advanced than the reasoning tasks explored in @weiChainThoughtPrompting2022, it should also be noted that the most sophisticated OpenAI model used in the aforementioned study was OpenAI's text-davincii-003 (also known as GPT-3 175B). 
+ Nevertheless, researchers have noted significantly improved outcomes in reasoning tasks when models are prompted to produce a chain-of-thought ( @weiChainThoughtPrompting2022; see also, @richardsAutoGPTAutonomousGPT42023; @weiArtificialStreamThought; @jsalsmanItEasyGive2023). Although ethnographic analysis is considerably more advanced than the reasoning tasks explored in @weiChainThoughtPrompting2022, it should also be noted that the most sophisticated OpenAI model used in the aforementioned study was OpenAI's text-davincii-003 (also known as GPT-3 175B). 
 
 Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a more detailed and reasoned output, mirroring the step-by-step process followed by human ethnographers. My discovery of this method gave rise to a rough draft of a new prompt, as follows:
 
@@ -320,7 +332,7 @@ The resulting analysis seemed to take a step back from the quick and dirty appro
 >
 > Group 3: Communication and relationships with the IT department
 >
-> Lise believes the ["]{dir="rtl"}unspoken considerations" that occur when contacting someone in the IT department personally would be lost if using a form.
+> Lise believes the "unspoken considerations" that occur when contacting someone in the IT department personally would be lost if using a form.
 >
 > Emma thinks the name \"IT investment process\" is unattractive and reminiscent of something the finance department might need.
 >
@@ -467,33 +479,100 @@ The final output was longer than is reasonable to quote within the present repor
 Later in the present report, I will go through the final result of the prompt in more detail, pointing to further potential points of improvement and investigation.
 
 ## Presentation of Data
-
 ### Interview Data
+![The author's human-made affinity diagram from the interview data. A high-resolution version is available in Appendix X.](9d6d3fd1cf5e3b0a9a7514c1b7c47822.png "The author's human-made affinity diagram from the interview data. A high-resolution version is available in Appendix X.")
 The data gathered for this study comprises semi-structured interviews with 12 employees of Vejle Municipality, spanning various roles across all six administrative divisions. The data collection process involved taking rough notes by hand during the interviews, followed by more refined digital notes afterwards. From these refined notes, I created two affinity diagrams: one by hand and the other with the assistance of GPT-4 through a carefully crafted prompt.
 
 The analysis in this report primarily utilises my hand-made affinity diagram, as it encompasses not only the insights gleaned from my notes but also the nuances of my experiences and observations within Vejle Municipality.
-![The author's human-made affinity diagram from the interview data. A high-resolution version is available in Appendix X.](9d6d3fd1cf5e3b0a9a7514c1b7c47822.png "The author's human-made affinity diagram from the interview data. A high-resolution version is available in Appendix X.")
 
 Out of the interviewees, the majority were familiar with the IT investment process: six indicated familiarity (including one who had helped create the process in her role as a digitalisation consultant), five were unfamiliar, and the final participant, who was also unfamiliar, deemed the process irrelevant to her work and was therefore excluded from the analysis.
 
-My first interview was with Freja, a seasoned web manager from the Politics, Analysis & Communication department. We met in a secluded meeting room within the IT department's corridor, an area unknown to most outside the department. Freja's immediate recognition of the location signalled her familiarity and ease with the IT department.
-
-During our discussion, Freja expressed strong opinions on the IT investment process, perceiving it as excessively bureaucratic and impersonal. With 20 years of experience working closely with the IT department, she felt confident in her ability to communicate directly with them when necessary, bypassing the formal process. Freja advocated for a more relationship-based approach, emphasising the importance of positive reinforcement over punishment.
+#### Reasons People Don't Use the IT Investment Process
+My first interview was with Freja, a seasoned web manager from the Politics, Analysis & Communication department. During our discussion, Freja expressed strong opinions on the IT investment process, perceiving it as excessively bureaucratic and impersonal. With 20 years of experience working closely with the IT department, she felt confident in her ability to communicate directly with them when necessary, bypassing the formal process. Freja advocated for a more relationship-based approach, emphasising the importance of positive reinforcement over punishment.
 
 Freja's perspective laid the groundwork for my research, as the issue of the IT investment process being seen as impersonal and bureaucratic recurred in subsequent interviews. Her experience and insights into the challenges of collaborating with the IT department were invaluable, and her close connection to the department provided a unique viewpoint that illuminated broader issues surrounding the process.
 
-Lise, an administrative assistant in the Daycare department, acts as a vital bridge between the Administration Building and daycare workers, who have distinct needs due to their more practical roles. Daycare workers, though provided with iPads, often face challenges with IT-related tasks. Lise addresses these issues by advocating for their interests.
-
-Lise expresses concern and dismay at the prospect of using a form to contact the IT department. She values her personal relationship with Jonas from IT, as he understands the unique context of daycare workers. Lise worries that submitting a form may result in losing "unspoken considerations" arising from the social and educational differences between the two groups. She fears either misrepresenting the situation or coming across as condescending to the IT department.
+Lise, an administrative assistant in the Daycare department, acts as a vital bridge between the Administration Building and daycare workers, who have distinct needs due to their more practical roles. Lise expresses concern and dismay at the prospect of using a form to contact the IT department. She values her personal relationship with Jonas from IT, as he understands the unique context of daycare workers. Lise worries that submitting a form may result in losing "unspoken considerations" arising from the social and educational differences between the two groups.
 
 To alleviate these concerns, Lise suggests adding an option on the form to indicate if the case involves a target group struggling to adapt to technological changes. Another appealing solution she proposes is including a preferred IT department contact person on the form, ensuring that someone familiar with the specific context is involved.
 
+#### Potential for Strengthened Cooperation between IT and the Rest of the Organisation
+Emma, who has been working in the municipality for 13 years and took over her current position as an Implementation Consultant in the Department of Welfare six months ago, told about welfare's own work and how they have a similar form to the IT investment process for welfare investments. She suggested that it would be more efficient if their applicants could automatically involve IT in projects related to IT.
+
+Despite not being familiar with the IT investment process prior to our interview, Emma recalls hearing about it from Jonas, an IT architect, at a meeting. Emma assumed the process was primarily relevant to IT and economy personnel due to its name. She agreed that a more tangible name, such as "Indkøbsguiden" (Danish for "The Purchase Guide"), might make it more accessible to the grassroots level of the organisation. However, according to Jonas, a similar system in another municipality also faced issues with lack of use, indicating a more attractive name cannot stand alone.
+
+Another example of potential strengthened cooperation comes from Anne, a professional consultant for the Salary department. Anne shares a similar attitude with the IT department, wishing that employees in the organisation would be better at consulting with her before purchasing systems that fall within her area of responsibility, rather than buying the system first and then consulting with her about its implementation afterward. This attitude may be why she has a good relationship with the IT department, consulting with them well in advance.
+
+Anne recalls an instance when she was called to a meeting by someone in the organisation, along with Jonas from the IT department, thinking that she 'might' have a stake in the implementation of their new system. She described the meeting as, "It was a video meeting, but I could sense that Jonas and I were looking at each other on the screen, thinking, 'is this really happening right now.'" This was because the third person had already purchased the system without asking and wanted it up and running in three weeks, which she found very unreasonable. She tells that such situations have at times created a tremendous workload in their wake. Thus, although Anne and Jonas work in different professional areas, they share some frustrations. A central frustration is that employees' expectations for the timeline of implementing new things do not match their own.
+
+During the interview, I suggested the idea of merging the systems, and Anne reacted positively to this idea, agreeing that implementing a central system that directs communication based on certain guidelines could help ensure that employees with new investments in the pipeline do not have to guess who should be involved and when in the process they should be involved.
+
+#### Benefits of Using the Process: Potential Talking Points
+Claus, a development manager at Vejle's Center for Special Education for Youth and Adults (CSV), finds the IT investment process helpful because it connects them with the right people, such as an architect who oversees the case, ensuring it is remembered and acted upon. Using the IT investment process also provides a clear line of communication when working decentralised, as is the case with CSV. It allows them to follow a case in the system and see which IT department members are involved and what they are doing. Claus appreciates the ability to intervene if he feels a need has been misunderstood.
+
+#### Central vs Decentralised
+Peter, a care assistant who recently retired but still works at the residential care facility one day a week to help with their IT, raised concerns about the feasibility of relying on support from Vejle's central IT department in decentralised areas. He wonders what will happen to the facility when he fully retires, as they will have to rely on support from central IT, which may not be viable considering the facility's location and the fact that they operate year-round, providing constant care to residents.
+
+#### Frustrations with Restrictions from IT
+Several interviewees, including Claus, expressed frustrations with restrictions imposed by the IT department. Claus wishes for more flexibility and risk-taking in areas such as updating programs on his computer without contacting central IT. He also hopes that Søren from school IT and central IT could collaborate more closely, as these areas are now more interconnected than they used to be.
+
+#### Importance of IT Architects as Communicators
+Many interviewees, such as Søren, responsible for purchasing IT equipment for schools, acknowledged the importance of IT architects as communicators. Søren notes that the arrival of IT architects in the organisation has improved communication and collaboration between central IT and decentralised areas, as well as between IT and the rest of the organisation.
+
+The architects, including Mathilde, have reached out more to decentralised areas in an attempt to build better relationships. Both Søren and Mikkel mentioned Mathilde's joint meetings, describing them as very helpful in the process of making IT's work more accessible throughout the organisation.
+
+#### Final Thoughts and Recommendations
+Based on the interviews conducted, it is clear that there are opportunities for improvement in the IT investment process at Vejle Municipality. The process should be more clearly communicated to the organisation and positioned as a support service rather than a bureaucratic hurdle. Additionally, adding options for preferred IT contact persons and indicating target groups struggling with technology adaptation could help alleviate concerns regarding the impersonal nature of the process.
+
+Furthermore, fostering better communication and collaboration between central IT and decentralised areas, as well as between IT and the rest of the organisation, should be a priority. IT architects have already made strides in this area, but continued efforts will be crucial to ensure that the IT investment process is effectively integrated into the daily operations of Vejle Municipality.
+
+###  Affinity Diagram Generated by GPT-4
+
+![The final affinity diagram generated by GPT-4 based on the interview data. A high-resolution version is available in Appendix X.](a79e7f23a4167279dd1e3af32e4313da.png "The final affinity diagram generated by GPT-4 based on the interview data. A high-resolution version is available in Appendix X.")
+As previously discussed in this report, field notes from the interviews were input into GPT-4 along with a carefully-crafted prompt. A visual representation of the affinity diagram generated by the AI can be seen in Figure X. It is important to note that GPT-4 only processes text inputs and outputs, so the visual layout was created manually by transferring the AI-generated data into the same program used for the human-generated affinity diagram. While GPT-4 is expected to process images in the future, this feature is not yet available, and creating a visual layout would require more complex prompting. To save time, all sticky notes have been left yellow rather than colour-coded.
+
+GPT-4 divided the 50 data segments into five groups, with four relatively small groups and one larger group containing more than half of the data segments (26 in total). The raw output with the groupings is shown below, and the full raw output can be found in Appendix X.
+
+>## NOTEBOOK
+>
+>Group 1: Awareness and Understanding of IT Investment Process
+>
+>- Segments: 1, 2, 5, 10, 16, 32, 46
+>
+>Group 2: Communication and Relationships between IT Department and Other Departments
+>
+>- Segments: 3, 4, 11, 19, 20, 29, 30, 35, 42
+>
+>Group 3: Challenges and Barriers in IT Investment Process
+>
+>- Segments: 6, 7, 8, 9, 17, 22, 23, 24, 25, 26, 27, 28, 31, 33, 34, 37, 38, 39, 40, 41, 43, 44, 45, 47, 49, 50
+>
+>Group 4: Suggestions and Improvements for IT Investment Process
+>
+>- Segments: 12, 18, 21, 36, 48
+>
+>Group 5: Specific Contexts and Considerations in Different Departments/Facilities
+>
+>- Segments: 13, 14, 15, 16
+
+The final stage of the affinity diagram process involves refining and iterating on the diagram. It is evident that the current diagram is satisfactory but could benefit from further refinement. The AI model acknowledges this need for improvement in its self-critique:
+
+>Self 2: Good point. We should also consider the depth of our analysis. Are there any themes or issues that we could explore further, or any connections between the groups that we haven't yet identified?
+>
+>Self 1: Yes, that's an important aspect to consider. Additionally, we could think about the clarity and consistency of our groupings. Are the group labels clear and descriptive, and do they accurately capture the content of the segments they contain?
+
+In this quote, the model highlights the need for further iteration on the clarity of the groupings, including the issue of the large third group. The self-critique concludes with:
+
+>Self 1: Great points. Let's keep all of these considerations in mind as we continue to refine our affinity diagram and analyse the data.
+
+This suggests that the model could potentially run the entire process again, iterating and improving its work, which it has demonstrated its capability to do. However, due to the current token limit of 8,000 for GPT-4, this was not possible at the time of writing. With access to a 32,000 token version of GPT-4, it is conceivable that the prompt could be modified to yield higher quality results.
 
 ## Findings
 
 ## Discussion
 
 ### Alternative prompting methods for GPT affinity diagrams
+Another problem prventing me from iterating more on my prompt and also getting the model to iterate on its own output is the rising cost of tokens: the more tokens the model outputs, the more it costs, and sending a prompt with the whole interview data is already quite a lot of tokens, and if you were to send a request with the whole interview + the generated affinity diagram, it would become even more expensive. These costs are not large for some economic circumstances, but for the purposes of a master's thesis where I have to fund these token costs myself, it can quickly become a relatively large economic cost.
 
 ## Conclusion
 
