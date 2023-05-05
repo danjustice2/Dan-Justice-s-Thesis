@@ -613,29 +613,39 @@ Based on the interviews conducted, it is clear that there are opportunities for 
 ### Need for clear communication of the process.
 The process should be more clearly communicated to the organisation and positioned as a support service rather than a bureaucratic hurdle. Additionally, adding options for preferred IT contact persons and indicating target groups struggling with technology adaptation could help alleviate concerns regarding the impersonal nature of the process. Explaining the IT investment process as a way to connect people rather than a bureaucratic hurtle.
 
+Furthermore, fostering better communication and collaboration between central IT and decentralised areas, as well as between IT and the rest of the organisation, should be a priority. IT architects have already made strides in this area, but continued efforts will be crucial to ensure that the IT investment process is effectively integrated into the daily operations of Vejle Municipality.
+
 IT's architects will be instrumental in communicating the process, both personally at meetings, but also by other means. However, as touched on the interviewee Anne, it's also important to try to avoid communicating this message to the wrong people
 
-#### Clear explanation of what the process is for
-As detailed in the interview data, multiple participants had the impression of the IT investment process 
+#### Leading by example
+When employees approach the architects, for example via email, they should of course oblige in helping the employee with their new IT investment. However, they should also themselves get into the habit of creating every new IT investment in whatever database the IT investment process gets entered into. This would help to show a mutual respect… if IT wants this to be an important part of other people's work, then they should make it a part of their own work. After entering the investments into the system, they could politely inform the employee in question that they have created a case for them in the system and request that they use the IT investment process for future new investments.
 
 ### Clearer guidelines for who is responsible for reporting
 On the intranet, there is a wealth of information on when investments need to be reported, but there is no obvious indication for me of who specifically is responsible for reporting investments to IT. This opens up to a game of hot potato, where no one individual wants to take responsibility for contacting IT.
 
+### Accommodating the needs of various employee groups
+The IT investment process should make an effort to better accomodate the needs of various employee groups who may be wary of using such a process. For example, being able to choose a preferred architect when filling out the form would help to provide a peace of mind to some employees like Lise who deals with sensitive IT investments for daycare workers who have a different set of needs than many other parts of the organisation.
+
 ### De-bureaucratisation
 It seems clear from the interview data and ethnographic observations that the IT investment process has a serious image problem. People view it as being some sort of bureaucracy regarding something to do with IT and economy, which they can safely ignore if they don't work in these areas. Bureaucratic processes can seem unappealing to employees and don't inspire a will to remember. If the IT investment process is to become more broadly used, then IT needs to take steps to ensure that the process is not viewed this way.
 #### Changing the name
+It was a topic bushed upon in many of the interviews with people who were not familiar with the IT investment process already: the name. Boasting no less eight syllables and twenty-three letters in Danish, people thought it seemed bureaucratic and had a hard time seeing the benefit in using it over the more personal approach.
 #### Streamlining the introductory text
 Hide the specific bureaucratic-looking text away somewhere else– first impressions mean a lot. Make a shorted and simplified version of it on the site. No one is going to read that stuff, so make something short enough for people to actually read and rely on other ways of communication instead.
+#### Clearer explanation of the process' purpose
+In the interviews, people seemed to have a view of the IT investment process seeming bureaucratic, and had a hard time understanding what the benefit was to using the process compared with the more personal approach of contacting someone in the IT department. I advise that the IT department uses the valuable first impression on the intranet site for the IT investment process to clearly explain the _why_ behind this IT investment process instead of for example talking about how the city council has mandated the use of this process for new IT investments, as coercion is known to reduce the feeling of agency
 
 
 ## Evaluation of outputted affinity diagram from GPT-4
 ### Not enough categories
 ### One very big category
-Furthermore, fostering better communication and collaboration between central IT and decentralised areas, as well as between IT and the rest of the organisation, should be a priority. IT architects have already made strides in this area, but continued efforts will be crucial to ensure that the IT investment process is effectively integrated into the daily operations of Vejle Municipality.
-# Discussion
 
-## Alternative prompting methods for GPT affinity diagrams
+# Discussion
+## Doors for future research
+### Alternative prompting methods for GPT affinity diagrams
 Another problem prventing me from iterating more on my prompt and also getting the model to iterate on its own output is the rising cost of tokens: the more tokens the model outputs, the more it costs, and sending a prompt with the whole interview data is already quite a lot of tokens, and if you were to send a request with the whole interview + the generated affinity diagram, it would become even more expensive. These costs are not large for some economic circumstances, but for the purposes of a master's thesis where I have to fund these token costs myself, it can quickly become a relatively large economic cost.
+### A more extensive investigation of practice in other municipalities
+### A closer look into the IT investment process with focus on managerial science
 
 # Conclusion
 
