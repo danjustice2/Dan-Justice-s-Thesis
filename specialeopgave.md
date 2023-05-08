@@ -137,11 +137,13 @@ Tokenisation is a crucial aspect of LLMs, as it serves as a preprocessing step t
 ### Inferential Text Completion
 ![f10b3c1eb732c9953e5b53325a794140.png](f10b3c1eb732c9953e5b53325a794140.png)
 ![9a74d7ae20c0fe20e10b681f0900e59a.png](9a74d7ae20c0fe20e10b681f0900e59a.png)
-Inferential text completion serves as the fundamental task carried out by LLMs in the context of the current research. This task entails generating coherent, contextually relevant, and human-like text by continuing a provided prompt based on learned linguistic patterns and contextual information. Owing to their ability to perform this task, LLMs are well-suited for various applications such as content generation, summarization, and conversation.
+Inferential text completion serves as the fundamental task carried out by LLMs in the context of current research. This task entails generating coherent, contextually relevant, and human-like text by continuing a provided prompt based on learned linguistic patterns and contextual information. Owing to their ability to perform this task, LLMs are well-suited for various applications such as content generation, summarization, and conversation.
 
 Understanding the basics of inferential text completion requires delving into the underlying principles that govern the process. LLMs are trained on vast amounts of text data, enabling them to recognize and predict complex patterns in human language. These models employ a probabilistic approach, calculating the likelihood of different tokens appearing in sequence based on their acquired knowledge.
 
 Figure X offers an example of inferential text completion using an older model, such as text-davinci-003. In this figure, the model is prompted with the letter "I," and its inference process is displayed. Individual tokens are separated and color-coded according to their likelihood of being the next text in the sequence. For instance, the token "feel" had a 0.47% probability of appearing next (Figure X). The hyperparameter, temperature, plays a vital role in controlling the model's randomness. As the temperature approaches 0, the model's output becomes increasingly deterministic, while higher temperature values (up to a maximum of 1) yield more varied results, often selecting less likely inferences.
+
+However, in certain cases, despite having a good prompt, the model may produce lower quality or irrelevant output due to the influence of the temperature parameter or other stochastic factors. This phenomenon, referred to as "output degradation" or "response deviation," occurs when random chance from the temperature parameter leads the model in a direction of generating low-quality output.
 
 The quality and relevance of the generated text can be fine-tuned using hyperparameters such as temperature and top-k. These parameters influence the model's token selection. A lower temperature value results in more deterministic output, while a higher value promotes exploration and creativity. In the current research, temperature values between 0.5 and 0.7 are typically used, as they are generally considered to strike an optimal balance between diversity and coherence. Similarly, the top-k parameter limits the model to consider only the k most probable tokens for each position in the text, striking a balance between diversity and coherence.
 
@@ -318,7 +320,7 @@ Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a 
 >
 > Labelling: Once the groups were formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Review and refinemeznt: Review the affinity diagram, ensuring that the groupings and labels accurately represented the data and making adjustments as needed.
 
-The resulting analysis seemed to take a step back from the quick and dirty approach, the model seemingly being pigeonholed by its many irrelevant data segments. The raw output is as follows:
+The resulting analysis appeared to take a step in the wrong direction, the model seemingly experiencing output degradation due to numerous irrelevant data segments. The raw output is as follows:
 
 > DATA SEGMENTATION:
 >
@@ -657,7 +659,7 @@ The IT investment process should make an effort to better accomodate the needs o
 
 ### De-bureaucratisation
 It seems clear from the interview data and ethnographic observations that the IT investment process has a serious image problem. People view it as being some sort of bureaucracy regarding something to do with IT and economy, which they can safely ignore if they don't work in these areas. Bureaucratic processes can seem unappealing to employees and don't inspire a will to remember. If the IT investment process is to become more broadly used, then IT needs to take steps to ensure that the process is not viewed this way.
-#### Changing the name
+#### Changing the names
 It was a topic bushed upon in many of the interviews with people who were not familiar with the IT investment process already: the name. Boasting no less eight syllables and twenty-three letters in Danish, people thought it seemed bureaucratic and had a hard time seeing the benefit in using it over the more personal approach.
 #### Streamlining the introductory text
 Hide the specific bureaucratic-looking text away somewhere else– first impressions mean a lot. Make a shorted and simplified version of it on the site. No one is going to read that stuff, so make something short enough for people to actually read and rely on other ways of communication instead.
@@ -666,9 +668,11 @@ In the interviews, people seemed to have a view of the IT investment process see
 
 
 ## Evaluation of outputted affinity diagram from GPT-4
-In the following sections I will discuss the results of the outputted affinity diagram from GPT-4, identifying pain points as well as potential solutions.
-### Not enough groups
-The model, mirroring our human tendencies, seems to have a tendency to make lists with satisfying round numbers of items: 3, 5, and then 10. It seems that the optimal number of group would have been somewhere between five and ten, but the model seems to have gotten pigeonholed into making just five groups because that was what 'won' in the battle of probability.
+In the following sections, I will discuss the results of the affinity diagram generated by GPT-4, identifying pain points as well as potential solutions.
+### Insufficient Number of Groups
+The model, reflecting human tendencies, seems to prefer creating lists with satisfying round numbers of items: 3, 5, and then 10. It appears that the optimal number of groups would have been somewhere between five and ten. However, the model seems to have experienced output degradation at this step, proceeding to the next step with only five groups because that outcome prevailed in the battle of probability. A possible improvement would involve incorporating checkpoints in the model's progress between each section, allowing human feedback to identify output degradation and intervene.
+
+The challenge with this approach is that every time the generation is halted, the entire text, including the original prompt and the generated output, must be sent back into the model as a new prompt. OpenAI charges prompt tokens at a slightly more favourable rate compared to output tokens, but utilising a dialogue approach with the models can become quite costly. This is especially true in cases where a fairly large dataset is being used, as users have to pay for the model's output tokens and then pay again when using them as input tokens. This is in contrast to letting the model generate the entire response in one go, where users only pay for the input data and the associated prompt and output provided by the model.
 #### One very big category
 
 # Discussion
