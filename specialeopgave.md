@@ -7,7 +7,7 @@ abstract:
 keywords: key1, key2
 
 # Introduction
-Introduction text
+
 
 ## Research question
 The IT department at Vejle municipality has established an IT investment process that outlines a set of procedures for procuring new IT systems, software, and equipment. Despite these guidelines, employees do not always follow this process, leading to potential inefficiencies and discrepancies in IT investments. This study aims to explore the reasons why employees do not comply with the IT investment process and suggest strategies to improve compliance.
@@ -64,11 +64,11 @@ Followed by the following text further down the page:
 >
 >You also have the option of booking an appointment yourself for a sparring meeting with an IT architect. This can be done via the booking page below.
 
-Jonas informed me that the form had been shortened down drastically some years before, as it previously asked lots of detailed questions that most non-IT people would not have known how to answer. The shortening of the webform was done in an attempt to get more people to use the form instead of just contacting the IT architects or others in the IT department directly, but this effort has not been met with large success. 
+Jonas informed me that the form had been shortened down drastically some years before, as it previously asked lots of detailed questions that most employees outside the IT department would not have known how to answer. The shortening of the web form was done in an attempt to get more people to use the form instead of just contacting the IT architects or others in the IT department directly, but this effort has not been met with large success. 
 
-In the report that follows, I will investigate this issue and propose solutions to increase the usage of the webform.
+In the report that follows, I will investigate this issue and propose solutions to increase the usage of the web form.
 
-# Literature Review
+# Literature review
 
 ## Ethnomethodology (Crabtree et al. 2012)
 
@@ -122,42 +122,61 @@ LLMs are a class of artificial intelligence models that specialise in processing
 
 ### Model Architecture
 
-LLMs are generally based on a Transformer architecture, first introduced in @vaswani2017attention. Transformers are characterised by their self-attention mechanism, which allows the model to weigh different parts of the input sequence in relation to each other. This mechanism enables the model to capture long-range dependencies and context more effectively than traditional recurrent neural networks (RNNs) or convolutional neural networks (CNNs).
+LLMs are generally based on a Transformer architecture, first introduced in @vaswani2017attention. Transformers are characterised by their self-attention mechanism, which allows the model to weigh different parts of the input sequence in relation to each other. This mechanism enables the model to capture long-range dependencies and context more effectively than traditional recurrent neural networks or convolutional neural networks [@vaswani2017attention].
 
 ### Training Process
 
-The training of LLMs involves two primary steps: pre-training and fine-tuning. During the pre-training phase, the model learns a general understanding of language by predicting missing words or tokens in a sequence (also known as masked language modeling). This is achieved by feeding the model a vast amount of text data from diverse sources, such as books, articles, and websites.
+The training of LLMs involves two primary steps: pre-training and fine-tuning. During the pre-training phase, the model learns a general understanding of language by predicting missing words or tokens in a sequence (also known as masked language modeling). This is achieved by feeding the model a vast amount of text data from diverse sources, such as books, articles, and websites [see, for example, @devlin-etal-2019-bert]
 
-After pre-training, the model undergoes a fine-tuning phase, during which it is further trained on a smaller, task-specific dataset. This enables the model to acquire specialised knowledge and skills related to the target task, such as question-answering, translation, or summarisation.
+After pre-training, the model typically undergoes some sort of fine-tuning phase, during which it is further trained on a smaller, task-specific dataset. This enables the model to acquire specialised knowledge and skills related to the target task, such as question-answering, translation, or summarisation [@devlin-etal-2019-bert].
 
-### Tokenisation
+### Inferential text completion
+Inferential text completion serves as the fundamental task carried out by LLMs in the context of current research. This task entails generating coherent, contextually relevant, and human-like text by continuing a provided prompt based on learned linguistic patterns and contextual information. Owing to their ability to perform this task, LLMs are well-suited for various applications such as content generation, summarisation, and conversation.
 
-Tokenisation is a crucial aspect of LLMs, as it serves as a preprocessing step that converts raw text into a format that can be processed by the model. In this process, the text is broken down into smaller units called tokens, which can be words, subwords, or individual characters. The choice of tokenisation strategy can significantly impact the model's performance, as it determines the granularity at which the model processes and generates text. LLMs typically use subword tokenisation methods, such as Byte Pair Encoding (BPE) or WordPiece, which strike a balance between capturing meaningful linguistic units and maintaining a manageable vocabulary size.
+Understanding the basics of inferential text completion requires delving into the underlying principles that govern the process. LLMs are trained on vast amounts of text data, enabling them to recognise and predict complex patterns in human language. These models employ a probabilistic approach, calculating the likelihood of different tokens appearing in sequence based on their acquired knowledge.
 
-### Inferential Text Completion
 ![f10b3c1eb732c9953e5b53325a794140.png](f10b3c1eb732c9953e5b53325a794140.png)
 ![9a74d7ae20c0fe20e10b681f0900e59a.png](9a74d7ae20c0fe20e10b681f0900e59a.png)
-Inferential text completion serves as the fundamental task carried out by LLMs in the context of current research. This task entails generating coherent, contextually relevant, and human-like text by continuing a provided prompt based on learned linguistic patterns and contextual information. Owing to their ability to perform this task, LLMs are well-suited for various applications such as content generation, summarization, and conversation.
-
-Understanding the basics of inferential text completion requires delving into the underlying principles that govern the process. LLMs are trained on vast amounts of text data, enabling them to recognize and predict complex patterns in human language. These models employ a probabilistic approach, calculating the likelihood of different tokens appearing in sequence based on their acquired knowledge.
 
 Figure X offers an example of inferential text completion using an older model, such as text-davinci-003. In this figure, the model is prompted with the letter "I," and its inference process is displayed. Individual tokens are separated and color-coded according to their likelihood of being the next text in the sequence. For instance, the token "feel" had a 0.47% probability of appearing next (Figure X). The hyperparameter, temperature, plays a vital role in controlling the model's randomness. As the temperature approaches 0, the model's output becomes increasingly deterministic, while higher temperature values (up to a maximum of 1) yield more varied results, often selecting less likely inferences.
 
-However, in certain cases, despite having a good prompt, the model may produce lower quality or irrelevant output due to the influence of the temperature parameter or other stochastic factors. This phenomenon, referred to as "output degradation" or "response deviation," occurs when random chance from the temperature parameter leads the model in a direction of generating low-quality output.
+However, in certain cases, despite having a good prompt, the model may produce lower quality or irrelevant output due to the influence of the temperature parameter or other stochastic factors. This phenomenon, referred to as "output degradation" or "response deviation," occurs when random chance from the temperature parameter leads the model in a direction of generating low-quality output [@Holtzman2020The]. A well-known type of response deviation is "hallucination," where the models yield information that is either irrelevant to the context or non-factual.
 
-The quality and relevance of the generated text can be fine-tuned using hyperparameters such as temperature and top-k. These parameters influence the model's token selection. A lower temperature value results in more deterministic output, while a higher value promotes exploration and creativity. In the current research, temperature values between 0.5 and 0.7 are typically used, as they are generally considered to strike an optimal balance between diversity and coherence. Similarly, the top-k parameter limits the model to consider only the k most probable tokens for each position in the text, striking a balance between diversity and coherence.
+As suggested in @Holtzman2020The, the quality and relevance of the generated text can be improved by fine-tuning hyperparameters such as temperature and top-k. These parameters influence the model's token selection. A lower temperature value results in more deterministic output, while a higher value promotes exploration and creativity. Similarly, the top-k parameter limits the model to consider only the k most probable tokens for each position in the text, striking a balance between diversity and coherence.
+
+In the current research, temperature values between 0.5 and 0.7 are typically used, as they are generally considered to strike an optimal balance between diversity and coherence.
+
+### Tokenisation
+
+Tokenisation is a crucial aspect of LLMs, as it serves as a pre-processing step that converts raw text into a format that can be processed by the model. In this process, the text is broken down into smaller units called tokens, which can be words, subwords, or individual characters [@vaswani2017attention]. The choice of tokenisation strategy can significantly impact the model's performance, as it determines the granularity at which the model processes and generates text. LLMs typically use subword tokenisation methods, such as Byte Pair Encoding (BPE) or WordPiece, which strike a balance between capturing meaningful linguistic units and maintaining a manageable vocabulary size [@vaswani2017attention].
+
+### Token-based pricing model
+Token-based pricing is the methodology employed by OpenAI to determine the cost associated with utilizing their language models. It is based on the principle that the length of text processed, measured in tokens, corresponds to the computational resources and time required for model inference.
+
+In OpenAI's pricing structure, a token represents a discrete unit that includes characters, spaces, words, punctuation marks, and other linguistic components. Longer inputs or passages generally contain a greater number of tokens, leading to increased computational expenses.
+
+OpenAI's token-based pricing accounts for the number of tokens used in both the input (prompt) and output (response) phases of an interaction. The total tokens include those in the provided input and those generated by the model in its response. Repetitive tokens within an interaction, such as duplicated prompts or recurring phrases, are counted as individual tokens.
+
+Customers are billed based on the total number of tokens utilized during the interaction, covering both input and output tokens. The cost per token remains consistent across different use cases and applications. This pricing structure ensures that the computational resources consumed by language models are appropriately considered, allowing for transparent cost estimation based on the complexity and length of text processed.
 
 ### Prompt engineering and emergent abilities
 
-Prompt engineering is crucial for achieving high-quality results with LLMs and plays a pivotal role in uncovering their emergent abilities. By developing and optimizing prompts, researchers can efficiently harness LLMs for various applications and research topics, gaining a deeper understanding of the models' capabilities and limitations \[@dair.aiPromptEngineeringGuide2023\].
+Prompt engineering is crucial for achieving high-quality results with LLMs and plays a pivotal role in uncovering their emergent abilities. By developing and optimising prompts, researchers can efficiently harness LLMs for various applications and research topics, gaining a deeper understanding of the models' capabilities and limitations \[@dair.aiPromptEngineeringGuide2023\].
 
-The process involves selecting appropriate text prompts, tuning the model's hyperparameters, and tailoring the prompt design to the model's capabilities. The primary objective is to provide sufficient context for high-quality results while avoiding incorrect or irrelevant outputs. Prompt engineering is particularly important in discovering emergent abilities, as it enables researchers to probe and explore the models' potential in novel and unexpected ways.
+The process involves selecting appropriate text prompts, tuning the model's hyperparameters, and tailoring the prompt design to the model's capabilities. The primary objective is to provide sufficient context for high-quality results while avoiding incorrect or irrelevant outputs. Prompt engineering is particularly important in discovering emergent abilities, as it enables researchers to probe and explore the models' potential in novel and unexpected ways [@wei2022emergent].
 
 Emergent abilities, which cannot be reliably inferred by merely extrapolating smaller models' performance, often become apparent only after the LLM has been publicly deployed. As researchers experiment with various prompts and explore different applications, they may uncover previously unnoticed capabilities. In this sense, prompt engineering serves as an essential tool for investigating the full potential of LLMs, leading to the discovery of emergent abilities and fostering a better understanding of their implications \[@wei2022emergent\].
 
-By carefully crafting prompts and iteratively refining them based on the model's responses, researchers can push the boundaries of LLMs and uncover emergent abilities that may not have been apparent otherwise. This iterative process allows for the identification of novel capabilities, contributes to the ongoing development of LLMs, and informs the design of future models.
+By carefully crafting prompts and iterating on them based on the model's responses, researchers can push the boundaries of LLMs and uncover emergent abilities that may not have been apparent otherwise. This iterative process allows for the identification of novel capabilities, contributes to the ongoing development of LLMs, and informs the design of future models.
+
+Recent research points to significantly improved outcomes in reasoning tasks when models are prompted to produce a chain-of-thought [@weiChainThoughtPrompting2022; see also, @richardsAutoGPTAutonomousGPT42023; @weiArtificialStreamThought]. A recent study took this approach a step further, tasking GPT-4 to self-critique its own outputs, further improving the quality of the results [@shinn2023reflexion].
 
 In the current study, the Prompt Engineering Guide from @dair.aiPromptEngineeringGuide2023 was used as a valuable resource, offering a repository of state-of-the-art methods and techniques. This guide, combined with a thorough understanding of the models' inner workings and careful prompt engineering, enabled the effective exploration of emergent abilities and the leveraging of LLMs for qualitative research purposes.
+
+### Effects of simultaneous instruction overload on GPT-4 performance
+Research published since the initiation of the present study indicates that GPT-4 may struggle when faced with numerous instructions simultaneously. The model's performance appears to deteriorate when it is asked to execute too many tasks at once, which bears similarities to how humans can become overwhelmed by an abundance of instructions. This phenomenon may provide some explanation as to why the model failed to generate satisfactory results when it was asked to produce critiques and iterate upon them within a single, comprehensive prompt.
+
+For example, the self-critique prompt from @hebenstreit2023automatically, which instructs the model to "Answer the question, then critique the answer. Based on the critique, reconsider the other answer options and give a single final answer," performed on par with direct prompting. In direct prompting, the question is asked without any additional instructions. This outcome is surprising because the self-critique strategy has been demonstrated to yield improved results in other contexts, as highlighted by @shinn2023reflexion.
 
 # Methodology
 
@@ -165,7 +184,9 @@ In the current study, the Prompt Engineering Guide from @dair.aiPromptEngineerin
 
 ### Semi-structured interviews
 
-To build empathy with the users, I conducted semi-structured interviews in an informal manner. According to @crabtreeDoingDesignEthnography2012, interviews should ideally be conducted in the flow of work, but since new IT investments were not a regular part of most employees\' daily work outside of the IT department, it was not feasible to talk with employees in the midst of making new investments. Thus, the interviews were done in a \"decontextualised\" fashion.
+To build empathy with the users, I conducted semi-structured interviews in an informal manner. In able to ensure that I had adequate energy to give the discussion my full capacity of creativity and thoughtfulness to listening and asking followup questions, I limited myself to conducting at maximum two interviews per day.
+
+According to @crabtreeDoingDesignEthnography2012, interviews should ideally be conducted in the flow of work, but since new IT investments were not a routine part of most employees\' daily work outside of the IT department, it was not feasible to talk with employees in the midst of making new investments. Thus, the interviews were conducted in a \"decontextualised\" fashion.
 
 In total, 12 employees were interviewed, selected based on a list of contacts provided by the author\'s contact person in Vejle's IT department. The list included decision-makers from all six administrations of the municipality. Each employee on the list was assigned assigned a pseudonym and identification number by which they were identified in my notes, never using their true names.
 
@@ -243,14 +264,18 @@ The following sections utilise what OpenAI calls chat completions. In chat compl
 
 By exploring GPT-4's capabilities in creating an affinity diagram and comparing it to a human ethnographer, this study seeks to gain insights into the language model's strengths and limitations for this task.
 
-#### The Quick and Dirty Approach
+#### The Direct Prompting Approach
 
-In the first attempt to get GPT-4 to produce an affinity diagram, the following simple prompt was given: "You are an ethnographer who evaluates user inputs and creates affinity diagrams based on the narratives they contain. Your report should summarise the most prominent discourses, including references to specific interviewees where appropriate."
+In the first attempt to get GPT-4 to produce an affinity diagram, the following simple and direct prompt was given: "You are an ethnographer who evaluates user inputs and creates affinity diagrams based on the narratives they contain. Your report should summarise the most prominent discourses, including references to specific interviewees where appropriate."
 
 > Affinity Diagram Themes:
+>
 > 1\. Understanding of the IT investment process
+>
 > 2\. Communication and collaboration with the IT department
+>
 > 3\. Challenges and frustrations in implementing new systems
+>
 > 4\. Suggestions for improvement
 >
 > Summary of Prominent Discourses:
@@ -273,13 +298,19 @@ Subsequently, the model was presented with a prompt to reflect on itself and eng
 >Assistant: As a large language model and ethnographer, I have both strengths and weaknesses when it comes to conducting research like this. 
 >
 >Strengths:
+>
 >1\. Text analysis: I can quickly analyze and summarize large amounts of text, making it easier to identify key themes, trends, and discourses.
+>
 >2\. Objectivity: As an AI, I am not influenced by personal biases or emotions, which can help ensure an impartial analysis of the data.
+>
 >3\. Consistency: My ability to maintain consistency in the analysis of data can help reduce discrepancies that might occur due to human error or fatigue.
 >
 >Weaknesses:
+>
 >1\. Lack of cultural understanding: As an AI, I may not fully grasp the cultural nuances and complexities involved in the conversations, which could impact the depth and richness of the analysis.
+>
 >2\. Absence of empathy: I do not possess the human ability to empathize with the interviewees, which could hinder my understanding of their emotions and motivations.
+>
 >3\. Limitations in interpreting ambiguous or incomplete data: In cases where the data is ambiguous, incomplete, or contradictory, I might struggle to provide a complete and accurate interpretation of the information.
 >
 >User: Are there any cases in this data where you can see your weaknesses at play?
@@ -297,7 +328,7 @@ The resulting conversation reveals that GPT-4 possesses a heightened ability to 
 
 However, these outputs are methodologically shaky due to some fundamental issues with LLMs. When humans create an affinity diagram, they follow a mental process, segmenting the data into pieces and organizing it into a hierarchical structure based on themes and subthemes. LLMs like GPT-4 do not think in the background but rather produce tokens one at a time based on the probability of the next word appearing, calculated from the corpus of text the model was trained on [@mahowaldDissociatingLanguageThought2023; @brownLanguageModelsAre2020; @guoHowCloseChatGPT2023].
 
-In contrast to humans, whose language and reasoning centers are contained within separate areas of the brain [@mahowaldDissociatingLanguageThought2023; @valmeekamLargeLanguageModels2022], the model, when simply asked to generate an affinity diagram, does not "think" about its answers in the background. Instead generating text one token at a time based on a probability model.
+In contrast to humans, whose language and reasoning centres are contained within separate areas of the brain [@mahowaldDissociatingLanguageThought2023; @valmeekamLargeLanguageModels2022], the model, when simply asked to generate an affinity diagram, does not appear to "think" about its answers in the same way that humans do. Instead, the model generates text one token at a time based on a probability model.
  
  Thus, the model, when simply asked to generate an affinity diagram, does not "think" about its answers in the background, but simply spits out text based on what it gleaned from "reading" the data given. This could be roughly equivalent to a human mearly reading thourhg interview data and writing down main themes and groups without thinking much about it; that is some sort of data analysis, but it certainly doesnt give the depth and richness that affinity diagrams are known and loved for.
 
@@ -318,7 +349,9 @@ Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a 
 >
 > Sorting and grouping: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerged. If you feel your analysis could benefit from iterating, you write \"SORTING AND GROUPING (ITERATION # x):"
 >
-> Labelling: Once the groups were formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Review and refinemeznt: Review the affinity diagram, ensuring that the groupings and labels accurately represented the data and making adjustments as needed.
+> Labelling: Once the groups were formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data.
+>
+> Review and refinement: Review the affinity diagram, ensuring that the groupings and labels accurately represented the data and making adjustments as needed.
 
 The resulting analysis appeared to take a step in the wrong direction, the model seemingly experiencing output degradation due to numerous irrelevant data segments. The raw output is as follows:
 
@@ -453,7 +486,7 @@ And, within seconds, the model outputted the following prompt.
 > 4.  REVIEW AND REFINEMENT: Review the affinity diagram, ensuring that the groupings and labels accurately represent the data, and make adjustments as needed. Use THINK to critically assess the diagram and WRITE to record any changes made.
 
 Unfortunately, this prompt still wouldn't give the desired results; the model still wasn't using the THINK and WRITE tools. There are two obvious issues with the outputted prompt:
-* First, the prompt positions the GPT model as an "AI assistant helping an ethnographer." Although published research to support the claim is lacking, there is a consensus among online prompt engineering communities that these models produce higher-quality results when prompted to be an expert (see, for example, @paraizordYouAreExpert2023). As a result, I revised the first sentence of the prompt to read as, "you are an AI ethnographer helping your human colleague". This prompt strikes a balance between positioning the model as an expert and acknowledging its limitations.
+* First, the prompt positions the GPT model as an "AI assistant helping an ethnographer." Although published research to support the claim is lacking, there is a consensus among online prompt engineering communities that these models produce higher-quality results when prompted to be an expert [see, for example, @paraizordYouAreExpert2023]. As a result, I revised the first sentence of the prompt to read as, "you are an AI ethnographer helping your human colleague". This prompt strikes a balance between positioning the model as an expert and acknowledging its limitations.
 * Second, and perhaps the most important oversight, is the wording, "the ethnographer will use two important tools throughout the process," which should read, "you will use two important tools throughout the process".
 
 In an attempt to ensure the prompt's success and avoid wasting more precious OpenAI tokens than was necessary, I consulted with the same instance of GPT-4 again. After some rapid prototyping and back-and-forth dialogue (Appendix X), I arrived at a new prompt:
@@ -543,7 +576,7 @@ In the data segmentation part, I chose to use the keyboard "BRAINSTORM," prompti
 
 The model gave similar thoughts when coming up with labels for the groups, so here I also chose to remove the "THINK" section that I originally included in the 
 
-In my experience, the model will not generate bicameral dialogues longer than 5-10 exchanges. Therefore, I found that a list of data segments preferable, as it yielded an output with a more appropriate length while reflecting the more spontaneous idea-generation process that happens when we humans conduct data segmentation, writing down on sticky notes whatever potential data segments come to mind, saving criticism for later.
+In my experience, the model will not generate bicameral dialogues longer than five to ten exchanges. Therefore, I found that a list of data segments preferable, as it yielded an output with a more appropriate length while reflecting the more spontaneous idea-generation process that happens when we humans conduct data segmentation, writing down on sticky notes whatever potential data segments come to mind, saving criticism for later.
 
 The final output was longer than is reasonable to quote within the present report, but can be read in its entirety in Appendix X. In order to give a more human-readable version of the model's affinity diagram, I have compiled the diagram into a visual representation that is more tradtionally associated with affinity diagrams, utilising the computer program Apple Freeform to work with virtual sticky notes, similar to my own method when making my human-made affinity diagram.
 
@@ -559,8 +592,8 @@ The analysis in this report primarily utilises my hand-made affinity diagram, as
 
 Out of the interviewees, the majority were familiar with the IT investment process: six indicated familiarity (including one who had helped create the process in her role as a digitalisation consultant), five were unfamiliar, and the final participant, who was also unfamiliar, deemed the process irrelevant to her work and was therefore excluded from the analysis.
 
-### Reasons people don't use the IT investment process
-My first interview was with Freja, a seasoned web manager from the Politics, Analysis & Communication department. During our discussion, Freja expressed strong opinions on the IT investment process, perceiving it as excessively bureaucratic and impersonal. With 20 years of experience working closely with the IT department, she felt confident in her ability to communicate directly with them when necessary, bypassing the formal process. Freja advocated for a more relationship-based approach, emphasising the importance of positive reinforcement over punishment.
+### Perception of IT investment process as impersonal or excessively bureaucratic
+My first interview was with Freja, a seasoned web manager from the Policy, Analysis & Communication department. During our discussion, Freja expressed strong opinions on the IT investment process, perceiving it as excessively bureaucratic and impersonal. With twenty years of experience working closely with the IT department, she felt confident in her ability to communicate directly with them when necessary, bypassing the formal process. Freja advocated for a more relationship-based approach, emphasising the importance of positive reinforcement over punishment.
 
 Freja's perspective laid the groundwork for my research, as the issue of the IT investment process being seen as impersonal and bureaucratic recurred in subsequent interviews. Her experience and insights into the challenges of collaborating with the IT department were invaluable, and her close connection to the department provided a unique viewpoint that illuminated broader issues surrounding the process.
 
@@ -568,21 +601,30 @@ Lise, an administrative assistant in the Daycare department, acts as a vital bri
 
 To alleviate these concerns, Lise suggests adding an option on the form to indicate if the case involves a target group struggling to adapt to technological changes. Another appealing solution she proposes is including a preferred IT department contact person on the form, ensuring that someone familiar with the specific context is involved.
 
+### Benefits of using the process: potential talking points
+Claus, a development manager at Vejle's Center for Special Education for Youth and Adults (CSV), finds the IT investment process helpful because it connects them with the right people, such as an architect who oversees the case, ensuring it is remembered and acted upon. Using the IT investment process also provides a clear line of communication when working decentralised, as is the case with CSV. It allows them to follow a case in the system and see which IT department members are involved and what they are doing. Claus appreciates the ability to intervene if he feels his needs has been misunderstood.
+
 ### Potential for strengthened cooperation between IT and the rest of the organisation
-Emma, who has been working in the municipality for 13 years and took over her current position as an Implementation Consultant in the Department of Welfare six months ago, told about welfare's own work and how they have a similar form to the IT investment process for welfare investments. She suggested that it would be more efficient if their applicants could automatically involve IT in projects related to IT.
+Emma, who has been working in the municipality for thirteen years and took over her current position as an Implementation Consultant in the Department of Welfare six months ago, told about welfare's own work and how they have a similar form to the IT investment process for welfare investments. She suggested that it would be more efficient if their applicants could automatically involve IT in projects related to IT.
 
-Despite not being familiar with the IT investment process prior to our interview, Emma recalls hearing about it from Jonas, an IT architect, at a meeting. Emma assumed the process was primarily relevant to IT and economy personnel due to its name. She agreed that a more tangible name, such as "Indkøbsguiden" (Danish for "The Purchase Guide"), might make it more accessible to the grassroots level of the organisation. However, according to Jonas, a similar system in another municipality also faced issues with lack of use, indicating a more attractive name cannot stand alone.
-
-Another example of potential strengthened cooperation comes from Anne, a professional consultant for the Salary department. Anne shares a similar attitude with the IT department, wishing that employees in the organisation would be better at consulting with her before purchasing systems that fall within her area of responsibility, rather than buying the system first and then consulting with her about its implementation afterward. This attitude may be why she has a good relationship with the IT department, consulting with them well in advance.
+Another example of potential strengthened cooperation comes from Anne, a professional consultant for the Salary department and primary contact point for KMD, the municipality's payroll system. Anne shares a similar attitude with the IT department, wishing that employees in the organisation would be better at consulting with her before purchasing systems that fall within her area of responsibility, rather than buying the system first and then consulting with her about its implementation afterward. This attitude may be why she has a good relationship with the IT department, consulting with them well in advance.
 
 Anne recalls an instance when she was called to a meeting by someone in the organisation, along with Jonas from the IT department, thinking that she 'might' have a stake in the implementation of their new system. She described the meeting as, "It was a video meeting, but I could sense that Jonas and I were looking at each other on the screen, thinking, 'is this really happening right now.'" This was because the third person had already purchased the system without asking and wanted it up and running in three weeks, which she found very unreasonable. She tells that such situations have at times created a tremendous workload in their wake. Thus, although Anne and Jonas work in different professional areas, they share some frustrations. A central frustration is that employees' expectations for the timeline of implementing new things do not match their own.
 
 During the interview, I suggested the idea of merging the systems, and Anne reacted positively to this idea, agreeing that implementing a central system that directs communication based on certain guidelines could help ensure that employees with new investments in the pipeline do not have to guess who should be involved and when in the process they should be involved.
 
-### Benefits of using the process: potential talking points
-Claus, a development manager at Vejle's Center for Special Education for Youth and Adults (CSV), finds the IT investment process helpful because it connects them with the right people, such as an architect who oversees the case, ensuring it is remembered and acted upon. Using the IT investment process also provides a clear line of communication when working decentralised, as is the case with CSV. It allows them to follow a case in the system and see which IT department members are involved and what they are doing. Claus appreciates the ability to intervene if he feels his needs has been misunderstood.
+### The name perceived as being opaque and unattractive
+Despite not being familiar with the IT investment process prior to our interview, Emma recalls hearing about it from Jonas, one of the IT architects, at a meeting. Emma assumed the process was primarily relevant to IT and economy personnel due to its name. She agreed that a more tangible name, such as "Indkøbsguiden" (Danish for "The Purchase Guide"), might make it more accessible to the grassroots level of the organisation. However, according to Jonas, a similar system in another municipality also faced issues with lack of use, indicating a more attractive name cannot stand alone.
+
+### IT investment process not widely promoted
+Interviewees such as Anne have a view of the IT investment process not being widely promoted or talked about by the personnel in the IT department. She has been used to just contacting Nicklas or one of IT's other architects when she needed something.
+
+### Broad guidelines for when reporting is required
+Some interviewees such as Mikkel from the Vejle's central library's IT department shared a feeling of being unsure as to when it actually was necessary to use the IT investment process, as the guidelines laid out on the Vejle's intranet cover a very broad area of investments. This is especially problematic for such central institutions that have the resources to implement new investments themselves without involving central IT, with an underlying feeling of participants wanting to be able to avoid using the process if it is unnecessary, despite the narrative at central IT being, if you are unsure, still use it to be safe.
 
 ### Central vs decentralised
+Søren, responsible for purchasing IT equipment for schools, explained that, while employees of the municipality are met by the municipal intranet as the first thing when they log onto their computers, employees in schools have to specfically browse to the intranet's address and log in to get access, making an extra barrier to entry to the IT investment process for them. Søren is nevertheless hopeful that, while school employees currently don't use the IT investment process, that it would be possible to get them to use it with the appropriate training, despite the fact that IT investments aren't a part of the everyday work of school employees. Søren went on to say that he thinks it is important that passionate school teachers have the adequate freedom to purchase unique IT equipment to practice their unique styles of teaching, as he seems to view this as an important part of a healthy school system.
+
 Peter, a care assistant who recently retired but still works at the residential care facility one day a week to help with their IT, raised concerns about the feasibility of relying on support from Vejle's central IT department in decentralised areas. He wonders what will happen to the facility when he fully retires, as they will have to rely on support from central IT, which may not be viable considering the facility's location and the fact that they operate year-round, providing constant care to residents.
 
 ### Frustrations with restrictions from IT
@@ -591,15 +633,22 @@ During the interviews, it became apparent that some interviewees, such as Claus,
 Another interviewee, Peter, expressed frustration with the lack of flexibility in smartphone models available. He believed that investing in the phones recommended by the supplier of their systems would be more beneficial, as they come with a guarantee of receiving updates for up to eight years after purchase. However, IT disagreed with his reasoning, claiming that he was influenced by the supplier. Peter's argument was that the phones offered by the IT department had to be replaced after a shorter lifespan due to not receiving necessary security updates from the manufacturer. 
 
 ### Importance of IT architects as communicators
-Many interviewees, such as Søren, responsible for purchasing IT equipment for schools, acknowledged the importance of IT architects as communicators. Søren notes that the arrival of IT architects in the organisation has improved communication and collaboration between central IT and decentralised areas, as well as between IT and the rest of the organisation.
+Many interviewees, such as Søren from school IT, acknowledged the importance of IT architects as communicators. Søren notes that the arrival of IT architects in the organisation has improved communication and collaboration between central IT and decentralised areas, as well as between IT and the rest of the organisation.
+
+Claus went so far as to call the IT architects a "godsend," giving IT a more service-oriented outward face. Freja touched on that IT, through the years, has attained a greater range of skills than were available before, both in technical expertise but also particularly in the area of soft skills such as communication, nodding to the hiring of IT architects within the past five to ten years.
 
 The architects, including Mathilde, have reached out more to decentralised areas in an attempt to build better relationships. Both Søren and Mikkel mentioned Mathilde's joint meetings, describing them as very helpful in the process of making IT's work more accessible throughout the organisation.
+
+### Current wins for the IT investment process
+While the interview data yielded a fair deal of critique to the process, it is not all bad. The web manager Freja expressed that, in her experience, that she thinks people have become more aware of the need to avoid double investments through the years. Søren from school IT described the simplification the IT investment process underwent some years ago as a considerable improvement, taking more consideration for decentralised employees.
 
 ##  Affinity diagram generated by GPT-4
 \
 
 ![The final affinity diagram generated by GPT-4 based on the interview data. A high-resolution version is available in Appendix X.](a79e7f23a4167279dd1e3af32e4313da.png "The final affinity diagram generated by GPT-4 based on the interview data. A high-resolution version is available in Appendix X.")
-As previously discussed in this report, field notes from the interviews were input into GPT-4 along with a carefully-crafted prompt. A visual representation of the affinity diagram generated by the AI can be seen in Figure X. It is important to note that GPT-4 only processes text inputs and outputs, so the visual layout was created manually by transferring the AI-generated data into the same program used for the human-generated affinity diagram. While GPT-4 is expected to process images in the future, this feature is not yet available, and creating a visual layout would require more complex prompting. To save time, all sticky notes have been left yellow rather than colour-coded.
+As previously discussed in this report, field notes from the interviews were input into GPT-4 along with a carefully-crafted prompt. A visual representation of the affinity diagram generated by the AI can be seen in Figure X. At the moment, GPT-4 only processes text inputs and outputs, so the visual layout was created manually by transferring the AI-generated data into the same program used for the human-generated affinity diagram. While GPT-4 is expected to process images in the future, this feature is not yet available, and creating a visual layout would require more complex prompting. To save time, all sticky notes have been left yellow rather than colour-coded.
+
+It should also be noted that the whole text output behind the affinity diagram in Figure X can be found in Appendix X.
 
 GPT-4 divided the 50 data segments into five groups, with four relatively small groups and one larger group containing more than half of the data segments (26 in total). The raw output with the groupings is shown below, and the full raw output can be found in Appendix X.
 
@@ -635,52 +684,186 @@ In this quote, the model highlights the need for further iteration on the clarit
 
 >Self 1: Great points. Let's keep all of these considerations in mind as we continue to refine our affinity diagram and analyse the data.
 
-This suggests that the model could potentially run the entire process again, iterating and improving its work, which it has demonstrated its capability to do. However, due to the current token limit of 8,000 for GPT-4, this was not possible at the time of writing. With access to a 32,000 token version of GPT-4, it is conceivable that the prompt could be modified to yield higher quality results.
+This suggests that the model could potentially run the entire process again, iterating and improving its work, which it has demonstrated its capability to do, for example in @shinn2023reflexion. However, due to the current token limit of 8,000 for GPT-4, this was unfortunately not possible at the time of writing as the prompt stands now. With access to a 32,000 token version of GPT-4, it is conceivable that the prompt could be modified to yield higher quality results.
 
-# Findings
-## Recommendations to Vejle Municipality
-Based on the interviews conducted, it is clear that there are opportunities for improvement in the IT investment process at Vejle Municipality. From the outset, it seems that Vejle's IT had descenered that it was a problem with that people didn't know about the IT investment process (awareness...). While it does appear to be true that awareness is a central problem, there are also some other key problems about the process (or at least people's view on it) that need to be addressed. Where possible, I will base this on the interview data, although at times recommendations will be offered based on my own ethnographic observations.
+# Discussion & Findings
 
-### Need for clear communication of the process.
-The process should be more clearly communicated to the organisation and positioned as a support service rather than a bureaucratic hurdle. Additionally, adding options for preferred IT contact persons and indicating target groups struggling with technology adaptation could help alleviate concerns regarding the impersonal nature of the process. Explaining the IT investment process as a way to connect people rather than a bureaucratic hurtle.
+## Recommendations for Vejle Municipality
 
-Furthermore, fostering better communication and collaboration between central IT and decentralised areas, as well as between IT and the rest of the organisation, should be a priority. IT architects have already made strides in this area, but continued efforts will be crucial to ensure that the IT investment process is effectively integrated into the daily operations of Vejle Municipality.
+Interviews conducted and ethnographic observations highlight opportunities to improve the IT investment process at Vejle Municipality. Though initially perceived as primarily an awareness issue, other key concerns also require addressing. Recommendations will be based on interview data and, occasionally, my own ethnographic observations.
 
-IT's architects will be instrumental in communicating the process, both personally at meetings, but also by other means. However, as touched on the interviewee Anne, it's also important to try to avoid communicating this message to the wrong people
+### Enhance communication and visibility of the IT investment process
 
-#### Leading by example
-When employees approach the architects, for example via email, they should of course oblige in helping the employee with their new IT investment. However, they should also themselves get into the habit of creating every new IT investment in whatever database the IT investment process gets entered into. This would help to show a mutual respect… if IT wants this to be an important part of other people's work, then they should make it a part of their own work. After entering the investments into the system, they could politely inform the employee in question that they have created a case for them in the system and request that they use the IT investment process for future new investments.
+To better communicate the IT investment process, it should be positioned as a support service rather than a bureaucratic obstacle. Adding an option to indicate preferred contact persons in the IT department could help alleviate concerns about the process's impersonal nature. Moreover, prioritising improved communication and collaboration between central IT and decentralised areas, and between IT and the rest of the organisation, is essential. IT architects have made progress in this area, but continued efforts are crucial for effectively integrating the IT investment process into Vejle Municipality's daily operations.
 
-### Clearer guidelines for who is responsible for reporting
-On the intranet, there is a wealth of information on when investments need to be reported, but there is no obvious indication for me of who specifically is responsible for reporting investments to IT. This opens up to a game of hot potato, where no one individual wants to take responsibility for contacting IT.
+#### Establish clearer guidelines on reporting responsibilities
 
-### Accommodating the needs of various employee groups
-The IT investment process should make an effort to better accomodate the needs of various employee groups who may be wary of using such a process. For example, being able to choose a preferred architect when filling out the form would help to provide a peace of mind to some employees like Lise who deals with sensitive IT investments for daycare workers who have a different set of needs than many other parts of the organisation.
+IT architects play a vital role in communicating the process through personal interactions and other means. As Anne, an interviewee, highlighted, sharing the process with the right people without bothering irrelevant employees is essential. While the intranet contains ample information on when investments must be reported, it lacks clarity on who is specifically responsible for reporting investments to IT. This ambiguity can lead to situations where no one takes responsibility for contacting IT.
 
-### De-bureaucratisation
-It seems clear from the interview data and ethnographic observations that the IT investment process has a serious image problem. People view it as being some sort of bureaucracy regarding something to do with IT and economy, which they can safely ignore if they don't work in these areas. Bureaucratic processes can seem unappealing to employees and don't inspire a will to remember. If the IT investment process is to become more broadly used, then IT needs to take steps to ensure that the process is not viewed this way.
-#### Changing the names
-It was a topic bushed upon in many of the interviews with people who were not familiar with the IT investment process already: the name. Boasting no less eight syllables and twenty-three letters in Danish, people thought it seemed bureaucratic and had a hard time seeing the benefit in using it over the more personal approach.
-#### Streamlining the introductory text
-Hide the specific bureaucratic-looking text away somewhere else– first impressions mean a lot. Make a shorted and simplified version of it on the site. No one is going to read that stuff, so make something short enough for people to actually read and rely on other ways of communication instead.
-#### Clearer explanation of the process' purpose
-In the interviews, people seemed to have a view of the IT investment process seeming bureaucratic, and had a hard time understanding what the benefit was to using the process compared with the more personal approach of contacting someone in the IT department. I advise that the IT department uses the valuable first impression on the intranet site for the IT investment process to clearly explain the _why_ behind this IT investment process instead of for example talking about how the city council has mandated the use of this process for new IT investments, as coercion is known to reduce the feeling of agency
+Clearer guidelines for reporting responsibilities could help remedy this problem and make it easier for architects to find and communicate with the appropriate individuals within the municipality.
 
+#### Set an example
+
+When employees contact IT architects for assistance, they should receive help with their IT investment. Simultaneously, IT architects should create a record of the new IT investment in the appropriate database, demonstrating mutual respect for the process. After logging the investment, IT architects could inform the employee and politely request that they use the IT investment process for future investments, ensuring to explain the process's purpose.
+
+#### Consider revising guidelines for when investments should be reported
+
+For IT-savvy employees outside of the IT department, such as Mikkel and Freja, the guidelines regarding when IT investments need to be reported can appear overly broad, seemingly intended for employees whose daily work and competencies do not focus on IT. Consequently, these IT-savvy employees may feel that they are exempt from using the IT investment process or perceive that employees with their competencies have not been taken into account when formulating the guidelines.
+
+Although the current guidelines serve as a comprehensive catch-all, which can be suitable when the complexity of a situation makes it difficult to establish precise rules, the IT department should be cognisant of the image problem and the confusion generated by prominently displaying these guidelines on the intranet page for the IT investment process. This prominence can overwhelm readers or appear condescending.
+
+#### Simplifying the introductory text
+
+To enhance the relationship between these two sections, it is essential to consider the presentation of the IT investment process on the intranet page. The extensive technical text on the intranet page should be relegated to less prominent areas, as first impressions are crucial in persuading employees to engage with the process. Instead, a more concise, simplified version should be presented, emphasising the rationale for the process's existence and the advantages of utilising it, ideally employing more engaging audiovisual communication methods.
+
+For instance, a video that explains the process, its purpose, and its benefits could be showcased on the intranet page, making it a valuable resource to which IT architects can direct employees for further information.
+
+By making employees aware of the rationale behind the IT investment process and its potential benefits, they are more likely to be receptive to changing their behaviour. Simultaneously, understanding the logic underpinning the IT investment process provides a more intuitive way of explaining and grasping its relevance. This approach could help address the image problem and confusion arising from the current guidelines, as mentioned in the previous section.
+
+### Humanise the IT investment process
+
+Interview data and ethnographic observations indicate that the IT investment process suffers from an image problem. To counteract this perception, steps should be taken to make the process more approachable. In the following sections, I will cover possible ways of achieving this.
+
+#### Renaming the process
+
+Many interviewees unfamiliar with the IT investment process commented on its name. The lengthy Danish term, consisting of twenty-three letters, appeared bureaucratic and unappealing. A name like "Indkøbsguiden" (Danish for "The Purchase Guide") was suggested as an alternative, appealing more to the grassroots level of the organization.
+
+#### Cater to the needs of diverse employee groups
+
+The IT investment process should accommodate the requirements of various employee groups who may be hesitant to use the process. Allowing employees to choose a preferred architect when completing the form could provide peace of mind to those dealing with sensitive IT investments, such as daycare workers with unique needs.
+
+#### Clarify the purpose and advantages of using the IT investment process
+
+Interviewees viewed the IT investment process as bureaucratic and struggled to understand its benefits compared to directly contacting the IT department. The IT department should use the intranet site to clearly explain the purpose of the IT investment process, emphasising the "why" rather than relying on coercive language about city council mandates.
+
+### Attempt to unify reporting with other parts of the organisation
+
+One significant issue raised in the interviews was the non-uniformity of reporting processes across the organisation. Other departments have their own reporting requirements for various cases of investments, such as new welfare technology investments and new systems integrating with the municipality's payroll system. This complexity creates a challenging environment for employees to navigate when investing in new systems.
+
+Although this complexity currently hinders the adoption of the IT investment process, there is potential to transform it into a strength by initiating dialogue to unify reporting requirements across the organisation. A unified reporting system could simplify communication about the importance of reporting new investments and improve overall compliance.
+
+This unified system would serve as a one-stop shop for all new investment reporting. A streamlined set of questions would automatically identify which departments should be informed of the new investment based on the responses provided, allowing IT and other departments to collaborate rather than compete for employees' attention.
+
+Implementing such an approach presents challenges, including fostering cooperation between separate working groups. However, given the shared difficulties arising from poorly executed investment reporting (as exemplified by Anne's interview), there should be common ground for collaboration.
+
+A potential solution is a standardised form asking relevant questions about the investment, such as access requirements to payroll systems and municipal networks. Based on the responses, the form would determine which responsible parties within the organisation need to be informed of the specific investment in question.
+
+### Ease restrictions where possible
+
+While information and cyber security are crucial, it is also essential to strike a balance. Decentralised employees may perceive strict restrictions on user privileges as excessive burdens, potentially affecting their job satisfaction and sense of agency. It is essential to consider that decentralised IT specialists, although not part of the central IT department organisationally, are still IT experts and likely possess the necessary knowledge and skills to manage their tasks responsibly.
+
+By easing restrictions where possible, a more balanced approach can be achieved, ensuring that decentralised employees, particularly IT specialists, feel trusted and empowered within the organisation.
 
 ## Evaluation of outputted affinity diagram from GPT-4
-In the following sections, I will discuss the results of the affinity diagram generated by GPT-4, identifying pain points as well as potential solutions.
-### Insufficient Number of Groups
-The model, reflecting human tendencies, seems to prefer creating lists with satisfying round numbers of items: 3, 5, and then 10. It appears that the optimal number of groups would have been somewhere between five and ten. However, the model seems to have experienced output degradation at this step, proceeding to the next step with only five groups because that outcome prevailed in the battle of probability. A possible improvement would involve incorporating checkpoints in the model's progress between each section, allowing human feedback to identify output degradation and intervene.
 
-The challenge with this approach is that every time the generation is halted, the entire text, including the original prompt and the generated output, must be sent back into the model as a new prompt. OpenAI charges prompt tokens at a slightly more favourable rate compared to output tokens, but utilising a dialogue approach with the models can become quite costly. This is especially true in cases where a fairly large dataset is being used, as users have to pay for the model's output tokens and then pay again when using them as input tokens. This is in contrast to letting the model generate the entire response in one go, where users only pay for the input data and the associated prompt and output provided by the model.
-#### One very big category
+In the following sections, the results of the affinity diagram generated by GPT-4 are discussed, focusing on identifying flaws and potential solutions.
 
-# Discussion
-## Doors for future research
-### Alternative prompting methods for GPT affinity diagrams
-Another problem prventing me from iterating more on my prompt and also getting the model to iterate on its own output is the rising cost of tokens: the more tokens the model outputs, the more it costs, and sending a prompt with the whole interview data is already quite a lot of tokens, and if you were to send a request with the whole interview + the generated affinity diagram, it would become even more expensive. These costs are not large for some economic circumstances, but for the purposes of a master's thesis where I have to fund these token costs myself, it can quickly become a relatively large economic cost.
+### Defining output quality
+Before discussing output quality, it is important to define the characteristics that define a high-quality output. In the context of evaluating GPT-4's performance in creating affinity diagrams, output quality can be defined in terms of the following criteria:
+
+1.  **Accuracy**: The extent to which the generated affinity diagram accurately captures and represents the key themes and patterns present in the interview notes and ethnographic observations. An accurate affinity diagram should reflect the main ideas and insights expressed by the interviewees and ensure that they are grouped correctly based on their similarities and relationships.
+    
+2.  **Completeness**: The ability of GPT-4 to include all relevant statements or observations from the interview notes in the affinity diagram. A complete affinity diagram should not omit any significant ideas or insights and should effectively utilise the entirety of the available data.
+    
+3.  **Clarity**: The clarity of the descriptive headings assigned to each group in the affinity diagram. Clear and concise headings should effectively summarise the content within each group and facilitate an easy understanding of the primary themes and patterns identified in the data.
+    
+4.  **Consistency**: The consistency with which GPT-4 groups and labels statements or observations in the affinity diagram. A consistent affinity diagram should follow a coherent logic in the sorting and grouping process, ensuring that similar ideas are placed together and dissimilar ones are separated.
+
+### Accuracy
+In some of the data segments, the model identified data segments that were indeed a part of the interview data, but identified them using the wrong interviewee number. For example, the following data segments:
+
+>41\. Importance of room for innovation in schools (Interviewee 165)
+>
+>43\. Challenges in getting schools onboard with using the IT investment process (Interviewee 165)
+
+Interviewee 165 (Karina), didn't know about the IT investment process and has nothing to do with schools. However, these statements were in fact given by one of the interviewees, Interviewee 163 (Søren). Therefore, this is not an example of classic LLM hallucination, but most likely a case of another type of output degradation. This is perhaps enabled by the fact that digits like 1, 6, and 3 are each identified as their own individual tokens, while a name, such as "Karina" or "Søren" would most likely have been one single token. This difference could have allowed the model to have written "16" and, having seen other numbers starting with 16 in the context, having a non-trivial chance of randomly choosing the wrong last digit, "5" instead of "3". Then, from here, the model merely continued pattern, which is one of the strengths of this type of language model coming to haunt us, continuing for the rest of the output to incorrectly refer to Søren as Interviewee 165.
+
+To avoid this kind of output degradation, it is suggested to avoid using numbers to identify participants, instead giving the model only pseudonyms for this purpose. If it is absolutely critical to use numbers, then selecting single-digit numbers would be preferable.
+
+### Completeness
+
+The depth of the analysis in focus, rather than in sheer detail, did not reach the desired level. This shortfall can partially be attributed to the lack of explicit instructions to the model regarding the specific topic under investigation, beyond the following problem statement:
+
+> The IT department at Vejle municipality has established an IT investment process that outlines a set of procedures for procuring new IT systems, software, and equipment. Despite these guidelines, employees do not always follow this process, leading to potential inefficiencies and discrepancies in IT investments. This study aims to explore the reasons why employees do not comply with the IT investment process and suggest strategies to improve compliance.
+
+A dialogue-based approach to the analysis would have proved advantageous, inviting the model to engage with the researcher in a conversational style. This interaction would enable more detailed insights to be extracted and foster a deeper understanding of the case. Unfortunately, the implementation of such a methodology is currently restricted by the limitations of the available 8,000-token model, although it could conceivably be achieved with the larger 32,000-token GPT-4 model.
+
+The analysis appears to lack a comprehensive understanding of the organisational context, particularly with regard to the IT investment process. Identifying these missing elements is a challenge, as they are deeply intertwined with my personal experiences gathered during the project's investigation. In this light, the dialogue approach could serve a dual purpose: it could act as a catalyst for the researcher to probe deeper into their contextual assumptions and simultaneously impart a richer understanding of the organisational context to the model.
+
+A specific area of potential improvement lies in the definition of the IT investment process. The process could have been more explicitly described in the prompt. The term's inherent ambiguity may have clouded its actual function and significance within the context, thus constraining the model's focus and comprehension.
+
+Creating an affinity diagram is a process that necessitates thoughtful contemplation of categorisations and their implications, infusing the data with meaning. However, as revealed in the model's simulated stream of consciousness, the model seemed to concentrate on the identification and thematic categorisation of data segments, without delving into their potential implications.
+
+Despite the model's extensive data segmentation, it became clear to me, as the interviewer, that certain context and subtext did not make the transition from reality into the notes. As a result, a comprehensive understanding of these elements cannot be reasonably inferred from the notes alone. The dialogue approach, reiterated here, could potentially bridge this gap, paving the way for a deeper exploration and understanding of the data's underlying themes and complexities.
+
+### Clarity
+
+Assessing the clarity of the descriptive headings assigned to each group in the affinity diagram entails examining their effectiveness in summarising the content within each group and conveying the primary themes and patterns identified in the data. There are, however, several aspects of the analysis process that can potentially affect clarity, such as the number of groups and their composition.
+
+#### Group Quantity and Composition
+
+A discernible tendency of the model is to generate lists with round numbers of items, reflecting human inclinations for 3, 5, and then 10 items. It appears that the optimal number of groups for this analysis would have been somewhere between five and ten. However, the model's performance seems to degrade at this juncture, opting to proceed with only five groups, likely due to the dominant probabilities at play in the training data. A potential refinement could involve incorporating checkpoints in the model's progress between each section, permitting human intervention to identify and rectify instances of performance degradation.
+
+The caveat with this approach is that it necessitates pausing the generation process each time, which means reintroducing the entire text, including the original prompt and the generated output, as a new prompt. While OpenAI charges prompt tokens at a marginally more favourable rate than output tokens, adopting a dialogue approach with the models can prove costly.
+
+This is especially true when dealing with large datasets, as users are charged both for the model's output tokens and then again when these tokens are used as input. In contrast, generating the entire response in one go only incurs charges for the input data and the associated prompt and output generated by the model. However, as will be covered in the later section discussing opportunities for further research, recent studies indicate that the model performs better at self-reflection when a new request is sent to the model.
+
+#### Group Size and Distribution
+
+An issue of concern is the model's third category, "Group 3: Challenges and Barriers in IT Investment Process," which seems to function as a catch-all group, accommodating many data segments. Optimally, this category could have been more evenly distributed. The model's bicameral dialogue approach appears to have been prematurely terminated, potentially contributing to this issue:
+
+> # SORTING, GROUPING, AND LABELLING
+>
+> ## THINK
+>
+> Self 1: We have a good list of data segments now. Let's think about how we can group them together in a meaningful way to better understand the main themes and issues.
+> 
+> Self 2: We could start by grouping the segments related to awareness and understanding of the IT investment process. This would include segments like lack of awareness, bureaucratic nature, and uncertainty about when to use the process.
+> 
+> Self 1: That's a good idea. We could also group the segments related to communication and relationships between the IT department and other departments, as well as the role of IT architects in the organization.
+> 
+> Self 2: Yes, that makes sense. Another group could be the challenges and barriers faced by employees when it comes to the IT investment process, which would include segments like the lack of training, inaccessibility of the intranet, and double solutions issue.
+> 
+> Self 1: Great. We could also have a group for suggestions and improvements to the process, like making it more user-friendly, better promoting it, and having more fixed and transparent guidelines.
+> 
+> Self 2: That's a good group. Lastly, we could have a group for the specific contexts and considerations of different departments or facilities, like decentralized IT support, residential care facilities, and schools.
+> 
+> Self 1: I like that. Let's write down these groupings with appropriate names.
+
+The model appears to favour a specific number of dialogue turns, likely influenced by examples from previous sections and the training data. This predisposition can result in excessively lengthy bicameral dialogues for straightforward matters and, more critically, dialogues that cease before adequate consideration has been given to the topic at hand. In this regard, less fine-tuned models (e.g., the older text-davinci-003) might have been more appropriate for the task. While models like GPT-3.5 and GPT-4 are optimised for chat applications, excel in structured tasks such as text summarisation, and produce concise outputs, they may not be ideal for more complex or nuanced tasks requiring long bouts of simulated thought.
+
+#### Possible Solutions
+
+One potential approach to enhancing the effectiveness of the model's operations could be to fine-tune GPT-4 to yield more detailed bicameral dialogues. This could be achieved by employing a method similar to Reinforcement Learning from Human Feedback (RLHF), as delineated in studies like @christiano2023deep and @NEURIPS2022_b1efde53. This approach would facilitate the generation of a multitude of bicameral dialogues, with the quality of the output subsequently assessed through human evaluation. However, as GPT-3.5 and GPT-4 do not currently allow for fine-tuning, implementing this strategy is not presently feasible.
+
+An alternative solution could involve training or prompting GPT-4 to provide a status update after each bicameral turn. This would require the model to actively engage in self-reflection and reasoning about the adequacy of its outputs prior to proceeding. This way, the model could signal whether the groups generated through brainstorming adequately represent the data. However, to completely harness the potential of this methodology, fine-tuning may be a necessary step.
+
+#### Re-evaluating the Bicameral Dialogue Approach
+
+It might also be worthwhile to question the utility and efficacy of the bicameral dialogue within this context, as compared to a single stream of simulated thought. The initial rationale behind implementing the bicameral dialogue was to facilitate a dynamic where Self 2 could critique Self 1 and vice versa, thereby encouraging a more robust and diverse analysis. However, in practice, the two selves appeared to predominantly affirm each other's responses, only serving to degrade the output by restricting the length of the train of thought. Therefore, a more detailed investigation into the relative merits of bicameral dialogues versus single streams of thought could provide valuable insights for refining the analysis process.
+
+### Consistency
+
+
+## Opportunities for future research
+### Alternative prompting approaches for GPT-based affinity diagrams
+This study identified a significant challenge, which hindered further prompt iteration and refinement of the model's output, specifically the escalating token cost. The more tokens the model is prompted with, the higher the cost for executing the request. Submitting a prompt containing the entire interview data already utilizes a substantial number of tokens. Including both the interview data and the affinity diagram generated by the model in a new request would further increase the expense. While these costs might be negligible in certain contexts, they can rapidly escalate to become a considerable financial burden for small-budget projects, such as a master's thesis that is self-funded by the researcher.
+
+Given these considerations, future research could explore alternative ways to structure and sequence prompts for GPT-based affinity diagrams. As indicated by @hebenstreit2023automatically and @shinn2023reflexion, dividing the prompt into smaller segments and inputting them sequentially might prove to be a more effective strategy for achieving better results. This approach could potentially mitigate the model's performance degradation when it is faced with an excessive number of tasks, thereby improving the overall quality of the output.
+
 ### A more extensive investigation of practice in other municipalities
-### A closer look into the IT investment process with focus on managerial science
+In the current study, the primary focus was on investigating practices within Vejle municipality, with only a few observations made about how other municipalities handled new IT investments. Future research should take a closer look at the practices in other municipalities and assess their effectiveness to attempt to understand what the best practice is within municipalities in the present day. To a certain extent, it could also be helpful to examine the private sector's practices. Although the public sector is fundamentally different from the private sector, IT departments in medium and large private sector companies might face similar challenges to the IT department in Vejle, making it worth investigating.
+
+To explore other municipalities, it would be beneficial to utilise existing connections between Vejle and other municipalities, for example, Aarhus, Odense, Fredericia, Sønderborg, and others.
+
+### A closer look into the IT investment process with a focus on managerial science
+Although the current research employs an ethnographic methodology to explore the challenges associated with the IT investment process, primarily from a user perspective, integrating insights from experts in communication and managerial science may prove invaluable for developing tailored communication strategies and action plans.
+
+By incorporating principles from managerial science, researchers could systematically examine the decision-making processes, resource allocation, and performance measurements affecting the IT investment process at Vejle Municipality. This approach can help identify inefficiencies, misaligned incentives, and other potential barriers to effective IT investment management.
+
+Moreover, communication specialists can contribute to the development of targeted communication plans, providing guidance on the most effective methods to convey information, promote collaboration, and foster a culture of transparency and accountability. These experts can also identify potential communication gaps and recommend strategies to bridge them, ensuring that all stakeholders understand their roles, responsibilities, and the overall goals of the IT investment process.
+
+Additionally, an interdisciplinary approach that combines these ethnographic findings with insights from managerial science and communication expertise can lead to a more comprehensive understanding of the problems facing the IT investment process. This holistic perspective can facilitate the identification of key factors influencing employee behaviour and organisational culture, thereby enabling the development of evidence-based interventions to improve the IT investment process within the municipality.
 
 # Conclusion
 
