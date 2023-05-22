@@ -103,23 +103,6 @@ The integration of GPT into this research endeavour is twofold. First, it allows
 
 In studying this interplay of technology and human behaviour, I hope to not only offer solutions to the challenges faced by Vejle Municipality but also illuminate new paths for the academic world. This investigation, therefore, seeks to contribute to an understanding of a specific socio-technical system within Vejle municipality, while simultaneously exploring the potential of AI as a groundbreaking tool in academic research. By doing so, we venture into an exciting intersection of technological innovation and human complexity, seeking to enrich both fields with fresh insights and strategies.
 
-GPT-4's unique capabilities, such as processing large volumes of detailed text input and generating insightful analyses, were leveraged throughout this study. Notably, GPT-4 can handle up to 8,000 tokens with the 8K model and an impressive 32,000 tokens with the 32K model, with each token representing approximately 0.75 words in English text {[}OpenAI (n.d.b){]}. This allows the model to analyse and derive insights from a vast amount of textual data.
-
-One innovative application of GPT-4 was its use in generating an affinity diagram based on the interview notes, with the aim of extracting fresh perspectives from the extensive dataset. However, this approach encountered some limitations. Despite employing bicameral dialogue, a technique in which the model simulates thoughts by engaging in dialogue with itself, the resulting diagrams did not meet the anticipated expectations. Therefore, further research is recommended to explore the limitations and potential applications of GPT-4 in this context.
-
-\hypertarget{research-question}{%
-\subsection{Research Question}\label{research-question}}
-
-This study primarily aims to investigate the efficacy of OpenAI's GPT in contributing to academic research, specifically in an ethnographic context. Here, the utility of GPT will be assessed by exploring its ability to aid in understanding attitudes and behaviours of employees towards a specific IT investment process in Vejle municipality. The process, despite being well-structured, witnesses non-compliance from the employees, leading to potential inefficiencies and discrepancies.
-
-The central research question henceforth becomes: How can the GPT, as a newly emerged technological tool, contribute to ethnographic studies in terms of augmenting traditional research methods and providing a deeper understanding of the phenomena in question?
-
-To provide a controlled analysis, this study will compare insights drawn from GPT with those obtained through traditional research methods. The context of Vejle municipality's IT investment process and the employees' behaviour towards it serve as the specific case that this research method will be applied to.
-
-This study thereby focuses on two intertwined aspects: Firstly, it aims to shed light on the reasons behind employees' non-compliance with the IT investment process and propose strategies for enhancing adherence. Secondly, it investigates the potential of GPT in offering a novel method for conducting such ethnographic research, thus opening new avenues for the academic world.
-
-The investigation of these two aspects will simultaneously aid in a comprehensive evaluation of the GPT's capabilities as a qualitative research tool and provide insights into the complexities of organizational behaviour. The ultimate goal is not only to understand the specific dynamics of the IT investment process in Vejle municipality but also to pioneer a systematic exploration of the value that artificial intelligence-based language models can add to the academic research field.
-
 \hypertarget{methodology-and-structure}{%
 \subsection{Methodology and Structure}\label{methodology-and-structure}}
 
@@ -132,9 +115,9 @@ The final chapters of the study offer concrete recommendations to Vejle Municipa
 \hypertarget{contributions-and-future-research-opportunities}{%
 \subsection{Contributions and Future Research Opportunities}\label{contributions-and-future-research-opportunities}}
 
-This study has made significant contributions to the field of IT investment governance, particularly in the context of Danish municipalities. It provides Vejle Municipality with practical recommendations to enhance their compliance with the IT investment process. Furthermore, it explores the potential of using LLMs as qualitative research tools in ethnographic studies, shedding light on their utility and limitations.
+This study makes significant contributions to the field of IT investment governance and resource-based theory, with a specific focus on Danish municipalities. It aims to provide Vejle Municipality with practical and actionable recommendations to improve compliance with their IT investment process. Additionally, it explores the potential utility and limitations of LLMs as qualitative research tools in ethnographic studies.
 
-The findings of this study open up exciting avenues for future research. One promising direction is the further exploration of GPT-4's capability of analysing significantly larger datasets than its predecessors. Investigating the use of LLMs for analyzing and interpreting qualitative datasets can further advance the field, offering new insights and methodologies.
+The application of a bicameral dialogue approach and the exploration of GPT-4 in generating an affinity diagram present exciting opportunities for future research. Further investigation into the use of LLMs in analysing and interpreting large qualitative datasets has the potential to advance the field.
 
 Expanding the understanding of IT investment governance can be achieved by comparing practices across different municipalities or other public/non-profit organisations. Exploring the combination of ethnographic methodologies with a stronger focus on managerial and communication studies could be a promising avenue for future research.
 
@@ -180,6 +163,28 @@ Despite the considerable simplification efforts made to the webform in recent ye
 
 In light of these findings, the main objective of this study is to delve into the reasons behind the inconsistent adherence to the IT investment process by employees and propose strategies to improve compliance. The subsequent report will thoroughly investigate the intricacies of this issue and put forward solutions to enhance the usage of the webform.
 
+\hypertarget{gpt-4-and-qualitative-research}{%
+\subsection{GPT-4 and Qualitative Research}\label{gpt-4-and-qualitative-research}}
+
+An innovative aspect of this study involves the utilization of OpenAI's advanced Generative Pre-trained Transformer (GPT), specifically the fourth iteration (GPT-4). This powerful Large Language Model (LLM) served as a complementary tool to traditional research methodologies, particularly in developing insights into employees' attitudes and behaviors regarding the IT investment process.
+
+GPT-4's unique capabilities, such as processing large volumes of detailed text input and generating insightful analyses, were leveraged throughout this study. Notably, GPT-4 can handle up to 8,000 tokens with the 8K model and an impressive 32,000 tokens with the 32K model, with each token representing approximately 0.75 words in English text {[}OpenAI (n.d.b){]}. This allows the model to analyze and derive insights from a vast amount of textual data.
+
+One innovative application of GPT-4 was its use in generating an affinity diagram based on the interview notes, with the aim of extracting fresh perspectives from the extensive dataset. However, this approach encountered some limitations. Despite employing bicameral dialogue, a technique in which the model simulates thoughts by engaging in dialogue with itself, the resulting diagrams did not meet the anticipated expectations. Therefore, further research is recommended to explore the limitations and potential applications of GPT-4 in this context.
+
+\hypertarget{research-question}{%
+\section{Research Question}\label{research-question}}
+
+This study primarily aims to investigate the efficacy of OpenAI's GPT in contributing to academic research, specifically in an ethnographic context. Here, the utility of GPT will be assessed by exploring its ability to aid in understanding attitudes and behaviours of employees towards a specific IT investment process in Vejle municipality. The process, despite being well-structured, witnesses non-compliance from the employees, leading to potential inefficiencies and discrepancies.
+
+The central research question henceforth becomes: How can the GPT, as a newly emerged technological tool, contribute to ethnographic studies in terms of augmenting traditional research methods and providing a deeper understanding of the phenomena in question?
+
+To provide a controlled analysis, this study will compare insights drawn from GPT with those obtained through traditional research methods. The context of Vejle municipality's IT investment process and the employees' behaviour towards it serve as the specific case that this research method will be applied to.
+
+This study thereby focuses on two intertwined aspects: Firstly, it aims to shed light on the reasons behind employees' non-compliance with the IT investment process and propose strategies for enhancing adherence. Secondly, it investigates the potential of GPT in offering a novel method for conducting such ethnographic research, thus opening new avenues for the academic world.
+
+The investigation of these two aspects will simultaneously aid in a comprehensive evaluation of the GPT's capabilities as a qualitative research tool and provide insights into the complexities of organizational behaviour. The ultimate goal is not only to understand the specific dynamics of the IT investment process in Vejle municipality but also to pioneer a systematic exploration of the value that artificial intelligence-based language models can add to the academic research field.
+
 \hypertarget{literature-review}{%
 \section{Literature review}\label{literature-review}}
 
@@ -221,7 +226,7 @@ The importance of such methods cannot be overstated in the context of ethnograph
 
 In this section, we will delve into two primary traditional qualitative methods frequently employed in ethnographic research: ethnomethodology and affinity diagramming. Ethnomethodology provides insights into social order's construction in daily interactions, while affinity diagramming facilitates the organisation and synthesis of large volumes of qualitative data.
 
-Understanding these established methodologies serves as a crucial starting point in the present research project. It offers a baseline against which we can assess the potential and utility of emerging tools such as LLMs. Additionally, these methods inform the ways we engage with participants and interpret their experiences and behaviours towards IT investment processes at Vejle municipality.
+Understanding these established methodologies serves as a crucial starting point in our research project. It offers a baseline against which we can assess the potential and utility of emerging tools such as Generative Pretrained Transformers (GPT). Additionally, these methods inform the ways we engage with participants and interpret their experiences and behaviours towards IT investment processes at Vejle municipality.
 
 \hypertarget{ethnomethodology-crabtree-et-al.-2012}{%
 \subsubsection{Ethnomethodology (Crabtree et al.~2012)}\label{ethnomethodology-crabtree-et-al.-2012}}
@@ -345,7 +350,9 @@ For example, the self-critique prompt from Hebenstreit et al. (2023), which inst
 \hypertarget{semi-structured-interviews}{%
 \subsubsection{Semi-structured interviews}\label{semi-structured-interviews}}
 
-To build empathy with the users, I conducted semi-structured interviews in an informal manner. According to Crabtree, Rouncefield, and Tolmie (2012), interviews should ideally be conducted in the flow of work, but since new IT investments were not a routine part of most employees' daily work outside of the IT department, it was not feasible to talk with employees in the midst of making new investments. Thus, the interviews were conducted in a "decontextualised" fashion.
+To build empathy with the users, I conducted semi-structured interviews in an informal manner. In able to ensure that I had adequate energy to give the discussion my full capacity of creativity and thoughtfulness to listening and asking followup questions, I limited myself to conducting at maximum two interviews per day.
+
+According to Crabtree, Rouncefield, and Tolmie (2012), interviews should ideally be conducted in the flow of work, but since new IT investments were not a routine part of most employees' daily work outside of the IT department, it was not feasible to talk with employees in the midst of making new investments. Thus, the interviews were conducted in a "decontextualised" fashion.
 
 In total, 12 employees were interviewed, selected based on a list of contacts provided by the author's contact person in Vejle's IT department. The list included decision-makers from all six administrations of the municipality. Each employee on the list was assigned assigned a pseudonym and identification number by which they were identified in my notes, never using their true names.
 
