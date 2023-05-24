@@ -6,83 +6,7 @@ runninghead: IT INVESTMENT REPORTING IN ORGANISATIONS
 abstract: 
 keywords: key1, key2
 
-# Introduction
 
-As digital technology continues to evolve, it increasingly intersects with various spheres of human life, transforming traditional practices and creating new paradigms. This transformation is noticeable within the academic field, where the advancement of artificial intelligence (AI) and machine learning (ML) open unprecedented possibilities for research. This study aims to probe one such possibility - the integration of Generative Pretrained Transformers (GPT), developed by OpenAI, into ethnographic studies. GPT, a representative of Large Language Models (LLMs), has demonstrated impressive capabilities in understanding and generating human-like text, raising questions about its potential to augment traditional research methodologies.
-
-This investigation occurs in the context of a unique case study at Vejle municipality, Denmark - a local government serving a vibrant community of 120,000 residents [@vejlekommuneVejleKommuneRunder2022]. Vejle's IT department, an integral part of the municipality's operation, has established an IT investment process aimed at streamlining procurement of new systems, software, and equipment. However, this tool is not consistently used by the employees, resulting in inefficiencies and discrepancies. This study ventures to explore the reasons behind such behaviour, aiming to formulate strategies to enhance compliance.
-
-The integration of GPT into this research endeavour is twofold. First, it allows us to examine GPT's capacity to generate insights about human behaviour, attitudes, and culture in the context of this IT investment process, comparing these insights with those obtained from traditional research methods. Second, it explores how this cutting-edge technology could be harnessed as a novel tool in the wider field of academic research, particularly ethnography.
-
-In studying this interplay of technology and human behaviour, I hope to not only offer solutions to the challenges faced by Vejle Municipality but also illuminate new paths for the academic world. This investigation, therefore, seeks to contribute to an understanding of a specific socio-technical system within Vejle municipality, while simultaneously exploring the potential of AI as a groundbreaking tool in academic research. By doing so, we venture into an exciting intersection of technological innovation and human complexity, seeking to enrich both fields with fresh insights and strategies.
-
-GPT-4's unique capabilities, such as processing large volumes of detailed text input and generating insightful analyses, were leveraged throughout this study. Notably, GPT-4 can handle up to 8,000 tokens with the 8K model and an impressive 32,000 tokens with the 32K model, with each token representing approximately 0.75 words in English text \[@openaiPricing\]. This allows the model to analyse and derive insights from a vast amount of textual data.
-
-One innovative application of GPT-4 was its use in generating an affinity diagram based on the interview notes, with the aim of extracting fresh perspectives from the extensive dataset. However, this approach encountered some limitations. Despite employing bicameral dialogue, a technique in which the model simulates thoughts by engaging in dialogue with itself, the resulting diagrams did not meet the anticipated expectations. Therefore, further research is recommended to explore the limitations and potential applications of GPT-4 in this context.
-
-## Research Question
-
-This study primarily aims to investigate the efficacy of OpenAI's GPT in contributing to academic research, specifically in an ethnographic context. Here, the utility of GPT will be assessed by exploring its ability to aid in understanding attitudes and behaviours of employees towards a specific IT investment process in Vejle municipality. The process, despite being well-structured, witnesses non-compliance from the employees, leading to potential inefficiencies and discrepancies.
-
-The central research question henceforth becomes: How can the GPT, as a newly emerged technological tool, contribute to ethnographic studies in terms of augmenting traditional research methods and providing a deeper understanding of the phenomena in question?
-
-To provide a controlled analysis, this study will compare insights drawn from GPT with those obtained through traditional research methods. The context of Vejle municipality's IT investment process and the employees' behaviour towards it serve as the specific case that this research method will be applied to.
-
-This study thereby focuses on two intertwined aspects: Firstly, it aims to shed light on the reasons behind employees' non-compliance with the IT investment process and propose strategies for enhancing adherence. Secondly, it investigates the potential of GPT in offering a novel method for conducting such ethnographic research, thus opening new avenues for the academic world.
-
-The investigation of these two aspects will simultaneously aid in a comprehensive evaluation of the GPT's capabilities as a qualitative research tool and provide insights into the complexities of organizational behaviour. The ultimate goal is not only to understand the specific dynamics of the IT investment process in Vejle municipality but also to pioneer a systematic exploration of the value that artificial intelligence-based language models can add to the academic research field.
-
-## Methodology and Structure
-
-To achieve a comprehensive understanding of the subject matter, this study adopts an ethnographic approach, employing semi-structured interviews to gather rich and nuanced data. This qualitative methodology was chosen due to the relatively limited number of individuals directly involved in IT investments within Vejle Municipality, allowing for a deeper exploration of their experiences and perspectives.
-
-The research is structured into several distinct chapters, starting with a comprehensive literature review, establishing the theoretical framework and existing knowledge on the topics studied. This is followed by a detailed methodology chapter, outlining the research design, data collection procedures, and ethical considerations. The subsequent chapters present, analyse, and discuss the gathered data, providing insights into employees' attitudes, challenges, and suggestions regarding the IT investment process.
-
-The final chapters of the study offer concrete recommendations to Vejle Municipality for improving compliance with the IT investment process. Additionally, the utility and limitations of GPT-4 in the context of this study are evaluated, highlighting its potential contributions and areas that require further exploration. The study also identifies potential avenues for future research, addressing unresolved questions and areas of interest that emerged during the investigation.
-
-## Contributions and Future Research Opportunities
-
-This study has made significant contributions to the field of IT investment governance, particularly in the context of Danish municipalities. It provides Vejle Municipality with practical recommendations to enhance their compliance with the IT investment process. Furthermore, it explores the potential of using LLMs as qualitative research tools in ethnographic studies, shedding light on their utility and limitations.
-
-The findings of this study open up exciting avenues for future research. One promising direction is the further exploration of GPT-4's capability of analysing significantly larger datasets than its predecessors. Investigating the use of LLMs for analyzing and interpreting qualitative datasets can further advance the field, offering new insights and methodologies.
-
-Expanding the understanding of IT investment governance can be achieved by comparing practices across different municipalities or other public/non-profit organisations. Exploring the combination of ethnographic methodologies with a stronger focus on managerial and communication studies could be a promising avenue for future research.
-
-This study contributes to a nuanced understanding of the challenges and dynamics involved in the governance of IT investments, particularly in the context of public administration. The insights gained from this research can guide future studies and potentially shape best practices in IT investment governance.
-
-# Background
-
-## The Vejle Municipality IT Department
-
-The Vejle Municipality IT department operates within the administrative building and has historically faced challenges when it comes to effectively communicating with stakeholders outside of its immediate vicinity, particularly individuals in decentralised roles. Recognising the need to expand its reach and improve efficiency, the department has strategically hired four IT architects in recent years, each possessing unique strengths and expertise.
-
-These IT architects play a crucial role in the municipality's IT ecosystem. Their primary responsibility revolves around aligning the expectations of municipal employees with the IT department's capabilities and resources, while considering the broader organisational context. Achieving this requires effective communication and a comprehensive understanding of both technical and non-technical perspectives from the various stakeholders within the municipality. It is a role that demands a combination of "soft" and "hard" skills, as the architects must empathise with the diverse needs and perspectives of users across the municipality, all while staying up-to-date with current and emerging technologies.
-
-For the purpose of this study, two of these architects will be referred to as Jonas and Mathilde. They bring a compelling balance of perspectives to the table: Jonas excels in the technical intricacies of IT architecture, while Mathilde places a crucial emphasis on the human element, advocating for a softer approach to IT. Together, their expertise ensures the seamless implementation of new technologies and fosters a shared sense of ownership and understanding regarding IT investment decisions throughout the organisation.
-
-Jonas and Mathilde have played a pivotal role in influencing and shaping the present study. Their invaluable guidance and profound knowledge have resulted in numerous references within the subsequent text. Their willingness to share their advice and expertise reflects their generosity and unwavering commitment to advancing the understanding of the subject matter.
-
-## The IT Investment Process
-
-Vejle Municipality has established an IT investment process that aims to streamline the procurement of new technologies. This process is facilitated through an online webform accessible via the intranet. The webform serves two primary objectives: to ensure that the IT department remains aware of the technologies it supports and to connect the appropriate IT personnel with the investment project, thereby facilitating smooth implementation and comprehensive consideration of potential implications.
-
-The webform's user interface presents a clear directive to all employees of the municipality:
-
-> "If you need to address a new IT task, update or enhance an existing system, have an idea for an IT system, or purchase a new IT system, the City Council requires you to utilise the IT investment process. By following this process, we collectively ensure that the system or function can be utilised while meeting our IT requirements. Additionally, when you follow the investment process, you will receive guidance to other departments if there are specific areas that require attention, such as information security."
-
-Following this statement, a list of examples is provided, outlining various scenarios in which the IT investment process should be employed. These examples include exploring existing solutions within the municipality, making changes to current systems, seeking IT support for a process, purchasing new equipment requiring network access, or implementing an entirely new IT solution.
-
-To initiate the process, employees are required to complete an electronic form available on the designated page. Once the form is submitted, an architect from the IT department typically reaches out to the individual within 48 hours. This initiates a dialogue involving the employee, the supplier, and a representative from the IT department, ultimately leading to feedback that includes an overall IT assessment of the system. If necessary, additional references to other departments within Vejle Municipality, such as Competition Suspension, are provided in this assessment.
-
-Despite the comprehensive instructions provided and the broad range of scenarios in which the webform is applicable, its usage among employees remains surprisingly limited. In recent years, efforts have been made to simplify the webform substantially by removing intricate questions that were found challenging by non-IT personnel. This simplification aimed to improve the webform's accessibility and increase its usage; however, it has not yielded significant success.
-
-The following report will delve into the reasons behind the employees' lack of adherence to the IT investment process and propose strategies to enhance compliance. This study will examine the intricacies of the issue and offer suggestions for increasing the webform's usage, thereby improving the efficiency of IT investments within Vejle Municipality.
-
-## The Challenge at Hand
-
-Despite the considerable simplification efforts made to the webform in recent years, its usage among employees has not witnessed a significant increase. The form was shortened to make it more accessible, removing detailed questions that non-IT personnel found challenging to answer. The objective was to encourage staff to utilise the webform instead of directly reaching out to the IT architects or other members of the IT department. However, these efforts have not yielded the desired level of success.
-
-In light of these findings, the main objective of this study is to delve into the reasons behind the inconsistent adherence to the IT investment process by employees and propose strategies to improve compliance. The subsequent report will thoroughly investigate the intricacies of this issue and put forward solutions to enhance the usage of the webform.
 
 
 # Literature review
@@ -98,154 +22,19 @@ Finally, the third section addresses the emergence and characteristics of Large 
 
 Through this comprehensive review, I aim to intertwine these seemingly disparate threads - IT governance, ethnographic research methods, and GPT models - into a cohesive framework, ultimately supporting our exploration of GPT's potential in enhancing our understanding of employee attitudes towards Vejle's IT investment process. As such, this literature review paves the way for the empirical investigation that follows.
 
-## Information Technology Investment Governance
 
-IT governance is a vital component for both private and public sector organisations, playing a central role in aligning IT investments with institutional goals and maximising associated benefits \[@Weill2004\]. Encompassing decision-making, planning, and controlling IT investments, it sits at the heart of effective governance.
 
-One influential concept for understanding IT governance is the resource-based theory, proposed by @Wernerfelt1984. The resource-based view (RBV) suggests that organisations can secure a sustainable advantage by optimally employing their resources and capabilities, those possessing valuable, rare, imperfectly imitable, and non-substitutable (VRIN) attributes \[@Wernerfelt1984; @Barney1991\]. RBV underlines the strategic necessity of resource allocation for maximum value.
 
-When we consider RBV in public sector contexts, such as Vejle municipality, the idea of a "competitive advantage" is recontextualised. Unlike private firms, public institutions aim to deliver the best possible public value rather than outperform market competitors. Here, the efficient allocation and utilisation of resources equate to high-quality service delivery. In the realm of IT investment, strategic decisions should maximise public benefit through increased efficiency and effectiveness.
 
-Building upon the RBV, @Bharadwaj2000 positions IT resources as a distinct strategic category. Organisations, he argues, possessing superior IT capabilities, can enhance their operational efficiency and service quality \[@Bharadwaj2000\]. This perspective fits seamlessly within the RBV, reinforcing the critical need for effective governance of IT resources and investments.
+LLMs are a class of artificial intelligence models that specialise in  The underlying architecture of these models typically employs neural networks with billions of parameters, which are fine-tuned during the training process on massive text corpora.
 
-@ALI20151 developed a novel construct, known as IT investment governance (ITIG), also premised on the RBV. ITIG gauges an organisation's competence in effectively governing its IT investments, thereby enabling the efficient allocation and utilisation of IT resources. The construct comprises four elements: IT investment value governance, IT investment value monitoring, IT investment appraisals, and IT investment project management.
 
-The relevance and efficacy of the ITIG construct were demonstrated by Ali et al. (2015), highlighting a significant positive correlation with organisational performance. This critical finding implies organisations with robust IT investment governance are poised to extract greater value from their IT investments and align these more closely with their strategic goals. Consequently, effective IT investment governance enables organisations to amplify operational efficiency and public value, thus reinforcing the core principles of the RBV.
-
-While Ali et al. (2015) made notable strides, certain gaps still persist, particularly in understanding the behavioural elements influencing effective IT investment governance, such as employee compliance with IT governance processes. Nonetheless, the RBV and ITIG construct offer a robust theoretical foundation to scrutinise and enhance IT investment governance within the public sector, paving the way for future research and improvements.
-
-## Traditional Qualitative Research Methods
-In the pursuit of understanding the complexity of human behaviour and experiences, qualitative research methods have been instrumental. Traditional qualitative methods offer a lens to dive into the social fabric of communities, organisations, and other societal entities. Through these methods, researchers can explore participants' perspectives, experiences, and interpretations in rich detail, allowing them to grasp the nuances of various socio-cultural phenomena.
-
-The importance of such methods cannot be overstated in the context of ethnography, a research tradition steeped in capturing the intricacies of cultural and social dynamics. While ethnographic research has evolved significantly over the years, certain traditional methods remain integral to its execution, providing a robust structure to the inquiry.
-
-In this section, we will delve into two primary traditional qualitative methods frequently employed in ethnographic research: ethnomethodology and affinity diagramming. Ethnomethodology provides insights into social order's construction in daily interactions, while affinity diagramming facilitates the organisation and synthesis of large volumes of qualitative data.
-
-Understanding these established methodologies serves as a crucial starting point in the present research project. It offers a baseline against which we can assess the potential and utility of emerging tools such as LLMs. Additionally, these methods inform the ways we engage with participants and interpret their experiences and behaviours towards IT investment processes at Vejle municipality.
-
-### Ethnomethodology (Crabtree et al. 2012)
-
-Ethnomethodology (EM) is a theoretical approach that has gained considerable attention in the field of social science research. EM emphasises the study of how people create and maintain social order through their everyday interactions, and how they use practical methods and techniques to make sense of their social world. As Crabtree et al. (2012) note, "EM researchers typically focus on how members of a particular community or social setting use their everyday practices and knowledge to produce the norms and rules that govern social life" (p. 316).
-
-EM has been applied in a wide range of fields, including sociology, anthropology, communication studies, and more recently in the study of human-computer interaction and interaction design. In particular, EM has been used to study how people use and interact with technology in their everyday lives, and how technology shapes and influences social practices.
-
-Crabtree et al. (2012) argue that EM can provide valuable insights for understanding technology use in a variety of settings. They note that EM's focus on the details of everyday practices can help researchers identify the practical challenges that people face when using technology, and how these challenges can be addressed through design. Additionally, they argue that EM's emphasis on the social context of technology use can help researchers understand how technology fits into broader social structures and how it shapes social relations.
-
-#### Interview
-
-@crabtreeDoingDesignEthnography2012 advise that researchers treat interviews with caution. They suggest that interviews should be conducted in the actual flow of work as it unfolds and as the situation permits. They warn that what people say they do and what they actually do are not the same. It is not that people are lying, but that the accounts they offer in an interview often gloss over their work. The best way to conduct an interview is to be concerned with the just what and just how of the work, and not be driven by a pre-formulated schedule of questions removed from the actual doing of the work.
-
-#### Field notes
-According to @crabtreeDoingDesignEthnography2012, making field notes is an essential part of fieldwork. It allows the researcher to document the things they see and hear and jot down their thoughts on the setting and its work. Field notes provide a record of what the researcher observes, hears, and is told. Keeping a good set of field notes helps researchers keep track of what they are being told and organise their thoughts. It is an active process that makes the researcher attend to the work as it occurs, helping them develop their understanding of the work being done.
-
-@crabtreeDoingDesignEthnography2012 suggest that the notebook need not be a loose collection of disjointed comments. Researchers may use their notebook to structure their thoughts and develop a coherent account of the work of a setting. They recommend researchers make diagrams of the ecology of work to frame their inquiries into the work of a setting and represent it to others. Draw plans of the environment, indicate the people who inhabit it, their roles or responsibilities, and the artefacts that they use in doing the work. This helps researchers develop a detailed understanding of the setting\'s work and the methods members use to organise it as a real-world, real-time social accomplishment.
-
-#### Formal organisation of work and flow of work
-
-@crabtreeDoingDesignEthnography2012 suggest that researchers describe how the setting\'s work is \'formally organised\' across a division of labour and how it is \'formally organised\' at an individual level. This includes plans, procedures, processes, and routines that the setting\'s members invoke to account for the organisation of their work. Researchers should also focus on the flow of work, which starts somewhere, with someone doing something and proceeds to some end. They should focus on how the work moves across individuals, how it flows from one activity to another and one person to another.
-
-#### Discrete sequences of interactional work, cooperation and collaboration
-
-@crabtreeDoingDesignEthnography2012 recommend that researchers flesh out their description of the flow of work by focusing on the discrete sequences of interactional work that are involved in the accomplishment of particular activities. Researchers should describe what is being done, who is doing it, and how the work is accomplished. Researchers should also focus on the cooperation and collaboration that takes place between people in the accomplishment of discrete sequences of interactional work. They should describe who is talking to whom, what they are talking about, what they do together, the transactions that take place between them, the hand-over of tasks, and what others do in response.
-
-### Affinity diagrams
-
-Affinity diagrams, also known as the KJ method or affinity charting, were first developed by Japanese anthropologist Jiro Kawakita [as cited in @scupinKJMethodTechnique1997]. Affinity diagrams are used to synthesise and categorise large amounts of qualitative data, such as observations, interviews, and field notes, into meaningful and easily understandable themes and patterns [@haningtonUniversalMethodsDesign2019].
-
-The affinity diagramming process typically starts with the raw data being transformed into discrete statements or observations. These statements are then grouped based on their similarities and relationships (Hanington & Martin, 2019). The groups are subsequently labeled with descriptive headings, which capture the essence of their content. This iterative process allows for the identification of patterns, themes, and relationships among the collected data, thus providing insights and guidance for further analysis and design @holtzblattAffinityDiagram2016.
-
-In the context of ethnographic UX studies, affinity diagrams serve as a valuable tool for making sense of the complex and often messy data that emerges from immersive fieldwork @holtzblattAffinityDiagram2016. By organising and categorising data in a structured manner, researchers can identify user needs, behaviours, and pain points, which can inform design decisions and enhance the overall user experience @haningtonUniversalMethodsDesign2019.
-
-Furthermore, affinity diagrams facilitate collaboration and interdisciplinary communication among research team members @holtzblattAffinityDiagram2016. By engaging in the process of grouping and labeling data, researchers from different backgrounds and expertise can contribute to a shared understanding of the user experience, leading to more innovative and effective solutions.
-## Large language models
-
-In light of the limited literature on the application of LLMs, such as GPT-3.5 (from the ChatGPT platform) and GPT-4, in qualitative research, this study adopted an exploratory approach to investigate the potential of these tools. Consequently, I utilised these LLMs as supplementary instruments within this study. To maintain a clear and coherent narrative, I will discuss the reasoning and approach behind incorporating these tools in the upcoming sections. Additionally, for complete transparency, I have included the full transcripts of my interactions with the models in Appendix X.
-
-LLMs are a class of artificial intelligence models that specialise in processing and generating human-like text. They are based on deep learning techniques and are designed to understand and mimic complex linguistic patterns observed in human language. The underlying architecture of these models typically employs neural networks with billions of parameters, which are fine-tuned during the training process on massive text corpora.
-
-### Model Architecture
-
-LLMs are generally based on a Transformer architecture, first introduced in @vaswani2017attention. Transformers are characterised by their self-attention mechanism, which allows the model to weigh different parts of the input sequence in relation to each other. This mechanism enables the model to capture long-range dependencies and context more effectively than traditional recurrent neural networks or convolutional neural networks [@vaswani2017attention].
-
-### Training Process
-
-The training of LLMs involves two primary steps: pre-training and fine-tuning. During the pre-training phase, the model learns a general understanding of language by predicting missing words or tokens in a sequence (also known as masked language modeling). This is achieved by feeding the model a vast amount of text data from diverse sources, such as books, articles, and websites [see, for example, @devlin-etal-2019-bert]
-
-After pre-training, the model typically undergoes some sort of fine-tuning phase, during which it is further trained on a smaller, task-specific dataset. This enables the model to acquire specialised knowledge and skills related to the target task, such as question-answering, translation, or summarisation [@devlin-etal-2019-bert].
-
-### Inferential text completion
-Inferential text completion serves as the fundamental task carried out by LLMs in the context of current research. This task entails generating coherent, contextually relevant, and human-like text by continuing a provided prompt based on learned linguistic patterns and contextual information. Owing to their ability to perform this task, LLMs are well-suited for various applications such as content generation, summarisation, and conversation.
-
-Understanding the basics of inferential text completion requires delving into the underlying principles that govern the process. LLMs are trained on vast amounts of text data, enabling them to recognise and predict complex patterns in human language. These models employ a probabilistic approach, calculating the likelihood of different tokens appearing in sequence based on their acquired knowledge.
-
-![f10b3c1eb732c9953e5b53325a794140.png](f10b3c1eb732c9953e5b53325a794140.png)
-![9a74d7ae20c0fe20e10b681f0900e59a.png](9a74d7ae20c0fe20e10b681f0900e59a.png)
-
-Figure X offers an example of inferential text completion using an older model, such as text-davinci-003. In this figure, the model is prompted with the letter "I," and its inference process is displayed. Individual tokens are separated and color-coded according to their likelihood of being the next text in the sequence. For instance, the token "feel" had a 0.47% probability of appearing next (Figure X). The hyperparameter, temperature, plays a vital role in controlling the model's randomness. As the temperature approaches 0, the model's output becomes increasingly deterministic, while higher temperature values (up to a maximum of 1) yield more varied results, often selecting less likely inferences.
-
-However, in certain cases, despite having a good prompt, the model may produce lower quality or irrelevant output due to the influence of the temperature parameter or other stochastic factors. This phenomenon, referred to as "output degradation" or "response deviation," occurs when random chance from the temperature parameter leads the model in a direction of generating low-quality output [@Holtzman2020The]. A well-known type of response deviation is "hallucination," where the models yield information that is either irrelevant to the context or non-factual.
-
-As suggested in @Holtzman2020The, the quality and relevance of the generated text can be improved by fine-tuning hyperparameters such as temperature and top-k. These parameters influence the model's token selection. A lower temperature value results in more deterministic output, while a higher value promotes exploration and creativity. Similarly, the top-k parameter limits the model to consider only the k most probable tokens for each position in the text, striking a balance between diversity and coherence.
-
-In the current research, temperature values between 0.5 and 0.7 are typically used, as they are generally considered to strike an optimal balance between diversity and coherence.
-
-### Tokenisation
-
-Tokenisation is a crucial aspect of LLMs, as it serves as a pre-processing step that converts raw text into a format that can be processed by the model. In this process, the text is broken down into smaller units called tokens, which can be words, subwords, or individual characters [@vaswani2017attention]. The choice of tokenisation strategy can significantly impact the model's performance, as it determines the granularity at which the model processes and generates text. LLMs typically use subword tokenisation methods, such as Byte Pair Encoding (BPE) or WordPiece, which strike a balance between capturing meaningful linguistic units and maintaining a manageable vocabulary size [@vaswani2017attention].
-
-### Token-based pricing model
-Token-based pricing is the methodology employed by OpenAI to determine the cost associated with utilizing their language models. It is based on the principle that the length of text processed, measured in tokens, corresponds to the computational resources and time required for model inference.
-
-In OpenAI's pricing structure, a token represents a discrete unit that includes characters, spaces, words, punctuation marks, and other linguistic components. Longer inputs or passages generally contain a greater number of tokens, leading to increased computational expenses.
-
-OpenAI's token-based pricing accounts for the number of tokens used in both the input (prompt) and output (response) phases of an interaction. The total tokens include those in the provided input and those generated by the model in its response. Repetitive tokens within an interaction, such as duplicated prompts or recurring phrases, are counted as individual tokens.
-
-Customers are billed based on the total number of tokens utilized during the interaction, covering both input and output tokens. The cost per token remains consistent across different use cases and applications. This pricing structure ensures that the computational resources consumed by language models are appropriately considered, allowing for transparent cost estimation based on the complexity and length of text processed.
-
-### Prompt engineering and emergent abilities
-
-Prompt engineering is crucial for achieving high-quality results with LLMs and plays a pivotal role in uncovering their emergent abilities. By developing and optimising prompts, researchers can efficiently harness LLMs for various applications and research topics, gaining a deeper understanding of the models' capabilities and limitations \[@dair.aiPromptEngineeringGuide2023\].
-
-The process involves selecting appropriate text prompts, tuning the model's hyperparameters, and tailoring the prompt design to the model's capabilities. The primary objective is to provide sufficient context for high-quality results while avoiding incorrect or irrelevant outputs. Prompt engineering is particularly important in discovering emergent abilities, as it enables researchers to probe and explore the models' potential in novel and unexpected ways [@wei2022emergent].
-
-Emergent abilities, which cannot be reliably inferred by merely extrapolating smaller models' performance, often become apparent only after the LLM has been publicly deployed. As researchers experiment with various prompts and explore different applications, they may uncover previously unnoticed capabilities. In this sense, prompt engineering serves as an essential tool for investigating the full potential of LLMs, leading to the discovery of emergent abilities and fostering a better understanding of their implications \[@wei2022emergent\].
-
-By carefully crafting prompts and iterating on them based on the model's responses, researchers can push the boundaries of LLMs and uncover emergent abilities that may not have been apparent otherwise. This iterative process allows for the identification of novel capabilities, contributes to the ongoing development of LLMs, and informs the design of future models.
-
-Recent research points to significantly improved outcomes in reasoning tasks when models are prompted to produce a chain-of-thought [@weiChainThoughtPrompting2022; see also, @richardsAutoGPTAutonomousGPT42023; @weiArtificialStreamThought]. A recent study took this approach a step further, tasking GPT-4 to self-critique its own outputs, further improving the quality of the results [@shinn2023reflexion].
-
-In the current study, the Prompt Engineering Guide from @dair.aiPromptEngineeringGuide2023 was used as a valuable resource, offering a repository of state-of-the-art methods and techniques. This guide, combined with a thorough understanding of the models' inner workings and careful prompt engineering, enabled the effective exploration of emergent abilities and the leveraging of LLMs for qualitative research purposes.
-
-### Effects of simultaneous instruction overload on GPT-4 performance
-Research published since the initiation of the present study indicates that GPT-4 may struggle when faced with numerous instructions simultaneously. The model's performance appears to deteriorate when it is asked to execute too many tasks at once, which bears similarities to how humans can become overwhelmed by an abundance of instructions. This phenomenon may provide some explanation as to why the model failed to generate satisfactory results when it was asked to produce critiques and iterate upon them within a single, comprehensive prompt.
-
-For example, the self-critique prompt from @hebenstreit2023automatically, which instructs the model to "Answer the question, then critique the answer. Based on the critique, reconsider the other answer options and give a single final answer," performed on par with direct prompting. In direct prompting, the question is asked without any additional instructions. This outcome is surprising because the self-critique strategy has been demonstrated to yield improved results in other contexts, as highlighted by @shinn2023reflexion.
 
 # Methodology
 
 ## Ethnography
 
-### Semi-structured interviews
 
-To build empathy with the users, I conducted semi-structured interviews in an informal manner. According to @crabtreeDoingDesignEthnography2012, interviews should ideally be conducted in the flow of work, but since new IT investments were not a routine part of most employees\' daily work outside of the IT department, it was not feasible to talk with employees in the midst of making new investments. Thus, the interviews were conducted in a \"decontextualised\" fashion.
-
-In total, 12 employees were interviewed, selected based on a list of contacts provided by the author\'s contact person in Vejle's IT department. The list included decision-makers from all six administrations of the municipality. Each employee on the list was assigned assigned a pseudonym and identification number by which they were identified in my notes, never using their true names.
-
-All but one of the interviews were conducted face-to-face, the remaining interview being held by video call in order to accommodate the participant, and notes were taken by hand in a notebook to maintain a relaxed atmosphere, as opposed to using audiovisual recordings. The questions were not pre-formulated but were based loosely on an interview guide, allowing for a more natural and authentic conversation. During the interviews, brief notes were taken, and more detailed notes (Appendix X) were written as soon as possible afterwards to ensure accuracy and facilitate data analysis.
-
-### Field notes
-
-In conducting my research, I recognised the significance of field notes as an essential tool for documenting and organising the vast amount of information that I would encounter during my fieldwork. As @crabtreeDoingDesignEthnography2012 emphasise, field notes play a critical role in capturing the observations, thoughts, and reflections of the researcher on the setting under study. They offer a means to document the unfolding of work and provide a detailed record of the interactions, activities, and processes that shape the context of the research.
-
-To ensure that I was able to keep an accurate and detailed account of my observations, I maintained a dedicated notebook where I recorded my thoughts, sketches, and other details of my fieldwork in Vejle. This notebook was, in particular, used to document the interviews conducted, avoiding the presence of laptop or tablet screens and recording devices, which I feared would disturb the natural flow of conversation.
-
-In addition to traditional field notes, I also created a folder on a cloud-synced notes app that allowed me to make digital notes on my computer, smartphone, and tablet. This proved to be a valuable resource when I didn't have my physical notebook with me or when I was in the mood to type rather than write, allowing me to capture my thoughts and insights in a way that was convenient and flexible for my needs.
-
-My field notes were instrumental in facilitating my understanding of the work in Vejle by highlighting areas of cooperation and collaboration between individuals that were not necessarily captured by the formal organisation of work. They provided a valuable means to document the handover of tasks and the transactions that took place between individuals, which helped to reveal the dynamic nature of the work.
-
-In addition to being a useful record of my observations, my field notes served also as an active process of reflection, helping me create a mental model of the work being done in Vejle. By continually reflecting on what I was seeing and hearing, I was able to develop a detailed understanding of the setting\'s work and to refine my description of it over time. Furthermore, my field notes proved to be an invaluable resource for continually reworking my understanding of the work and for confirming or correcting my observations with those who were actually doing the work.
-
-On the whole, my field notes served as a critical resource for documenting and organising the rich and complex data that I collected during my fieldwork. By capturing the unfolding of work in Vejle and facilitating my understanding of it, my field notes provided a solid foundation for the analysis and interpretation of my research findings.
 
 ## Large Language Models (LLMs)
 
@@ -297,43 +86,6 @@ After the sorting and grouping process, I assigned descriptive headings to each 
 
 ### Exploring the potential of GPT-4 in creating affinity diagrams
 This section aims to investigate the capabilities of GPT-4 in creating affinity diagrams by comparing its performance to that of a human ethnographer. Affinity diagrams are valuable tools for organizing and understanding vast amounts of information. Given GPT-4's capacity to process large amounts of text, it presents a unique opportunity to evaluate the language model's effectiveness in creating affinity diagrams. Subsequent sections will explore the development of a "zero shot" prompt for creating affinity diagrams. A "zero shot" refers to the model's ability to perform a task without having seen specific examples of that task during training.
-
-#### Defining output quality
-
-To assess the output quality, the criteria described below are used. The criteria provide a comprehensive set of characteristics that define a high-quality output within the context of affinity diagrams created by GPT-4.
-
-##### Accuracy
-
-Accuracy refers to the fidelity of the output relative to the raw interview data. It is an assessment of whether the generated affinity diagram accurately represents and organises the data into appropriate categories.
-
-##### Relevance
-
-Relevance examines the pertinence of the categories formed by the model to the topic under investigation. This includes whether the categories formed by the model are meaningful and hold significance within the context of the collected interview data. An evaluation of relevance entails a close examination of the conceptual connections between the raw data and the categories within the generated affinity diagram.
-
-##### Completeness
-
-Completeness is an assessment of whether all data from the interviews is incorporated into the affinity diagram. This involves an analysis of whether any data has been excluded or overlooked in the output. Completeness provides a gauge of the exhaustiveness of the model's data categorisation process.
-
-##### Consistency
-
-Consistency measures the uniformity in the application of criteria for grouping data by the model. It examines whether similar data points have been grouped similarly, providing an indication of the consistency of the model's data interpretation and categorisation.
-
-##### Clarity
-
-Clarity evaluates the ease with which the generated affinity diagram can be understood. This assessment includes whether the groupings are straightforward and the diagram as a whole is intelligible. Clarity can often be an indicator of the usability of the output in further research or decision-making processes.
-
-##### Bias
-
-Bias scrutinises the neutrality of the model in its data categorisation process. It involves an analysis of whether the model has favoured certain responses or categories over others without a data-driven basis. This criterion seeks to identify any unintended skewing in the representation of the data.
-
-##### Interpretability
-Interpretability encompasses the evaluation of the model's decision-making process in terms of transparency and comprehensibility. This involves comprehending how LLMs process input data to produce an affinity diagram and determining if this process is logically explainable.
-
-LLMs possess an intrinsic characteristic that significantly limits their interpretability due to their complex nature and an enormous number of parameters, reaching far over a hundred billion. Consequently, these models are often referred to as "black-box" systems [@openai2023gpt4].
-
-##### Utility
-
-Utility evaluates the practical value of the generated affinity diagram. This involves an assessment of whether the diagram provides insights that can influence further research or decision-making. It is a measure of the actionable value of the output.
 
 #### Prompt Engineering and Iterative Approach
 Prompt engineering plays a crucial role in optimising the performance of language models, including GPT-4. This section discusses the approach to prompt engineering, aiming to achieve high-quality results. With GPT-4's enhanced capacity to understand and assist with meta-tasks, such as refining its own prompts, there is potential for streamlining the prompt engineering process without compromising its efficacy, thus further reducing workload.
@@ -780,76 +532,7 @@ This suggests that the model could potentially run the entire process again, ite
 
 # Discussion & Findings
 
-## Recommendations for Vejle Municipality
 
-Interviews conducted and ethnographic observations highlight opportunities to improve the IT investment process at Vejle Municipality. Though initially perceived as primarily an awareness issue, other key concerns also require addressing. Recommendations will be based on interview data and, occasionally, my own ethnographic observations.
-
-### Enhance communication and visibility of the IT investment process
-
-To better communicate the IT investment process, it should be positioned as a support service rather than a bureaucratic obstacle. Adding an option to indicate preferred contact persons in the IT department could help alleviate concerns about the process's impersonal nature. Moreover, prioritising improved communication and collaboration between central IT and decentralised areas, and between IT and the rest of the organisation, is essential. IT architects have made progress in this area, but continued efforts are crucial for effectively integrating the IT investment process into Vejle Municipality's daily operations.
-
-#### Establish clearer guidelines on reporting responsibilities
-
-IT architects play a vital role in communicating the process through personal interactions and other means. As Anne, an interviewee, highlighted, sharing the process with the right people without bothering irrelevant employees is essential. While the intranet contains ample information on when investments must be reported, it lacks clarity on who is specifically responsible for reporting investments to IT. This ambiguity can lead to situations where no one takes responsibility for contacting IT.
-
-Clearer guidelines for reporting responsibilities could help remedy this problem and make it easier for architects to find and communicate with the appropriate individuals within the municipality.
-
-#### Address implementation time and workload concerns
-As reported in the interview with Anne from the Salary department, instances have occurred where employees approach IT and other stakeholders with unrealistic expectations regarding the timeframe for solution implementation. Such situations can lead to disappointment and/or impose an excessively heavy workload to meet the desired schedule. It is therefore crucial to focus on the time requirements of projects. If feasible, guidelines should be established to provide employees with a realistic estimate of the time it will take to implement their IT investments.
-
-Alternatively, or in addition, the IT investment process form could incorporate an option for indicating a preferred implementation date for the new IT investment. This provision would allow the IT architect to manage expectations right from the first meeting, helping to realign any unrealistic timelines. Consequently, the IT architect would be less likely to be taken aback by an impractical timeframe presented during the meeting. This strategy could also mitigate the element of surprise and reduce the likelihood of a burdensome workload being imposed at short notice.
-
-#### Set an example
-
-When employees contact IT architects for assistance, they should receive help with their IT investment. Simultaneously, IT architects should create a record of the new IT investment in the appropriate database, demonstrating mutual respect for the process. After logging the investment, IT architects could inform the employee and politely request that they use the IT investment process for future investments, ensuring to explain the process's purpose.
-
-#### Simplifying the introductory text
-
-IT should consider the presentation of the IT investment process on the intranet page further. The extensive technical text on the page should be relegated to less prominent areas, as first impressions are crucial in persuading employees to engage with the process. Instead, a more concise, simplified version should be presented, emphasising the rationale for the process's existence and the advantages of utilising it, ideally employing more engaging communication methods.
-
-For instance, a video that explains the process, its purpose, and its benefits could be showcased on the intranet page, making it a valuable resource to which IT architects can direct employees for further information.
-
-By making employees aware of the rationale behind the IT investment process and its potential benefits, they are more likely to be receptive to changing their behaviour. Simultaneously, understanding the logic underpinning the IT investment process provides a more intuitive way of explaining and grasping its relevance. This approach could help address the image problem and confusion arising from the current guidelines, as mentioned in the previous section.
-
-#### Consider revising guidelines for when investments should be reported
-
-For IT-savvy employees outside of the IT department, such as Mikkel and Freja, the guidelines regarding when IT investments need to be reported can appear overly broad, seemingly intended for employees whose daily work and competencies do not focus on IT. Consequently, these IT-savvy employees may feel that they are exempt from using the IT investment process or perceive that employees with their competencies have not been taken into account when formulating the guidelines.
-
-Although the current guidelines serve as a comprehensive catch-all, which can be suitable when the complexity of a situation makes it difficult to establish precise rules, the IT department should be cognisant of the image problem and the confusion generated by prominently displaying these guidelines on the intranet page for the IT investment process. This prominence can overwhelm readers or appear condescending.
-
-### Humanise the IT investment process
-
-Interview data and ethnographic observations indicate that the IT investment process suffers from an image problem. To counteract this perception, steps should be taken to make the process more approachable. In the following sections, I will cover possible ways of achieving this.
-
-#### Renaming the process
-
-Many interviewees unfamiliar with the IT investment process commented on its name. The lengthy Danish term, consisting of twenty-three letters, appeared bureaucratic and unappealing. A name like "Indkøbsguiden" (Danish for "The Purchase Guide") was suggested as an alternative, appealing more to the grassroots level of the organisation.
-
-#### Cater to the needs of diverse employee groups
-
-The IT investment process should accommodate the requirements of various employee groups who may be hesitant to use the process. Allowing employees to choose a preferred architect when completing the form could provide peace of mind to those dealing with sensitive IT investments, such as daycare workers with unique needs.
-
-#### Clarify the purpose and advantages of using the IT investment process
-
-Interviewees viewed the IT investment process as bureaucratic and struggled to understand its benefits compared to directly contacting the IT department. The IT department should use the intranet site to clearly explain the purpose of the IT investment process, emphasising the "why" rather than relying on coercive language about city council mandates.
-
-### Attempt to unify reporting with other parts of the organisation
-
-One significant issue raised in the interviews was the non-uniformity of reporting processes across the organisation. Other departments have their own reporting requirements for various cases of investments, such as new welfare technology investments and new systems integrating with the municipality's payroll system. This complexity creates a challenging environment for employees to navigate when investing in new systems.
-
-Although this complexity currently hinders the adoption of the IT investment process, there is potential to transform it into a strength by initiating dialogue to unify reporting requirements across the organisation. A unified reporting system could simplify communication about the importance of reporting new investments and improve overall compliance.
-
-This unified system would serve as a one-stop shop for all new investment reporting. A streamlined set of questions would automatically identify which departments should be informed of the new investment based on the responses provided, allowing IT and other departments to collaborate rather than compete for employees' attention.
-
-Implementing such an approach presents challenges, including fostering cooperation between separate working groups. However, given the shared difficulties arising from poorly executed investment reporting (as exemplified by Anne's interview), there should be common ground for collaboration.
-
-A potential solution is a standardised form asking relevant questions about the investment, such as access requirements to payroll systems and municipal networks. Based on the responses, the form would determine which responsible parties within the organisation need to be informed of the specific investment in question.
-
-### Ease restrictions where possible
-
-While information and cyber security are crucial, it is also essential to strike a balance. Decentralised employees may perceive strict restrictions on user privileges as excessive burdens, potentially affecting their job satisfaction and sense of agency. It is essential to consider that decentralised IT specialists, although not part of the central IT department organisationally, are still IT experts and likely possess the necessary knowledge and skills to manage their tasks responsibly.
-
-By easing restrictions where possible, a more balanced approach can be achieved, ensuring that decentralised employees, particularly IT specialists, feel trusted and empowered within the organisation.
 
 ## Evaluation of outputted affinity diagrams from GPT-4
 
