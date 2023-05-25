@@ -7,14 +7,21 @@ abstract:
 keywords: key1, key2
 
 # Introduction
-[INSERT TEXT]
-Our world is increasingly influenced by the rapid progress of digital evolution, which has far-reaching implications in a variety of domains, including academia. A notable development in this arena is the incorporation of artificial intelligence (AI) and machine learning (ML) technologies into academic research methodologies. This integration opens up exciting prospects for significant breakthroughs, pushing the boundaries of traditional research methods.
+As the world grows more interconnected and digitally advanced, the implications of this digital evolution span various domains, most notably, academia. A significant development is the integration of artificial intelligence (AI) and machine learning (ML) technologies into academic research methodologies, presenting novel avenues for progress and breakthroughs. This study delves into the exploration of one such innovation, the Generative Pretrained Transformer 4 (GPT-4), a highly advanced Large Language Model (LLM) developed by OpenAI. In particular, we examine the capacity of GPT-4 to augment traditional qualitative research methodologies within the setting of Vejle Municipality's IT department in Denmark.
 
-This study delves into the exploration of one such technology, the Generative Pretrained Transformer 4 (GPT-4), a cutting-edge Large Language Model (LLM) developed by the American AI research laboratory OpenAI. GPT-4, the latest iteration in the GPT series, possesses advanced capabilities that have the potential to revolutionise the field of text generation and analysis. In particular, our research aims to examine the capacity of GPT-4 in augmenting traditional qualitative research methodologies, with the backdrop being the IT department in Vejle Municipality in Denmark.
+In Vejle's IT department, a structured IT investment process is in place, yet challenges persist with employee compliance, leading to inefficiencies and discrepancies. The aim of our research is to uncover the root causes of such behaviour and propose strategies for improvement. A significant innovative element of our research involves leveraging GPT-4 to create affinity diagrams, capitalising on its ability to process and analyse large volumes of text data and to understand the interconnected themes within.
 
-Vejle's IT department has in place a well-structured IT investment process, in form of a webform on the municipal intranet, but there have been challenges with employees' adherence, leading to inefficiencies and discrepancies. This study is designed to dig deep into the reasons behind such behaviour and propose strategies to enhance compliance.
+Digital technology's rapid evolution continues to intersect with various spheres of human life, transforming traditional practices and forging new paradigms. This transformative trend is vividly visible within academia, where AI and ML advancements present unparalleled possibilities. This study, therefore, probes one such possibility—the integration of GPT, represented by GPT-4, into ethnographic studies.
 
-A significant innovation of our research lies in utilising GPT-4 to create affinity diagrams based on a corpus of interview data. This leverages GPT-4's capacity to process and analyse vast amounts of text and build an understanding of the interconnected themes present within the data. Recent studies, such as @weiChainThoughtPrompting2022, indicate that LLMs perform optimally on reasoning tasks when prompted with a chain of thought. The novelty of our study lies in the application of this chain of thought prompting to a more substantial analytical task, such as the analysis of interview data and the generation of a structured affinity diagram.
+We investigate this potential within the unique setting of Vejle municipality, Denmark, a local government that serves a vibrant community of 120,000 residents [@vejlekommuneVejleKommuneRunder2022]. Despite the establishment of a robust IT investment process, the department faces inconsistencies in employee adherence, leading to inefficiencies. Our study aims to understand why this is the case, and how to formulate strategies that enhance compliance.
+
+The use of language models like GPT-4 in this research is twofold. Firstly, they are used as a peripheral method within the context of the traditional qualitative research in order to assist the investigation in an unobtrusive way, much the same as a supervisor available 24/7. Secondly, we take a more exploratory approach to how this cutting-edge technology can be harnessed in order to accelerate or augment the process of qualitative analysis, taking the route of attempting to automate the process generating an affinity diagram from interview data, with the aim of extracting new perspectives from the extensive dataset. Despite the application of bicameral dialogue, a technique that simulates the model's thoughts through self-dialogue, the resulting diagrams did not meet the anticipated expectations. Consequently, we recommend additional research to explore the limitations and potential applications of GPT-4 in this context.
+
+Through examining this intersection of technology and human behaviour, we aim to provide solutions to Vejle Municipality's challenges while simultaneously shining a light on new paths for the academic world. Our study contributes to understanding a specific socio-technical system within Vejle municipality, exploring LLMs' potential as a groundbreaking tool in academic research. It is a journey at the exciting intersection of technological innovation and human complexity, seeking to enrich both fields with new insights and strategies.
+
+GPT-4's unique ability to process large volumes of detailed text input and generate insightful analyses has been fully leveraged in this study. GPT-4 can handle up to 8,000 tokens with the 8K model, and a massive 32,000 tokens with the 32K model, where each token represents approximately 0.75 words in English text [@openaiPricing].
+
+A novel application of GPT-4 in our study was its use in generating an affinity diagram 
 
 This exploration, therefore, fulfils a dual purpose. Firstly, it sheds light on the socio-technical system within Vejle municipality and the specific dynamics that impact the IT investment process. Secondly, it uncovers the potential of AI and GPT-4 as pioneering tools in academic research, providing an original perspective on qualitative studies. Thus, the present research is guided by two intertwined questions:
 
@@ -38,7 +45,13 @@ The first section starts with an introduction to the case background, followed b
 The second section focuses on GPT-4, beginning with a technical background for those unfamiliar with the model. This is followed by a literature review positioning the present research in the intersection of qualitative research and machine learning and natural language processing. The methodology involves data collection through user-model interfaces, details about the iterative prompting approach used, ending by establishing a set criteria for assessing output quality forming the basis of data analysis.
 
 # Case Study: Vejle Municipality's IT Investment Process
-As mentioned before, the chapter that follows will consist of a traditional qualitative investigation of the IT investment process in Vejle Municipality. [INSERT TEXT]
+The forthcoming chapter will present a comprehensive qualitative analysis of the IT investment process in Vejle Municipality. This investigation will begin with a thorough case background, providing insights into the organisational structure of Vejle Municipality, the composition and function of its IT department, and the mechanics of its IT investment process, among other details.
+
+Subsequently, we will delve into a literature review. This section will encapsulate the existing body of knowledge that forms the basis for the study at hand. By exploring previous scholarship, we can position our current research within a broader academic context, illuminating the novel aspects of our investigation.
+
+Following the literature review, we will present the collected data, detailing its relevance and potential implications for Vejle Municipality's IT investment process. This evidence will be meticulously examined to ensure it supports the study's objectives and assumptions.
+
+The chapter will culminate in a comprehensive discussion, synthesizing our findings and positing their significance within the framework of our broader research goals. This concluding section will effectively tie together the various elements of the chapter, offering a cohesive analysis of the IT investment process within Vejle Municipality.
 ## Case Background
 Residing within the administrative building of Vejle Municipality, the IT department has historically grappled with effective communication, particularly with external stakeholders and individuals in decentralised roles. Recognising the need to bridge this gap, the department strategically incorporated four IT architects into its ranks over recent years, each bringing a distinct blend of skills and expertise.
 
@@ -63,7 +76,7 @@ However, despite these comprehensive instructions and the broad applicability of
 In light of these observations, this study aims to delve into the reasons behind employees' inconsistent adherence to the IT investment process and propose strategies to improve compliance. The ensuing report will thoroughly investigate the complexities of this case before using the rich qualitative data generated for experiments in the field of NLP in the penultimate chapter.
 
 ## Literature Review
-This literature review will delve into three key areas pertinent to this study: IT Investment Governance, Ethnomethodology, and Affinity Diagrams. The analysis of these topics aims to build a theoretical underpinning for understanding the complexities of IT investment in the public sector and how ethnomethodological research and affinity diagrams can help derive valuable insights into this intricate process. Let's begin by unpacking the first concept, Information Technology Investment Governance.
+This literature review will delve into three key areas pertinent to this study: IT Investment Governance, Ethnomethodology, and Affinity Diagrams. The analysis of these topics aims to build a theoretical underpinning for understanding the complexities of IT investment in the public sector and how ethnomethodological research and affinity diagrams can help derive valuable insights into this intricate process. Let's begin by unpacking the first concept, Information Technology Investment Governance
 
 ### IT Investment Governance
 
@@ -115,7 +128,6 @@ The affinity diagramming process typically starts with the raw data being transf
 In the context of ethnographic UX studies, affinity diagrams serve as a valuable tool for making sense of the complex and often messy data that emerges from immersive fieldwork @holtzblattAffinityDiagram2016. By organising and categorising data in a structured manner, researchers can identify user needs, behaviours, and pain points, which can inform design decisions and enhance the overall user experience @haningtonUniversalMethodsDesign2019.
 
 Furthermore, affinity diagrams facilitate collaboration and interdisciplinary communication among research team members @holtzblattAffinityDiagram2016. By engaging in the process of grouping and labeling data, researchers from different backgrounds and expertise can contribute to a shared understanding of the user experience, leading to more innovative and effective solutions.
-
 
 ## Methodology
 [INSERT TEXT]
@@ -223,7 +235,7 @@ The architects, including Mathilde, have reached out more to decentralised areas
 While the interview data yielded a fair deal of critique to the process, it is not all bad. The web manager Freja expressed that, in her experience, that she thinks people have become more aware of the need to avoid double investments through the years. Søren from school IT described the simplification the IT investment process underwent some years ago as a considerable improvement, taking more consideration for decentralised employees.
 
 ## Discussion
-[INSERT TEXT]
+[INSERT TEXT] now that we've covered the interview data, we will move into discussing the...
 ### Recommendations for Vejle Municipality
 
 Interviews conducted and ethnographic observations highlight opportunities to improve the IT investment process at Vejle Municipality. Though initially perceived as primarily an awareness issue, other key concerns also require addressing. Recommendations will be based on interview data and, occasionally, my own ethnographic observations.
@@ -297,33 +309,61 @@ By easing restrictions where possible, a more balanced approach can be achieved,
 
 
 ### Opportunities for Future Research
-[INSERT TEXT]
-#### A more extensive investigation of practice in other municipalities
-In the current study, the primary focus was on investigating practices within Vejle municipality, with only a few observations made about how other municipalities handled new IT investments. Future research should take a closer look at the practices in other municipalities and assess their effectiveness to attempt to understand what the best practice is within municipalities in the present day. To a certain extent, it could also be helpful to examine the private sector's practices. Although the public sector is fundamentally different from the private sector, IT departments in medium and large private sector companies might face similar challenges to the IT department in Vejle, making it worth investigating.
+Further research is necessary to delve deeper into the facets of the IT investment process that weren't covered in depth during this study. Potential areas of exploration could include:
 
-To explore other municipalities, it would be beneficial to utilise existing connections between Vejle and other municipalities, for example, Aarhus, Odense, Fredericia, Sønderborg, and others.
+#### Comprehensive Review of Practices in Other Municipalities
+In this study, we primarily focused on examining the IT practices within the Vejle municipality. However, our observations were limited to this area, leaving a gap in our understanding of how other municipalities manage new IT investments. Future research should cast a wider net, scrutinizing practices in various municipalities to identify the most effective strategies for managing IT investments. This approach can pave the way to establishing a standard for best practices among municipalities.
 
-#### A closer look into the IT investment process through the lens of managerial science
-Although the current research employs an ethnographic methodology to explore the challenges associated with the IT investment process, primarily from a user perspective, integrating insights from experts in communication and managerial science may prove invaluable for developing tailored communication strategies and action plans.
+There's merit in drawing comparisons and lessons from the private sector, despite fundamental differences between it and the public sector. Mid to large-sized private companies may face similar challenges to Vejle's IT department, thus it's worthwhile to include such entities in future investigations.
 
-By incorporating principles from managerial science, researchers could systematically examine the decision-making processes, resource allocation, and performance measurements affecting the IT investment process at Vejle Municipality. This approach can help identify inefficiencies, misaligned incentives, and other potential barriers to effective IT investment management.
+To extend our exploration to other municipalities, leveraging established relationships between Vejle and its counterparts, such as Aarhus, Odense, Fredericia, Sønderborg, among others, would be advantageous.
 
-Moreover, communication specialists can contribute to the development of targeted communication plans, providing guidance on the most effective methods to convey information, promote collaboration, and foster a culture of transparency and accountability. These experts can also identify potential communication gaps and recommend strategies to bridge them, ensuring that all stakeholders understand their roles, responsibilities, and the overall goals of the IT investment process.
+#### Enhancing IT Investment Process Understanding Through Managerial Science
+While the present research employs ethnographic methods to delve into IT investment process challenges primarily from a user standpoint, integrating insights from communication and managerial science could be highly valuable. These insights could guide the creation of custom communication strategies and action plans.
 
-Additionally, an interdisciplinary approach that combines these ethnographic findings with insights from managerial science and communication expertise can lead to a more comprehensive understanding of the problems facing the IT investment process. This holistic perspective can facilitate the identification of key factors influencing employee behaviour and organisational culture, thereby enabling the development of evidence-based interventions to improve the IT investment process within the municipality.
+By incorporating managerial science principles, we could systematically investigate the decision-making processes, resource distribution, and performance metrics that shape the IT investment process in Vejle Municipality. This strategy would aid in pinpointing inefficiencies, discrepancies in incentives, and other potential hindrances to efficient IT investment management.
+
+Communication specialists can play a crucial role in crafting targeted communication plans. Their expertise can guide the choice of effective ways to share information, encourage cooperation, and foster a culture of transparency and accountability. These experts can detect potential communication voids and propose strategies to fill them, ensuring all stakeholders are aware of their roles, responsibilities, and the overarching goals of the IT investment process.
+
+An interdisciplinary approach that merges these ethnographic findings with insights from managerial science and communication expertise can yield a broader understanding of the IT investment process's issues. This comprehensive view can help identify key influences on employee behaviour and organisational culture, thereby informing the design of evidence-based interventions to enhance the IT investment process within the municipality.
 
 #### In-Depth Exploration of IT Investment Process through Ethnomethodology
-While the aspiration was to do ethnomethodology, the current research primarily focuses on an ethnographic approach to understand challenges associated with IT investment processes from a user perspective. However, employing an ethnomethodological approach could provide additional insights by examining the everyday practices, social interactions, and meaning-making processes involved in the implementation of IT investments within the municipality.
+Drawing from the ethnographic approach that was undertaken in the current research, there are clear opportunities for further exploration, especially employing an EM approach. 
 
-Ethnomethodology delves deeper into the detailed practices and interactions that constitute the social world, offering a more nuanced understanding of how people make sense of and navigate complex situations. In the context of the IT investment process, this could involve investigating how various stakeholders collaborate, communicate, and negotiate their roles and responsibilities within the organizational structure. This approach can uncover the underlying rationales, assumptions, and expectations that shape the behaviors and actions of those involved in the IT investment process.
+Future research can aim to delve deeper into the nuanced practices and interactions that constitute the IT investment processes. The daily workings of IT architects, as well as their decision-making processes, can be the focus of such studies. EM techniques, such as video analysis or conversational analysis, would be extremely useful for this purpose. This approach will help uncover not only the explicit knowledge that IT architects use when making IT investment decisions but also tacit knowledge and practices, which are often overlooked but are critical to the process and which potentially could benefit from being explicated.
 
-Moreover, an ethnomethodological study could provide insights into the emergent norms and routines that govern the functioning of the IT department and the dynamics between central IT and decentralised staff members. This may involve examining the work practices and decision-making processes employed by IT staff when managing IT investments, the informal channels of communication and collaboration that exist between different departments, and patterns of resistance and negotiation that manifest in response to organizational constraints and expectations.
+Moreover, breaching experiments, another EM method, could provide valuable insights into the inherent assumptions and norms within the IT department and the larger organisation. These experiments involve intentionally breaking the "rules" of social behaviour to reveal underlying norms and expectations. In an IT investment context, this might involve changing certain standard procedures or channels of communication and observing how IT architects and other stakeholders react and adapt to these changes.
 
-Furthermore, incorporating ethnomethodological findings could enhance the current recommendations by offering a more in-depth understanding of the sociocultural factors that impact the IT investment process. Consequently, this could enable the development of tailored interventions that directly address the root causes of the identified challenges, facilitating a more effective and sustainable transformation of the IT investment process within the municipality.
+In addition, a more detailed study of the social interactions and meaning-making processes associated with IT investments could be beneficial. For instance, how do different stakeholders negotiate and collaborate during the IT investment process? What kinds of informal communication and collaboration channels exist? And how do these processes influence IT investment decisions?
+
+Finally, more research could be done on how sociocultural factors impact the IT investment process. The EM approach could be particularly effective in uncovering these influences, as it emphasises the importance of social context in shaping behaviors and actions.
+
+In summary, the current research has laid the groundwork for a more detailed exploration of the IT investment process. Future studies that incorporate EM methods could build on this foundation, providing a more holistic and in-depth understanding of the complex social dynamics that underlie IT investments. These studies could in turn inform more effective strategies and interventions for improving IT investment processes within municipalities and other organisational contexts.
+
+### Interim Conclusions
+These interim conclusions drawn from the current research provide valuable insights into the challenges and opportunities associated with Vejle Municipality's IT investment process. Based on the findings and recommendations, it is apparent that a multifaceted approach is required to enhance the IT investment process. Through improved communication, streamlined guidelines, and a more human-centred approach, Vejle Municipality has the potential to make substantial improvements to its IT investment process, ultimately leading to more effective IT investments in the future.
+
+The insights garnered so far have laid the groundwork for a deeper exploration into not just the mechanisms of the IT investment process, but also the potential applicability of advanced technological tools like artificial intelligence in understanding and enhancing this process.
+
+As we transition into the next chapter of this report, we turn our focus to the evaluation of the utility of GPT-4 in the domain of qualitative research. Specifically, we will be examining GPT-4's capability in creating affinity diagrams and comparing its performance to that of a human ethnographer. This exploration offers an exciting perspective on the intersection of qualitative research and artificial intelligence.
+
+Before we dive into this analysis, it is important to provide a solid understanding of the principles underlying the functioning of GPT-4. The upcoming sections will provide a technical background on the architecture, training process, and operational mechanisms of large language models, and delve into specific aspects such as inferential text completion, tokenisation, token-based pricing, and the critical role of prompt engineering.
+
+While these interim conclusions close this chapter of our report, they also pave the way for the exciting discussions to come. The subsequent examination of AI's role in qualitative research, specifically the application of GPT-4 in creating affinity diagrams, promises to open up new avenues of thought and possibilities.
 
 # GPT-4's Utility in Qualitative Research
-The present chapter aims to investigate the capabilities of GPT-4 in creating affinity diagrams by comparing its performance to that of a human ethnographer. Affinity diagrams are valuable tools for organising and understanding vast amounts of information; given GPT-4's capacity to process large amounts of text, it presents a unique opportunity to evaluate the language model's effectiveness in creating affinity diagrams.
-[INSERT TEXT]
+This chapter provides an in-depth look at the potential of GPT-4, a large language model developed by OpenAI, to contribute to qualitative research. Specifically, we will assess GPT-4's proficiency in creating affinity diagrams, and compare its performance with that of the human ethnographer who authored this report. This evaluation will give us insights into the model's practical utility and effectiveness. While our focus here is on affinity diagrams, we hope this exploration will spark interest in investigating a wider range of applications for AI models like GPT-4 in the field of qualitative research.
+
+This chapter is structured into five sections. We begin with a technical background to give those unfamiliar with the workings of GPT-4 a foundational understanding of the technology behind it.
+
+Next, we undertake a literature review to place this research within the context of the existing body of knowledge. We will discuss relevant studies and theories that pertain to AI applications in qualitative research, with a specific focus on the use of large language models for tasks such as creating affinity diagrams.
+
+The following section is dedicated to methodology. Here, I will detail the user-model interfaces used in this research, and the iterative prompting approaches that were employed. I will also describe the qualitative criteria used for assessing the quality of the model's outputs.
+
+The fourth section presents the results: the outputs generated by GPT-4 in response to the prompts provided. These results will then be evaluated and discussed in the subsequent section.
+
+In the final section, we delve into a discussion of the output quality. We reflect on the strengths and weaknesses of GPT-4's performance, and explore potential areas for future research. We will also consider the broader implications of our findings for the application of AI in qualitative research.
+
 ## Technical Background
 The following sections provide a technical background designed to enhance the understanding of LLMs, specifically focusing on their architecture, training process, and operational mechanisms, delving into the principles of inferential text completion, tokenisation, token-based pricing, and the importance of prompt engineering in eliciting emergent abilities from LLMs. 
 
@@ -401,9 +441,7 @@ However, it is equally important to recognise that humans are not exempt from bi
 
 [INSERT TEXT]
 ### Effects of simultaneous instruction overload on GPT-4 performance
-Research published since the completion of the data collection of the present study indicates that GPT-4 may struggle when faced with numerous instructions simultaneously. The model's performance appears to deteriorate when it is asked to execute too many tasks at once, which bears similarities to how humans can become overwhelmed by an abundance of instructions. This phenomenon may provide some explanation as to why the model failed to generate satisfactory results when it was asked to produce critiques and iterate upon them within a single, comprehensive prompt.
 
-For example, the self-critique prompt from @hebenstreit2023automatically, which instructs the model to "Answer the question, then critique the answer. Based on the critique, reconsider the other answer options and give a single final answer," performed on par with direct prompting. In direct prompting, the question is asked without any additional instructions. This outcome is surprising because the self-critique strategy has been demonstrated to yield improved results in other contexts, as highlighted by @shinn2023reflexion.
 
 Opportunities for using this knowledge to remedy problems encountered in the present research will be covered later in the present chapter together with other opportunities for future research.
 
@@ -648,47 +686,28 @@ In the following sections, the results of the affinity diagrams generated by GPT
 
 ### The Direct Prompting Approach
 
-The resultant affinity diagram from the direct prompting approach didn't necessarily adhere to the typical structure associated with such diagrams, which usually entail small, data-rich segments presented on sticky notes. Despite this, the model utilised the interview data factually and accurately, subject to its inherent limitations. Similar to the simulated-though approach, it was evident that the model fell short in grasping the organisational context surrounding Vejle Municipality and the IT investment process. The output, for ease of interpretation, has been reformatted and summarised as follows:
+The direct prompting approach resulted in an affinity diagram that diverged from the standard structure, typically comprising small, data-rich segments presented on sticky notes. Despite inherent limitations, the model utilised the interview data with a fair degree of accuracy. However, shortcomings were evident in the model's understanding of the organisational context, particularly within the context of Vejle Municipality and its IT investment process, a limitation also observed in the simulated-though approach. The output, for ease of interpretation, has been reformatted and summarised as follows:
 
 > 1.  **Understanding of the IT investment process**: Several interviewees, including Karina (Interview 165) and Anne (Interview 190), either lacked awareness of the IT investment process or didn't view it as pertinent to their work.
 > 2.  **Communication and collaboration with the IT department**: The crucial role of communication and collaboration with the IT department in successfully implementing new systems was underscored. Lise (Interview 161) stressed the importance of understanding the specific context of daycare workers, while Peter (Interview 183) flagged concerns about gaps in IT support at his residential care facility.
 > 3.  **Challenges and frustrations in implementing new systems**: A number of interviewees articulated their challenges and frustrations in implementing new systems. These were often attributed to communication gaps and misunderstandings between different departments or a perceived rigidity of the IT department. Mikkel (Interview 169) and Freja (Interview 189) were among those voicing such concerns.
 > 4.  **Suggestions for improvement**: Proposals for improvement included enhanced communication regarding the IT investment process, targeted promotion to specific departments dealing with IT investments, and changes to the process name for increased tangibility. Suggestions for a more streamlined form, a central system to guide communication, and transparent guidelines for reporting new investments were also made.
 
-[INSERT TEXT] (merge)
-#### Accuracy
+In particular, the model's interpretation of Karina's interview revealed a crucial misunderstanding. Karina, whose role did not involve the IT investment process, expressed unawareness of it, a legitimate response given her job scope. Yet, the model misinterpreted this as a lack of understanding, underscoring the model's deficiency in recognizing contextual nuances, a thread common in its analysis.
 
-The model's misinterpretation of Peter's concerns about IT support at his residential care facility, which are not strictly within the remit of the central IT department, highlights a crucial misunderstanding. This underscores the model's deficiency in fully understanding the organisational context. However, this appears to be a singular error in an otherwise accurate output, leading to a moderate rating in accuracy.
+Another example of this is reflected in its interpretation of Peter's concerns about IT support at his residential care facility. These concerns were not within the remit of the central IT department, highlighting the model's insufficient grasp of the organisational structure. Thus, the accuracy of the output was moderate, limited by these contextual misunderstandings.
 
-#### Relevance
+Despite the occasional misinterpretation, the model effectively grouped the data, leading to high scores in relevance and consistency. It also presented the output in clear, accessible language, securing a high rating for clarity. However, it fell short in fully utilising the depth of available data, resulting in a low completeness score.
 
-All groupings made by the model were pertinent to the data, hence the relevance of the output is deemed high.
+The model's 'black-box' nature posed a challenge for interpretability, providing little insight into the decision-making process behind the output. In terms of bias, no obvious leanings were detected. Given the interview context and data, it is highly probable that the output was free from significant bias.
 
-#### Completeness
+In terms of utility, while the model's output could offer a quick overview for those unfamiliar with the data, it didn't provide any new insights for researchers or those familiar with the context. It failed to offer knowledge that couldn't be quickly noted manually, leading to a utility rating of low to moderate. This critique, combined with the model's contextual misunderstandings, underlines the necessity for a deeper contextual understanding for more salient analysis.
 
-The model demonstrated significant shortcomings in the completeness of its output, failing to fully utilise the depth of the data at its disposal. Therefore, the completeness of the output is assessed as low.
+This direct prompting approach's overarching analysis was adequately conducted. It presented the responses in an organised, coherent manner, providing a broad overview of the issues and suggestions related to the IT investment process at Vejle Municipality. Although, there was a marked inability to distinguish the intricacies contained within the subtext of the interview data.
 
-#### Consistency
+While the model was capable of highlighting the issues raised, such as the lack of understanding of the IT investment process and the challenges in implementing new systems, it failed to provide a nuanced interpretation of the underlying issues. Instead, it often simplified the responses, occasionally leading to misinterpretations and neglecting the complexities inherent in a real-world organisational setting, not successfully recognising the limitations of its data set. It treated all responses with equal weight, failing to read between the lines in the way a researcher with an in-depth understanding of the context and subtext would.
 
-No apparent issues with consistency of groupings were observed in the model's output, leading to a high consistency rating.
-
-#### Clarity
-
-The output was presented in plain, easy-to-understand language, securing a high rating for clarity.
-
-#### Bias
-
-Given the limited data output and the inherent lack of interpretability, it's challenging to detect any bias. However, nothing suggestive of bias is apparent. The context of the interviews doesn't encompass controversial elements present in the model's training data, making it highly probable that no significant bias is in play.
-
-#### Interpretability
-
-The 'black-box' nature of large language models (LLMs) offers limited insight into the decision-making process behind the output. Consequently, the interpretability of the output is rated as low.
-
-#### Utility
-
-For an individual unfamiliar with the data, the output could provide a quick overview. However, from a researcher's perspective, the output doesn't add anything novel to the existing understanding. It fails to provide insights that couldn't be quickly jotted down manually. Therefore, the utility of the approach is judged to be low to moderate.
-
-[INSERT TEXT]
+Despite these limitations, the direct prompting approach has potential as an initial data analysis tool, especially in processing large amounts of qualitative data quickly. However, its output needs to be carefully scrutinised for contextual accuracy and validated against the human analyst's understanding of the organisation.
 
 ### The simulated-though approach
 The simulated-thought approach used in the present study could be argued to have attained a deeper level analysis, but other key problems arose from the design of the prompt, particularly in the area of grouping strategy. [INSERT TEXT]
@@ -759,10 +778,15 @@ The model's output did not appear to contain any bias. However, the premature te
 The output of the model should provide actionable insights. While the model segmented the data extensively, it did not delve into the potential implications of the identified themes and issues. An explicit description of the IT investment process, coupled with a dialogue-based approach for a deeper exploration of the data, could help enhance the utility of the model's output.
 
 ### Opportunities for Future Research
-This study identified a significant challenge, which hindered further prompt iteration and refinement of the model's output, specifically the escalating token cost. The more tokens the model is prompted with, the higher the cost for executing the request. Submitting a prompt containing the entire interview data already utilises a substantial number of tokens. Including both the interview data and the affinity diagram generated by the model in a new request would further increase the expense. While these costs might be negligible in certain contexts, they can rapidly escalate to become a considerable financial burden for small-budget projects, such as a master's thesis which is self-funded by the researcher.
+This study identified a significant challenge that hindered further prompt iteration and the refinement of the model's output, specifically the escalating token cost. The more tokens the model is prompted with, the higher the cost for executing the request. Submitting a prompt containing the entire interview data already utilises a substantial number of tokens. Including both the interview data and the affinity diagram generated by the model in a new request would lead to a substantial increase in cost. While these costs might be negligible in certain contexts, they can rapidly escalate to become a considerable financial burden for small-budget projects, such as a master's thesis that is self-funded by the researcher.
 
-Given these considerations, future research could explore alternative ways to structure and sequence prompts for GPT-based affinity diagrams. As indicated in comparing results attained in @hebenstreit2023automatically and @shinn2023reflexion on question-answering tasks followed by self-critique, dividing the prompt into smaller segments and inputting them sequentially might prove to be a more effective strategy for achieving better results. This approach could potentially mitigate the model's performance degradation when it is faced with an excessive number of tasks in one prompt, in this example outputting an answer as well as self-critique, thereby improving the overall quality of the output.
+An additional complexity that emerged both from this study and recent research conducted after our data collection phase is GPT-4's struggle with managing multiple instructions at the same time. As these recent studies have indicated, the performance of GPT-4 tends to decline when tasked with numerous directives simultaneously. This behaviour mirrors how humans can also become overwhelmed when presented with a multitude of instructions, and it might shed light on why the model faced difficulties in delivering satisfactory results when asked to both generate critiques and iterate upon them in a single, comprehensive prompt.
 
+An example that highlights this challenge is found in the self-critique prompt from @hebenstreit2023automatically. This prompt guides the model to "Answer the question, then critique the answer. Based on the critique, reconsider the other answer options and give a single final answer." In this case, the performance of GPT-4 equaled that of direct prompting, where the question is presented without any additional instructions. This outcome stands in contrast to expectations as the self-critique strategy has been shown to improve results in different contexts, as demonstrated by @shinn2023reflexion.
+
+This juxtaposition suggests that while GPT-4 can handle complex tasks, the combination of several instructions in a single prompt might impact its performance. These findings emphasise the need for additional research to understand the model's optimal operating conditions and to explore strategies for more effective prompt design.
+
+[INSERT TEXT] dialogue approach, inherently doesn't know everything about organisational context… suggested way to give it the context it needs to do a better analysis while at the same time asking thought-provoking questions. We could called it LLM-Assisted Socratic Elucidation
 # Conclusion
 [INSERT TEXT]
 ## Summary of Findings
