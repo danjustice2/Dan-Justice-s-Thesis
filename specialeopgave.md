@@ -7,20 +7,16 @@ abstract:
 keywords: key1, key2
 
 # Introduction
-
+[INSERT TEXT]
 Our world is increasingly influenced by the rapid progress of digital evolution, which has far-reaching implications in a variety of domains, including academia. A notable development in this arena is the incorporation of artificial intelligence (AI) and machine learning (ML) technologies into academic research methodologies. This integration opens up exciting prospects for significant breakthroughs, pushing the boundaries of traditional research methods.
 
 This study delves into the exploration of one such technology, the Generative Pretrained Transformer 4 (GPT-4), a cutting-edge Large Language Model (LLM) developed by the American AI research laboratory OpenAI. GPT-4, the latest iteration in the GPT series, possesses advanced capabilities that have the potential to revolutionise the field of text generation and analysis. In particular, our research aims to examine the capacity of GPT-4 in augmenting traditional qualitative research methodologies, with the backdrop being the IT department in Vejle Municipality in Denmark.
 
-Vejle's IT department has in place a well-structured IT investment process, but there have been challenges with employees' adherence, leading to inefficiencies and discrepancies. This study is designed to dig deep into the reasons behind such behaviour and propose strategies to enhance compliance.
+Vejle's IT department has in place a well-structured IT investment process, in form of a webform on the municipal intranet, but there have been challenges with employees' adherence, leading to inefficiencies and discrepancies. This study is designed to dig deep into the reasons behind such behaviour and propose strategies to enhance compliance.
 
 A significant innovation of our research lies in utilising GPT-4 to create affinity diagrams based on a corpus of interview data. This leverages GPT-4's capacity to process and analyse vast amounts of text and build an understanding of the interconnected themes present within the data. Recent studies, such as @weiChainThoughtPrompting2022, indicate that LLMs perform optimally on reasoning tasks when prompted with a chain of thought. The novelty of our study lies in the application of this chain of thought prompting to a more substantial analytical task, such as the analysis of interview data and the generation of a structured affinity diagram.
 
-Our exploration, therefore, fulfils a dual purpose. Firstly, it sheds light on the socio-technical system within Vejle municipality and the specific dynamics that impact the IT investment process. Secondly, it uncovers the potential of AI and GPT-4 as pioneering tools in academic research, providing an original perspective on qualitative studies.
-
-## Research Questions
-
-Our research is guided by two intertwined questions:
+This exploration, therefore, fulfils a dual purpose. Firstly, it sheds light on the socio-technical system within Vejle municipality and the specific dynamics that impact the IT investment process. Secondly, it uncovers the potential of AI and GPT-4 as pioneering tools in academic research, providing an original perspective on qualitative studies. Thus, the present research is guided by two intertwined questions:
 
 1.  How does GPT-4's capacity to generate affinity diagrams from interview data compare to that of a human researcher, and what insights can this provide for qualitative research methodologies?
 2.  What are the key factors contributing to the non-compliance of employees with the IT investment process in Vejle municipality, and how can these factors be addressed to improve adherence?
@@ -35,13 +31,14 @@ The combination of these aspects means the research holds immediate practical im
 
 ## Overview of Structure
 
-This thesis is composed of two parts, each addressing a specific research question. The first part focuses on the IT Investment Process in Vejle Municipality, while the second part evaluates the utility of GPT-4 in qualitative research, focusing on prompting the model to output affinity diagrams from interview data.
+This thesis is composed of two parts, each addressing a specific research question. We work out way backwards, the first part focusing on a traditional qualitative investigation of the IT Investment Process in Vejle Municipality, while the second part evaluates the utility of GPT-4 in the context of the aforementioned qualitative research, focusing on prompting the model to output affinity diagrams from interview data.
 
 The first section starts with an introduction to the case background, followed by a literature review providing the theoretical context. The research methodology includes semi-structured interviews and field notes for data collection, with affinity diagrams used for data analysis. The results, discussion, and recommendations form the subsequent segments of this part of the study.
 
-The second section focuses on GPT-4, providing a technical background for those unfamiliar with the model. This is followed by a literature review on GPT-4's implications in qualitative research. The methodology involves data collection through user-model interfaces, with criteria for assessing output quality forming the basis of data analysis.
-# Case Study: Vejle Municipality's IT Investment Process
+The second section focuses on GPT-4, beginning with a technical background for those unfamiliar with the model. This is followed by a literature review positioning the present research in the intersection of qualitative research and machine learning and natural language processing. The methodology involves data collection through user-model interfaces, details about the iterative prompting approach used, ending by establishing a set criteria for assessing output quality forming the basis of data analysis.
 
+# Case Study: Vejle Municipality's IT Investment Process
+As mentioned before, the chapter that follows will consist of a traditional qualitative investigation of the IT investment process in Vejle Municipality. [INSERT TEXT]
 ## Case Background
 Residing within the administrative building of Vejle Municipality, the IT department has historically grappled with effective communication, particularly with external stakeholders and individuals in decentralised roles. Recognising the need to bridge this gap, the department strategically incorporated four IT architects into its ranks over recent years, each bringing a distinct blend of skills and expertise.
 
@@ -63,7 +60,7 @@ To engage this process, employees are required to complete an electronic form on
 
 However, despite these comprehensive instructions and the broad applicability of the webform, its use among employees remains limited. A significant effort has been made to simplify the webform, making it more accessible by removing intricate questions that non-IT personnel found challenging. The primary goal was to increase the form's usage and prevent staff from directly contacting IT architects or other members of the IT department, thereby streamlining the IT investment process. However, these efforts have not translated into the expected increase in webform usage.
 
-In light of these observations, this study aims to delve into the reasons behind employees' inconsistent adherence to the IT investment process and propose strategies to improve compliance. The ensuing report will thoroughly investigate the complexities of this
+In light of these observations, this study aims to delve into the reasons behind employees' inconsistent adherence to the IT investment process and propose strategies to improve compliance. The ensuing report will thoroughly investigate the complexities of this case before using the rich qualitative data generated for experiments in the field of NLP in the penultimate chapter.
 
 ## Literature Review
 This literature review will delve into three key areas pertinent to this study: IT Investment Governance, Ethnomethodology, and Affinity Diagrams. The analysis of these topics aims to build a theoretical underpinning for understanding the complexities of IT investment in the public sector and how ethnomethodological research and affinity diagrams can help derive valuable insights into this intricate process. Let's begin by unpacking the first concept, Information Technology Investment Governance.
@@ -121,7 +118,7 @@ Furthermore, affinity diagrams facilitate collaboration and interdisciplinary co
 
 
 ## Methodology
-
+[INSERT TEXT]
 ### Data Collection: Interviews & Field Notes
 
 In this study, the process of data collection was established upon two critical components: semi-structured interviews and field notes documentation.
@@ -226,7 +223,7 @@ The architects, including Mathilde, have reached out more to decentralised areas
 While the interview data yielded a fair deal of critique to the process, it is not all bad. The web manager Freja expressed that, in her experience, that she thinks people have become more aware of the need to avoid double investments through the years. Søren from school IT described the simplification the IT investment process underwent some years ago as a considerable improvement, taking more consideration for decentralised employees.
 
 ## Discussion
-
+[INSERT TEXT]
 ### Recommendations for Vejle Municipality
 
 Interviews conducted and ethnographic observations highlight opportunities to improve the IT investment process at Vejle Municipality. Though initially perceived as primarily an awareness issue, other key concerns also require addressing. Recommendations will be based on interview data and, occasionally, my own ethnographic observations.
@@ -300,6 +297,7 @@ By easing restrictions where possible, a more balanced approach can be achieved,
 
 
 ### Opportunities for Future Research
+[INSERT TEXT]
 #### A more extensive investigation of practice in other municipalities
 In the current study, the primary focus was on investigating practices within Vejle municipality, with only a few observations made about how other municipalities handled new IT investments. Future research should take a closer look at the practices in other municipalities and assess their effectiveness to attempt to understand what the best practice is within municipalities in the present day. To a certain extent, it could also be helpful to examine the private sector's practices. Although the public sector is fundamentally different from the private sector, IT departments in medium and large private sector companies might face similar challenges to the IT department in Vejle, making it worth investigating.
 
@@ -314,8 +312,18 @@ Moreover, communication specialists can contribute to the development of targete
 
 Additionally, an interdisciplinary approach that combines these ethnographic findings with insights from managerial science and communication expertise can lead to a more comprehensive understanding of the problems facing the IT investment process. This holistic perspective can facilitate the identification of key factors influencing employee behaviour and organisational culture, thereby enabling the development of evidence-based interventions to improve the IT investment process within the municipality.
 
+#### In-Depth Exploration of IT Investment Process through Ethnomethodology
+While the aspiration was to do ethnomethodology, the current research primarily focuses on an ethnographic approach to understand challenges associated with IT investment processes from a user perspective. However, employing an ethnomethodological approach could provide additional insights by examining the everyday practices, social interactions, and meaning-making processes involved in the implementation of IT investments within the municipality.
+
+Ethnomethodology delves deeper into the detailed practices and interactions that constitute the social world, offering a more nuanced understanding of how people make sense of and navigate complex situations. In the context of the IT investment process, this could involve investigating how various stakeholders collaborate, communicate, and negotiate their roles and responsibilities within the organizational structure. This approach can uncover the underlying rationales, assumptions, and expectations that shape the behaviors and actions of those involved in the IT investment process.
+
+Moreover, an ethnomethodological study could provide insights into the emergent norms and routines that govern the functioning of the IT department and the dynamics between central IT and decentralised staff members. This may involve examining the work practices and decision-making processes employed by IT staff when managing IT investments, the informal channels of communication and collaboration that exist between different departments, and patterns of resistance and negotiation that manifest in response to organizational constraints and expectations.
+
+Furthermore, incorporating ethnomethodological findings could enhance the current recommendations by offering a more in-depth understanding of the sociocultural factors that impact the IT investment process. Consequently, this could enable the development of tailored interventions that directly address the root causes of the identified challenges, facilitating a more effective and sustainable transformation of the IT investment process within the municipality.
+
 # GPT-4's Utility in Qualitative Research
 The present chapter aims to investigate the capabilities of GPT-4 in creating affinity diagrams by comparing its performance to that of a human ethnographer. Affinity diagrams are valuable tools for organising and understanding vast amounts of information; given GPT-4's capacity to process large amounts of text, it presents a unique opportunity to evaluate the language model's effectiveness in creating affinity diagrams.
+[INSERT TEXT]
 ## Technical Background
 The following sections provide a technical background designed to enhance the understanding of LLMs, specifically focusing on their architecture, training process, and operational mechanisms, delving into the principles of inferential text completion, tokenisation, token-based pricing, and the importance of prompt engineering in eliciting emergent abilities from LLMs. 
 
@@ -389,6 +397,9 @@ Before embarking on the use of LLMs in research, it is imperative to acknowledge
 However, it is equally important to recognise that humans are not exempt from biases, which are influenced by their own 'training data', such as personal experiences, memories, and knowledge. As humanities researchers, we have a keen understanding of how our biases can shape our interpretation of the world. We are adept at navigating these intricate issues and can apply this critical thinking to the employment of LLMs.
 
 ## Literature Review
+[INSERT TEXT]
+
+[INSERT TEXT]
 ### Effects of simultaneous instruction overload on GPT-4 performance
 Research published since the completion of the data collection of the present study indicates that GPT-4 may struggle when faced with numerous instructions simultaneously. The model's performance appears to deteriorate when it is asked to execute too many tasks at once, which bears similarities to how humans can become overwhelmed by an abundance of instructions. This phenomenon may provide some explanation as to why the model failed to generate satisfactory results when it was asked to produce critiques and iterate upon them within a single, comprehensive prompt.
 
@@ -397,6 +408,7 @@ For example, the self-critique prompt from @hebenstreit2023automatically, which 
 Opportunities for using this knowledge to remedy problems encountered in the present research will be covered later in the present chapter together with other opportunities for future research.
 
 ## Methodology
+[INSERT TEXT]
 ### Data Collection: User-Model Interfaces
 My research endeavour focused on identifying the optimal method to interact with GPT-4. I was particularly interested in the user-model interface, which serves as the frontend mechanism to facilitate interaction between humans and the model's functionalities. To suit my research needs, I required an interface that could support chat functionality, allowing me to manually control the model's inputs and outputs as much as possible.
 
@@ -414,6 +426,8 @@ The present subsection will explore the development of a "zero-shot" prompt for 
 Prompt engineering plays a crucial role in optimising the performance of language models, including GPT-4. This section discusses the approach to prompt engineering, aiming to achieve high-quality results. With GPT-4's enhanced capacity to understand and assist with meta-tasks, such as refining its own prompts, there is potential for streamlining the prompt engineering process without compromising its efficacy, thus further reducing workload.
 
 Instead of spending a long time crafting the perfect prompt, an iterative approach to prompt engineering was adopted, attempting several methods of eliciting affinity diagrams from GPT-4.
+
+[INSERT TEXT]
 
 #### The Direct Prompting Approach
 
@@ -479,6 +493,8 @@ The key to optimising GPT-4's performance lies in iterative prompt engineering. 
 >
 >\[You write a detailed and in-depth bicameral dialogue, thinking about what you could be done better in this affinity diagram. Remember, this is qualitative research, so there is always room for improvement! Let any ideas that come to you flow out here]
 
+
+[INSERT TEXT]
 For a more in-depth look into the iterative prompting process behind the aforementioned prompt, I have included a rough journal entry detailing parts of this process in Appendix X.
 
 ### Data Analysis: Criteria for Assessment of Output Quality
@@ -501,7 +517,7 @@ Interpretability is the penultimate criterion, and it encompasses the evaluation
 Finally, we consider Utility, which assesses the practical usefulness of the generated affinity diagram. The potential of the output to yield insights that can be applied in further research or decision-making processes is central to this criterion. Utility, thus, serves as a measure of the actionable value of the model's output.
 
 ## Presentation of GPT-4 Output Data
-
+[INSERT TEXT]
 ### The direct prompting approach
 The direct prompting approach yielded the following results, the prominent discourses serving as explanations of each of the diagram themes laid out:
 
@@ -561,13 +577,13 @@ When asked to reflect upon its potential strengths and weaknesses, the model out
 
 Despite GPT-4 demonstrating an understanding of the concept of an affinity diagram, its output remained somewhat superficial, lacking the depth inherent in the context of the data. While its performance was commendable, the interpretability of its results could be enhanced.
 
-In the human process of creating an affinity diagram, data is segmented and organised into a hierarchical structure based on themes and subthemes, following a mental process. Conversely, LLMs such as GPT-4 do not formulate a plan before producing tokens. Rather, the generation of tokens is sequential, based on the probability of the appearance of the subsequent word, as computed from the corpus of text on which the model was trained \[@mahowaldDissociatingLanguageThought2023; @brownLanguageModelsAre2020; @guoHowCloseChatGPT2023\].
+In the human process of creating an affinity diagram, data is segmented and organised into a hierarchical structure based on themes and subthemes, following a mental process. Conversely, LLMs such as GPT-4 do not formulate a plan before producing tokens. Rather, the generation of tokens is sequential, based on the probability of the appearance of the subsequent word, as computed from the corpus of text on which the model was trained \[@mahowaldDissociatingLanguageThought2023; @brownLanguageModelsAre2020; @guoHowCloseChatGPT2023\]. [INSERT TEXT]
 
 ### The simulated-thought approach
 \
 
 ![The final affinity diagram generated by GPT-4 based on the interview data. A high-resolution version is available in Appendix X.](a79e7f23a4167279dd1e3af32e4313da.png "The final affinity diagram generated by GPT-4 based on the interview data. A high-resolution version is available in Appendix X.")
-As previously discussed in this report, field notes from the interviews were input into GPT-4 along with a carefully-crafted prompt. A visual representation of the affinity diagram generated by the model can be seen in Figure X. At the moment, GPT-4 only processes text inputs and outputs, so the visual layout was created manually by transferring the AI-generated data into the same program used for the human-generated affinity diagram. While GPT-4 is expected to process images in the future, this feature is not yet available, and creating a visual layout would require more complex prompting. To save time, all sticky notes have been left yellow rather than colour-coded.
+[INSERT TEXT] As previously discussed in the present report, field notes from the interviews were input into GPT-4 along with a carefully-crafted prompt. A visual representation of the affinity diagram generated by the model can be seen in Figure X. At the moment, GPT-4 only processes text inputs and outputs, so the visual layout was created manually by transferring the AI-generated data into the same program used for the human-generated affinity diagram. While GPT-4 is expected to process images in the future, this feature is not yet available, and creating a visual layout would require more complex prompting. To save time, all sticky notes have been left yellow rather than colour-coded.
 
 It should also be noted that the whole text output behind the affinity diagram in Figure X can be found in Appendix X.
 
@@ -612,7 +628,7 @@ This suggests that the model could potentially run the entire process again, ite
 In the following sections, the results of the affinity diagrams generated by GPT-4 are discussed, focusing on identifying flaws and potential solutions.
 
 ### Defining output quality
-Before discussing output quality, it is important to define the characteristics that define a high-quality output. These criteria, as detailed earlier in the present report, are as follows:
+[INSERT TEXT] Before discussing output quality, it is important to define the characteristics that define a high-quality output. These criteria, as detailed earlier in the present report, are as follows:
 
 1.  **Accuracy**: The output should accurately represent the data from the interviews. The model should be able to correctly interpret the responses and group them appropriately.
     
@@ -639,6 +655,7 @@ The resultant affinity diagram from the direct prompting approach didn't necessa
 > 3.  **Challenges and frustrations in implementing new systems**: A number of interviewees articulated their challenges and frustrations in implementing new systems. These were often attributed to communication gaps and misunderstandings between different departments or a perceived rigidity of the IT department. Mikkel (Interview 169) and Freja (Interview 189) were among those voicing such concerns.
 > 4.  **Suggestions for improvement**: Proposals for improvement included enhanced communication regarding the IT investment process, targeted promotion to specific departments dealing with IT investments, and changes to the process name for increased tangibility. Suggestions for a more streamlined form, a central system to guide communication, and transparent guidelines for reporting new investments were also made.
 
+[INSERT TEXT] (merge)
 #### Accuracy
 
 The model's misinterpretation of Peter's concerns about IT support at his residential care facility, which are not strictly within the remit of the central IT department, highlights a crucial misunderstanding. This underscores the model's deficiency in fully understanding the organisational context. However, this appears to be a singular error in an otherwise accurate output, leading to a moderate rating in accuracy.
@@ -671,8 +688,10 @@ The 'black-box' nature of large language models (LLMs) offers limited insight in
 
 For an individual unfamiliar with the data, the output could provide a quick overview. However, from a researcher's perspective, the output doesn't add anything novel to the existing understanding. It fails to provide insights that couldn't be quickly jotted down manually. Therefore, the utility of the approach is judged to be low to moderate.
 
+[INSERT TEXT]
+
 ### The simulated-though approach
-The simulated-thought approach used in the present study could be argued to have attained a deeper level analysis, but other key problems arose from the design of the prompt, particularly in the area of grouping strategy.
+The simulated-thought approach used in the present study could be argued to have attained a deeper level analysis, but other key problems arose from the design of the prompt, particularly in the area of grouping strategy. [INSERT TEXT]
 
 #### Accuracy
 
@@ -688,11 +707,11 @@ For example, data segments belonging to Interviewee 163 (Søren) were mistakenly
 
 This issue could be mitigated by using pseudonyms rather than numbers to identify interviewees or by choosing single-digit numbers to reduce the chance of error.
 
-Furthermore,
+Furthermore, [INSERT TEXT]
 
 Based on these findings, the accuracy of the generated output can be judged to be moderate to high.
 
-### Relevance
+#### Relevance
 
 Relevance refers to the degree of alignment between the model's output and the subject or context in question. In the case of the current analysis, relevance can be evaluated based on how accurately and appropriately the model grouped data segments under the right categories in the context of the IT investment process.
 
@@ -704,11 +723,12 @@ These misclassifications indicate that the model seems to have made assumptions 
 
 This behaviour might indicate a gap in the model's understanding of the context. This is where a dialogue-based approach can potentially help. By allowing the researcher to interactively guide the model through the data analysis process, a dialogue-based approach can improve the model's understanding of the context, leading to a more relevant classification of data segments. The researcher can correct the model's misconceptions, clarify ambiguities, and provide additional contextual information to help the model make more accurate and relevant classifications.
 
-### Completeness
+#### Completeness
 
 Completeness refers to the representation of all data from the interviews in the affinity diagram. While the model demonstrated an extensive data segmentation process, certain context and subtext did not transition from the interviews into the notes. A dialogue approach could potentially bridge this gap, allowing for a deeper exploration of the underlying themes and complexities of the data.
 
-### Clarity!!
+[INSERT TEXT] (repeated clarity? get styr på det)
+#### Clarity!!
 
 Another aspect of accuracy is the correct classification of data segments into groups. However, similarly to the direct prompting approach, some segments were correctly identified but misplaced into unrelated groups. For example, data segments like "Fear of data breaches and restrictions", "Cost-saving attempts in decentralised IT support", and "Importance of having a dedicated IT staff member" were wrongly placed under "Suggestions and Improvements for the IT Investment Process", even though they were not related to the IT investment process in context.
 
@@ -716,7 +736,7 @@ Furthermore, the model placed a repeated data segment, "Need for more effective 
 
 Starting from the 25th data segment, the model displayed a tendency to duplicate previously identified data segments but with incorrect attributions to the interviewees. This behaviour might stem from the model's inherent capability for pattern recognition, causing it to persist with an established pattern even when it leads to errors. Additionally, this could be attributed to the demanding nature of the prompt, which required the generation of fifty data segments, presenting a challenging task for the model. Although the model fulfilled the explicit request, it overlooked the implicit requirement for the data segments to be distinct.
 
-### Consistency and Clarity
+#### Consistency and Clarity
 
 Consistency and clarity in data grouping are vital for meaningful analysis. In this experiment, however, the model demonstrated a tendency to prematurely conclude the bicameral dialogue. This behaviour might stem from the patterns established earlier in the output. Consequently, the model's groupings were often not detailed enough to make meaningful connections in the data. Ideally, the two 'selves' in the bicameral dialogue would offer constructive critique of each other's ideas. However, instead of this ideal, they frequently gave noncritical feedback such as "good idea", indicating that the bicameral dialogue approach as it stands may provide more challenges than advantages.
 
@@ -724,17 +744,17 @@ In terms of clarity, the model's understanding of the context surrounding the IT
 
 Further, modifying the prompt to make the model provide meaningful critiques of its decisions could potentially improve the consistency and clarity of the final outputted affinity diagram. Studies by @hebenstreit2023automatically and @shinn2023reflexion suggest that self-critique approaches are more fruitful if executed as separate requests to the API rather than included in a single extensive prompt. This could explain the lack of critical feedback in my experiments. It appears that the model, when given a new request, can get a fresh perspective, having its parameters cleared and reset. While anthropomorphising LLMs is generally not accurate, it seems that starting a new output sequence gives the model a refreshed "perspective" on the task.
 
-### Interpretability
+#### Interpretability
 
 LLMs are often likened to "black boxes" due to the difficulty in understanding how they reach their conclusions. The reasoning typically occurs within the parameters behind the output, which isn't readily accessible. However, chain of thought approaches, like the one employed in this study, can enhance the model's performance on reasoning-based tasks and improve the interpretability of the output. It allows the researcher to follow the model's logic, checking it at every stage.
 
 While the bicameral dialogue approach used in this study improved the interpretability of the output, it's unclear whether this method offers any advantages over a standard chain of logic approach, as featured in contemporary studies \[e.g., @hebenstreit2023automatically; @shinn2023reflexion\]. 
 
-### Bias
+#### Bias
 
 The model's output did not appear to contain any bias. However, the premature termination of the bicameral dialogues in the think sections could potentially introduce bias in the output. A dialogue approach could help mitigate this bias.
 
-### Utility
+#### Utility
 
 The output of the model should provide actionable insights. While the model segmented the data extensively, it did not delve into the potential implications of the identified themes and issues. An explicit description of the IT investment process, coupled with a dialogue-based approach for a deeper exploration of the data, could help enhance the utility of the model's output.
 
@@ -744,10 +764,10 @@ This study identified a significant challenge, which hindered further prompt ite
 Given these considerations, future research could explore alternative ways to structure and sequence prompts for GPT-based affinity diagrams. As indicated in comparing results attained in @hebenstreit2023automatically and @shinn2023reflexion on question-answering tasks followed by self-critique, dividing the prompt into smaller segments and inputting them sequentially might prove to be a more effective strategy for achieving better results. This approach could potentially mitigate the model's performance degradation when it is faced with an excessive number of tasks in one prompt, in this example outputting an answer as well as self-critique, thereby improving the overall quality of the output.
 
 # Conclusion
-
+[INSERT TEXT]
 ## Summary of Findings
-
+[INSERT TEXT]
 ## Implications of Research
-
+[INSERT TEXT]
 # References
 <div id="refs"></div>
