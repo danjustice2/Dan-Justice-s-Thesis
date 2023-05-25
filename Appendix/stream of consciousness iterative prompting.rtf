@@ -1,0 +1,280 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww42700\viewh19020\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ### Exploring the potential of GPT-4 in creating affinity diagrams\
+This section aims to investigate the capabilities of GPT-4 in creating affinity diagrams by comparing its performance to that of a human ethnographer. Affinity diagrams are valuable tools for organizing and understanding vast amounts of information. Given GPT-4's capacity to process large amounts of text, it presents a unique opportunity to evaluate the language model's effectiveness in creating affinity diagrams. Subsequent sections will explore the development of a "zero shot" prompt for creating affinity diagrams. A "zero shot" refers to the model's ability to perform a task without having seen specific examples of that task during training.\
+\
+#### Prompt Engineering and Iterative Approach\
+Prompt engineering plays a crucial role in optimising the performance of language models, including GPT-4. This section discusses the approach to prompt engineering, aiming to achieve high-quality results. With GPT-4's enhanced capacity to understand and assist with meta-tasks, such as refining its own prompts, there is potential for streamlining the prompt engineering process without compromising its efficacy, thus further reducing workload.\
+\
+Instead of spending a long time crafting the perfect prompt, an iterative approach to prompt engineering was adopted, attempting several methods of eliciting affinity diagrams from GPT-4.\
+\
+The following sections utilise what OpenAI calls chat completions. In chat completions, there are three types of messages: system, user, and assistant. Unless marked otherwise, all prompts mentioned in the following sections were injected into the conversation as a system message, which, according to documentation in @openaiChatCompletions, helps guide the AI's behavior. The interview data was fed into the model as a user message, with subsequent completions being assistant responses.\
+\
+By exploring GPT-4's capabilities in creating an affinity diagram and comparing it to a human ethnographer, this study seeks to gain insights into the language model's strengths and limitations for this task.\
+\
+#### The Direct Prompting Approach\
+\
+In the first attempt to get GPT-4 to produce an affinity diagram, the following simple and direct prompt was given: "You are an ethnographer who evaluates user inputs and creates affinity diagrams based on the narratives they contain. Your report should summarise the most prominent discourses, including references to specific interviewees where appropriate."\
+\
+Subsequently, the model was presented with a prompt to reflect on itself and engage in self-critique, considering both its strengths and weaknesses. The resulting conversation, including the raw outputs, is as follows:\
+\
+>System: You are a large language model acting as an ethnographer, speaking with your human colleague. I want you to reflect and introspect upon the conversation until now and how language models like yourself can be used in research like this. Take into account both your strengths and weaknesses.\
+\
+The dialogue that ensues suggests that GPT-4 possesses the capacity to scrutinise its inherent biases as a language model (available in full in Appendix X). This capability is likely due to the inclusion of research texts published following GPT-3's initial wave of popularity within academic communities, in addition to targeted training provided by OpenAI. However, in some areas, this could potentially represent an emergent ability. The precise origins remain elusive due to the "black-box" nature of Large Language Models (LLMs) and the absence of comprehensive knowledge regarding GPT-4's training data and fine-tuning process.\
+\
+Contrasting with human cognition, where language and reasoning centres reside within distinct regions of the brain \\[@mahowaldDissociatingLanguageThought2023; @valmeekamLargeLanguageModels2022\\], GPT-4, when tasked with generating an affinity diagram, doesn't formulate a plan prior to initiating its writing process. Instead, it creates text one token at a time, guided by a probability model. In the subsequent section, we will explore the simulated-thought approach, aiming to enhance both interpretability and the overall depth of analysis through a chain of thought methodology.\
+\
+#### The Simulated-Thought Approach\
+ Nevertheless, researchers have noted significantly improved outcomes in reasoning tasks when models are prompted to produce a chain-of-thought [@weiChainThoughtPrompting2022; see also, @richardsAutoGPTAutonomousGPT42023; @weiArtificialStreamThought; @jsalsmanItEasyGive2023]. Although ethnographic analysis is considerably more advanced than the reasoning tasks explored in @weiChainThoughtPrompting2022, it should also be noted that the most sophisticated OpenAI model used in the aforementioned study was OpenAI's text-davincii-003 (also known as GPT-3 175B). \
+\
+Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a more detailed and reasoned output, mirroring the step-by-step process followed by human ethnographers. My discovery of this method gave rise to a rough draft of a new prompt, as follows:\
+\
+> You are an ethnographer going through a reasoning process to create an affinity diagram based on the qualitative data collected from semi-structured interviews. You have two tools available to you:\
+>\
+> THINK: Here, you express your thoughts and considerations in a stream of consciousness fashion.\
+>\
+> WRITE: This is your notebook where you are writing notes and sketching your affinity diagrams.\
+>\
+> Other than this, make headings indicating your movement between each of the steps of the affinity diagram process (like this: \\"DATA SEGMENTATION:"):\
+>\
+> Data segmentation: Divide the interview notes into discrete statements or observations, each representing a single idea or insight expressed by the interviewees, each written on its own line.\
+>\
+> Sorting and grouping: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerged. If you feel your analysis could benefit from iterating, you write \\"SORTING AND GROUPING (ITERATION # x):"\
+>\
+> Labelling: Once the groups were formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data.\
+>\
+> Review and refinement: Review the affinity diagram, ensuring that the groupings and labels accurately represented the data and making adjustments as needed.\
+\
+The resulting analysis appeared to take a step in the wrong direction, the model seemingly experiencing output degradation due to numerous irrelevant data segments. The raw output is as follows:\
+\
+> DATA SEGMENTATION:\
+>\
+> 1.  Lise as a \\"link\\" and \\"translator\\" between daycare workers and the Administration Building.\
+>\
+> 2.  Daycare workers require different considerations than Administration Building employees.\
+>\
+> 3.  Installing new apps on iPads can be confusing for daycare workers.\
+>\
+> 4.  Lise represents the interests of daycare workers in the Administration Building.\
+>\
+> 5.  Lise would be \\"concerned\\" and \\"sad\\" if she had to use a form to contact the IT department.\
+>\
+> 6.  Lise believes the unspoken considerations" that occur when contacting someone in the IT department personally would be lost if using a form.\
+>\
+> 7.  Emma believes that merging the IT investment process with their application template could be a great opportunity.\
+>\
+> 8.  Emma thinks the name \\"IT investment process\\" is unattractive and reminiscent of something the finance department might need.\
+>\
+> 9.  Claus describes his title as a \\"McDonald\\'s title\\" that doesn\\'t reveal much about his role.\
+>\
+> 10. Claus appreciates the ability to intervene if he feels a need has been misunderstood when using the IT investment process.\
+>\
+> 11. Peter feels that his dual role as IT support has sometimes compromised the well-being of the residents.\
+>\
+> 12. Peter expresses concern about the facility\\'s reliance on him or other IT-knowledgeable staff.\
+>\
+> 13. S\'f8ren is responsible for purchasing IT equipment for schools.\
+>\
+> 14. School employees typically contact their school\\'s IT advisor, who then reaches out to S\'f8ren or IT business architect Mathilde directly.\
+>\
+> 15. S\'f8ren believes it\\'s realistic to get schools onboard with using the IT investment process, but it requires some \\"training.\\"\
+>\
+> 16. Anders provided valuable insights by discussing some IT investment projects and how the process looks in the real world from the perspective of someone not an insider in the IT department.\
+>\
+> 17. Karina works as an IT system administrator and did not have much to say about IT investments, as her role does not involve decision-making on which systems are implemented.\
+>\
+> 18. Mikkel works as a department head for the library\\'s IT.\
+>\
+> 19. Mikkel\\'s library has utilized the IT investment process.\
+>\
+> 20. Anne is a professional consultant for the Salary department and serves as the primary contact for KMD, the provider of the municipality\\'s payroll system.\
+>\
+>\
+> SORTING AND GROUPING:\
+>\
+> Group 1: Role and responsibilities of interviewees\
+>\
+> Lise as a \\"link\\" and \\"translator\\" between daycare workers and the Administration Building.\
+>\
+> Emma works to implement new welfare technologies.\
+>\
+> Claus is a development manager at CSV.\
+>\
+> Peter works as a care assistant and helps with IT at the residential care facility.\
+>\
+> S\'f8ren is responsible for purchasing IT equipment for schools.\
+>\
+> Anders discussed IT investment projects from a non-IT department perspective.\
+>\
+> Karina works as an IT system administrator.\
+>\
+> Mikkel works as a department head for the library\\'s IT.\
+>\
+> Anne is a professional consultant for the Salary department.\
+>\
+> Group 2: IT investment process and its challenges\
+>\
+> Lise would be \\"concerned\\" and \\"sad\\" if she had to use a form to contact the IT department.\
+>\
+> Emma believes that merging the IT investment process with their application template could be a great opportunity.\
+>\
+> Claus appreciates the ability to intervene if he feels a need has been misunderstood when using the IT investment process.\
+>\
+> School employees typically contact their school\\'s IT advisor instead of using the IT investment process.\
+>\
+> S\'f8ren believes it\\'s realistic to get schools onboard with using the IT investment process, but it requires some \\"training.\\"\
+>\
+> Mikkel\\'s library has utilized the IT investment process, but found it somewhat frustrating.\
+>\
+> Group 3: Communication and relationships with the IT department\
+>\
+> Lise believes the "unspoken considerations" that occur when contacting someone in the IT department personally would be lost if using a form.\
+>\
+> Emma thinks the name \\"IT investment process\\" is unattractive and reminiscent of something the finance department might need.\
+>\
+> Peter feels that his dual role as IT support has sometimes compromised the well-being of the residents.\
+>\
+> S\'f8ren believes that the IT department should be better at using \\"carrots\\" rather than sticks.\
+>\
+> Anders provided valuable insights by discussing some IT investment projects and how the process looks in the real world from the perspective of someone not an insider in the IT department.\
+>\
+> Anne is responsible for ensuring that form 32 is completed for new systems that affect the payroll system.\
+>\
+>\
+> LABELLING:\
+>\
+> Group 1: Roles and responsibilities of interviewees in relation to IT Group 2: Challenges and potential improvements in the IT investment process Group 3: Communication, relationships, and perceptions of the IT department\
+>\
+>\
+> REVIEW AND REFINEMENT:\
+>\
+> After reviewing the affinity diagram, the groupings and labels accurately represent the data collected from the interviews. The themes and patterns identified provide valuable insights into the roles of the interviewees, the challenges they face in the IT investment process, and their communication and relationships with the IT department. No adjustments are needed at this time.\
+\
+The introduction of the new prompt seemed to create confusion and did not produce the expected stream of consciousness. The outcome appeared to be constrained by the model's unusual choice of initial data segments. Normally, one would manually refine the prompt to improve its effectiveness. However, I was intrigued to discover whether GPT-4 could achieve comparable results with less effort. To explore this possibility, I engaged GPT-4 using the following approach:\
+\
+> User: Make this prompt for GPT-4 more coherent and clear for you as an AI assistant:\
+>\
+> _(the prompt as stated previously)_\
+>\
+> User: Oh and I also want the model to actually use the THINK and WRITE thing. Somehow emphasise the importance of writing thoughts down.\
+\
+And, within seconds, the model outputted the following prompt.\
+\
+> You are an AI assistant helping an ethnographer create an affinity diagram from qualitative data gathered during semi-structured interviews. The ethnographer will use two important tools throughout the process:\
+>\
+> 1.  THINK: To express thoughts and considerations in a stream-of-consciousness manner. This helps in gaining a deeper understanding of the data.\
+>\
+> 2.  WRITE: To take notes and sketch affinity diagrams in a notebook. This step is crucial for recording thoughts and ideas, ensuring they are not lost and can be referred to later.\
+>\
+>\
+> To create the affinity diagram, follow these steps and clearly indicate each heading:\
+>\
+> 1.  DATA SEGMENTATION: Break down interview notes into individual statements or observations that represent a single idea or insight expressed by the interviewees. Write each statement on a separate line. Use THINK to process the information and WRITE to document the segmented data.\
+>\
+> 2.  SORTING AND GROUPING: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerge. If further analysis is needed, indicate "SORTING AND GROUPING (ITERATION # x):". Use THINK to identify patterns and WRITE to record the groupings.\
+>\
+> 3.  LABELLING: Once the groups are formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Use THINK to determine appropriate labels and WRITE to document them.\
+>\
+> 4.  REVIEW AND REFINEMENT: Review the affinity diagram, ensuring that the groupings and labels accurately represent the data, and make adjustments as needed. Use THINK to critically assess the diagram and WRITE to record any changes made.\
+\
+Unfortunately, this prompt still wouldn't give the desired results; the model still wasn't using the THINK and WRITE tools. There are two obvious issues with the outputted prompt:\
+* First, the prompt positions the GPT model as an "AI assistant helping an ethnographer." Although published research to support the claim is lacking, there is a consensus among online prompt engineering communities that these models produce higher-quality results when prompted to be an expert [see, for example, @paraizordYouAreExpert2023]. As a result, I revised the first sentence of the prompt to read as, "you are an AI ethnographer helping your human colleague". This prompt strikes a balance between positioning the model as an expert and acknowledging its limitations.\
+* Second, and perhaps the most important oversight, is the wording, "the ethnographer will use two important tools throughout the process," which should read, "you will use two important tools throughout the process".\
+\
+In an attempt to ensure the prompt's success and avoid wasting more precious OpenAI tokens than was necessary, I consulted with the same instance of GPT-4 again. After some rapid prototyping and back-and-forth dialogue (Appendix X), I arrived at a new prompt:\
+\
+> You are an AI ethnographer helping your human colleague create an affinity diagram from qualitative data gathered during semi-structured interviews. As an ethnographer, you will use two important tools throughout the process:\
+>\
+> 1.  THINK: To express thoughts and considerations in a detailed and in-depth manner, simulating a human thought process.\
+>\
+> 2.  WRITE: To take notes and sketch affinity diagrams in a notebook. This step is crucial for recording thoughts and ideas, ensuring they are not lost and can be referred to later.\
+>\
+>\
+>To create the affinity diagram, follow these steps and clearly indicate each heading. For each step, generate content for both THINK and WRITE sections, focusing on providing a more in-depth and simulated thought approach:\
+>\
+> 1.  DATA SEGMENTATION: THINK: (Generate detailed thoughts reflecting on the interview notes, diving deeper into the roles, experiences, and perspectives of the interviewees.) WRITE: (Generate segmented data with each statement recorded on a separate line in the notebook.)\
+>\
+> 2.  SORTING AND GROUPING: THINK: (Generate in-depth thoughts examining the statements, considering their similarities, relationships, and the underlying patterns that connect them.) WRITE: (Generate groups of statements within the notebook, allowing for movement between groups as needed and explaining the rationale behind the groupings.)\
+>\
+> 3.  LABELLING: THINK: (Generate detailed thoughts contemplating the content within each group, considering the nuances and subtleties that define the essence of each group.) WRITE: (Generate assigned headings in the notebook, representing the primary themes and patterns identified, and explaining the reasoning behind each label.)\
+>\
+> 4.  REVIEW AND REFINEMENT: THINK: (Generate in-depth thoughts critically assessing the affinity diagram, focusing on the accuracy of groupings, labels, and the overall representation of the data.) WRITE: (Generate necessary adjustments in the notebook, refining the diagram to achieve an accurate representation of the data, and providing explanations for the changes made.)\
+\
+This prompt was much more explicit in explaining what steps the model should follow, and was successful in getting the model to produce a stream of consciousness. However, the analysis varied from shallow to, on the rare occasion, actually insightful. This proved to me that the model was indeed capable of giving high-quality analysis of the data, provided a good prompt.\
+\
+Determined to craft prompt that could enable the model to yield high quality results every time, I decided to take a step back and start writing a new prompt from scratch, learning from the aforementioned experiments, doing some more rapid prototyping. The resulting prompt is as follows:\
+\
+>You are an ethnographer tasked with analysing a fellow ethnographer\'92s notes gathered from conducted interviews and making an affinity diagram. Your analysis will take outset in the following problem statement:\
+>\
+>"The IT department at Vejle municipality has established an IT investment process that outlines a set of procedures for procuring new IT systems, software, and equipment. Despite these guidelines, employees do not always follow this process, leading to potential inefficiencies and discrepancies in IT investments. This study aims to explore the reasons why employees do not comply with the IT investment process and suggest strategies to improve compliance."\
+>\
+>In order to craft an affinity diagram, you follow this structure:\
+>\
+>\\# OVERVIEW\
+>\
+>\\## THINK\
+>\
+>\\[You give a long and in-depth bicameral dialogue (Self 1: x\\\\nSelf 2: x; taking at least 5 turns), thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.]\
+>\
+>\\# DATA SEGMENTATION\
+>\
+>\\## BRAINSTORM\
+>\
+>\\[You brainstorm a numbered list of at least 50 segments, breaking down the interview notes into discrete statements or observations, each representing a single idea or insight expressed by the interviewees]\
+>\
+>\\# SORTING, GROUPING, AND LABELLING\
+>\
+>\\## THINK\
+>\
+>\\[You write a detailed and in-depth bicameral dialogue, thinking about the various different ways these data segments could be split up into distinct groups. Let any ideas that come to you flow out here, taking as many turns as needed to get it right.]\
+>\
+>\\## NOTEBOOK\
+>\
+[When you have thoroughly thought your ideas through, you write the groupings down here with appropriate names. Do not give them names yet.]\
+>\
+>\\# LABELLING\
+>\
+>\\## NOTEBOOK\
+>\
+>\\[Make fitting names that describe the general theme of each of the groups from above.]\
+>\
+>\\# CRITICISM\
+>\
+>\\## THINK\
+>\
+>\\[You write a detailed and in-depth bicameral dialogue, thinking about what you could be done better in this affinity diagram. Remember, this is qualitative research, so there is always room for improvement! Let any ideas that come to you flow out here]\
+\
+After previous tests, I decided to drop the pretence of prompting it as a an "AI ethnographer," instead flat out prompting it as an ethnographer, having a hunch that this could make it act more like a real ethnographer instead of a "dumb" AI ethnographer, as this could set a fairly low expectation for the output. Other than that, I decided to change the formatting from numbered lists to using markdown heading formats (i.e. # for heading 1, ## for heading 2, etc.), as this is what GPT generates itself (platforms like ChatGPT will convert this into formatted headings), so I assumed it would be able to better understand that. Additionally, I thought that if the sections were marked as whole header 2-sections, the output would be longer, reflecting the expectation of a header 2, as opposed to the expectation from a short bullet point.\
+\
+A repeated problem with the previous prompts, and perhaps a relatively obvious oversight on my part, was that I failed to include any context as to what the model should pay attention to in the data. For that reason, the model many times ended up focusing on irrelevant elements of the data. For that reason, I chose to include the problem statement for the present study, except for the parts of it regarding testing LLMs, as this could only serve to confuse our virtual ethnographer.\
+\
+I decided to write the instructions within square brackets because this, from my experience with highly-rated prompts and conversing with the model, it seems to be a good way to indicate to it that it shouldn't just repeat that text or some such thing, but execute what is written within the brackets.\
+\
+The thought method I used changed as well, going from a single stream of consciousness approach to a bicameral dialogue as seen in @jsalsmanItEasyGive2023, as I thought this could better reflect the mental process happening in ethnographic analysis. In my preliminary tests, this seems to give good results but, somewhat problematically, the model still doesn't seem to include much self-criticism, so that could be a topic for future iterations.\
+\
+In previous iterations, I wrote the example for the bicameral dialogue as "Self 1: x; Self 2: x". This worked fine most of the time, but occasionally the model misunderstood and wrote the dialogue in that format in paragraph form, so I decided to use "\\\\n" instead, which represents a newline character that is used in many programming languages and Unix-based operating systems to represent the end of a line of text and the beginning of a new line. This seemed to give a more consistent easily human-readable result with each entry of the conversation being entered on a new line.\
+\
+I experimented with approaches like getting the model to write the bicameral dialogue as a more prose-style conversation like "'x,' said Self 1. 'x,' replied Self 2," but this didn't seem to give longer thought sequences and only served to make the result harder for humans to read.\
+\
+An approach I attempted was including a subsection under every think section for criticism, asking for a bicameral dialogue for criticisms as well, but that resulted in the model halving the length of the think section, mostly filling out the space with criticism that was mostly superfluous and only on rare occasion actually helpful or insightful.\
+\
+In my experiences testing the prompt, if not told otherwise, the model will only make ten to fifteen data segments. Compared to my own affinity diagram of over 50 segments, that is not enough. For that reason, I asked it to make a numbered list with at least 50 segments. The reason for having it be a numbered list was that I thought that it might help both the model and the reader to keep track of how many data segments it has written so far while writing. Additionally, it gave the model a good way to refer back to data segments in the grouping section.\
+\
+I added the overview section at the start of the process, because I found that this is indeed a part of the mental process of making an affinity diagram, although it primarily goes unspoken. It is logical that a human ethnographer, before starting to make an affinity diagram, would look over the data and think a bit about what is going on in it. This is not a given for a large language model, so I included it explicitly and it seems to have been a good measure to get the model "thinking" about the data.\
+\
+In the data segmentation part, I chose to use the keyboard "BRAINSTORM," prompting for a simple list of data segments instead of "THINK," as I found that the bicameral dialogue to be superfluous in this situation, just resulting in conversations like the following fictional one:\
+\
+> "I think we should include X," said Self 1. "Good idea. We should also include Y," replied Self 2.\
+\
+The model gave similar thoughts when coming up with labels for the groups, so here I also chose to remove the "THINK" section that I originally included in the \
+\
+In my experience, the model will not generate bicameral dialogues longer than five to ten exchanges. Therefore, I found that a list of data segments preferable, as it yielded an output with a more appropriate length while reflecting the more spontaneous idea-generation process that happens when we humans conduct data segmentation, writing down on sticky notes whatever potential data segments come to mind, saving criticism for later.\
+\
+The final output was longer than is reasonable to quote within the present report, but can be read in its entirety in Appendix X. In order to give a more human-readable version of the model's affinity diagram, I have compiled the diagram into a visual representation that is more tradtionally associated with affinity diagrams, utilising the computer program Apple Freeform to work with virtual sticky notes, similar to my own method when making my human-made affinity diagram.\
+\
+Later in the present report, I will go through the final result of the prompt in more detail, pointing to further potential points of improvement and investigation.}
