@@ -1,0 +1,70 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+\frontmatter
+
+\mainmatter
+This research navigates the exciting intersection of Artificial Intelligence (AI) and qualitative academic research, focusing on the application of OpenAI's Generative Pretrained Transformer 4 (GPT-4), an advanced Large Language Model (LLM), within the realm of organisational behaviour. Specifically, it delves into the complexities of the Information Technology (IT) department in Vejle Municipality, Denmark, a governmental unit that grapples with challenges relating to employee compliance to a well-established IT investment process.
+
+The study addresses two significant gaps in current academic understanding. Firstly, despite the profound potential and growing prevalence of AI and Machine Learning (ML) in various fields, there remains a dearth of scholarly exploration into GPT-4's utility within the context of qualitative analysis. Secondly, the dynamics of IT investment processes within the unique socio-political landscape of Danish municipalities have not been thoroughly investigated.
+
+The research questions guiding this investigation are twofold: firstly, how does GPT-4's capacity to generate affinity diagrams from interview data compare with that of a human researcher, and what insights can this provide for future qualitative research methodologies? Secondly, what are the critical factors contributing to the non-compliance of employees with the IT investment process in Vejle Municipality, and how can these factors be addressed to bolster compliance?
+
+A combination of traditional and innovative research methods were employed in this study. Semi-structured interviews and field notes were used for data collection, while affinity diagrams were used for data analysis, offering a visual representation of thematic connections. An exploratory approach was adopted with GPT-4, prompting the model to generate affinity diagrams from interview data, using the bicameral dialogue approach to stimulate a two-sided conversation within the model.
+
+The findings highlight both the potential and current limitations of GPT-4's capabilities in analysing interview data for affinity diagram generation. While falling short of human researcher performance, GPT-4 displayed promising aspects that could be enhanced through future research and more focused approaches. Within the Vejle Municipality's IT department, the study identified awareness, bureaucracy, and communication issues as key factors influencing employee non-compliance with the IT investment process.
+
+These insights contribute to both the emerging field of AI and ML application in qualitative research, as well as the specific understanding of IT investment process dynamics within Vejle Municipality. The exploration of GPT-4's utility reveals a rich potential for LLMs to revolutionize academic research practices. Concurrently, the findings provide tangible strategies to improve operational efficiency and guideline adherence within Vejle Municipality's IT department. This research thus paves the way for future studies into the integration of AI into qualitative research methodologies, while also offering actionable insights into IT investment processes within Danish municipalities.
+
+\backmatter
+\end{document}
