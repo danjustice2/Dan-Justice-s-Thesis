@@ -5,31 +5,7 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww42700\viewh19020\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 ### Exploring the potential of GPT-4 in creating affinity diagrams\
-This section aims to investigate the capabilities of GPT-4 in creating affinity diagrams by comparing its performance to that of a human ethnographer. Affinity diagrams are valuable tools for organizing and understanding vast amounts of information. Given GPT-4's capacity to process large amounts of text, it presents a unique opportunity to evaluate the language model's effectiveness in creating affinity diagrams. Subsequent sections will explore the development of a "zero shot" prompt for creating affinity diagrams. A "zero shot" refers to the model's ability to perform a task without having seen specific examples of that task during training.\
-\
-#### Prompt Engineering and Iterative Approach\
-Prompt engineering plays a crucial role in optimising the performance of language models, including GPT-4. This section discusses the approach to prompt engineering, aiming to achieve high-quality results. With GPT-4's enhanced capacity to understand and assist with meta-tasks, such as refining its own prompts, there is potential for streamlining the prompt engineering process without compromising its efficacy, thus further reducing workload.\
-\
-Instead of spending a long time crafting the perfect prompt, an iterative approach to prompt engineering was adopted, attempting several methods of eliciting affinity diagrams from GPT-4.\
-\
-The following sections utilise what OpenAI calls chat completions. In chat completions, there are three types of messages: system, user, and assistant. Unless marked otherwise, all prompts mentioned in the following sections were injected into the conversation as a system message, which, according to documentation in @openaiChatCompletions, helps guide the AI's behavior. The interview data was fed into the model as a user message, with subsequent completions being assistant responses.\
-\
-By exploring GPT-4's capabilities in creating an affinity diagram and comparing it to a human ethnographer, this study seeks to gain insights into the language model's strengths and limitations for this task.\
-\
-#### The Direct Prompting Approach\
-\
-In the first attempt to get GPT-4 to produce an affinity diagram, the following simple and direct prompt was given: "You are an ethnographer who evaluates user inputs and creates affinity diagrams based on the narratives they contain. Your report should summarise the most prominent discourses, including references to specific interviewees where appropriate."\
-\
-Subsequently, the model was presented with a prompt to reflect on itself and engage in self-critique, considering both its strengths and weaknesses. The resulting conversation, including the raw outputs, is as follows:\
-\
->System: You are a large language model acting as an ethnographer, speaking with your human colleague. I want you to reflect and introspect upon the conversation until now and how language models like yourself can be used in research like this. Take into account both your strengths and weaknesses.\
-\
-The dialogue that ensues suggests that GPT-4 possesses the capacity to scrutinise its inherent biases as a language model (available in full in Appendix X). This capability is likely due to the inclusion of research texts published following GPT-3's initial wave of popularity within academic communities, in addition to targeted training provided by OpenAI. However, in some areas, this could potentially represent an emergent ability. The precise origins remain elusive due to the "black-box" nature of Large Language Models (LLMs) and the absence of comprehensive knowledge regarding GPT-4's training data and fine-tuning process.\
-\
-Contrasting with human cognition, where language and reasoning centres reside within distinct regions of the brain \\[@mahowaldDissociatingLanguageThought2023; @valmeekamLargeLanguageModels2022\\], GPT-4, when tasked with generating an affinity diagram, doesn't formulate a plan prior to initiating its writing process. Instead, it creates text one token at a time, guided by a probability model. In the subsequent section, we will explore the simulated-thought approach, aiming to enhance both interpretability and the overall depth of analysis through a chain of thought methodology.\
-\
-#### The Simulated-Thought Approach\
+\f0\fs24 \cf0 #### The Simulated-Thought Approach\
  Nevertheless, researchers have noted significantly improved outcomes in reasoning tasks when models are prompted to produce a chain-of-thought [@weiChainThoughtPrompting2022; see also, @richardsAutoGPTAutonomousGPT42023; @weiArtificialStreamThought; @jsalsmanItEasyGive2023]. Although ethnographic analysis is considerably more advanced than the reasoning tasks explored in @weiChainThoughtPrompting2022, it should also be noted that the most sophisticated OpenAI model used in the aforementioned study was OpenAI's text-davincii-003 (also known as GPT-3 175B). \
 \
 Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a more detailed and reasoned output, mirroring the step-by-step process followed by human ethnographers. My discovery of this method gave rise to a rough draft of a new prompt, as follows:\

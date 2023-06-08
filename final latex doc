@@ -1,97 +1,5 @@
-% Options for packages loaded elsewhere
-\PassOptionsToPackage{unicode}{hyperref}
-\PassOptionsToPackage{hyphens}{url}
-%
-\documentclass[
-]{book}
-\usepackage{amsmath,amssymb}
-\usepackage{lmodern}
-\usepackage{iftex}
-\ifPDFTeX
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provide euro and other symbols
-\else % if luatex or xetex
-  \usepackage{unicode-math}
-  \defaultfontfeatures{Scale=MatchLowercase}
-  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\fi
-% Use upquote if available, for straight quotes in verbatim environments
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-\IfFileExists{microtype.sty}{% use microtype if available
-  \usepackage[]{microtype}
-  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
-}{}
-\makeatletter
-\@ifundefined{KOMAClassName}{% if non-KOMA class
-  \IfFileExists{parskip.sty}{%
-    \usepackage{parskip}
-  }{% else
-    \setlength{\parindent}{0pt}
-    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
-}{% if KOMA class
-  \KOMAoptions{parskip=half}}
-\makeatother
-\usepackage{xcolor}
-\usepackage{graphicx}
-\makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-% Set default figure placement to htbp
-\makeatletter
-\def\fps@figure{htbp}
-\makeatother
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newlength{\cslentryspacingunit} % times entry-spacing
-\setlength{\cslentryspacingunit}{\parskip}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-  \let\oldpar\par
-  \def\par{\hangindent=\cslhangindent\oldpar}
-  \fi
-  % set entry spacing
-  \setlength{\parskip}{#2\cslentryspacingunit}
- }%
- {}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same} % disable monospaced font for URLs
-\hypersetup{
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-
-\author{}
-\date{}
-
-\begin{document}
-\frontmatter
-
-\mainmatter
 \hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
+\chapter{Introduction}\label{introduction}}
 
 Artificial Intelligence (AI) and Machine Learning (ML) have extended their reach far beyond the realm of technological innovation, now infiltrating diverse sectors of human activity. Of particular note is their permeation into academic research, which has seen a profound transformation through the application of these technologies. The inherent potential of AI and ML is immense, not only introducing innovative methods for enquiry but also opening up vistas for novel discoveries. One striking innovation is the Generative Pretrained Transformer 4 (GPT-4), an advanced Large Language Model (LLM) developed by OpenAI. This highly sophisticated language model offers a robust mechanism for processing and analysing substantial quantities of textual data, making it an invaluable asset in contemporary research.
 
@@ -121,7 +29,7 @@ Hence, this exploration has a dual purpose. Firstly, it clarifies the socio-tech
 These research questions aim to comprehensively evaluate GPT-4 as an innovative tool for qualitative research while providing deeper insights into the dynamics of the IT investment process in Vejle Municipality.
 
 \hypertarget{relevance-of-research}{%
-\subsection{Relevance of Research}\label{relevance-of-research}}
+\section{Relevance of Research}\label{relevance-of-research}}
 
 This research holds significant value from both a pragmatic and scholarly perspective. From a practical viewpoint, the results of this study aim to improve the efficiency and adherence to guidelines within the IT investment process in Vejle Municipality. The aim here is to provide tangible recommendations and insights to better navigate the complexities inherent in municipal IT investment decisions. By doing so, it will help facilitate a more sustainable, robust, and accountable IT ecosystem within the context of Danish municipalities.
 
@@ -132,7 +40,7 @@ Furthermore, to the best of the author's knowledge, there is no comprehensive st
 The fusion of these perspectives underscores the profound relevance of the research, with immediate practical implications while potentially shaping the future course of academic research methodologies. It paves the way for a broadened scope of investigation into the role LLMs like GPT-4 could play in qualitative research, raising intriguing questions and setting the stage for future explorations in this emergent and promising field of study.
 
 \hypertarget{overview-of-structure}{%
-\subsection{Overview of Structure}\label{overview-of-structure}}
+\section{Overview of Structure}\label{overview-of-structure}}
 
 This thesis consists of two parts, each addressing a specific research question. I will work my way backwards, with the first part focusing on a traditional qualitative investigation of the IT Investment Process in Vejle Municipality. The second part evaluates the utility of GPT-4 in the context of the aforementioned qualitative research, specifically focusing on prompting the model to generate affinity diagrams from interview data.
 
@@ -141,7 +49,7 @@ The first section begins with an introduction to the case background, followed b
 The second section focuses on GPT-4, starting with a technical background for those unfamiliar with the model. This is followed by a methodology section, detailing data collection through user-model interfaces, details about the iterative prompting approach used, and establishes a set of criteria for assessing output quality, forming the basis of data analysis.
 
 \hypertarget{case-study-vejle-municipalitys-it-investment-process}{%
-\section{Case Study: Vejle Municipality's IT Investment Process}\label{case-study-vejle-municipalitys-it-investment-process}}
+\chapter{Case Study: Vejle Municipality's IT Investment Process}\label{case-study-vejle-municipalitys-it-investment-process}}
 
 In this case study, I will present a comprehensive qualitative analysis of the IT investment process in Vejle Municipality from the perspective of a single researcher. The investigation will commence with a detailed case background, providing insights into the organisational structure of Vejle Municipality, the composition and function of its IT department, and the mechanics of its IT investment process, among other details.
 
@@ -152,7 +60,7 @@ After the literature review, I will present the collected data, providing detail
 The chapter will conclude with a comprehensive discussion, synthesising my findings and highlighting their significance within the framework of my broader research goals. This concluding section will effectively tie together the various elements of the chapter, offering a cohesive analysis of the IT investment process within Vejle Municipality.
 
 \hypertarget{case-background}{%
-\subsection{Case Background}\label{case-background}}
+\section{Case Background}\label{case-background}}
 
 Residing within Vejle Municipality's administrative building, the IT department has historically faced challenges in effective communication, particularly with external stakeholders and individuals in decentralised roles. Recognising the need to bridge this gap, the department strategically incorporated four IT architects into its ranks over recent years, each bringing a distinct blend of skills and expertise.
 
@@ -179,12 +87,12 @@ However, despite these comprehensive instructions and the broad applicability of
 In light of these observations, this study aims to delve into the reasons behind employees' inconsistent adherence to the IT investment process and propose strategies to improve compliance. The ensuing report will thoroughly investigate the complexities of this case before using the rich qualitative data generated for experiments in the field of NLP in the penultimate chapter.
 
 \hypertarget{literature-review}{%
-\subsection{Literature Review}\label{literature-review}}
+\section{Literature Review}\label{literature-review}}
 
 This literature review will delve into three key areas pertinent to this study: IT Investment Governance, Ethnomethodology, and Affinity Diagrams. The analysis of these topics aims to build a theoretical underpinning for understanding the complexities of IT investment in the public sector and how ethnomethodological research and affinity diagrams can help derive valuable insights into this intricate process. Let's begin by unpacking the first concept: Information Technology Investment Governance (ITIG).
 
 \hypertarget{it-investment-governance}{%
-\subsubsection{IT Investment Governance}\label{it-investment-governance}}
+\subsection{IT Investment Governance}\label{it-investment-governance}}
 
 IT governance is a vital component for both private and public sector organisations, playing a central role in aligning IT investments with institutional goals and maximising associated benefits (Weill, 2004). Encompassing decision-making, planning, and controlling IT investments, it sits at the heart of effective governance.
 
@@ -201,7 +109,7 @@ The relevance and efficacy of the ITIG construct were demonstrated by Ali et al.
 While Ali et al.~(2015) made notable strides, certain gaps still persist, particularly in understanding the behavioural elements influencing effective IT investment governance, such as employee compliance with IT governance processes. Nonetheless, the RBV and ITIG construct offer a robust theoretical foundation to scrutinise and enhance IT investment governance within the public sector, paving the way for future research and improvements.
 
 \hypertarget{ethnomethodology}{%
-\subsubsection{Ethnomethodology}\label{ethnomethodology}}
+\subsection{Ethnomethodology}\label{ethnomethodology}}
 
 The field of social science research has seen a significant surge in the application of Ethnomethodology (EM) as a theoretical approach. EM explores how individuals establish and uphold social order through their everyday interactions, focusing on practical methods and techniques they utilise to comprehend their social realm. As observed by Crabtree (2012), EM research primarily centres on how communities or social settings employ quotidian practises and knowledge to formulate the regulations governing their social existence (p.~316).
 
@@ -232,7 +140,7 @@ Understanding how the work is `formally organised' across a division of labour a
 Crabtree, Rouncefield, and Tolmie (2012) encourage researchers to enrich their depiction of work's flow by concentrating on discrete sequences of interactional work entailed in completing specific activities. The focus should be on what is done, who does it, and the process of work completion. Attention should also be given to the cooperation and collaboration between individuals during discrete sequences of interactional work. This would involve observing and documenting who interacts with whom, their discussion points, joint activities, task transactions and handovers, and subsequent responses.
 
 \hypertarget{affinity-diagrams}{%
-\subsubsection{Affinity Diagrams}\label{affinity-diagrams}}
+\subsection{Affinity Diagrams}\label{affinity-diagrams}}
 
 Affinity diagrams, also known as the KJ method or affinity charting, were first developed by Japanese anthropologist Jiro Kawakita (as cited in Scupin 1997). Affinity diagrams are used to synthesise and categorise large amounts of qualitative data, such as observations, interviews, and field notes, into meaningful and easily understandable themes and patterns (Hanington and Martin 2019).
 
@@ -243,12 +151,12 @@ In the context of ethnographic UX studies, affinity diagrams serve as a valuable
 Furthermore, affinity diagrams facilitate collaboration and interdisciplinary communication among research team members Holtzblatt and Beyer (2016). By engaging in the process of grouping and labelling data, researchers from different backgrounds and expertise can contribute to a shared understanding of the user experience, leading to more innovative and effective solutions.
 
 \hypertarget{methodology}{%
-\subsection{Methodology}\label{methodology}}
+\section{Methodology}\label{methodology}}
 
 This section delineates the research methodology undertaken in this study, with a detailed examination of both data collection and analysis processes. The data collection encompasses two salient approaches: semi-structured interviews and field note documentation. Following this, the data analysis strategy is explicated, focusing on affinity diagrams and the employment of GPT models as a peripheral method. These methodologies provide a synergistic approach, marrying qualitative and quantitative aspects to ensure an all-encompassing understanding of the research context. This thorough exposition of the processes involved serves to elucidate the rigour and thoughtfulness in the methodological design of the study. Furthermore, it underscores the comprehensive trajectory from data procurement to analysis, illuminating the rigorous approach taken to ensure the validity and reliability of the research findings.
 
 \hypertarget{data-collection-interviews-field-notes}{%
-\subsubsection{Data Collection: Interviews \& Field Notes}\label{data-collection-interviews-field-notes}}
+\subsection{Data Collection: Interviews \& Field Notes}\label{data-collection-interviews-field-notes}}
 
 In this study, the process of data collection was established upon two critical components: semi-structured interviews and field notes documentation.
 
@@ -269,7 +177,7 @@ The process of taking field notes enabled a comprehensive understanding of Vejle
 In sum, the combination of semi-structured interviews and field notes documentation provided a comprehensive and valuable resource. The detailed accounts served as a solid foundation for the analysis and interpretation of the data, effectively informing the subsequent phases of this research study.
 
 \hypertarget{data-analysis-affinity-diagrams}{%
-\subsubsection{Data Analysis: Affinity Diagrams}\label{data-analysis-affinity-diagrams}}
+\subsection{Data Analysis: Affinity Diagrams}\label{data-analysis-affinity-diagrams}}
 
 Following the process of collecting interview summaries and field notes, an affinity diagramming technique was employed to synthesise and analyse the data. This method provided an effective way to organise the large volume of collected data, identify patterns, and uncover underlying themes.
 
@@ -284,7 +192,7 @@ Throughout this process, the affinity diagram was consistently reviewed and iter
 In conclusion, the affinity diagramming method was instrumental in providing a structured approach to data analysis. It facilitated a holistic view of the data collected through semi-structured interviews and field notes, allowing for a nuanced understanding of the research context, which in turn informed the interpretation of the research findings.
 
 \hypertarget{data-analysis-gpt-models}{%
-\subsubsection{Data Analysis: GPT Models}\label{data-analysis-gpt-models}}
+\subsection{Data Analysis: GPT Models}\label{data-analysis-gpt-models}}
 
 While the data analysis of the present chapter primarily relied on creating a traditional affinity diagram, the LLMs GPT-4 and its predecessor GPT-3.5 served as valuable supplementary tools, aiding the author in the research process. Their inclusion offered a unique opportunity to enhance the breadth of information accessed beyond what was personally known or available in the immediate context of the study. The LLMs were primarily utilised for their conversational abilities, providing an interactive platform to generate diverse perspectives on the research topic. Drawing from an extensive text corpus, LLMs offered insightful responses to the author's queries, often sparking new lines of thought, novel questions, and unexplored research avenues.
 
@@ -293,7 +201,7 @@ Notably, the LLMs did not merely function as an easily accessible knowledge reso
 While LLMs can serve as a source of knowledge, it is always worth noting that these models can also output false information, so all information attained from the models was double-checked using traditional information searching methods.
 
 \hypertarget{presentation-of-interview-data}{%
-\subsection{Presentation of Interview Data}\label{presentation-of-interview-data}}
+\section{Presentation of Interview Data}\label{presentation-of-interview-data}}
 
 \hfill\break
 \includegraphics{9d6d3fd1cf5e3b0a9a7514c1b7c47822.png} The data gathered for this study comprises semi-structured interviews with twelve employees of Vejle Municipality, spanning various roles across all six administrative divisions. The data collection process involved taking rough notes by hand during the interviews, followed by more refined digital notes afterwards. From these refined notes, I created two affinity diagrams: one by hand and the other with the assistance of GPT-4 through a carefully crafted prompt.
@@ -303,7 +211,7 @@ The analysis in this report primarily utilises my hand-made affinity diagram, as
 Out of the interviewees, the majority were familiar with the IT investment process: six indicated familiarity (including one who had helped create the process in her role as a digitalisation consultant), five were unfamiliar, and the final participant, who was also unfamiliar, deemed the process irrelevant to her work and was therefore excluded from the analysis.
 
 \hypertarget{perceptions-of-an-impersonal-and-bureaucratic-it-investment-process}{%
-\subsubsection{Perceptions of an Impersonal and Bureaucratic IT Investment Process}\label{perceptions-of-an-impersonal-and-bureaucratic-it-investment-process}}
+\subsection{Perceptions of an Impersonal and Bureaucratic IT Investment Process}\label{perceptions-of-an-impersonal-and-bureaucratic-it-investment-process}}
 
 My first interview was with Freja, a seasoned web manager from the Policy, Analysis \& Communication department. During our discussion, Freja expressed strong opinions on the IT investment process, perceiving it as excessively bureaucratic and impersonal. With twenty years of experience working closely with the IT department, she felt confident in her ability to communicate directly with them when necessary, bypassing the formal process. Freja advocated for a more relationship-based approach, emphasising the importance of positive reinforcement over punishment.
 
@@ -314,12 +222,12 @@ Lise, an administrative assistant in the Daycare department, acts as a vital bri
 To alleviate these concerns, Lise suggests adding an option on the form to indicate if the case involves a target group struggling to adapt to technological changes. Another appealing solution she proposes is including a preferred IT department contact person on the form, ensuring that someone familiar with the specific context is involved.
 
 \hypertarget{benefits-of-using-the-process-potential-talking-points}{%
-\subsubsection{Benefits of Using the Process: Potential Talking Points}\label{benefits-of-using-the-process-potential-talking-points}}
+\subsection{Benefits of Using the Process: Potential Talking Points}\label{benefits-of-using-the-process-potential-talking-points}}
 
 Claus, a development manager at Vejle's Centre for Special Education for Youth and Adults (CSV), finds the IT investment process helpful because it connects them with the right people, such as an architect who oversees the case, ensuring it is remembered and acted upon. Using the IT investment process also provides a clear line of communication when working decentralised, as is the case with CSV. It allows them to follow a case in the system and see which IT department members are involved and what they are doing. Claus appreciates the ability to intervene if he feels his needs has been misunderstood.
 
 \hypertarget{potential-for-strengthened-cooperation-between-it-and-the-rest-of-the-organisation}{%
-\subsubsection{Potential for Strengthened Cooperation Between IT and the Rest of the Organisation}\label{potential-for-strengthened-cooperation-between-it-and-the-rest-of-the-organisation}}
+\subsection{Potential for Strengthened Cooperation Between IT and the Rest of the Organisation}\label{potential-for-strengthened-cooperation-between-it-and-the-rest-of-the-organisation}}
 
 Emma, who has been working in the municipality for thirteen years and took over her current position as an Implementation Consultant in the Department of Welfare six months ago, told about welfare's own work and how they have a similar form to the IT investment process for welfare investments. She suggested that it would be more efficient if their applicants could automatically involve IT in projects related to IT.
 
@@ -330,41 +238,41 @@ Anne recalls an instance when she was called to a meeting by someone in the orga
 During the interview, I suggested the idea of merging the systems, and Anne reacted positively to this idea, agreeing that implementing a central system that directs communication based on certain guidelines could help ensure that employees with new investments in the pipeline do not have to guess who should be involved and when in the process they should be involved.
 
 \hypertarget{time-requirements-for-implementation-of-new-solutions}{%
-\subsubsection{Time Requirements for Implementation of New Solutions}\label{time-requirements-for-implementation-of-new-solutions}}
+\subsection{Time Requirements for Implementation of New Solutions}\label{time-requirements-for-implementation-of-new-solutions}}
 
 As touched on earlier, Anne from the Salary department has grappled with some employees in the organisation who were eager to introduce new solutions, with expectations regarding the timeframe for these implementations that, in her view, were unrealistic and lacked sensitivity to the accompanying workload. At present, there are no formal guidelines laying out the expected duration for the implementation of new solutions. This void likely stems from the inherently diverse nature of IT investments, making the creation of universal guidelines a challenging task.
 
 \hypertarget{the-name-perceived-as-opaque-and-unattractive}{%
-\subsubsection{The Name Perceived as Opaque and Unattractive}\label{the-name-perceived-as-opaque-and-unattractive}}
+\subsection{The Name Perceived as Opaque and Unattractive}\label{the-name-perceived-as-opaque-and-unattractive}}
 
 Despite not being familiar with the IT investment process prior to our interview, Emma recalls hearing about it from Jonas, one of the IT architects, at a meeting. Emma assumed the process was primarily relevant to IT and economy personnel due to its name. She agreed that a more tangible name, such as ``Indkøbsguiden'' (Danish for ``The Purchase Guide''), might make it more accessible to the grassroots level of the organisation. However, according to Jonas, a similar system in another municipality also faced issues with lack of use, indicating a more attractive name cannot stand alone.
 
 \hypertarget{it-investment-process-not-widely-promoted}{%
-\subsubsection{IT Investment Process Not Widely Promoted}\label{it-investment-process-not-widely-promoted}}
+\subsection{IT Investment Process Not Widely Promoted}\label{it-investment-process-not-widely-promoted}}
 
 Interviewees such as Anne have a view of the IT investment process not being widely promoted or talked about by the personnel in the IT department. She has been used to just contacting Nicklas or one of IT's other architects when she needed something.
 
 \hypertarget{broad-guidelines-for-when-reporting-is-required}{%
-\subsubsection{Broad Guidelines for When Reporting is Required}\label{broad-guidelines-for-when-reporting-is-required}}
+\subsection{Broad Guidelines for When Reporting is Required}\label{broad-guidelines-for-when-reporting-is-required}}
 
 Some interviewees such as Mikkel from the Vejle's central library's IT department shared a feeling of being unsure as to when it actually was necessary to use the IT investment process, as the guidelines laid out on the Vejle's intranet cover a very broad area of investments. This is especially problematic for such central institutions that have the resources to implement new investments themselves without involving central IT, with an underlying feeling of participants wanting to be able to avoid using the process if it is unnecessary, despite the narrative at central IT being, if you are unsure, still use it to be safe.
 
 \hypertarget{central-vs.-decentralised}{%
-\subsubsection{Central vs.~Decentralised}\label{central-vs.-decentralised}}
+\subsection{Central vs.~Decentralised}\label{central-vs.-decentralised}}
 
 Søren, responsible for purchasing IT equipment for schools, explained that, while employees of the municipality are met by the municipal intranet as the first thing when they log onto their computers, employees in schools have to specfically browse to the intranet's address and log in to get access, making an extra barrier to entry to the IT investment process for them. Søren is nevertheless hopeful that, while school employees currently don't use the IT investment process, that it would be possible to get them to use it with the appropriate training, despite the fact that IT investments aren't a part of the everyday work of school employees. Søren went on to say that he thinks it is important that passionate school teachers have the adequate freedom to purchase unique IT equipment to practise their unique styles of teaching, as he seems to view this as an important part of a healthy school system.
 
 Peter, a care assistant who recently retired but still works at the residential care facility one day a week to help with their IT, raised concerns about the feasibility of relying on support from Vejle's central IT department in decentralised areas. He wonders what will happen to the facility when he fully retires, as they will have to rely on support from central IT, which may not be viable considering the facility's location and the fact that they operate year-round, providing constant care to residents.
 
 \hypertarget{frustrations-with-restrictions-from-it}{%
-\subsubsection{Frustrations With Restrictions From IT}\label{frustrations-with-restrictions-from-it}}
+\subsection{Frustrations With Restrictions From IT}\label{frustrations-with-restrictions-from-it}}
 
 During the interviews, it became apparent that some interviewees, such as Claus, were frustrated with the limitations imposed by the IT department. Claus expressed his desire for more flexibility and autonomy in updating programmes on his computer without having to consult with central IT. Additionally, Claus hoped for more collaboration between Søren from school IT and central IT, as these areas are becoming increasingly interconnected.
 
 Another interviewee, Peter, expressed frustration with the lack of flexibility in smartphone models available. He believed that investing in the phones recommended by the supplier of their systems would be more beneficial, as they come with a guarantee of receiving updates for up to eight years after purchase. However, IT disagreed with his reasoning, claiming that he was influenced by the supplier. Peter's argument was that the phones offered by the IT department had to be replaced after a shorter lifespan due to not receiving necessary security updates from the manufacturer.
 
 \hypertarget{importance-of-it-architects-as-communicators}{%
-\subsubsection{Importance of IT Architects as Communicators}\label{importance-of-it-architects-as-communicators}}
+\subsection{Importance of IT Architects as Communicators}\label{importance-of-it-architects-as-communicators}}
 
 Many interviewees, such as Søren from school IT, acknowledged the importance of IT architects as communicators. Søren notes that the arrival of IT architects in the organisation has improved communication and collaboration between central IT and decentralised areas, as well as between IT and the rest of the organisation.
 
@@ -373,12 +281,12 @@ Claus went so far as to call the IT architects a ``godsend,'' giving IT a more s
 The architects, including Mathilde, have reached out more to decentralised areas in an attempt to build better relationships. Both Søren and Mikkel mentioned Mathilde's joint meetings, describing them as very helpful in the process of making IT's work more accessible throughout the organisation.
 
 \hypertarget{current-wins-for-the-it-investment-process}{%
-\subsubsection{Current Wins for the IT Investment Process}\label{current-wins-for-the-it-investment-process}}
+\subsection{Current Wins for the IT Investment Process}\label{current-wins-for-the-it-investment-process}}
 
 While the interview data yielded a fair deal of critique to the process, it is not all bad. The web manager Freja expressed that, in her experience, that she thinks people have become more aware of the need to avoid double investments through the years. Søren from school IT described the simplification the IT investment process underwent some years ago as a considerable improvement, taking more consideration for decentralised employees.
 
 \hypertarget{discussion}{%
-\subsection{Discussion}\label{discussion}}
+\section{Discussion}\label{discussion}}
 
 Upon analysing the data from the interviews conducted within Vejle Municipality, it becomes clear that navigating the IT investment process is a complex and challenging task. These interviews spanned a diverse range of roles within the Municipality, painting a comprehensive picture of how the organisation perceives and interacts with the IT investment process.
 
@@ -391,7 +299,7 @@ In line with the recommendations, I plan to delineate potential directions for f
 Through this exhaustive exploration of Vejle Municipality's IT investment process, my objective is to catalyse enhancements that will benefit not only the Municipality, but also broaden the understanding of IT investment processes in analogous situations.
 
 \hypertarget{recommendations-for-vejle-municipality}{%
-\subsubsection{Recommendations for Vejle Municipality}\label{recommendations-for-vejle-municipality}}
+\subsection{Recommendations for Vejle Municipality}\label{recommendations-for-vejle-municipality}}
 
 Based on the data analysis and understanding of the current IT investment process at Vejle Municipality, it's clear there are areas of opportunity for improvement. The recommendations for the Municipality centre around five major themes: (1) enhancing communication and visibility of the IT investment process, (2) setting an example in reporting responsibilities and implementation timelines, (3) simplifying the introductory text and revising guidelines, (4) humanising the IT investment process, and (5) unifying reporting across the organisation and easing restrictions where applicable.
 
@@ -403,26 +311,26 @@ The suggestions emphasise a more user-friendly approach that bridges the gap bet
 To better communicate the IT investment process, it should be positioned as a support service rather than a bureaucratic obstacle. Adding an option to indicate preferred contact persons in the IT department could help alleviate concerns about the process's impersonal nature. Moreover, prioritising improved communication and collaboration between central IT and decentralised areas, and between IT and the rest of the organisation, is essential. IT architects have made progress in this area, but continued efforts are crucial for effectively integrating the IT investment process into Vejle Municipality's daily operations.
 
 \hypertarget{establish-clearer-guidelines-on-reporting-responsibilities}{%
-\subparagraph{Establish Clearer Guidelines on Reporting Responsibilities}\label{establish-clearer-guidelines-on-reporting-responsibilities}}
+\subsubsection{Establish Clearer Guidelines on Reporting Responsibilities}\label{establish-clearer-guidelines-on-reporting-responsibilities}}
 
 IT architects play a vital role in communicating the process through personal interactions and other means. As Anne, an interviewee, highlighted, sharing the process with the right people without bothering irrelevant employees is essential. While the intranet contains ample information on when investments must be reported, it lacks clarity on who is specifically responsible for reporting investments to IT. This ambiguity can lead to situations where no one takes responsibility for contacting IT.
 
 Clearer guidelines for reporting responsibilities could help remedy this problem and make it easier for architects to find and communicate with the appropriate individuals within the municipality.
 
 \hypertarget{address-implementation-time-and-workload-concerns}{%
-\subparagraph{Address implementation time and workload concerns}\label{address-implementation-time-and-workload-concerns}}
+\subsubsection{Address implementation time and workload concerns}\label{address-implementation-time-and-workload-concerns}}
 
 As reported in the interview with Anne from the Salary department, instances have occurred where employees approach IT and other stakeholders with unrealistic expectations regarding the timeframe for solution implementation. Such situations can lead to disappointment and/or impose an excessively heavy workload to meet the desired schedule. It is therefore crucial to focus on the time requirements of projects. If feasible, guidelines should be established to provide employees with a realistic estimate of the time it will take to implement their IT investments.
 
 Alternatively, or in addition, the IT investment process form could incorporate an option for indicating a preferred implementation date for the new IT investment. This provision would allow the IT architect to manage expectations right from the first meeting, helping to realign any unrealistic timelines. Consequently, the IT architect would be less likely to be taken aback by an impractical timeframe presented during the meeting. This strategy could also mitigate the element of surprise and reduce the likelihood of a burdensome workload being imposed at short notice.
 
 \hypertarget{set-an-example}{%
-\subparagraph{Set an Example}\label{set-an-example}}
+\subsubsection{Set an Example}\label{set-an-example}}
 
 When employees contact IT architects for assistance, they should receive help with their IT investment. Simultaneously, IT architects should create a record of the new IT investment in the appropriate database, demonstrating mutual respect for the process. After logging the investment, IT architects could inform the employee and politely request that they use the IT investment process for future investments, ensuring to explain the process's purpose.
 
 \hypertarget{simplifying-the-introductory-text}{%
-\subparagraph{Simplifying the Introductory Text}\label{simplifying-the-introductory-text}}
+\subsubsection{Simplifying the Introductory Text}\label{simplifying-the-introductory-text}}
 
 IT should consider the presentation of the IT investment process on the intranet page further. The extensive technical text on the page should be relegated to less prominent areas, as first impressions are crucial in persuading employees to engage with the process. Instead, a more concise, simplified version should be presented, emphasising the rationale for the process's existence and the advantages of utilising it, ideally employing more engaging communication methods.
 
@@ -431,7 +339,7 @@ For instance, a video that explains the process, its purpose, and its benefits c
 By making employees aware of the rationale behind the IT investment process and its potential benefits, they are more likely to be receptive to changing their behaviour. Simultaneously, understanding the logic underpinning the IT investment process provides a more intuitive way of explaining and grasping its relevance. This approach could help address the image problem and confusion arising from the current guidelines, as mentioned in the previous section.
 
 \hypertarget{consider-revising-guidelines-for-when-investments-should-be-reported}{%
-\subparagraph{Consider Revising Guidelines for When Investments Should be Reported}\label{consider-revising-guidelines-for-when-investments-should-be-reported}}
+\subsubsection{Consider Revising Guidelines for When Investments Should be Reported}\label{consider-revising-guidelines-for-when-investments-should-be-reported}}
 
 For IT-savvy employees outside of the IT department, such as Mikkel and Freja, the guidelines regarding when IT investments need to be reported can appear overly broad, seemingly intended for employees whose daily work and competencies do not focus on IT. Consequently, these IT-savvy employees may feel that they are exempt from using the IT investment process or perceive that employees with their competencies have not been taken into account when formulating the guidelines.
 
@@ -443,17 +351,17 @@ Although the current guidelines serve as a comprehensive catch-all, which can be
 Interview data and ethnographic observations indicate that the IT investment process suffers from an image problem. To counteract this perception, steps should be taken to make the process more approachable. In the following sections, I will cover possible ways of achieving this.
 
 \hypertarget{renaming-the-process}{%
-\subparagraph{Renaming the Process}\label{renaming-the-process}}
+\subsubsection{Renaming the Process}\label{renaming-the-process}}
 
 Many interviewees unfamiliar with the IT investment process commented on its name. The lengthy Danish term, consisting of twenty-three letters, appeared bureaucratic and unappealing. A name like ``Indkøbsguiden'' (Danish for ``The Purchase Guide'') was suggested as an alternative, appealing more to the grassroots level of the organisation.
 
 \hypertarget{cater-to-the-needs-of-diverse-employee-groups}{%
-\subparagraph{Cater to the Needs of Diverse Employee Groups}\label{cater-to-the-needs-of-diverse-employee-groups}}
+\subsubsection{Cater to the Needs of Diverse Employee Groups}\label{cater-to-the-needs-of-diverse-employee-groups}}
 
 The IT investment process should accommodate the requirements of various employee groups who may be hesitant to use the process. Allowing employees to choose a preferred architect when completing the form could provide peace of mind to those dealing with sensitive IT investments, such as daycare workers with unique needs.
 
 \hypertarget{clarify-the-purpose-and-advantages-of-using-the-it-investment-process}{%
-\subparagraph{Clarify the Purpose and Advantages of Using the IT Investment Process}\label{clarify-the-purpose-and-advantages-of-using-the-it-investment-process}}
+\subsubsection{Clarify the Purpose and Advantages of Using the IT Investment Process}\label{clarify-the-purpose-and-advantages-of-using-the-it-investment-process}}
 
 Interviewees viewed the IT investment process as bureaucratic and struggled to understand its benefits compared to directly contacting the IT department. The IT department should use the intranet site to clearly explain the purpose of the IT investment process, emphasising the ``why'' rather than relying on coercive language about city council mandates.
 
@@ -478,7 +386,7 @@ While information and cyber security are crucial, it is also essential to strike
 By easing restrictions where possible, a more balanced approach can be achieved, ensuring that decentralised employees, particularly IT specialists, feel trusted and empowered within the organisation.
 
 \hypertarget{opportunities-for-future-research}{%
-\subsubsection{Opportunities for Future Research}\label{opportunities-for-future-research}}
+\subsection{Opportunities for Future Research}\label{opportunities-for-future-research}}
 
 Further research is necessary to delve deeper into the facets of the IT investment process that weren't covered in depth during this study. Potential areas of exploration could include:
 
@@ -518,7 +426,7 @@ Finally, more research could be done on how sociocultural factors impact the IT 
 In summary, the current research has laid the groundwork for a more detailed exploration of the IT investment process. Future studies that incorporate EM methods could build on this foundation, providing a more holistic and in-depth understanding of the complex social dynamics that underlie IT investments. These studies could in turn inform more effective strategies and interventions for improving IT investment processes within municipalities and other organisational contexts.
 
 \hypertarget{interim-conclusion}{%
-\subsubsection{Interim Conclusion}\label{interim-conclusion}}
+\subsection{Interim Conclusion}\label{interim-conclusion}}
 
 The findings thus far offer valuable insights into the intricacies of the IT investment process in Vejle Municipality. It is evident from these conclusions that an enhanced IT investment process necessitates a comprehensive approach encompassing improved communication, refined guidelines, and a heightened focus on the human factor. By implementing these measures, Vejle Municipality stands to improve its IT investment process considerably, fostering more effective IT investments in the future.
 
@@ -527,7 +435,7 @@ The insights accumulated serve as a solid foundation for further investigations.
 While these interim conclusions signify the end of this part of the present report, they also usher in the intriguing discussions that lie ahead. The impending exploration of the role of AI, specifically GPT-4, in creating affinity diagrams, holds the promise of unveiling new perspectives and possibilities.
 
 \hypertarget{gpt-4s-utility-in-qualitative-research}{%
-\section{GPT-4's Utility in Qualitative Research}\label{gpt-4s-utility-in-qualitative-research}}
+\chapter{GPT-4's Utility in Qualitative Research}\label{gpt-4s-utility-in-qualitative-research}}
 
 This chapter provides an in-depth look at the potential of GPT-4, an LLM developed by OpenAI, to contribute to qualitative research. Specifically, I will assess GPT-4's proficiency in creating affinity diagrams, and compare its performance with that of the human ethnographer who authored this report. This evaluation will give us insights into the model's practical utility and effectiveness. While our focus here is on affinity diagrams, I hope this exploration will spark interest in investigating a wider range of applications for AI models like GPT-4 in the field of qualitative research.
 
@@ -540,31 +448,31 @@ The fourth section presents the results: the outputs generated by GPT-4 in respo
 In the final section, we delve into a discussion of the output quality, reflecting on the strengths and weaknesses of GPT-4's performance, and exploring potential areas for future research. Thereafter, I will also discuss the broader implications of these findings for the application of AI in qualitative research.
 
 \hypertarget{technical-background}{%
-\subsection{Technical Background}\label{technical-background}}
+\section{Technical Background}\label{technical-background}}
 
 The following sections provide a technical background designed to enhance the understanding of LLMs, specifically focusing on their architecture, training process, and operational mechanisms, delving into the principles of inferential text completion, tokenisation, token-based pricing, and the importance of prompt engineering in eliciting emergent abilities from LLMs.
 
 While this background aims to build a strong foundation for understanding the chapter that follows, it is worth nothing that the complexity and depth of the subject at hand does not allow for an exhaustive coverage in this brief overview. Further reading and resources are cited throughout to provide a more detailed exploration of these topics. It is encouraged to delve into these sources for a deeper and more nuanced understanding of the intricacies of LLMs.
 
 \hypertarget{gpt-4s-unique-architecture}{%
-\subsubsection{GPT-4's Unique Architecture}\label{gpt-4s-unique-architecture}}
+\subsection{GPT-4's Unique Architecture}\label{gpt-4s-unique-architecture}}
 
 With OpenAI's debut of the GPT-4 model, a pioneering advancement was realised in the form of its multi-modal capabilities. The model is distinguished by its ability to process not only text data but also images (OpenAI 2023). The current study, however, is restricted in its scope as the image module of GPT-4 has yet to be fully released to the public. Therefore, I will solely focus on examining the text-processing proficiency of this LLM.
 
 \hypertarget{transformer-architecture}{%
-\subsubsection{Transformer Architecture}\label{transformer-architecture}}
+\subsection{Transformer Architecture}\label{transformer-architecture}}
 
 LLMs are generally based on a Transformer architecture, first introduced in Vaswani et al. (2017). Transformers are characterised by their self-attention mechanism, which allows the model to weigh different parts of the input sequence in relation to each other. This mechanism enables the model to capture long-range dependencies and context more effectively than traditional recurrent neural networks or convolutional neural networks (Vaswani et al. 2017).
 
 \hypertarget{training-process}{%
-\subsubsection{Training Process}\label{training-process}}
+\subsection{Training Process}\label{training-process}}
 
 The training of LLMs involves two primary steps: pre-training and fine-tuning. During the pre-training phase, the model learns a general understanding of language by predicting missing words or tokens in a sequence (also known as masked language modelling). This is achieved by feeding the model a vast amount of text data from diverse sources, such as books, articles, and websites (see, for example, Devlin et al. 2019)
 
 After pre-training, the model typically undergoes some sort of fine-tuning phase, during which it is further trained on a smaller, task-specific dataset. This enables the model to acquire specialised knowledge and skills related to the target task, such as question-answering, translation, or summarisation (Devlin et al. 2019).
 
 \hypertarget{inferential-text-completion}{%
-\subsubsection{Inferential Text Completion}\label{inferential-text-completion}}
+\subsection{Inferential Text Completion}\label{inferential-text-completion}}
 
 Inferential text completion serves as the fundamental task carried out by LLMs in the context of current research. This task entails generating coherent, contextually relevant, and human-like text by continuing a provided prompt based on learnt linguistic patterns and contextual information. Owing to their ability to perform this task, LLMs are well-suited for various applications such as content generation, summarisation, and conversation.
 
@@ -588,12 +496,12 @@ The present study utilises what OpenAI calls chat completions. In chat completio
 Unless marked otherwise, all prompts mentioned in the following sections were injected into the conversation as a system message, which, according to documentation in OpenAI (n.d.), helps guide the AI's behaviour. The interview data was fed into the model as a user message, with subsequent completions being assistant responses.
 
 \hypertarget{tokenisation}{%
-\subsubsection{Tokenisation}\label{tokenisation}}
+\subsection{Tokenisation}\label{tokenisation}}
 
 Tokenisation is a crucial aspect of LLMs, as it serves as a pre-processing step that converts raw text into a format that can be processed by the model. In this process, the text is broken down into smaller units called tokens, which can be words, subwords, or individual characters (Vaswani et al. 2017). The choice of tokenisation strategy can significantly impact the model's performance, as it determines the granularity at which the model processes and generates text. LLMs typically use subword tokenisation methods, such as Byte Pair Encoding (BPE) or WordPiece, which strike a balance between capturing meaningful linguistic units and maintaining a manageable vocabulary size (Vaswani et al. 2017).
 
 \hypertarget{token-based-pricing-model}{%
-\subsubsection{Token-Based Pricing Model}\label{token-based-pricing-model}}
+\subsection{Token-Based Pricing Model}\label{token-based-pricing-model}}
 
 Token-based pricing is the methodology employed by OpenAI to determine the cost associated with utilising their language models. It is based on the principle that the length of text processed, measured in tokens, corresponds to the computational resources and time required for model inference.
 
@@ -604,14 +512,14 @@ OpenAI's token-based pricing accounts for the number of tokens used in both the 
 Customers are billed based on the total number of tokens utilised during the interaction, covering both input and output tokens. The cost per token remains consistent across different use cases and applications. This pricing structure ensures that the computational resources consumed by language models are appropriately considered, allowing for transparent cost estimation based on the complexity and length of text processed.
 
 \hypertarget{the-significance-of-prompt-engineering}{%
-\subsubsection{The Significance of Prompt Engineering}\label{the-significance-of-prompt-engineering}}
+\subsection{The Significance of Prompt Engineering}\label{the-significance-of-prompt-engineering}}
 
 Prompt engineering plays a pivotal role in achieving high-quality results with LLMs such as GPT-4. This process involves the careful crafting and optimisation of text prompts that are used to instruct the model, as well as tuning the model's hyperparameters, for specific tasks or applications. The overarching aim is to provide a clear and context-rich instruction that elicits accurate, relevant, and comprehensive outputs from the model, while minimising the chance of incorrect or irrelevant responses {[}DAIR.AI (2023){]}.
 
 The quality of a prompt is paramount for two main reasons: First, it sets the stage for the model's response, influencing its understanding and interpretation of the task. Second, it can significantly impact the model's output, dictating its structure, content, and level of detail. In essence, prompt engineering is a vital skill for harnessing the capabilities of LLMs effectively and for a wide array of applications.
 
 \hypertarget{emergent-abilities}{%
-\subsubsection{Emergent Abilities}\label{emergent-abilities}}
+\subsection{Emergent Abilities}\label{emergent-abilities}}
 
 Prompt engineering also plays a key role in uncovering emergent abilities of LLMs. Emergent abilities are unique capabilities of these models that are not merely a direct function of their size or complexity, but rather manifest unexpectedly as the model scales. These abilities, which can't be reliably inferred by simply extrapolating the performance of smaller models, often become apparent only after the LLM has been publicly deployed and extensively probed with diverse prompts (Wei, Tay, et al. 2022).
 
@@ -620,7 +528,7 @@ As researchers experiment with various prompts and explore different application
 The discovery of emergent abilities through prompt engineering is an iterative process. By thoughtfully designing prompts, observing the model's outputs, and refining prompts based on the observed responses, researchers can push the boundaries of LLMs' capabilities. This process not only uncovers new applications but also contributes to the ongoing development of LLMs and informs the design of future models.
 
 \hypertarget{zero-shot-prompting}{%
-\subsubsection{Zero-Shot Prompting}\label{zero-shot-prompting}}
+\subsection{Zero-Shot Prompting}\label{zero-shot-prompting}}
 
 Zero-shot prompting is a technique used to elicit intelligent behaviour from LLMs like GPT-4 without any additional fine-tuning or training on task-specific data. The term `zero-shot' implies that the model is being tested on a type of task it has not explicitly trained on before. Instead, it relies on the comprehensive and diverse training data it has been trained on to understand the task and generate a reasonable response.
 
@@ -629,14 +537,14 @@ The main advantage of zero-shot prompting is that it allows the model to perform
 However, while zero-shot prompting can produce impressive results, it is not without limitations. It relies heavily on the quality and diversity of the model's training data, and there can be gaps in its knowledge or understanding, especially for very specific, niche, or recently-developed topics. Additionally, the quality of the output often hinges on the clarity and precision of the prompt, requiring careful crafting of prompts for best results.
 
 \hypertarget{the-chain-of-thought-and-self-critique-approaches}{%
-\subsubsection{The Chain-of-Thought and Self-Critique Approaches}\label{the-chain-of-thought-and-self-critique-approaches}}
+\subsection{The Chain-of-Thought and Self-Critique Approaches}\label{the-chain-of-thought-and-self-critique-approaches}}
 
 Recent research highlights the effectiveness of a chain-of-thought prompting approach in improving the model's performance in reasoning tasks (Wei, Wang, et al. 2022). This approach encourages the model to elaborate on its thought process, thereby providing more transparency and potentially leading to more accurate and reasoned outputs.
 
 Taking this a step further, a recent study tasked GPT-4 to self-critique its own outputs, which led to further improvements in the quality of the results (Shinn, Labash, and Gopinath 2023). By prompting the model to review and critique its initial output, researchers can guide it towards refining its responses and potentially correcting any mistakes or oversights.
 
 \hypertarget{effects-of-simultaneous-instruction-overload-on-gpt-4-performance}{%
-\subsubsection{Effects of Simultaneous Instruction Overload on GPT-4 Performance}\label{effects-of-simultaneous-instruction-overload-on-gpt-4-performance}}
+\subsection{Effects of Simultaneous Instruction Overload on GPT-4 Performance}\label{effects-of-simultaneous-instruction-overload-on-gpt-4-performance}}
 
 An emergent complexity both from the findings of this study and recent research conducted after the data collection phase of the present research centres on GPT-4's difficulty in simultaneously managing multiple instructions. Mirroring a human tendency to become overwhelmed when faced with numerous tasks at once, GPT-4's performance appears to decline under similar circumstances. This understanding might illuminate why the model struggled to deliver satisfactory results when tasked with both generating critiques and iterating upon them within a single, comprehensive prompt (Hebenstreit et al. 2023; Shinn, Labash, and Gopinath 2023).
 
@@ -645,7 +553,7 @@ A notable exemplification of this challenge can be seen in the self-critique pro
 Such findings suggest that while GPT-4 is indeed capable of tackling complex tasks, the amalgamation of several instructions into a single prompt seems to compromise its performance. Therefore, these insights underscore the urgency for further research to elucidate GPT-4's optimal conditions and develop more effective strategies for prompt design. The subsequent sections of this chapter will draw upon these insights to suggest potential remedies for the issues identified in this research and will also explore other future research opportunities.
 
 \hypertarget{ethical-considerations-in-the-application-of-llms}{%
-\subsubsection{Ethical Considerations in the Application of LLMs}\label{ethical-considerations-in-the-application-of-llms}}
+\subsection{Ethical Considerations in the Application of LLMs}\label{ethical-considerations-in-the-application-of-llms}}
 
 As we contemplate the adoption of LLMs like GPT-4 in research practises, it is critical that one carefully considers the ethical dimensions of this enterprise. The use of such models introduces a set of unique ethical quandaries that must be thoroughly addressed to ensure the responsible and conscientious application of these technologies.
 
@@ -658,7 +566,7 @@ However, it is also crucial to recognise the parallels between LLMs and human co
 The same level of rigorous introspection and self-awareness should be applied when employing LLMs. By acknowledging their limitations and potential for bias, and by understanding the opaque processes underpinning their operations, we can more responsibly utilise these powerful tools. This thoughtful approach to LLMs mirrors the humanistic tradition of ethical research and critical self-reflection, reinforcing the importance of these values even as we venture into new technological frontiers.
 
 \hypertarget{methodology-1}{%
-\subsection{Methodology}\label{methodology-1}}
+\section{Methodology}\label{methodology-1}}
 
 In this chapter, I depart from the traditional qualitative methods discussed in the previous chapter and pivot towards a more computational approach. This methodology seeks to explore the intersection of artificial intelligence and ethnographic research, specifically utilising GPT-4. This LLM is deployed to conduct qualitative data analysis, particularly focusing on generating affinity diagrams from interview data.
 
@@ -667,7 +575,7 @@ This transition to using an LLM as a tool for qualitative analysis represents a 
 In the following sections, I will provide a detailed account of the data collection process, exploring the nuances of user-model interface selection, and outlining the iterative process of prompting. Additionally, I expound on the distinct prompting approaches employed, the subsequent data analysis strategy, and the criteria for assessing the quality of the output. This comprehensive methodological exposition marks a foray into new territories of research, redefining the boundaries of ethnographic research by integrating artificial intelligence.
 
 \hypertarget{data-collection-user-model-interfaces}{%
-\subsubsection{Data Collection: User-Model Interfaces}\label{data-collection-user-model-interfaces}}
+\subsection{Data Collection: User-Model Interfaces}\label{data-collection-user-model-interfaces}}
 
 My research endeavour focused on identifying the optimal method to interact with GPT-4. I was particularly interested in the user-model interface, which serves as the frontend mechanism to facilitate interaction between humans and the model's functionalities. To suit my research needs, I required an interface that could support chat functionality, allowing me to manually control the model's inputs and outputs as much as possible.
 
@@ -680,7 +588,7 @@ The final stage of my quest led me to the GitHub project ``Chat with GPT'' from 
 Despite the existence of a more robust 32,000-token variant of GPT-4, I did not have access to this version during the course of this research.
 
 \hypertarget{data-collection-iterative-prompting}{%
-\subsubsection{Data Collection: Iterative Prompting}\label{data-collection-iterative-prompting}}
+\subsection{Data Collection: Iterative Prompting}\label{data-collection-iterative-prompting}}
 
 In the subsequent subsections, we will delve into two distinct prompt approaches that were explored during the iterative process: the direct prompting approach and the Chain of Thought Approach. These approaches were designed to enhance the generation of affinity diagrams from interview data by employing different strategies.
 
@@ -711,7 +619,7 @@ Contrasting with human cognition, where language and reasoning centres reside wi
 In this section, I introduce the Chain of Thought Approach adapted for creating affinity diagrams using GPT-4. The primary purpose of this approach is to elicit more detailed and reasoned outputs from the model, thus achieving in-depth ethnographic analysis. I will discuss its application, design, challenges, and evaluation in the subsequent sections.
 
 \hypertarget{background-and-motivation}{%
-\subparagraph{Background and Motivation}\label{background-and-motivation}}
+\subsubsection{Background and Motivation}\label{background-and-motivation}}
 
 In the realm of LLMs, various strategies and techniques have been developed to facilitate more accurate and interpretable reasoning tasks. Among these, the Chain of Thought Approach stands out as particularly effective.
 
@@ -726,7 +634,7 @@ Inspired by previous experiments such as those noted in the work of jsalsman (20
 In the following section, we will delve into the implementation of this bicameral dialogue approach, highlighting the promising outcomes of this experimental technique. By synergising the Chain of Thought Approach and the simulated bicameral dialogue approach, I aim to further optimise the quality and interpretability of LLM outputs, fostering a new frontier in language model reasoning.
 
 \hypertarget{prompt-design-and-strategy}{%
-\subparagraph{Prompt Design and Strategy}\label{prompt-design-and-strategy}}
+\subsubsection{Prompt Design and Strategy}\label{prompt-design-and-strategy}}
 
 The key to optimising GPT-4's performance lies in iterative prompt engineering. To apply the Chain of Thought Approach to creating an affinity diagram, I designed a prompt that aimed to emulate human thought processes, such as detailed reflection and analysis. The prompt included sections for THINK and WRITE processes, simulating the way human ethnographers contemplate and record their observations, respectively. The final adapted simulated-thought prompt is as follows:
 
@@ -775,7 +683,7 @@ In order to craft an affinity diagram, you follow this structure:
 For a more in-depth look into the iterative prompting process behind the aforementioned prompt, I have included a rough journal entry detailing parts of this process in Appendix F.
 
 \hypertarget{data-analysis-criteria-for-assessment-of-output-quality}{%
-\subsubsection{Data Analysis: Criteria for Assessment of Output Quality}\label{data-analysis-criteria-for-assessment-of-output-quality}}
+\subsection{Data Analysis: Criteria for Assessment of Output Quality}\label{data-analysis-criteria-for-assessment-of-output-quality}}
 
 In the context of evaluating the output quality of affinity diagrams created by GPT-4, a holistic approach is taken, encompassing several definitive criteria. These ensure that the resulting outputs are not only accurate and relevant but also comprehensive, consistent, clear, unbiased, interpretable, and of significant utility.
 
@@ -796,12 +704,12 @@ Interpretability is the penultimate criterion, and it encompasses the evaluation
 Finally, Utility is taken into account, which evaluates the practical usefulness of the generated affinity diagram. The potential of the output to yield insights that can be applied in further research or decision-making processes is central to this criterion. Utility, thus, serves as a measure of the actionable value of the model's output.
 
 \hypertarget{presentation-of-gpt-4-output-data}{%
-\subsection{Presentation of GPT-4 Output Data}\label{presentation-of-gpt-4-output-data}}
+\section{Presentation of GPT-4 Output Data}\label{presentation-of-gpt-4-output-data}}
 
 In the subsequent sections, the output data generated by the GPT-4 model will be presented and scrutinised, employing two distinct methodologies: the direct prompting approach and the Chain of Thought Approach, as presented in the previous section. These strategies showcase the proficiency of GPT-4 in segmenting, grouping, and reflecting upon qualitative data, particularly in the formation of affinity diagrams. This exploration furnishes insights into the possible strengths and limitations of AI application in qualitative research. Although it is promising in numerous aspects, the interpretation of data by the GPT-4 model occasionally lacks the depth and contextual sensitivity inherent in such research, suggesting potential for further enhancement and refinement.
 
 \hypertarget{the-direct-prompting-approach-1}{%
-\subsubsection{The Direct Prompting Approach}\label{the-direct-prompting-approach-1}}
+\subsection{The Direct Prompting Approach}\label{the-direct-prompting-approach-1}}
 
 The direct prompting approach yielded the following results, the prominent discourses serving as explanations of each of the diagram themes laid out:
 
@@ -891,7 +799,7 @@ Despite GPT-4 demonstrating an understanding of the concept of an affinity diagr
 In the human process of creating an affinity diagram, data is segmented and organised into a hierarchical structure based on themes and subthemes, following a mental process. Conversely, LLMs such as GPT-4 do not formulate a plan before producing tokens. Rather, the generation of tokens is sequential, based on the probability of the appearance of the subsequent word, as computed from the corpus of text on which the model was trained {[}Mahowald et al. (2023); Brown et al. (2020); Guo et al. (2023){]}.
 
 \hypertarget{the-chain-of-thought-approach-1}{%
-\subsubsection{The Chain of Thought Approach}\label{the-chain-of-thought-approach-1}}
+\subsection{The Chain of Thought Approach}\label{the-chain-of-thought-approach-1}}
 
 \hfill\break
 
@@ -962,7 +870,7 @@ Self 1: Great points. Let's keep all of these considerations in mind as we conti
 This indicates that the model could potentially undertake the entire process again, iterating and improving its work, as demonstrated in Shinn, Labash, and Gopinath (2023). However, due to the current token limit of 8,000 for GPT-4, re-running the process with the existing prompt was impracticable. In the future, if access to a 32,000 token version of GPT-4 is available, it's conceivable that the prompt could be altered to allow the model to iterate and produce superior results.
 
 \hypertarget{discussion-1}{%
-\subsection{Discussion}\label{discussion-1}}
+\section{Discussion}\label{discussion-1}}
 
 This section aims to delve deeper into the evaluation of the results obtained from the affinity diagrams generated by GPT-4, emphasising the identification of flaws and potential improvements. To ensure a comprehensive analysis, the structure of this discussion is arranged as follows:
 
@@ -977,7 +885,7 @@ Lastly, in the spirit of continuous development and exploration of AI capabiliti
 This systematic and in-depth examination of the results will enable us to draw meaningful insights and formulate strategies for better utilisation of AI in qualitative research, fostering a more synergistic relationship between human researchers and AI.
 
 \hypertarget{defining-output-quality}{%
-\subsubsection{Defining Output Quality}\label{defining-output-quality}}
+\subsection{Defining Output Quality}\label{defining-output-quality}}
 
 Before evaluating the output quality of the Chain of Thought Approach applied in this research, we need to revisit the parameters of high-quality output, as already defined in the methodology section of this report. These criteria, which are used to appraise the quality of the affinity diagram generated by GPT-4, are as follows:
 
@@ -1002,7 +910,7 @@ Before evaluating the output quality of the Chain of Thought Approach applied in
 \end{enumerate}
 
 \hypertarget{the-direct-prompting-approach-2}{%
-\subsubsection{The Direct Prompting Approach}\label{the-direct-prompting-approach-2}}
+\subsection{The Direct Prompting Approach}\label{the-direct-prompting-approach-2}}
 
 The direct prompting approach resulted in an affinity diagram that diverged from the standard structure, typically comprising small, data-rich segments presented on sticky notes. Despite inherent limitations, the model utilised the interview data with a fair degree of accuracy. However, shortcomings were evident in the model's understanding of the organisational context, particularly within the context of Vejle Municipality and its IT investment process, a limitation also observed in the simulated-though approach. The output, for ease of interpretation, has been reformatted and summarised as follows:
 
@@ -1038,7 +946,7 @@ While the model was capable of highlighting the issues raised, such as the lack 
 Despite these limitations, the direct prompting approach has potential as an initial data analysis tool, especially in processing large amounts of qualitative data quickly. However, its output needs to be carefully scrutinised for contextual accuracy and validated against the human analyst's understanding of the organisation.
 
 \hypertarget{the-chain-of-thought-approach-2}{%
-\subsubsection{The Chain of Thought Approach}\label{the-chain-of-thought-approach-2}}
+\subsection{The Chain of Thought Approach}\label{the-chain-of-thought-approach-2}}
 
 The Chain of Thought Approach used in the present study could be argued to have attained a deeper level analysis, but other key problems arising from the selected prompting approach limited the output's efficacy, particularly in the area of depth of analysis and grouping strategy. In the following sections, I offer my in-depth analysis of the output, drawing hypotheses regarding the causes of the problems that arose, as well as suggesting possible solutions to the problems at hand.
 
@@ -1069,7 +977,7 @@ Initially, this was presumed to be an issue related to the model's interpretatio
 \end{enumerate}
 \end{quote}
 
-When analysed with a model akin to text-davincii-003 (employed as a stand-in for GPT-4), it chose the correct interviewee with an 87.25\% probability. The remaining probability introduces unpredictability, resulting in the observed output degradation, as the model likely slips into a pattern of benign hallucination, repetitively outputting data segments until the retquested fifty are fulfilled.
+When analysed with a model akin to text-davincii-003 (employed as a stand-in for GPT-4), it chose the correct interviewee with an 87.25\% probability. The remaining probability introduces unpredictability, resulting in the observed output degradation, as the model likely slips into a pattern of benign hallucination, repetitively outputting data segments until the requested fifty are fulfilled.
 
 GPT-4 typically exhibits a diminished inclination towards such output loops compared to its predecessors, such as text-davincii-003. This discrepancy prompts consideration of the root causes leading to the repetitive output of identical data segments. A likely hypothesis is that the complexity and nature of the tasks encapsulated in a single, lengthy prompt, as outlined in the literature review, triggers this phenomenon. This problem could be exacerbated when the model is tasked to generate an extensive number of fifty data segments. Consequently, the model seems to have adopted a shortcut strategy of repetitive identical data segments output, a technique not explicitly prohibited in the original prompt.
 
@@ -1180,7 +1088,7 @@ Despite these challenges, it is worth mentioning that the generated data segment
 Considering the current state of the output, it would be fair to conclude that the utility of the outputted affinity diagram leans more towards being low. However, this presents opportunities for further research and improvements. Possible strategies to enhance the utility could include providing the model with more context about the IT investment process or using an interactive dialogue-based approach, which would allow the model to learn and adapt its output in real-time based on researcher's feedback. This approach could potentially enhance the model's understanding of the data and thereby increase the utility of its output.
 
 \hypertarget{opportunities-for-future-research-1}{%
-\subsubsection{Opportunities for Future Research}\label{opportunities-for-future-research-1}}
+\subsection{Opportunities for Future Research}\label{opportunities-for-future-research-1}}
 
 \hypertarget{instruction-overload-and-the-role-of-interaction}{%
 \paragraph{Instruction Overload and the Role of Interaction}\label{instruction-overload-and-the-role-of-interaction}}
@@ -1216,7 +1124,7 @@ In terms of iterative model refinement, user feedback could be instrumental in i
 These enhancements address some of the limitations observed in previous applications of the bicameral dialogue model. For instance, the present found that the two `selves' of the model often fell into a pattern of simply affirming one another's responses with short, confirmatory statements. While this maintained the flow of the dialogue, it did not substantively contribute to the depth or complexity of the conversation. By assigning contrasting roles to the `selves' in the conversation and introducing a council of diverse viewpoints, future applications of this model could foster a more dynamic, engaged, and expansive dialogue.
 
 \hypertarget{conclusion}{%
-\section{Conclusion}\label{conclusion}}
+\chapter{Conclusion}\label{conclusion}}
 
 In conclusion, this master's thesis sought to answer two research questions pertaining to the applicability of GPT-4 in generating affinity diagrams from interview data and to the key factors contributing to employee non-compliance with the IT investment process in Vejle Municipality. The results revealed significant room for improvement in GPT-4's capacity to analyse interview data, with potential to be greatly enhanced through future research and more focused approaches. Furthermore, the study identified issues relating to awareness, bureaucracy, and communication as key factors influencing the non-compliance with the IT investment process.
 
@@ -1229,7 +1137,7 @@ There were several limitations in this study, primarily related to its explorato
 As one of the first forays into the intersection of LLMs and qualitative research, this study emphasises the need for humanists to engage in discussions surrounding the future of research methods, AI integration, and the overarching implications of such technological advancements. The infancy of this field presents numerous opportunities for researchers to make transformative contributions, shaping the future of qualitative research practises in an increasingly AI-driven world.
 
 \hypertarget{references}{%
-\section{References}\label{references}}
+\chapter{References}\label{references}}
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
@@ -1308,18 +1216,18 @@ Wei, Jason, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Ed Chi, Quoc Le, and De
 \end{CSLReferences}
 
 \hypertarget{appendices}{%
-\section{Appendices}\label{appendices}}
+\chapter{Appendices}\label{appendices}}
 
 \hypertarget{appendix-a.-full-text-of-the-intranet-page-for-the-it-investment-process}{%
-\subsection{Appendix A. Full Text of the Intranet Page for the IT Investment Process}\label{appendix-a.-full-text-of-the-intranet-page-for-the-it-investment-process}}
+\section{Appendix A. Full Text of the Intranet Page for the IT Investment Process}\label{appendix-a.-full-text-of-the-intranet-page-for-the-it-investment-process}}
 
 \hypertarget{original-in-danish}{%
-\subsubsection{Original, in Danish}\label{original-in-danish}}
+\subsection{Original, in Danish}\label{original-in-danish}}
 
 The translated text from Vejle Municipality's intranet is as follows. For the English translation, see the next subsection in the present appendix. \#\#\#\# IT-investeringsprocessen Hvis du skal indkøbe eller implementere nye IT-løsninger, har Byrådet vedtaget, at du skal benytte IT-investeringsprocessen.
 
 \hypertarget{indkuxf8b-af-nye-it-systemer-eller-ny-funktionalitet-til-eksisterende}{%
-\subparagraph{Indkøb af nye IT-systemer eller ny funktionalitet til eksisterende}\label{indkuxf8b-af-nye-it-systemer-eller-ny-funktionalitet-til-eksisterende}}
+\subsubsection{Indkøb af nye IT-systemer eller ny funktionalitet til eksisterende}\label{indkuxf8b-af-nye-it-systemer-eller-ny-funktionalitet-til-eksisterende}}
 
 Skal du løse en ny IT-opgave, opdatere eller tilkøbe til et eksisterende system, har en idé til et IT-system eller købe et nyt IT-system, så har Byrådet vedtaget, at du skal benytte IT-investeringsprocessen. Ved at bruge IT-investeringsprocessen sikrer vi i fællesskab, at systemet eller funktionen kan bruges og samtidig lever op til vores IT-krav. Når du følger investeringsprocessen, får du ligeledes henvisninger til andre afdelinger, hvis der er områder, du skal være opmærksom på, eksempelvis I-sikkerhed~
 
@@ -1371,7 +1279,7 @@ Nedenstående~er eksempler på, hvornår du skal benytte IT-investeringsprocesse
 \end{itemize}
 
 \hypertarget{suxe5dan-guxf8r-du}{%
-\subparagraph{Sådan gør du}\label{suxe5dan-guxf8r-du}}
+\subsubsection{Sådan gør du}\label{suxe5dan-guxf8r-du}}
 
 Når du kan sige~ja~til et~af ovenstående~punkter,~skal~du benytte IT-investeringsprocessen.~Du benytter IT-investeringsprocessen ved at~klikke her eller via knappen øverst i på siden, hvorefter du skal udfylde en elektronisk blanket.~~
 
@@ -1380,12 +1288,12 @@ Når~blanketten~er udfyldt, vil~du typisk inden for~48 timer~blive kontaktet~af 
 Du har også muligheder for selv at booke en tid til et sparringsmøde med en IT-arkitekt. Dette kan gøres via nedenstående bookingside.
 
 \hypertarget{translation-in-english}{%
-\subsubsection{Translation, in English}\label{translation-in-english}}
+\subsection{Translation, in English}\label{translation-in-english}}
 
 The translated text from Vejle Municipality's intranet is as follows. \#\#\#\# The IT Investment Process If you need to procure or implement new IT solutions, the Council has decided that you should use the IT investment process.
 
 \hypertarget{purchase-of-new-it-systems-or-new-functionality-for-existing-ones}{%
-\subparagraph{Purchase of new IT systems or new functionality for existing ones}\label{purchase-of-new-it-systems-or-new-functionality-for-existing-ones}}
+\subsubsection{Purchase of new IT systems or new functionality for existing ones}\label{purchase-of-new-it-systems-or-new-functionality-for-existing-ones}}
 
 If you need to address a new IT task, update or make additions to an existing system, have an idea for an IT system, or buy a new IT system, the Council has decided that you should use the IT investment process. By using the IT investment process, we ensure together that the system or function can be used while meeting our IT requirements. When you follow the investment process, you will also be referred to other departments if there are areas you need to be aware of, such as IT security.
 
@@ -1437,7 +1345,7 @@ The following are examples of when you should use the IT investment process:
 \end{itemize}
 
 \hypertarget{here-is-how-you-do-it}{%
-\subparagraph{Here is how you do it}\label{here-is-how-you-do-it}}
+\subsubsection{Here is how you do it}\label{here-is-how-you-do-it}}
 
 When you can say yes to any of the above points, you should use the IT investment process. You use the IT investment process by clicking here or via the button at the top of the page, after which you will fill out an electronic form.
 
@@ -1446,11 +1354,93 @@ Once the form is completed, you will typically be contacted within 48 hours by a
 You also have the option to book a time for a sparring meeting with an IT architect. This can be done via the booking page below.
 
 \hypertarget{appendix-b.-interview-guide}{%
-\subsection{Appendix B. Interview Guide}\label{appendix-b.-interview-guide}}
+\section{Appendix B. Interview Guide}\label{appendix-b.-interview-guide}}
 
+\hypertarget{original-in-danish-1}{%
+\subsection{Original, in Danish}\label{original-in-danish-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Fortæl om projektet
+
+  \begin{itemize}
+  \tightlist
+  \item
+    It-investeringsprocessen: hvad er det?\ldots{} tag evt en print af vkintra med
+  \item
+    Hvorfor bruger folk det ikke\ldots{} hvorfor bruger folk det?
+  \end{itemize}
+\item
+  Jobtitel
+\item
+  Primære ansvarsområder
+\item
+  Fortæl om etnografisk tilgang\ldots{} flow of work
+\item
+  Nævn anonymitet og uafhængighed
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Har du brugt it-investeringsprocessen?
+  \item
+    Beskriv instans, du/bekendt ikke brugte it-investeringsprocessen? Begrundelser?
+  \item
+    Fordele ved at bruge it-investeringsprocessen?
+  \item
+    Kan du se nogle barrierer, som forhindrer folk?
+  \item
+    Hvordan tror du, man kunne få flere til at bruge it-investeringsprocessen?
+  \item
+    Nogle andre faktorer, som påvirker brugen?
+  \item
+    Kan du beskrive en situation, hvor it-investeringsprocessen fungerede særdeles godt? Hvad fik det til at ske?
+  \item
+    Hvordan tror du, man kunne gøre det bedre (inddrag evt. papir og kuglepenne) \#\#\# Translation, in English
+  \end{itemize}
+\item
+  Tell about the project
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The IT investment process: what is it?\ldots perhaps take a printout of vkintra with you
+  \item
+    Why don't people use it\ldots why do people use it?
+  \end{itemize}
+\item
+  Job title
+\item
+  Primary areas of responsibility
+\item
+  Tell about the ethnographic approach\ldots{} flow of work
+\item
+  Mention anonymity and independence
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Have you used the IT investment process?
+  \item
+    Describe a situation where you/someone you know did not use the IT investment process? Reasons?
+  \item
+    Advantages of using the IT investment process?
+  \item
+    Can you see any barriers that prevent people?
+  \item
+    How do you think you could get more people to use the IT investment process?
+  \item
+    Any other factors that affect its use?
+  \item
+    Can you describe a situation where the IT investment process worked exceptionally well? What made that happen?
+  \item
+    How do you think it could be done better (consider incorporating paper and pens)?
+  \end{itemize}
+\end{itemize}
 
 \hypertarget{appendix-c.-complete-interview-summaries}{%
-\subsection{Appendix C. Complete Interview Summaries}\label{appendix-c.-complete-interview-summaries}}
+\section{Appendix C. Complete Interview Summaries}\label{appendix-c.-complete-interview-summaries}}
 
 Interview 161: Lise (N) Lise is an administrative assistant for the Daycare department and was trained as an administrative employee in Vejle municipality. She describes herself as a ``link'' and ``translator'' between the more academically or technically educated employees in the Administration Building and the more practically oriented daycare workers. She says that daycare workers require different considerations than those who ``sit in front of a screen all day'' in the Administration Building, as their work does not involve as much IT. All daycare workers have an iPad. Lise provides an example that installing a new app on their iPads may seem minor to IT professionals, but it can be confusing for daycare workers, especially since they work alone in their homes and do not have colleagues for support. In such cases, Lise represents the interests of daycare workers in the Administration Building.
 
@@ -1587,12 +1577,12 @@ Anne reacted positively to the idea of a central system that directs communicati
 Another good point Anne made was how to make the IT investment process come to life. It must be communicated clearly in some way, but who exactly is the target audience? To which forum should it be communicated? How can one avoid communicating with the wrong people in the organization?
 
 \hypertarget{appendix-d.-high-resolution-version-of-human-made-affinity-diagram}{%
-\subsection{Appendix D. High-Resolution Version of Human-Made Affinity Diagram}\label{appendix-d.-high-resolution-version-of-human-made-affinity-diagram}}
+\section{Appendix D. High-Resolution Version of Human-Made Affinity Diagram}\label{appendix-d.-high-resolution-version-of-human-made-affinity-diagram}}
 
 Attached as a separate file in the folder titled ``Appendices.''
 
 \hypertarget{appendix-e.-full-dialogue-with-gpt-4-from-the-direct-prompting-approach}{%
-\subsection{Appendix E. Full Dialogue with GPT-4 From the Direct Prompting Approach}\label{appendix-e.-full-dialogue-with-gpt-4-from-the-direct-prompting-approach}}
+\section{Appendix E. Full Dialogue with GPT-4 From the Direct Prompting Approach}\label{appendix-e.-full-dialogue-with-gpt-4-from-the-direct-prompting-approach}}
 
 p.p1 \{margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px `Helvetica Neue'\} p.p2 \{margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px `Helvetica Neue'; min-height: 15.0px\} p.p3 \{margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px `Helvetica Neue'; min-height: 16.0px\}
 
@@ -1760,7 +1750,7 @@ III.C. Evaluation of AI chatbots as a complementary tool to traditional research
 In summary, large language models like OpenAI's family of large language models can serve as a complementary tool to traditional research methods in ethnographic studies. By combining the strengths of both AI chatbots and human researchers, we can achieve a more comprehensive and insightful analysis of qualitative data, shedding light on employees' attitudes and behaviors towards the IT investment process at Vejle municipality.
 
 \hypertarget{appendix-f.-rough-draft-detailing-iterative-prompting-process-for-the-chain-of-thought-approach}{%
-\subsection{Appendix F. Rough Draft Detailing Iterative Prompting Process for the Chain of Thought Approach}\label{appendix-f.-rough-draft-detailing-iterative-prompting-process-for-the-chain-of-thought-approach}}
+\section{Appendix F. Rough Draft Detailing Iterative Prompting Process for the Chain of Thought Approach}\label{appendix-f.-rough-draft-detailing-iterative-prompting-process-for-the-chain-of-thought-approach}}
 
 The text that follows was originally written as a rough draft for the methodology section detailing the chain of thought prompt used in the present study. It was later shortened and streamlined significantly for readability and clarity. Readers interested in learning more about my process can read on, although it is not guaranteed to be a particularly good read.
 
@@ -1772,38 +1762,31 @@ Using this simulated-thought approach, the idea is to prompt GPT-4 to produce a 
 
 \textgreater{} You are an ethnographer going through a reasoning process to create an affinity diagram based on the qualitative data collected from semi-structured interviews. You have two tools available to you:
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} THINK: Here, you express your thoughts and considerations in a stream of consciousness fashion.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} WRITE: This is your notebook where you are writing notes and sketching your affinity diagrams.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Other than this, make headings indicating your movement between each of the steps of the affinity diagram process (like this: \textbackslash{}``DATA SEGMENTATION:''):
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Data segmentation: Divide the interview notes into discrete statements or observations, each representing a single idea or insight expressed by the interviewees, each written on its own line.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Sorting and grouping: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerged. If you feel your analysis could benefit from iterating, you write \textbackslash{}``SORTING AND GROUPING (ITERATION \# x):''
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Labelling: Once the groups were formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Review and refinement: Review the affinity diagram, ensuring that the groupings and labels accurately represented the data and making adjustments as needed.
 
@@ -1811,257 +1794,205 @@ The resulting analysis appeared to take a step in the wrong direction, the model
 
 \textgreater{} DATA SEGMENTATION:
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 1. Lise as a \textbackslash{}``link\textbackslash{}'' and \textbackslash{}``translator\textbackslash{}'' between daycare workers and the Administration Building.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 2. Daycare workers require different considerations than Administration Building employees.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 3. Installing new apps on iPads can be confusing for daycare workers.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 4. Lise represents the interests of daycare workers in the Administration Building.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 5. Lise would be \textbackslash{}``concerned\textbackslash{}'' and \textbackslash{}``sad\textbackslash{}'' if she had to use a form to contact the IT department.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 6. Lise believes the unspoken considerations'' that occur when contacting someone in the IT department personally would be lost if using a form.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 7. Emma believes that merging the IT investment process with their application template could be a great opportunity.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 8. Emma thinks the name \textbackslash{}``IT investment process\textbackslash{}'' is unattractive and reminiscent of something the finance department might need.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 9. Claus describes his title as a \textbackslash{}``McDonald\textbackslash's title\textbackslash{}'' that doesn\textbackslash't reveal much about his role.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 10. Claus appreciates the ability to intervene if he feels a need has been misunderstood when using the IT investment process.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 11. Peter feels that his dual role as IT support has sometimes compromised the well-being of the residents.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 12. Peter expresses concern about the facility\textbackslash's reliance on him or other IT-knowledgeable staff.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 13. Søren is responsible for purchasing IT equipment for schools.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 14. School employees typically contact their school\textbackslash's IT advisor, who then reaches out to Søren or IT business architect Mathilde directly.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 15. Søren believes it\textbackslash's realistic to get schools onboard with using the IT investment process, but it requires some \textbackslash{}``training.\textbackslash{}''
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 16. Anders provided valuable insights by discussing some IT investment projects and how the process looks in the real world from the perspective of someone not an insider in the IT department.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 17. Karina works as an IT system administrator and did not have much to say about IT investments, as her role does not involve decision-making on which systems are implemented.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 18. Mikkel works as a department head for the library\textbackslash's IT.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 19. Mikkel\textbackslash's library has utilized the IT investment process.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 20. Anne is a professional consultant for the Salary department and serves as the primary contact for KMD, the provider of the municipality\textbackslash's payroll system.
 
-\begin{quote}
-\end{quote}
+ 
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} SORTING AND GROUPING:
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Group 1: Role and responsibilities of interviewees
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Lise as a \textbackslash{}``link\textbackslash{}'' and \textbackslash{}``translator\textbackslash{}'' between daycare workers and the Administration Building.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Emma works to implement new welfare technologies.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Claus is a development manager at CSV.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Peter works as a care assistant and helps with IT at the residential care facility.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Søren is responsible for purchasing IT equipment for schools.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Anders discussed IT investment projects from a non-IT department perspective.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Karina works as an IT system administrator.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Mikkel works as a department head for the library\textbackslash's IT.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Anne is a professional consultant for the Salary department.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Group 2: IT investment process and its challenges
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Lise would be \textbackslash{}``concerned\textbackslash{}'' and \textbackslash{}``sad\textbackslash{}'' if she had to use a form to contact the IT department.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Emma believes that merging the IT investment process with their application template could be a great opportunity.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Claus appreciates the ability to intervene if he feels a need has been misunderstood when using the IT investment process.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} School employees typically contact their school\textbackslash's IT advisor instead of using the IT investment process.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Søren believes it\textbackslash's realistic to get schools onboard with using the IT investment process, but it requires some \textbackslash{}``training.\textbackslash{}''
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Mikkel\textbackslash's library has utilized the IT investment process, but found it somewhat frustrating.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Group 3: Communication and relationships with the IT department
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Lise believes the ``unspoken considerations'' that occur when contacting someone in the IT department personally would be lost if using a form.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Emma thinks the name \textbackslash{}``IT investment process\textbackslash{}'' is unattractive and reminiscent of something the finance department might need.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Peter feels that his dual role as IT support has sometimes compromised the well-being of the residents.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Søren believes that the IT department should be better at using \textbackslash{}``carrots\textbackslash{}'' rather than sticks.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Anders provided valuable insights by discussing some IT investment projects and how the process looks in the real world from the perspective of someone not an insider in the IT department.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Anne is responsible for ensuring that form 32 is completed for new systems that affect the payroll system.
 
-\begin{quote}
-\end{quote}
+ 
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} LABELLING:
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} Group 1: Roles and responsibilities of interviewees in relation to IT Group 2: Challenges and potential improvements in the IT investment process Group 3: Communication, relationships, and perceptions of the IT department
 
-\begin{quote}
-\end{quote}
+ 
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} REVIEW AND REFINEMENT:
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} After reviewing the affinity diagram, the groupings and labels accurately represent the data collected from the interviews. The themes and patterns identified provide valuable insights into the roles of the interviewees, the challenges they face in the IT investment process, and their communication and relationships with the IT department. No adjustments are needed at this time.
 
@@ -2069,13 +2000,11 @@ The introduction of the new prompt seemed to create confusion and did not produc
 
 \textgreater{} User: Make this prompt for GPT-4 more coherent and clear for you as an AI assistant:
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} \emph{(the prompt as stated previously)}
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} User: Oh and I also want the model to actually use the THINK and WRITE thing. Somehow emphasise the importance of writing thoughts down.
 
@@ -2083,41 +2012,33 @@ And, within seconds, the model outputted the following prompt.
 
 \textgreater{} You are an AI assistant helping an ethnographer create an affinity diagram from qualitative data gathered during semi-structured interviews. The ethnographer will use two important tools throughout the process:
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 1. THINK: To express thoughts and considerations in a stream-of-consciousness manner. This helps in gaining a deeper understanding of the data.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 2. WRITE: To take notes and sketch affinity diagrams in a notebook. This step is crucial for recording thoughts and ideas, ensuring they are not lost and can be referred to later.
 
-\begin{quote}
-\end{quote}
+ 
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} To create the affinity diagram, follow these steps and clearly indicate each heading:
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 1. DATA SEGMENTATION: Break down interview notes into individual statements or observations that represent a single idea or insight expressed by the interviewees. Write each statement on a separate line. Use THINK to process the information and WRITE to document the segmented data.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 2. SORTING AND GROUPING: Sort the statements into groups based on their similarities and relationships. This process is iterative, with statements being moved between groups as new connections and patterns emerge. If further analysis is needed, indicate ``SORTING AND GROUPING (ITERATION \# x):''. Use THINK to identify patterns and WRITE to record the groupings.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 3. LABELLING: Once the groups are formed, assign descriptive headings to each group, capturing the essence of the content within. These headings represent the primary themes and patterns identified in the data. Use THINK to determine appropriate labels and WRITE to document them.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 4. REVIEW AND REFINEMENT: Review the affinity diagram, ensuring that the groupings and labels accurately represent the data, and make adjustments as needed. Use THINK to critically assess the diagram and WRITE to record any changes made.
 
@@ -2131,43 +2052,35 @@ In an attempt to ensure the prompt's success and avoid wasting more precious Ope
 
 \textgreater{} You are an AI ethnographer helping your human colleague create an affinity diagram from qualitative data gathered during semi-structured interviews. As an ethnographer, you will use two important tools throughout the process:
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 1. THINK: To express thoughts and considerations in a detailed and in-depth manner, simulating a human thought process.
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 2. WRITE: To take notes and sketch affinity diagrams in a notebook. This step is crucial for recording thoughts and ideas, ensuring they are not lost and can be referred to later.
 
-\begin{quote}
-\end{quote}
+ 
 
-\begin{quote}
-\end{quote}
+ 
 
 \begin{quote}
 To create the affinity diagram, follow these steps and clearly indicate each heading. For each step, generate content for both THINK and WRITE sections, focusing on providing a more in-depth and simulated thought approach:
 \end{quote}
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 1. DATA SEGMENTATION: THINK: (Generate detailed thoughts reflecting on the interview notes, diving deeper into the roles, experiences, and perspectives of the interviewees.) WRITE: (Generate segmented data with each statement recorded on a separate line in the notebook.)
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 2. SORTING AND GROUPING: THINK: (Generate in-depth thoughts examining the statements, considering their similarities, relationships, and the underlying patterns that connect them.) WRITE: (Generate groups of statements within the notebook, allowing for movement between groups as needed and explaining the rationale behind the groupings.)
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 3. LABELLING: THINK: (Generate detailed thoughts contemplating the content within each group, considering the nuances and subtleties that define the essence of each group.) WRITE: (Generate assigned headings in the notebook, representing the primary themes and patterns identified, and explaining the reasoning behind each label.)
 
-\begin{quote}
-\end{quote}
+ 
 
 \textgreater{} 4. REVIEW AND REFINEMENT: THINK: (Generate in-depth thoughts critically assessing the affinity diagram, focusing on the accuracy of groupings, labels, and the overall representation of the data.) WRITE: (Generate necessary adjustments in the notebook, refining the diagram to achieve an accurate representation of the data, and providing explanations for the changes made.)
 
@@ -2179,43 +2092,37 @@ Determined to craft prompt that could enable the model to yield high quality res
 You are an ethnographer tasked with analysing a fellow ethnographer's notes gathered from conducted interviews and making an affinity diagram. Your analysis will take outset in the following problem statement:
 \end{quote}
 
-\begin{quote}
-\end{quote}
+ 
 
 \begin{quote}
 ``The IT department at Vejle municipality has established an IT investment process that outlines a set of procedures for procuring new IT systems, software, and equipment. Despite these guidelines, employees do not always follow this process, leading to potential inefficiencies and discrepancies in IT investments. This study aims to explore the reasons why employees do not comply with the IT investment process and suggest strategies to improve compliance.''
 \end{quote}
 
-\begin{quote}
-\end{quote}
+ 
 
 \begin{quote}
 In order to craft an affinity diagram, you follow this structure:
 \end{quote}
 
-\begin{quote}
-\end{quote}
+ 
 
 \begin{quote}
 \textbackslash\# OVERVIEW
 \end{quote}
 
-\begin{quote}
-\end{quote}
+ 
 
 \begin{quote}
 \textbackslash\#\# THINK
 \end{quote}
 
-\begin{quote}
-\end{quote}
+ 
 
 \begin{quote}
 \textbackslash{[}You give a long and in-depth bicameral dialogue (Self 1: x\textbackslash{}\nSelf 2: x; taking at least 5 turns), thinking about the data you have received, being keen on details, discourses, data segments, and anything else an ethnographer would think about. Let any ideas that come to you flow out here.{]}
 \end{quote}
 
-\begin{quote}
-\end{quote}
+ 
 
 \begin{quote}
 \textbackslash\# DATA SEGMENTATION
@@ -2278,12 +2185,12 @@ In my experience, the model will not generate bicameral dialogues longer than fi
 The final output was longer than is reasonable to quote within the present report, but can be read in its entirety in Appendix X. In order to give a more human-readable version of the model's affinity diagram, I have compiled the diagram into a visual representation that is more tradtionally associated with affinity diagrams, utilising the computer program Apple Freeform to work with virtual sticky notes, similar to my own method when making my human-made affinity diagram.
 
 \hypertarget{appendix-g.-high-resolution-version-of-gpt-4s-chain-of-thought-affinity-diagram}{%
-\subsection{Appendix G. High-Resolution Version of GPT-4's Chain of Thought Affinity Diagram}\label{appendix-g.-high-resolution-version-of-gpt-4s-chain-of-thought-affinity-diagram}}
+\section{Appendix G. High-Resolution Version of GPT-4's Chain of Thought Affinity Diagram}\label{appendix-g.-high-resolution-version-of-gpt-4s-chain-of-thought-affinity-diagram}}
 
 Attached as a separate file in the folder titled ``Appendices.''
 
 \hypertarget{appendix-h.-gpt-4s-full-output-from-the-chain-of-thought-prompt}{%
-\subsection{Appendix H. GPT-4's Full Output From the Chain of Thought Prompt}\label{appendix-h.-gpt-4s-full-output-from-the-chain-of-thought-prompt}}
+\section{Appendix H. GPT-4's Full Output From the Chain of Thought Prompt}\label{appendix-h.-gpt-4s-full-output-from-the-chain-of-thought-prompt}}
 
 \# OVERVIEW \#\# THINK Self 1: The interviews provided a lot of information about the IT investment process and the experiences of employees in various roles within the municipality. It seems that some are aware of the process, while others are not. There are also some interesting insights into the relationship between the IT department and the rest of the organization.
 
@@ -2346,7 +2253,7 @@ Self 2: Definitely. And finally, we should consider the practical implications o
 Self 1: Great points. Let's keep all of these considerations in mind as we continue to refine our affinity diagram and analyze the data.
 
 \hypertarget{appendix-i.-full-typed-interview-notes-in-danish}{%
-\subsection{Appendix I. Full Typed Interview Notes, in Danish}\label{appendix-i.-full-typed-interview-notes-in-danish}}
+\section{Appendix I. Full Typed Interview Notes, in Danish}\label{appendix-i.-full-typed-interview-notes-in-danish}}
 
 The ensuing annotations are comprehensive, yet unrefined, extrapolations of my immediate post-interview notes, which themselves expand upon my initial written observations. These extensive annotations subsequently facilitated the creation of the synthesized interview summaries found in Appendix C. Please note, these detailed remarks are exclusively provided in Danish, in alignment with the author's belief that the interview summaries from Appendix C convey essentially the same content, but in a significantly clearer and more digestible format.
 
@@ -2397,6 +2304,3 @@ Vi snakkede også om, hvordan kommunerne virker til at konkurrere iblandt hinand
 \textbf{169} * Arbejder i biblioteket som afdelingsleder for bibliotekets IT. Han sidder på Digitaliseringsforum, står for bibliotekets systemer, deres drift og udvikling, projektledelse, komunnikation mellem interessenter på kommunale og nationale plan. De er centralbibliotek, så han står også for nogle ting overfor andre biblioteker. De laver også nogle ting i Region Syddanmark. Han går med mange kasketter. * Modsat de andre interviewees indtil videre har de faktisk benyttet sig at it-investeringsprocessen ved biblioteket. Han siger det ikke er ofte de gør det, men sidst var det med nogle formidlingsskærme. Han sagde, at noget som var lidt frustrerende ved at bruge det var at skulle udfylde nogle ting, som man allerede havde gransket så tæt. Han siger dog at blanketten er meget simplificeret sammenlignet med før den blev forkortet. * Han beskriver it-afdelingen som havende været mere ``konservativ'' førhen, hvor han laver reference til udsagt såsom ``vi er en Microsoft kommune'', og beskriver en lingende udvikling til de andre, at it-afdelingen er blivet mere ``udviklingsorienteret'', og at der er kommet et bedre samarbejde. Arkitekten Mette har biblioteket som specifikt ansvarsområde. Før hende var der en anden som kun arbejdede ved kommunen i kortere tid. Han beskriver hende som en god samarbejdspartner og siger, at de i biblioteket er begyndt at tænkte nogle gange ``måske skulle vi tage fat i Mette for at høre om det her'', da hun har været god til at dele viden før og har haft en større involvering end de førhen har set fra it-afdelingen. De kvartalsmøder med Mette, som blev beskrevet i tidligere interviews, synes han er en god hjælp. Han siger at han allerede har hørt om mange af de ting fra andre steder, fx Digitaliseringsforum, men at han nogle gange tager andre af hans medarbejdere med til det for at de også kan høre det. * Han beskriver at man nogle gange har været uenige/usikre på, hvornår it-investeringsprocessen faktisk behøvede at blive brugt, da kravene for hvornår man skal bruge den er, på papir, ekstremt brede. Han forslår at det nok kunne skade folks vilje til at bruge det, da reglerne så tydeligt ikke stemmer overens med virkeligheden. * Han beskriver, at han kan se vigtigheden i it-investeringsprocessen for at undgå dobbeltinvesteringer og sikkerhedstrusler og sådan noget, men har haft svært nogle gange ved at reconciliere it-afdelingens forventinger med de nationale tiltag og systemer som de er underlagt som centralbibliotek. Nogle gange har han fået at vide, at de systemer ikke bruges i kommunen. Han siger at han er ``pisse ligeglade'' med, at det ikke bruges i kommunen, når det er et system, da de organisatorisk ikke er en del af kommunen. Det giver nogle dilemmaer dog, når man i praksis bruger kommunens netværk og overordnet supportes af kommunens it-afdelingen. * Han siger at han også har snakket med it-arkitekten Nicklas.
 
 \textbf{190} * Faglig konsulent for Løn. Hun er dem primære kontakt til KMD, leverandøren for kommunens lønsystem. * Når hun har brug for noget fra IT-afdelingen plejer hun at ringe til IT-arkitekten Nicklas. Hendes sidste nye it-investering var personligt et digitalt afstemningsystem for et halvt år siden. * For nye systemer som berører lønsystemet (?) skal der udfyldes en bilag 32, som fungerer som en slags ledelsestilsyn som tildeler en dataansvarlig for systemet. Hun er ansvarlig for, at bilag 32 bliver udfyldt. Her har de nogle lignende problemer til IT-afdelingen, hvor nogle rapporterer nye systemer senere i processen end Lønafdelingen ville foretrække. * Hun kendte ikke noget til it-investeringsprocessen før interviewet. Hun sagde, at hendes tanke i den slags situationer, hvor it-investeringsprocessen kunne have været relevant var, ``jeg må hellere lige spørge {[}it-afdelingen{]}'', også selvom hun ikke kendte til de officielle retningslinjer * Hun virker til at have en lignende indstilling til it-afdelingen i, at man ville nogle gange ønske at medarbejdere i organisationen ville være bedre til at konsultere med hende før de køber systemer som falder indenfor hendes ansvarsområde i stedet for at købe systemet først og så konsultere med hende om implementeringen bagefter. Det kan være derfor at hun har sådan en attitude overfor it-afdelingen hvor man er god til at konsultere med dem i god tid. * Hun fortæller om en instans, hvor hun uden at få noget som helst at vide før, blev indkaldt til et møde af en i organisationen sammen med Nicklas også, som syntes at hun `måske' kunne have en stake i implementeringen af deres nye system. Hun beskrev mødet som, at ``det var et videomøde, men jeg kunne fornemme at mig og Nicklas sad og kiggede lidt på hinanden på skærmen og tænkte `sker det her virkelig lige nu'\,''\ldots{} det var fordi at fik at vide, at 3. manden allerede havde købt systemet uden at spørge, og ville have systemet i luften om 3 uger, hvilket hun så som meget urimeligt. Hun beskriver, at sådan nogle situationer har til tider været en enorm arbejdsbelastning. Så selvom 190 og Nicklas arbejder på hver deres faglige område, deler de nogle frustationer. En central frustration er, at medarbejderenes forventninger til tidshorisonten for implementeringen af nye ting ikke stemmer overens med deres egne. * Hun reagerede positivt på min idé om, at der kunne være et centralt system som dirigerer kommunikationen forskellige steder i organisationen afhængigt af nogle faste retningslinjer (fx. henvendelse om nyt lønsystem bliver videresendt til Lønafdelingen og IT, hvorefter afdelingerne kan videresende sagerne til de relevante medlemmer af deres afdelinger). Hun pointerer, at man mangler mere sammenbinding i organisationen, men at det også er vigtigt at bevare friheden til at ``tænke selv''. En anden vigtig faktor er i hvert fald at have mere faste og transparante retningslinjer for, hvornår rapportering er nødvendig og til hvem i organisationen, sådan som medarbejdere med nye investeringer i the pipeline ikke bare skal gætte på, hvem der skal involveres, og hvornår i processen de skal involveres (før de køber det? Efter de har købt det? Bare når man får den første strø tanke om at investere? Når man har brug for at det er implementeret om 3 uger? 3 måneder? 3 år?) * En anden god pointe hun lavede var, hvordan man skal få it-investeringsprocessen ud at leve\ldots{} det skal klart kommunikeres ud på en eller anden måde men hvem præcist er målgruppen? Til hvilket forum skal det kommunikeres? Hvordan undgår, at man kommunikerer med de forkerte mennesker i organisationen?
-
-\backmatter
-\end{document}
